@@ -1,2 +1,0 @@
-research_direction: self-evolving multi-agent system
-filter_requirements: 近三年，NLP和agent落地方向，最有影响力

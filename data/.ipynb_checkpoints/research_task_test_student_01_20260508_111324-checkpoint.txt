@@ -1,3 +1,0 @@
-research_direction: self-evolving multi-agent systems, NLP, 大模型agent落地, 文本处理, Self-Evolving, Multi-Agent Framework, LLM Agent 记忆管理, Long Term Memory, AI Self-Evolution, Generative Agents based on LLM
-filter_requirements: 近三年（2022-2024），有影响力
-other_info: 用户对论文 'Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation' 感到满意，认为其核心概念与自身研究兴趣高度契合。用户对论文 'MorphAgent: Empowering Agents through Self-Evolving Profiles and Decentralized Collaboration' 持高度积极态度，认为其核心概念直接对应自己的研究兴趣。用户对论文 'Long Term Memory: The Foundation of AI Self-Evolution' 感到满意，认为其核心概念高度相关。对论文'Magenta: Metrics and Evaluation Framework for Generative Agents based on LLMs'有条件地接受，部分符合研究兴趣。

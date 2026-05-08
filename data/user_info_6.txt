@@ -1,2 +1,0 @@
-user_identity: 综述作者
-user_preference: 倾向于纳入符合研究兴趣的论文
