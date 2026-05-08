@@ -1,0 +1,756 @@
+2026-05-07 23:48:41 [INFO] auto_slr - 日志系统初始化完成，级别: DEBUG，日志文件: D:\School\SAT404\pilot_study_code\new_auto_slr\logs\run_20260507_234841.log
+2026-05-07 23:48:41 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:41 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个对大模型agent很有兴趣的学生,你现在要做一个关于self-evolving multi-agent system相关的literature review. 你想看一些最近三年的非常有影响力的paper. 你的学术偏好是自然语言处理和大模型agent落地
+2026-05-07 23:48:41 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-07 23:48:42 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-07 23:48:42 [INFO] auto_slr - [User(Simulated)] 初始query: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-07 23:48:42 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-07 23:48:42 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:42 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-07 23:48:42 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-07 23:48:44 [DEBUG] auto_slr - [System LLM] 响应: {
+  "user_identity": "文献综述研究者",
+  "user_preference": "",
+  "research_direction": "self-evolving multi-agent system",
+  "filter_requirements": "近三年，NLP和agent落地方向，最有影响力",
+  "rejection_reasons": "",
+  "other_info": ""
+}
+2026-05-07 23:48:44 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "文献综述研究者", "user_preference": "", "research_direction": "self-evolving multi-agent system", "filter_requirements": "近三年，NLP和agent落地方向，最有影响力", "rejection_reasons": "", "other_info": ""}
+2026-05-07 23:48:44 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:44 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的用户信息记录]和[新提取的用户相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+(none)
+
+新提取的信息：
+user_identity: 文献综述研究者
+2026-05-07 23:48:44 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-07 23:48:45 [DEBUG] auto_slr - [System LLM] 响应: user_identity: 文献综述研究者
+2026-05-07 23:48:45 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:45 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+(none)
+
+新提取的信息：
+research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+2026-05-07 23:48:45 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-07 23:48:46 [DEBUG] auto_slr - [System LLM] 响应: research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+2026-05-07 23:48:46 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_identity: 文献综述研究者, research_task=research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+2026-05-07 23:48:46 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:46 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献搜索评估专家。请判断用户提供的查询信息是否足够进行初步论文搜索。
+
+至少应包含：
+1. 明确的研究方向/主题
+2. 可推断的时间范围（如果未明确指定，默认近5年可以接受）
+
+用户信息：
+user_identity: 文献综述研究者
+
+研究任务：
+research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+请判断信息是否充分，输出 JSON：
+{
+  "sufficient": true/false,
+  "missing_info": "缺失信息的描述（如果充分则为空字符串）"
+}
+
+只输出 JSON，不要输出其他内容。
+2026-05-07 23:48:46 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-07 23:48:47 [DEBUG] auto_slr - [System LLM] 响应: {
+  "sufficient": true,
+  "missing_info": ""
+}
+2026-05-07 23:48:47 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-07 23:48:47 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=搜索相关论文
+2026-05-07 23:48:47 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:47 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个助手，需要为执行者提供与当前任务相关的背景信息。
+
+当前用户信息：
+user_identity: 文献综述研究者
+
+当前研究任务：
+research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+当前达标论文列表：
+(none)
+
+执行者即将执行的任务：搜索相关论文
+
+请从以上信息中提取最相关的背景信息，简洁地提供给执行者。只输出相关信息，不要输出其他内容。
+2026-05-07 23:48:47 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-07 23:48:48 [DEBUG] auto_slr - [System LLM] 响应: 用户身份：文献综述研究者
+研究方向：自我进化多智能体系统（self-evolving multi-agent system）
+筛选要求：近三年（2022-2025）、NLP和智能体落地方向、最具影响力论文
+当前状态：尚未获取达标论文列表，需搜索相关论文。
+2026-05-07 23:48:48 [INFO] auto_slr - [Assistant] provide_context 输出: 用户身份：文献综述研究者
+研究方向：自我进化多智能体系统（self-evolving multi-agent system）
+筛选要求：近三年（2022-2025）、NLP和智能体落地方向、最具影响力论文
+当前状态：尚未获取达标论文列表，需搜索相关论文。
+2026-05-07 23:48:48 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力, assistant_context=用户身份：文献综述研究者
+研究方向：自我进化多智能体系统（self-evolving multi-agent system）
+筛选要求：近三年（2022-2025）、NLP和智能体落地方向、最具影响力论文
+当前状态：尚未获取达标论文列表，需搜索相关论文。
+2026-05-07 23:48:48 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:48:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献搜索专家。根据给定的研究课题和要求，你需要为 Semantic Scholar API 和 arXiv 生成搜索查询关键词。
+
+请输出一个 JSON 对象：
+{{
+  "semantic_scholar_query": "搜索关键词",
+  "arxiv_query": "搜索关键词",
+  "year_range": "起始年份-结束年份 或 空字符串",
+  "max_results": 数字
+}}
+
+重要：两个 API 的查询语法不同，必须分别适配：
+
+【Semantic Scholar 查询语法】
+- 支持布尔运算符 AND / OR / NOT
+- 支持引号精确匹配，如 "breast cancer"
+- 示例："deep learning" AND "medical imaging" AND "breast cancer"
+
+【arXiv 查询语法 — 务必严格遵守】
+- arXiv 使用 Lucene 风格语法，支持字段前缀：ti:(标题)、abs:(摘要)、au:(作者)、cat:(分类)
+- **禁止使用 all: 前缀**：all: 要求所有字段精确...
+2026-05-07 23:48:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 研究任务: research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+补充背景: 用户身份：文献综述研究者
+研究方向：自我进化多智能体系统（self-evolving multi-agent system）
+筛选要求：近三年（2022-2025）、NLP和智能体落地方向、最具影响力论文
+当前状态：尚未获取达标论文列表，需搜索相关论文。
+2026-05-07 23:48:50 [DEBUG] auto_slr - [System LLM] 响应: {
+  "semantic_scholar_query": "self-evolving multi-agent system AND NLP AND agent",
+  "arxiv_query": "abs:\"self-evolving\" AND abs:\"multi-agent\" AND abs:\"NLP\"",
+  "year_range": "2022-2025",
+  "max_results": 20
+}
+2026-05-07 23:48:50 [INFO] auto_slr - [Semantic Scholar] 搜索: query=self-evolving multi-agent system AND NLP AND agent, year_range=2022-2025, limit=100, proxy=none, api_key=yes
+2026-05-07 23:48:51 [WARNING] auto_slr - [Semantic Scholar] API Key 返回 403 Forbidden，回退匿名访问: HTTP status 403 Forbidden.
+2026-05-07 23:53:16 [ERROR] auto_slr - [Semantic Scholar] 搜索出错 (api_key=anonymous): RetryError: RetryError[<Future at 0x1da09b0d430 state=finished raised ConnectionRefusedError>]
+2026-05-07 23:53:16 [ERROR] auto_slr - [Semantic Scholar] 所有尝试均失败，最后一次错误: RetryError: RetryError[<Future at 0x1da09b0d430 state=finished raised ConnectionRefusedError>]
+2026-05-07 23:53:16 [INFO] auto_slr - [Semantic Scholar] 查询放宽: self-evolving multi-agent system AND NLP AND agent → self-evolving multi-agent system AND NLP
+2026-05-07 23:53:16 [INFO] auto_slr - [Semantic Scholar] 搜索: query=self-evolving multi-agent system AND NLP, year_range=2022-2025, limit=100, proxy=none, api_key=yes
+2026-05-07 23:53:17 [WARNING] auto_slr - [Semantic Scholar] API Key 返回 403 Forbidden，回退匿名访问: HTTP status 403 Forbidden.
+2026-05-07 23:53:55 [INFO] auto_slr - [Semantic Scholar] 找到 216 篇论文 (api_key=anonymous)
+2026-05-07 23:53:55 [INFO] auto_slr - [arXiv] 搜索: query=abs:"self-evolving" AND abs:"multi-agent" AND abs:"NLP", max_results=100, proxy=none
+2026-05-07 23:54:38 [WARNING] auto_slr - [arXiv] 搜索出错 (query#1, 第 1/3 次): HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=abs%3A%22self-evolving%22+AND+abs%3A%22multi-agent%22+AND+abs%3A%22NLP%22&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2026-05-07 23:54:38 [INFO] auto_slr - [arXiv] 等待 5s 后重试...
+2026-05-07 23:55:42 [WARNING] auto_slr - [arXiv] 搜索出错 (query#1, 第 2/3 次): HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=abs%3A%22self-evolving%22+AND+abs%3A%22multi-agent%22+AND+abs%3A%22NLP%22&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2026-05-07 23:55:42 [INFO] auto_slr - [arXiv] 等待 10s 后重试...
+2026-05-07 23:56:51 [WARNING] auto_slr - [arXiv] 搜索出错 (query#1, 第 3/3 次): HTTPError: Page request resulted in HTTP 429 (https://export.arxiv.org/api/query?search_query=abs%3A%22self-evolving%22+AND+abs%3A%22multi-agent%22+AND+abs%3A%22NLP%22&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100)
+2026-05-07 23:56:51 [INFO] auto_slr - [arXiv] 查询回退 (第 2 种): query=self-evolving multi-agent NLP
+2026-05-07 23:59:32 [INFO] auto_slr - [arXiv] 找到 100 篇论文 (query=self-evolving multi-agent NLP)
+2026-05-07 23:59:32 [INFO] auto_slr - [Executor] search_papers 输出: 找到 313 篇不重复论文
+2026-05-07 23:59:32 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=对论文进行初步筛选
+2026-05-07 23:59:32 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:59:32 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个助手，需要为执行者提供与当前任务相关的背景信息。
+
+当前用户信息：
+user_identity: 文献综述研究者
+
+当前研究任务：
+research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+当前达标论文列表：
+(none)
+
+执行者即将执行的任务：对论文进行初步筛选
+
+请从以上信息中提取最相关的背景信息，简洁地提供给执行者。只输出相关信息，不要输出其他内容。
+2026-05-07 23:59:32 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-07 23:59:33 [DEBUG] auto_slr - [System LLM] 响应: 用户身份：文献综述研究者
+研究任务：self-evolving multi-agent system
+筛选要求：近三年（2022-2024），NLP和agent落地方向，最有影响力
+当前达标论文列表：无
+2026-05-07 23:59:33 [INFO] auto_slr - [Assistant] provide_context 输出: 用户身份：文献综述研究者
+研究任务：self-evolving multi-agent system
+筛选要求：近三年（2022-2024），NLP和agent落地方向，最有影响力
+当前达标论文列表：无
+2026-05-07 23:59:33 [INFO] auto_slr - [Executor] screen_papers_sample 输入: assistant_context=用户身份：文献综述研究者
+研究任务：self-evolving multi-agent system
+筛选要求：近三年（2022-2024），NLP和agent落地方向，最有影响力
+当前达标论文列表：无
+2026-05-07 23:59:33 [INFO] auto_slr - 初步筛选: 共 313 篇, 未筛选 313 篇
+2026-05-07 23:59:33 [INFO] auto_slr - 筛选第 1 批, 共 10 篇
+2026-05-07 23:59:33 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:59:33 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-07 23:59:33 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+用户身份：文献综述研究者
+研究任务：self-evolving multi-agent system
+筛选要求：近三年（2022-2024），NLP和agent落地方向，最有影响力
+当前达标论文列表：无
+
+论文列表:
+--- 论文 1 ---
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+作者: Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+摘要: Recent years, multimodal models have made remarkable strides and pave the way for intelligent browser use agents. However, when solving tasks on real world webpages in multi-turn, l...
+2026-05-07 23:59:42 [DEBUG] auto_slr - [System LLM] 响应: [
+  {
+    "index": 1,
+    "decision": "include",
+    "reason": "论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "论文聚焦于云系统的事件管理，属于运维领域，与NLP和agent落地方向不直接相关，不符合用户研究方向。"
+  },
+  {
+    "index": 3,
+    "decision": "include",
+    "reason": "论文标题明确为Self-Evolving Multi-Agent Collaboration Networks，摘要聚焦于软件开发的自动化和NLP驱动的多智能体协作，年份2024，符合近三年和NLP/agent落地要求。"
+  },
+  {
+    "index": 4,
+    "decision": "include",
+    "reason": "论文标题和摘要直接涉及self-evolving multi-agent systems，且基于LLM（NLP领域），年份2025，符合要求。"
+  },
+  {
+    "index": 5,
+    "decision": "include",
+    "reason": "论文标题包含Self-Evolving LLM-based Multi-Agent Framework，摘要聚焦于医疗咨询的NLP应用，年份2025，符合近三年和NLP/agent落地要求。"
+  },
+  {
+    "index": 6,
+    "decision": "include",
+    "reason": "论文标题明确为Self-Evolving Multi-Agent Architecture Search，摘要涉及LLM驱动的多智能体系统，年份2025，符合要求。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "论文聚焦于机器人群体和强化学习，属于机器人领域，与NLP和agent落地方向不相关，不符合用户研究方向。"
+  },
+  {
+    "index": 8,
+    "decision": "include",
+    "reason": "论文标题为Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation，摘要涉及多智能体系统用于LLM评估，属于NLP领域，年份2024，符合要求。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "论文聚焦于气候科学领域，虽然涉及AI agent，但非NLP和agent落地方向，不符合用户研究任务。"
+  },
+  {
+    "index": 10,
+    "decision": "include",
+    "reason": "论文标题为A Self-Evolving Framework for Multi-Agent Medical Consultation，摘要涉及基于LLM的多智能体医疗咨询，属于NLP应用，年份2025，符合要求。"
+  }
+]
+2026-05-07 23:59:42 [INFO] auto_slr - 第 1 批筛选完成: included=7, excluded=3, not_sure=0
+2026-05-07 23:59:42 [INFO] auto_slr - [Executor] screen_papers_sample 输出: included=7, excluded=3, not_sure=0
+2026-05-07 23:59:42 [INFO] auto_slr - [Contactor] present_sample_papers 输入: 7 篇论文
+2026-05-07 23:59:42 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-07 23:59:42 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个学术助手，正在向用户展示筛选后的样例论文，并请求用户确认。
+
+以下是筛选出的样例论文：
+[论文 1]
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+作者: Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+筛选理由: 论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+[论文 2]
+标题: Self-Evolving Multi-Agent Collaboration Networks for Software Development
+年份: 2024
+作者: Yue Hu, Yuzhu Cai, Yaxin Du, Xinyu Zhu, Xiangrui Liu, Zijie Y...
+2026-05-07 23:59:42 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请向用户展示样例论文，并请求反馈。
+2026-05-07 23:59:56 [DEBUG] auto_slr - [System LLM] 响应: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*   **筛选理由:** 标题和摘要明确涉及“self-evolving multi-agent system”，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+**论文 2**
+*   **标题:** Self-Evolving Multi-Agent Collaboration Networks for Software Development
+*   **年份:** 2024
+*   **作者:** Yue Hu, Yuzhu Cai, Yaxin Du, Xinyu Zhu, Xiangrui Liu, Zijie Yu, Yuchen Hou, Shuo Tang, Siheng Chen
+*   **筛选理由:** 标题明确为“Self-Evolving Multi-Agent Collaboration Networks”，摘要聚焦于软件开发的自动化和NLP驱动的多智能体协作，年份2024，符合近三年和NLP/agent落地要求。
+
+**论文 3**
+*   **标题:** Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation
+*   **年份:** 2025
+*   **作者:** Xiaowen Ma, Chenyang Lin, Yao Zhang, Volker Tresp, Yunpu Ma
+*   **筛选理由:** 标题和摘要直接涉及“self-evolving multi-agent systems”，且基于LLM（NLP领域），年份2025，符合要求。
+
+**论文 4**
+*   **标题:** MDTeamGPT: A Self-Evolving LLM-based Multi-Agent Framework for Multi-Disciplinary Team Medical Consultation
+*   **年份:** 2025
+*   **作者:** Kai Chen, Xinfeng Li, Tianpei Yang, Hewei Wang, Wei Dong, Yang Gao
+*   **筛选理由:** 标题包含“Self-Evolving LLM-based Multi-Agent Framework”，摘要聚焦于医疗咨询的NLP应用，年份2025，符合近三年和NLP/agent落地要求。
+
+**论文 5**
+*   **标题:** AutoMaAS: Self-Evolving Multi-Agent Architecture Search for Large Language Models
+*   **年份:** 2025
+*   **作者:** Bo Ma, Hang Li, Zehua Hu, Xiaofan Gui, Luyao Liu, Simon Liu
+*   **筛选理由:** 标题明确为“Self-Evolving Multi-Agent Architecture Search”，摘要涉及LLM驱动的多智能体系统，年份2025，符合要求。
+
+**论文 6**
+*   **标题:** Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation
+*   **年份:** 2024
+*   **作者:** Siyuan Wang, Zhuohan Long, Zhihao Fan, Zhongyu Wei, Xuanjing Huang
+*   **筛选理由:** 标题为“Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation”，摘要涉及多智能体系统用于LLM评估，属于NLP领域，年份2024，符合要求。
+
+**论文 7**
+*   **标题:** A Self-Evolving Framework for Multi-Agent Medical Consultation Based on Large Language Models
+*   **年份:** 2025
+*   **作者:** Kai Chen, Ji Qi, Jing Huo, Pinzhuo Tian, Fanyu Meng, Xi Yang, Yang Gao
+*   **筛选理由:** 标题为“A Self-Evolving Framework for Multi-Agent Medical Consultation”，摘要涉及基于LLM的多智能体医疗咨询，属于NLP应用，年份2025，符合要求。
+
+---
+
+### 请您反馈
+
+请您根据您的研究需求，对以上论文进行评价。请告诉我：
+
+1.  **哪些论文符合您的期望？** 您认为这些论文在主题、方法或应用场景上与您的研究方向高度匹配。
+2.  **哪些论文不符合？** 如果不符合，请简要说明原因（例如：主题偏离、方法不相关、应用场景不匹配等）。
+
+您的反馈将帮助我进一步优化筛选结果，为您提供更精准的文献支持。期待您的回复！
+2026-05-07 23:59:56 [INFO] auto_slr - [Contactor] present_sample_papers 输出: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*  ...
+2026-05-07 23:59:56 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=4条
+2026-05-07 23:59:56 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个对大模型agent很有兴趣的学生,你现在要做一个关于self-evolving multi-agent system相关的literature review. 你想看一些最近三年的非常有影响力的paper. 你的学术偏好是自然语言处理和大模型agent落地
+2026-05-07 23:59:56 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-07 23:59:56 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*   **筛选理由:** 标题和摘要明确涉及“self-evolving multi-agent system”，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+**论文 2**
+*   **标题:** Self-Evolving Multi-Agent Collaboration Networks for Software Developmen...
+2026-05-07 23:59:56 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+筛选理由: 论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+摘要: Recent years, multimodal models have made remarkable strides and pave the way for intelligent browser use agents. However, when solving tasks on real world webpages in multi-turn, long-horizon trajectories, current agents still suffer from disordered ...
+2026-05-08 00:00:01 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键词。论文将“自进化”与“多智能体”结合，并且落地在“浏览器使用”这个非常具体的、具有高实用价值的NLP agent场景上，这与我的学术偏好（NLP和大模型agent落地）完美匹配。
+2.  **方法具有启发性**：摘要中提到的“Web Reconnaissance, Tool Generation, and Task Execution”暗示了一种模块化、可演化的架构。尤其是“Tool Generation”（工具生成），这通常是智能体实现自我进化（self-evolving）的关键机制——智能体通过生成新工具来扩展自身能力边界，而不是仅仅依赖固定的API。这比简单的记忆反馈循环更深入一步，对我的综述非常有价值。
+3.  **时效性与影响力潜力**：2025年的论文，属于近三年内最前沿的工作。在浏览器自动化这个竞争激烈的领域（如WebVoyager, Mind2Web等），提出“自进化”的视角，很可能是一个有影响力的新方向。
+
+**简而言之：** 这篇论文看起来正好踩在了“自进化机制”和“实用型多智能体系统”的交汇点上，是我综述中理想的核心参考文献。我非常愿意深入阅读全文。
+2026-05-08 00:00:01 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Recon-Act: A Self-Evolving Multi-Agent Browser-Use': 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键词。论文将“自进化”与“多智能体”结合，并且落地在“浏览器使用”这个非常具体的、具有高实用价值的NLP agent场景上，这与我的学术偏好（NLP和大模型agent落地）完美匹配。
+2.  **方法具
+2026-05-08 00:00:01 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution' 感到满意: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键
+2026-05-08 00:00:01 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:01 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-08 00:00:01 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution' 感到满意: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键
+2026-05-08 00:00:03 [DEBUG] auto_slr - [System LLM] 响应: {
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "Self-Evolving Multi-Agent",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": ""
+}
+2026-05-08 00:00:03 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Self-Evolving Multi-Agent", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-08 00:00:03 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:03 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: self-evolving multi-agent system
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+新提取的信息：
+research_direction: Self-Evolving Multi-Agent
+2026-05-08 00:00:03 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-08 00:00:04 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Self-Evolving Multi-Agent System  
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=6条
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个对大模型agent很有兴趣的学生,你现在要做一个关于self-evolving multi-agent system相关的literature review. 你想看一些最近三年的非常有影响力的paper. 你的学术偏好是自然语言处理和大模型agent落地
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*   **筛选理由:** 标题和摘要明确涉及“self-evolving multi-agent system”，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+**论文 2**
+*   **标题:** Self-Evolving Multi-Agent Collaboration Networks for Software Developmen...
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+筛选理由: 论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+摘要: Recent years, multimodal models have made remarkable strides and pave the way for intelligent browser use agents. However, when solving tasks on real world webpages in multi-turn, long-horizon trajectories, current agents still suffer from disordered ...
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键词。论文将“自进化”与“多智能体”结合，并且落地在“浏览器使用”这个非常具体的、具有高实用价值的NLP agent场景上，这与我的学术偏好（NLP和大模型agent落地）完美匹配。
+2.  **方法具有启发性**：摘要中提到的“Web Reconnaissance, Tool Generation, and Task Execution”暗示了一种模块化、可演化的架构。尤其是“Tool Generation”（工具生成），这通常是智能体实现自我进化（self-evolving）的关键机制——智能体通过生成新工具来扩展自身能力边界，而不是仅仅依赖固定的API。这比简单的记忆反馈循环更深入一步，对我的综述非常有价值。
+3.  **时效性与影响力潜力**：2025年的论文，属于近三年内最前沿的工作。在浏览器自动化这个竞争激烈的领域（如WebVoyager, Mind2Web等），提出“自进化”的...
+2026-05-08 00:00:04 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Self-Evolving Multi-Agent Collaboration Networks for Software Development
+年份: 2024
+筛选理由: 论文标题明确为Self-Evolving Multi-Agent Collaboration Networks，摘要聚焦于软件开发的自动化和NLP驱动的多智能体协作，年份2024，符合近三年和NLP/agent落地要求。
+摘要: LLM-driven multi-agent collaboration (MAC) systems have demonstrated impressive capabilities in automatic software development at the function level. However, their heavy reliance on human design limits their adaptability to the diverse demands of real-world software development...
+2026-05-08 00:00:11 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collaboration Networks”直接点出了我综述的核心主题。与上一篇不同，这篇将“自进化”聚焦在“协作网络”本身，暗示系统不仅让单个agent进化，更让agent之间的交互拓扑和协作模式能够自主优化。这比固定拓扑的多智能体系统更进了一步，非常有理论深度。
+2.  **解决关键痛点**：摘要指出当前LLM驱动的多智能体系统“严重依赖人工设计”（heavy reliance on human design），这恰恰是阻碍agent落地的核心瓶颈。该论文提出“自进化”来打破这一瓶颈，直接回应了“如何让多智能体系统在真实软件开发中自适应”这一重要问题。这与我的学术偏好（大模型agent落地）高度一致。
+3.  **领域价值明确**：软件工程是多智能体系统最成熟、最受关注的落地场景之一（如ChatDev, MetaGPT等）。在2024年这个时间点提出“自进化协作网络”，很可能是在已有基础上的一次重要迭代或范式升级。作为综述，这篇文章能很好地展现该领域从“静态协作”向“动态自适应协作”的演进脉络。
+
+**简而言之：** 这篇论文解决的是多智能体系统从“可运行”到“可自适应”的关键跃迁问题，且落地在软件工程这一标杆领域，是我综述中不可或缺的核心文献。我非常期待阅读全文，了解其自进化协作网络的具体实现机制。
+2026-05-08 00:00:11 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Self-Evolving Multi-Agent Collaboration Networks f': 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collaboration Networks”直接点出了我综述的核心主题。与上一篇不同，这篇将“自进化”聚焦在“协作网络”本身，暗示系统不仅让单个agent进化，更让agent之间的交互拓扑和协作模式能够自主优化。这
+2026-05-08 00:00:11 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Self-Evolving Multi-Agent Collaboration Networks for Software Development' 感到满意: 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collabor
+2026-05-08 00:00:11 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:11 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-08 00:00:11 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Self-Evolving Multi-Agent Collaboration Networks for Software Development' 感到满意: 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collabor
+2026-05-08 00:00:13 [DEBUG] auto_slr - [System LLM] 响应: {
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "Self-Evolving Multi-Agent Collaboration",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "用户对论文 'Self-Evolving Multi-Agent Collaboration Networks for Software Development' 感到满意，认为其核心概念精准匹配研究兴趣。"
+}
+2026-05-08 00:00:13 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Self-Evolving Multi-Agent Collaboration", "filter_requirements": "", "rejection_reasons": "", "other_info": "用户对论文 'Self-Evolving Multi-Agent Collaboration Networks for Software Development' 感到满意，认为其核心概念精准匹配研究兴趣。"}
+2026-05-08 00:00:13 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:13 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: Self-Evolving Multi-Agent System  
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+新提取的信息：
+research_direction: Self-Evolving Multi-Agent Collaboration
+other_info: 用户对论文 'Self-Evolving Multi-Agent Collaboration Networks for Software Development' 感到满意，认为其核心概念精准匹配研究兴趣。
+2026-05-08 00:00:13 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-08 00:00:14 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Self-Evolving Multi-Agent Collaboration  
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=8条
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个对大模型agent很有兴趣的学生,你现在要做一个关于self-evolving multi-agent system相关的literature review. 你想看一些最近三年的非常有影响力的paper. 你的学术偏好是自然语言处理和大模型agent落地
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*   **筛选理由:** 标题和摘要明确涉及“self-evolving multi-agent system”，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+**论文 2**
+*   **标题:** Self-Evolving Multi-Agent Collaboration Networks for Software Developmen...
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+筛选理由: 论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+摘要: Recent years, multimodal models have made remarkable strides and pave the way for intelligent browser use agents. However, when solving tasks on real world webpages in multi-turn, long-horizon trajectories, current agents still suffer from disordered ...
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键词。论文将“自进化”与“多智能体”结合，并且落地在“浏览器使用”这个非常具体的、具有高实用价值的NLP agent场景上，这与我的学术偏好（NLP和大模型agent落地）完美匹配。
+2.  **方法具有启发性**：摘要中提到的“Web Reconnaissance, Tool Generation, and Task Execution”暗示了一种模块化、可演化的架构。尤其是“Tool Generation”（工具生成），这通常是智能体实现自我进化（self-evolving）的关键机制——智能体通过生成新工具来扩展自身能力边界，而不是仅仅依赖固定的API。这比简单的记忆反馈循环更深入一步，对我的综述非常有价值。
+3.  **时效性与影响力潜力**：2025年的论文，属于近三年内最前沿的工作。在浏览器自动化这个竞争激烈的领域（如WebVoyager, Mind2Web等），提出“自进化”的...
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Self-Evolving Multi-Agent Collaboration Networks for Software Development
+年份: 2024
+筛选理由: 论文标题明确为Self-Evolving Multi-Agent Collaboration Networks，摘要聚焦于软件开发的自动化和NLP驱动的多智能体协作，年份2024，符合近三年和NLP/agent落地要求。
+摘要: LLM-driven multi-agent collaboration (MAC) systems have demonstrated impressive capabilities in automatic software development at the function level. However, their heavy reliance on human design limits their adaptability to the diverse demands of real-world software development...
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collaboration Networks”直接点出了我综述的核心主题。与上一篇不同，这篇将“自进化”聚焦在“协作网络”本身，暗示系统不仅让单个agent进化，更让agent之间的交互拓扑和协作模式能够自主优化。这比固定拓扑的多智能体系统更进了一步，非常有理论深度。
+2.  **解决关键痛点**：摘要指出当前LLM驱动的多智能体系统“严重依赖人工设计”（heavy reliance on human design），这恰恰是阻碍agent落地的核心瓶颈。该论文提出“自进化”来打破这一瓶颈，直接回应了“如何让多智能体系统在真实软件开发中自适应”这一重要问题。这与我的学术偏好（大模型agent落地）高度一致。
+3.  **领域价值明确**：软件工程是多智能体系统最成熟、最受关注的落地场景之一（如ChatDev, MetaGPT等）。在2024年这个时间点提出“自进化协作网络”，很可能是在已有基础上的一次重要...
+2026-05-08 00:00:14 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: 系统向你展示了一篇论文:
+标题: Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation
+年份: 2025
+筛选理由: 论文标题和摘要直接涉及self-evolving multi-agent systems，且基于LLM（NLP领域），年份2025，符合要求。
+摘要: Leveraging multiple Large Language Models(LLMs) has proven effective for addressing complex, high-dimensional tasks, but current approaches often rely on static, manually engineered multi-agent configurations. To overcome these constraints, we present the Agentic Neural Network(ANN), a framework tha...
+
+...
+2026-05-08 00:00:21 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**极其符合**我的研究兴趣，我对其持**非常积极且兴奋**的态度。
+
+理由如下：
+
+1.  **概念创新性极强**：标题中的“Agentic Neural Networks”和“Textual Backpropagation”这两个概念组合非常新颖。它将神经网络中“反向传播”这一核心学习机制，类比并迁移到了多智能体系统中，提出了一个优雅且具有理论深度的自进化框架。这不仅仅是简单的“记忆-反思”循环，而是从架构层面定义了一种系统性的、可微分的（在文本空间）进化方式。这很可能成为该领域的一个标杆性工作。
+2.  **直击核心瓶颈**：摘要指出当前方法“依赖静态、手工设计的配置”（static, manually engineered multi-agent configurations），这与我的认知完全一致。该论文提出的“文本反向传播”机制，为多智能体系统的**自动化架构搜索与参数（即agent行为、提示、工具）优化**提供了一条全新的、极具潜力的路径。这直接回应了“如何让多智能体系统真正实现自我进化”这一根本问题。
+3.  **方法论启发巨大**：对于我的综述而言，这篇论文很可能提供了一个**核心的分析框架**。我可以将其与其他自进化方法（如基于反思、基于工具生成、基于进化算法等）进行对比分析，探讨不同进化范式的优劣。它的影响力很可能不局限于自身，而是会启发后续一系列工作。
+
+**简而言之：** 这篇论文在概念和方法论上都具有显著的突破性，它不仅仅是一个应用案例，更可能是一种**新的范式**。它完美契合了我对“自进化多智能体系统”这一核心主题的探索需求，是我综述中**最期待深入阅读**的文献之一。
+2026-05-08 00:00:21 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Agentic Neural Networks: Self-Evolving Multi-Agent': 这篇论文**极其符合**我的研究兴趣，我对其持**非常积极且兴奋**的态度。
+
+理由如下：
+
+1.  **概念创新性极强**：标题中的“Agentic Neural Networks”和“Textual Backpropagation”这两个概念组合非常新颖。它将神经网络中“反向传播”这一核心学习机制，类比并迁移到了多智能体系统中，提出了一个优雅且具有理论深度的自进化框架。这不仅仅是简单的“记忆-
+2026-05-08 00:00:21 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意: 这篇论文**极其符合**我的研究兴趣，我对其持**非常积极且兴奋**的态度。
+
+理由如下：
+
+1.  **概念创新性极强**：标题中的“Agentic Neural Networks”和“Textua
+2026-05-08 00:00:21 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:21 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-08 00:00:21 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意: 这篇论文**极其符合**我的研究兴趣，我对其持**非常积极且兴奋**的态度。
+
+理由如下：
+
+1.  **概念创新性极强**：标题中的“Agentic Neural Networks”和“Textua
+2026-05-08 00:00:23 [DEBUG] auto_slr - [System LLM] 响应: {
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "Agentic Neural Networks, Self-Evolving Multi-Agent Systems, Textual Backpropagation",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意，认为其概念创新性极强。"
+}
+2026-05-08 00:00:23 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Agentic Neural Networks, Self-Evolving Multi-Agent Systems, Textual Backpropagation", "filter_requirements": "", "rejection_reasons": "", "other_info": "用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意，认为其概念创新性极强。"}
+2026-05-08 00:00:23 [DEBUG] auto_slr - [System LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-08 00:00:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: Self-Evolving Multi-Agent Collaboration  
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力
+
+新提取的信息：
+research_direction: Agentic Neural Networks, Self-Evolving Multi-Agent Systems, Textual Backpropagation
+other_info: 用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意，认为其概念创新性极强。
+2026-05-08 00:00:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-08 00:00:25 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Agentic Neural Networks, Self-Evolving Multi-Agent Systems, Textual Backpropagation  
+filter_requirements: 近三年，NLP和agent落地方向，最有影响力  
+other_info: 用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意，认为其概念创新性极强。
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=10条
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个对大模型agent很有兴趣的学生,你现在要做一个关于self-evolving multi-agent system相关的literature review. 你想看一些最近三年的非常有影响力的paper. 你的学术偏好是自然语言处理和大模型agent落地
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好！我最近在做一个关于self-evolving multi-agent system的文献综述，想看看近三年在NLP和agent落地方向最有影响力的论文。能帮我推荐一些吗？
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 好的，学术助手已为您筛选出7篇与“自进化多智能体系统”主题高度相关的样例论文。请您审阅以下列表，并告诉我您的反馈。
+
+---
+
+### 筛选出的样例论文列表
+
+**论文 1**
+*   **标题:** Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+*   **年份:** 2025
+*   **作者:** Kaiwen He, Zhiwei Wang, Chenyi Zhuang, Jinjie Gu
+*   **筛选理由:** 标题和摘要明确涉及“self-evolving multi-agent system”，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+
+**论文 2**
+*   **标题:** Self-Evolving Multi-Agent Collaboration Networks for Software Developmen...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Recon-Act: A Self-Evolving Multi-Agent Browser-Use System via Web Reconnaissance, Tool Generation, and Task Execution
+年份: 2025
+筛选理由: 论文标题和摘要明确涉及self-evolving multi-agent system，且聚焦于NLP和agent落地方向（浏览器使用），年份为2025，符合近三年要求，且具有影响力潜力。
+摘要: Recent years, multimodal models have made remarkable strides and pave the way for intelligent browser use agents. However, when solving tasks on real world webpages in multi-turn, long-horizon trajectories, current agents still suffer from disordered ...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**非常符合**我的研究兴趣，我对其持**积极肯定**的态度。
+
+理由如下：
+
+1.  **主题高度契合**：标题中的“Self-Evolving Multi-Agent”正是我综述的核心关键词。论文将“自进化”与“多智能体”结合，并且落地在“浏览器使用”这个非常具体的、具有高实用价值的NLP agent场景上，这与我的学术偏好（NLP和大模型agent落地）完美匹配。
+2.  **方法具有启发性**：摘要中提到的“Web Reconnaissance, Tool Generation, and Task Execution”暗示了一种模块化、可演化的架构。尤其是“Tool Generation”（工具生成），这通常是智能体实现自我进化（self-evolving）的关键机制——智能体通过生成新工具来扩展自身能力边界，而不是仅仅依赖固定的API。这比简单的记忆反馈循环更深入一步，对我的综述非常有价值。
+3.  **时效性与影响力潜力**：2025年的论文，属于近三年内最前沿的工作。在浏览器自动化这个竞争激烈的领域（如WebVoyager, Mind2Web等），提出“自进化”的...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Self-Evolving Multi-Agent Collaboration Networks for Software Development
+年份: 2024
+筛选理由: 论文标题明确为Self-Evolving Multi-Agent Collaboration Networks，摘要聚焦于软件开发的自动化和NLP驱动的多智能体协作，年份2024，符合近三年和NLP/agent落地要求。
+摘要: LLM-driven multi-agent collaboration (MAC) systems have demonstrated impressive capabilities in automatic software development at the function level. However, their heavy reliance on human design limits their adaptability to the diverse demands of real-world software development...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: 这篇论文**非常符合**我的研究兴趣，我同样持**积极肯定**的态度。
+
+理由如下：
+
+1.  **核心概念精准匹配**：标题中的“Self-Evolving Multi-Agent Collaboration Networks”直接点出了我综述的核心主题。与上一篇不同，这篇将“自进化”聚焦在“协作网络”本身，暗示系统不仅让单个agent进化，更让agent之间的交互拓扑和协作模式能够自主优化。这比固定拓扑的多智能体系统更进了一步，非常有理论深度。
+2.  **解决关键痛点**：摘要指出当前LLM驱动的多智能体系统“严重依赖人工设计”（heavy reliance on human design），这恰恰是阻碍agent落地的核心瓶颈。该论文提出“自进化”来打破这一瓶颈，直接回应了“如何让多智能体系统在真实软件开发中自适应”这一重要问题。这与我的学术偏好（大模型agent落地）高度一致。
+3.  **领域价值明确**：软件工程是多智能体系统最成熟、最受关注的落地场景之一（如ChatDev, MetaGPT等）。在2024年这个时间点提出“自进化协作网络”，很可能是在已有基础上的一次重要...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: 系统向你展示了一篇论文:
+标题: Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation
+年份: 2025
+筛选理由: 论文标题和摘要直接涉及self-evolving multi-agent systems，且基于LLM（NLP领域），年份2025，符合要求。
+摘要: Leveraging multiple Large Language Models(LLMs) has proven effective for addressing complex, high-dimensional tasks, but current approaches often rely on static, manually engineered multi-agent configurations. To overcome these constraints, we present the Agentic Neural Network(ANN), a framework tha...
+
+...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[8] role=assistant: 这篇论文**极其符合**我的研究兴趣，我对其持**非常积极且兴奋**的态度。
+
+理由如下：
+
+1.  **概念创新性极强**：标题中的“Agentic Neural Networks”和“Textual Backpropagation”这两个概念组合非常新颖。它将神经网络中“反向传播”这一核心学习机制，类比并迁移到了多智能体系统中，提出了一个优雅且具有理论深度的自进化框架。这不仅仅是简单的“记忆-反思”循环，而是从架构层面定义了一种系统性的、可微分的（在文本空间）进化方式。这很可能成为该领域的一个标杆性工作。
+2.  **直击核心瓶颈**：摘要指出当前方法“依赖静态、手工设计的配置”（static, manually engineered multi-agent configurations），这与我的认知完全一致。该论文提出的“文本反向传播”机制，为多智能体系统的**自动化架构搜索与参数（即agent行为、提示、工具）优化**提供了一条全新的、极具潜力的路径。这直接回应了“如何让多智能体系统真正实现自我进化”这一根本问题。
+3.  **方法论启发巨大**：对于我的综述而言，这篇论文很...
+2026-05-08 00:00:25 [DEBUG] auto_slr - [Simulator LLM] 输入[9] role=user: 系统向你展示了一篇论文:
+标题: MDTeamGPT: A Self-Evolving LLM-based Multi-Agent Framework for Multi-Disciplinary Team Medical Consultation
+年份: 2025
+筛选理由: 论文标题包含Self-Evolving LLM-based Multi-Agent Framework，摘要聚焦于医疗咨询的NLP应用，年份2025，符合近三年和NLP/agent落地要求。
+摘要: Large Language Models (LLMs) have made significant progress in various fields. However, challenges remain in Multi-Disciplinary Team (MDT) medical consultations. Current research enhances reasoning through role assignment, task decomposition, and accumulation ...

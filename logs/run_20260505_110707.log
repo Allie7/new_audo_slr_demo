@@ -1,0 +1,1230 @@
+2026-05-05 11:07:07 [INFO] auto_slr - 日志系统初始化完成，级别: DEBUG，日志文件: D:\School\SAT404\pilot_study_code\new_auto_slr\logs\run_20260505_110707.log
+2026-05-05 11:07:07 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:07:07 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 11:07:07 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:07:09 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent studies (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, ICLR. I need papers with actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects. Can you help me screen for that?
+2026-05-05 11:07:09 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent studies (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, ICLR. I need papers with actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects. Can you help me screen for that?
+2026-05-05 11:07:09 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent studies (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, ICLR. I need papers with actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perf...
+2026-05-05 11:07:09 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:09 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:07:09 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent studies (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, ICLR. I need papers with actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects. Can you help me screen for that?
+2026-05-05 11:07:28 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases",
+  "research_direction": "LLM-based code generation, specifically performance on small to medium-sized projects",
+  "filter_requirements": "time range: 2023-2026; exclude purely theoretical frameworks",
+  "rejection_reasons": "purely theoretical frameworks without actual experimental data and real-world deployment cases",
+  "other_info": ""
+}
+```
+2026-05-05 11:07:28 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases", "research_direction": "LLM-based code generation, specifically performance on small to medium-sized projects", "filter_requirements": "time range: 2023-2026; exclude purely theoretical frameworks", "rejection_reasons": "purely theoretical frameworks without actual experimental data and real-world deployment cases", "other_info": ""}
+2026-05-05 11:07:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world ...
+2026-05-05 11:07:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:07:33 [DEBUG] auto_slr - [System LLM] 响应: user_preference: top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases
+2026-05-05 11:07:33 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:33 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: LLM-based code generation, specifically performance on small to medium-sized pro...
+2026-05-05 11:07:33 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:07:39 [DEBUG] auto_slr - [System LLM] 响应: research_direction: LLM-based code generation, specifically performance on small to medium-sized projects
+filter_requirements: time range: 2023-2026; exclude purely theoretical frameworks
+rejection_reasons: purely theoretical frameworks without actual experimental data and real-world deployment cases
+2026-05-05 11:07:39 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases, research_task=research_direction: LLM-based code generation, specifically performance on small to medium-sized projects
+filter_requirements: time range: 2023-2026; exclude purely theoretical frameworks
+rejection_reasons: purely theoretical frameworks without actual experimental data and real-world deployment cases
+2026-05-05 11:07:39 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:39 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases
+
+Research task:
+research_direction...
+2026-05-05 11:07:39 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:07:47 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:07:47 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:07:47 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:07:47 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:47 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: top venues like ICML, NeurIPS, ICLR; papers with actual experimental data and real-world deployment cases
+
+Current research task:
+research_direction: LLM-based code generation, specifically performance on small to medium-sized projects
+filter_requirements: time range: 2023-2026; exclude purely theoretical frameworks
+rejection_reasons: purel...
+2026-05-05 11:07:47 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:07:57 [DEBUG] auto_slr - [System LLM] 响应: Topic: LLM-based code generation, specifically performance on small to medium-sized projects
+Time range: 2023-2026
+Target venues: ICML, NeurIPS, ICLR
+Requirements: Must include actual experimental data and real-world deployment cases; exclude purely theoretical frameworks
+2026-05-05 11:07:57 [INFO] auto_slr - [Assistant] provide_context 输出: Topic: LLM-based code generation, specifically performance on small to medium-sized projects
+Time range: 2023-2026
+Target venues: ICML, NeurIPS, ICLR
+Requirements: Must include actual experimental data and real-world deployment cases; exclude purely theoretical frameworks
+2026-05-05 11:07:57 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: LLM-based code generation, specifically performance on small to medium-sized projects
+filter_requirements: time range: 2023-2026; exclude purely theoretical frameworks
+rejection_reasons: purely theoretical frameworks without actual experimental data and real-world deployment cases, assistant_context=Topic: LLM-based code generation, specifically performance on small to medium-sized projects
+Time range: 2023-2026
+Target venues: ICML, NeurIPS, ICLR
+Requirements: Must include actual experimental dat
+2026-05-05 11:07:57 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:07:57 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:07:57 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: LLM-based code generation, specifically performance on small to medium-sized projects
+filter_requirements: time range: 2023-2026; exclude purely theoretical frameworks
+rejection_reasons: purely theoretical frameworks without actual experimental data and real-world deployment cases
+Additional context: Topic: LLM-based code generation, specifically performance on small to medium-sized projects
+Time range: 2023-2026
+Target venues: ICML, NeurIPS, ICLR
+Requirements:...
+2026-05-05 11:09:15 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "\"large language model\" code generation (\"repository-level\" OR \"project-level\" OR \"software project\")",
+  "arxiv_query": "all:\"large language model\" AND all:\"code generation\" AND (all:\"repository-level\" OR all:\"project-level\" OR all:\"software project\")",
+  "year_range": "2023-2026",
+  "max_results": 30
+}
+```
+2026-05-05 11:09:19 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:09:19 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:09:19 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on the intersection of privacy-preserving computing and machine learning, familiar with federated learning foundational algorithms, and have participated in campus privacy protection research projects. Your academic preference is to focus on technology security and compliance, prefer studies with specific scenario validation, and value algorithm efficiency optimization. You are now conducting a literature review, and your research...
+2026-05-05 11:09:19 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:09:21 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi! I’m working on a literature review about federated learning for privacy-preserving machine learning, specifically in medical and financial data scenarios. I need papers that use real datasets from these domains, include privacy attack testing results, and combine federated learning with differential privacy. Also, I’d like studies that provide specific communication overhead comparisons. Please exclude any papers that don’t address data anonymization. Thanks!
+2026-05-05 11:09:21 [INFO] auto_slr - [User(Simulated)] Initial query: Hi! I’m working on a literature review about federated learning for privacy-preserving machine learning, specifically in medical and financial data scenarios. I need papers that use real datasets from these domains, include privacy attack testing results, and combine federated learning with differential privacy. Also, I’d like studies that provide specific communication overhead comparisons. Please exclude any papers that don’t address data anonymization. Thanks!
+2026-05-05 11:09:21 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi! I’m working on a literature review about federated learning for privacy-preserving machine learning, specifically in medical and financial data scenarios. I need papers that use real datasets from these domains, include privacy attack testing results, and combine federated learning with differen...
+2026-05-05 11:09:21 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:09:21 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:09:21 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi! I’m working on a literature review about federated learning for privacy-preserving machine learning, specifically in medical and financial data scenarios. I need papers that use real datasets from these domains, include privacy attack testing results, and combine federated learning with differential privacy. Also, I’d like studies that provide specific communication overhead comparisons. Please exclude any papers that don’t address data anonymization. Thanks!
+2026-05-05 11:09:48 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "federated learning for privacy-preserving machine learning in medical and financial data scenarios",
+  "filter_requirements": "use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization",
+  "rejection_reasons": "doesn't address data anonymization",
+  "other_info": ""
+}
+```
+2026-05-05 11:09:48 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "federated learning for privacy-preserving machine learning in medical and financial data scenarios", "filter_requirements": "use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization", "rejection_reasons": "doesn't address data anonymization", "other_info": ""}
+2026-05-05 11:09:48 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:09:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: federated learning for privacy-preserving machine learning in medical and financ...
+2026-05-05 11:09:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:09:57 [DEBUG] auto_slr - [System LLM] 响应: research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirements: use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization
+rejection_reasons: doesn't address data anonymization
+2026-05-05 11:09:57 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=, research_task=research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirements: use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization
+rejection_reasons: doesn't address data anonymization
+2026-05-05 11:09:57 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:09:57 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+(none)
+
+Research task:
+research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirem...
+2026-05-05 11:09:57 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:10:07 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:10:07 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:10:07 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:10:07 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:10:07 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+(none)
+
+Current research task:
+research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirements: use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead ...
+2026-05-05 11:10:07 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:10:18 [DEBUG] auto_slr - [System LLM] 响应: Research direction: Federated learning for privacy-preserving ML in medical and financial data scenarios.
+Required criteria: Real medical/financial datasets, privacy attack testing results, federated learning combined with differential privacy, specific communication overhead comparisons, data anonymization.
+Exclusion criteria: Papers lacking data anonymization.
+2026-05-05 11:10:18 [INFO] auto_slr - [Assistant] provide_context 输出: Research direction: Federated learning for privacy-preserving ML in medical and financial data scenarios.
+Required criteria: Real medical/financial datasets, privacy attack testing results, federated learning combined with differential privacy, specific communication overhead comparisons, data anony...
+2026-05-05 11:10:18 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirements: use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization
+rejection_reasons: doesn't address data anonymization, assistant_context=Research direction: Federated learning for privacy-preserving ML in medical and financial data scenarios.
+Required criteria: Real medical/financial datasets, privacy attack testing results, federated 
+2026-05-05 11:10:18 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:10:18 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:10:18 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: federated learning for privacy-preserving machine learning in medical and financial data scenarios
+filter_requirements: use real datasets from medical and financial domains, include privacy attack testing results, combine federated learning with differential privacy, provide specific communication overhead comparisons, exclude papers that don't address data anonymization
+rejection_reasons: doesn't address data anonymization
+Additional context: Research directio...
+2026-05-05 11:10:56 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "federated learning differential privacy medical financial privacy attack communication overhead anonymization",
+  "arxiv_query": "\"federated learning\" AND \"differential privacy\" AND (\"medical\" OR \"financial\") AND \"privacy attack\" AND \"anonymization\"",
+  "year_range": "2019-2024",
+  "max_results": 20
+}
+```
+2026-05-05 11:11:00 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:11:00 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:11:00 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on computer vision and deep learning, with internship experience in medical image processing and proficient in using the PyTorch framework. Your academic preference is to emphasize the real-world deployment effectiveness of models, focus on lightweight model design, and enjoy comparing performance differences across algorithms. You are now conducting a literature review, and your research question is: Research progress of deep lea...
+2026-05-05 11:11:00 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:11:02 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for papers on deep learning for image segmentation, specifically comparing CNNs and Transformers. My focus is on medical imaging like CT and MRI, validated on public datasets such as BraTS or LIDC-IDRI. I need models that are lightweight enough for edge deployment, so please exclude any with too many parameters. Also, I’d like studies that include inference speed comparisons. Thanks!
+2026-05-05 11:11:02 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for papers on deep learning for image segmentation, specifically comparing CNNs and Transformers. My focus is on medical imaging like CT and MRI, validated on public datasets such as BraTS or LIDC-IDRI. I need models that are lightweight enough for edge deployment, so please exclude any with too many parameters. Also, I’d like studies that include inference speed comparisons. Thanks!
+2026-05-05 11:11:02 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for papers on deep learning for image segmentation, specifically comparing CNNs and Transformers. My focus is on medical imaging like CT and MRI, validated on public datasets such as BraTS or LIDC-IDRI. I need models that are lightweight enough for edge deployment, so please exclude ...
+2026-05-05 11:11:02 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:02 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:11:02 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for papers on deep learning for image segmentation, specifically comparing CNNs and Transformers. My focus is on medical imaging like CT and MRI, validated on public datasets such as BraTS or LIDC-IDRI. I need models that are lightweight enough for edge deployment, so please exclude any with too many parameters. Also, I’d like studies that include inference speed comparisons. Thanks!
+2026-05-05 11:11:20 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "studies that include inference speed comparisons",
+  "research_direction": "deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)",
+  "filter_requirements": "validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters",
+  "rejection_reasons": "too many parameters (not lightweight enough for edge deployment)",
+  "other_info": ""
+}
+```
+2026-05-05 11:11:20 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "studies that include inference speed comparisons", "research_direction": "deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)", "filter_requirements": "validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters", "rejection_reasons": "too many parameters (not lightweight enough for edge deployment)", "other_info": ""}
+2026-05-05 11:11:20 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:20 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: studies that include inference speed comparisons
+2026-05-05 11:11:20 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:11:26 [DEBUG] auto_slr - [System LLM] 响应: user_preference: studies that include inference speed comparisons
+2026-05-05 11:11:26 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:26 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing ...
+2026-05-05 11:11:26 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:11:36 [DEBUG] auto_slr - [System LLM] 响应: research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)
+filter_requirements: validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters
+rejection_reasons: too many parameters (not lightweight enough for edge deployment)
+2026-05-05 11:11:36 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: studies that include inference speed comparisons, research_task=research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)
+filter_requirements: validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters
+rejection_reasons: too many parameters (not lightweight enough for edge deployment)
+2026-05-05 11:11:36 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:36 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: studies that include inference speed comparisons
+
+Research task:
+research_direction: deep learning for image segmentation, comparing CNNs an...
+2026-05-05 11:11:36 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:11:48 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:11:48 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:11:48 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:11:48 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: studies that include inference speed comparisons
+
+Current research task:
+research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)
+filter_requirements: validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude pa...
+2026-05-05 11:11:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:11:58 [DEBUG] auto_slr - [System LLM] 响应: Deep learning for image segmentation comparing CNNs and Transformers in medical imaging (CT and MRI). Must include inference speed comparisons. Focus on lightweight models suitable for edge deployment (exclude papers with too many parameters). Must be validated on public datasets such as BraTS or LIDC-IDRI.
+2026-05-05 11:11:58 [INFO] auto_slr - [Assistant] provide_context 输出: Deep learning for image segmentation comparing CNNs and Transformers in medical imaging (CT and MRI). Must include inference speed comparisons. Focus on lightweight models suitable for edge deployment (exclude papers with too many parameters). Must be validated on public datasets such as BraTS or LI...
+2026-05-05 11:11:58 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)
+filter_requirements: validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters
+rejection_reasons: too many parameters (not lightweight enough for edge deployment), assistant_context=Deep learning for image segmentation comparing CNNs and Transformers in medical imaging (CT and MRI). Must include inference speed comparisons. Focus on lightweight models suitable for edge deployment
+2026-05-05 11:11:58 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:11:58 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:11:58 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: deep learning for image segmentation, comparing CNNs and Transformers, focusing on medical imaging (CT and MRI)
+filter_requirements: validated on public datasets such as BraTS or LIDC-IDRI; lightweight models suitable for edge deployment; exclude papers with too many parameters
+rejection_reasons: too many parameters (not lightweight enough for edge deployment)
+Additional context: Deep learning for image segmentation comparing CNNs and Transformers in medical im...
+2026-05-05 11:12:25 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "image segmentation AND (CNN OR Transformer) AND medical imaging AND lightweight AND (BraTS OR LIDC-IDRI)",
+  "arxiv_query": "\"image segmentation\" AND (CNN OR Transformer) AND \"medical imaging\" AND lightweight AND (BraTS OR LIDC-IDRI)",
+  "year_range": "2021-2024",
+  "max_results": 25
+}
+```
+2026-05-05 11:12:33 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:12:33 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:12:33 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on the intersection of edge computing and the Internet of Things, have participated in smart IoT device development projects, and are familiar with edge node deployment technologies. Your academic preference is to focus on the industrial deployment value of technology, value real-time performance and low energy consumption in resource scheduling, and prefer studies with actual testing scenarios. You are now conducting a literature...
+2026-05-05 11:12:33 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:12:35 [DEBUG] auto_slr - [Simulator LLM] 响应: I need a literature review on resource scheduling strategies for edge computing and IoT integration. Please prioritize studies targeting industrial IoT scenarios, with experimental data on edge node load balancing. Exclude papers based solely on simulation — I need actual deployment testing. Focus on lightweight scheduling algorithms and collect research supporting low-latency scenarios like industrial control.
+2026-05-05 11:12:35 [INFO] auto_slr - [User(Simulated)] Initial query: I need a literature review on resource scheduling strategies for edge computing and IoT integration. Please prioritize studies targeting industrial IoT scenarios, with experimental data on edge node load balancing. Exclude papers based solely on simulation — I need actual deployment testing. Focus on lightweight scheduling algorithms and collect research supporting low-latency scenarios like industrial control.
+2026-05-05 11:12:35 [INFO] auto_slr - [Assistant] extract_and_record 输入: I need a literature review on resource scheduling strategies for edge computing and IoT integration. Please prioritize studies targeting industrial IoT scenarios, with experimental data on edge node load balancing. Exclude papers based solely on simulation — I need actual deployment testing. Focus o...
+2026-05-05 11:12:35 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:12:35 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:12:35 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: I need a literature review on resource scheduling strategies for edge computing and IoT integration. Please prioritize studies targeting industrial IoT scenarios, with experimental data on edge node load balancing. Exclude papers based solely on simulation — I need actual deployment testing. Focus on lightweight scheduling algorithms and collect research supporting low-latency scenarios like industrial control.
+2026-05-05 11:12:59 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "resource scheduling strategies for edge computing and IoT integration",
+  "filter_requirements": "prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control",
+  "rejection_reasons": "based solely on simulation without actual deployment testing",
+  "other_info": ""
+}
+```
+2026-05-05 11:12:59 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "resource scheduling strategies for edge computing and IoT integration", "filter_requirements": "prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control", "rejection_reasons": "based solely on simulation without actual deployment testing", "other_info": ""}
+2026-05-05 11:12:59 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:12:59 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_req...
+2026-05-05 11:12:59 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:13:12 [DEBUG] auto_slr - [System LLM] 响应: research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control
+rejection_reasons: based solely on simulation without actual deployment testing
+2026-05-05 11:13:12 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=, research_task=research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control
+rejection_reasons: based solely on simulation without actual deployment testing
+2026-05-05 11:13:12 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:13:12 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+(none)
+
+Research task:
+research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial I...
+2026-05-05 11:13:12 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:13:25 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:13:25 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:13:25 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:13:25 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:13:25 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+(none)
+
+Current research task:
+research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial con...
+2026-05-05 11:13:25 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:13:35 [DEBUG] auto_slr - [System LLM] 响应: Research Direction: Resource scheduling strategies for edge computing and IoT integration
+Key Focus Areas: Industrial IoT scenarios, lightweight scheduling algorithms, low-latency scenarios (industrial control)
+Mandatory Requirements: Experimental data on edge node load balancing, actual deployment testing
+Exclusion Criteria: Reject papers based solely on simulation without actual deployment testing
+2026-05-05 11:13:35 [INFO] auto_slr - [Assistant] provide_context 输出: Research Direction: Resource scheduling strategies for edge computing and IoT integration
+Key Focus Areas: Industrial IoT scenarios, lightweight scheduling algorithms, low-latency scenarios (industrial control)
+Mandatory Requirements: Experimental data on edge node load balancing, actual deployment ...
+2026-05-05 11:13:35 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control
+rejection_reasons: based solely on simulation without actual deployment testing, assistant_context=Research Direction: Resource scheduling strategies for edge computing and IoT integration
+Key Focus Areas: Industrial IoT scenarios, lightweight scheduling algorithms, low-latency scenarios (industria
+2026-05-05 11:13:35 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:13:35 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:13:35 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: resource scheduling strategies for edge computing and IoT integration
+filter_requirements: prioritize industrial IoT scenarios; must have experimental data on edge node load balancing; require actual deployment testing; focus on lightweight scheduling algorithms and low-latency scenarios like industrial control
+rejection_reasons: based solely on simulation without actual deployment testing
+Additional context: Research Direction: Resource scheduling strategies f...
+2026-05-05 11:13:52 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "edge computing resource scheduling load balancing industrial IoT",
+  "arxiv_query": "all:\"edge computing\" AND all:\"resource scheduling\" AND all:\"load balancing\" AND all:\"industrial IoT\"",
+  "year_range": "2018-2024",
+  "max_results": 20
+}
+```
+2026-05-05 11:13:57 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:13:57 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:13:57 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Clinical Medicine, focusing on medical oncology, with half a year of clinical internship experience and familiar with lung cancer diagnosis and treatment protocols. Your academic preference is to emphasize clinical practicality, focus on treatment safety and patient tolerability, and prefer studies with large-sample clinical trial data. You are now conducting a literature review, and your research question is: What are the current research status, clinical ...
+2026-05-05 11:13:57 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:13:58 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent studies on immunotherapy for advanced NSCLC. I need papers with clinical trial data, sample size at least 100, preferably on Asian populations. Focus on immunotherapy combined with chemo, and please include data on side effects and efficacy differences across age groups. Thanks!
+2026-05-05 11:13:58 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent studies on immunotherapy for advanced NSCLC. I need papers with clinical trial data, sample size at least 100, preferably on Asian populations. Focus on immunotherapy combined with chemo, and please include data on side effects and efficacy differences across age groups. Thanks!
+2026-05-05 11:13:58 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent studies on immunotherapy for advanced NSCLC. I need papers with clinical trial data, sample size at least 100, preferably on Asian populations. Focus on immunotherapy combined with chemo, and please include data on side effects and efficacy differences across age groups. T...
+2026-05-05 11:13:58 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:13:58 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:13:58 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent studies on immunotherapy for advanced NSCLC. I need papers with clinical trial data, sample size at least 100, preferably on Asian populations. Focus on immunotherapy combined with chemo, and please include data on side effects and efficacy differences across age groups. Thanks!
+2026-05-05 11:14:17 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "preferably on Asian populations",
+  "research_direction": "immunotherapy for advanced NSCLC, immunotherapy combined with chemo",
+  "filter_requirements": "recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups",
+  "rejection_reasons": "",
+  "other_info": ""
+}
+```
+2026-05-05 11:14:17 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "preferably on Asian populations", "research_direction": "immunotherapy for advanced NSCLC, immunotherapy combined with chemo", "filter_requirements": "recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups", "rejection_reasons": "", "other_info": ""}
+2026-05-05 11:14:17 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:14:17 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: preferably on Asian populations
+2026-05-05 11:14:17 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:14:23 [DEBUG] auto_slr - [System LLM] 响应: user_preference: preferably on Asian populations
+2026-05-05 11:14:23 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:14:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requi...
+2026-05-05 11:14:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:14:32 [DEBUG] auto_slr - [System LLM] 响应: research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requirements: recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups
+2026-05-05 11:14:32 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: preferably on Asian populations, research_task=research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requirements: recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups
+2026-05-05 11:14:32 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:14:32 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: preferably on Asian populations
+
+Research task:
+research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filt...
+2026-05-05 11:14:32 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:14:48 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:14:48 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:14:48 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:14:48 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:14:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: preferably on Asian populations
+
+Current research task:
+research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requirements: recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups
+
+Current list of satisfactory papers:
+(non...
+2026-05-05 11:14:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:14:56 [DEBUG] auto_slr - [System LLM] 响应: Research topic: Immunotherapy combined with chemotherapy for advanced NSCLC
+Population focus: Preferably Asian populations
+Filter criteria: Recent studies, clinical trial data, sample size ≥ 100, must include data on side effects and efficacy differences across age groups
+2026-05-05 11:14:56 [INFO] auto_slr - [Assistant] provide_context 输出: Research topic: Immunotherapy combined with chemotherapy for advanced NSCLC
+Population focus: Preferably Asian populations
+Filter criteria: Recent studies, clinical trial data, sample size ≥ 100, must include data on side effects and efficacy differences across age groups
+2026-05-05 11:14:56 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requirements: recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups, assistant_context=Research topic: Immunotherapy combined with chemotherapy for advanced NSCLC
+Population focus: Preferably Asian populations
+Filter criteria: Recent studies, clinical trial data, sample size ≥ 100, must
+2026-05-05 11:14:56 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:14:56 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:14:56 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: immunotherapy for advanced NSCLC, immunotherapy combined with chemo
+filter_requirements: recent studies, clinical trial data, sample size at least 100, include data on side effects and efficacy differences across age groups
+Additional context: Research topic: Immunotherapy combined with chemotherapy for advanced NSCLC
+Population focus: Preferably Asian populations
+Filter criteria: Recent studies, clinical trial data, sample size ≥ 100, must include data on side...
+2026-05-05 11:15:15 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "immunotherapy chemotherapy advanced NSCLC clinical trial Asian age adverse events efficacy",
+  "arxiv_query": "immunotherapy chemotherapy advanced NSCLC clinical trial Asian age adverse events efficacy",
+  "year_range": "2020-2024",
+  "max_results": 30
+}
+```
+2026-05-05 11:15:21 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:15:21 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:15:21 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Medical Imaging, focusing on the intersection of medical imaging diagnosis and artificial intelligence, proficient in using imaging processing software, and have participated in AI-assisted diagnosis research projects. Your academic preference is to focus on the clinical adaptability of AI models, value diagnostic accuracy and misdiagnosis rate data, and prefer studies comparing with traditional manual diagnosis. You are now conducting a literature review, ...
+2026-05-05 11:15:21 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:15:23 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for studies on AI in medical image diagnosis, specifically for early screening of breast cancer and lung nodules. I need papers that report diagnostic accuracy, sensitivity, and specificity data, with a focus on early-stage (Stage I-II) lesions. It's important that the studies include testing in primary hospital settings, and that the models offer some interpretability—no pure black-box approaches. Please exclude any papers lacking these specific metrics or settings. Thanks!
+2026-05-05 11:15:23 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for studies on AI in medical image diagnosis, specifically for early screening of breast cancer and lung nodules. I need papers that report diagnostic accuracy, sensitivity, and specificity data, with a focus on early-stage (Stage I-II) lesions. It's important that the studies include testing in primary hospital settings, and that the models offer some interpretability—no pure black-box approaches. Please exclude any papers lacking these specific metrics or settings. Thanks!
+2026-05-05 11:15:23 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for studies on AI in medical image diagnosis, specifically for early screening of breast cancer and lung nodules. I need papers that report diagnostic accuracy, sensitivity, and specificity data, with a focus on early-stage (Stage I-II) lesions. It's important that the studies includ...
+2026-05-05 11:15:23 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:15:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:15:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for studies on AI in medical image diagnosis, specifically for early screening of breast cancer and lung nodules. I need papers that report diagnostic accuracy, sensitivity, and specificity data, with a focus on early-stage (Stage I-II) lesions. It's important that the studies include testing in primary hospital settings, and that the models offer some interpretability—no pure black-box approaches. Please exclude any papers lacking these specific metrics or settings. Thanks!
+2026-05-05 11:15:45 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "interpretable models (no pure black-box approaches)",
+  "research_direction": "AI in medical image diagnosis for early screening of breast cancer and lung nodules",
+  "filter_requirements": "must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings",
+  "rejection_reasons": "lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability)",
+  "other_info": ""
+}
+```
+2026-05-05 11:15:45 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "interpretable models (no pure black-box approaches)", "research_direction": "AI in medical image diagnosis for early screening of breast cancer and lung nodules", "filter_requirements": "must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings", "rejection_reasons": "lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability)", "other_info": ""}
+2026-05-05 11:15:45 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:15:45 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: interpretable models (no pure black-box approaches)
+2026-05-05 11:15:45 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:15:51 [DEBUG] auto_slr - [System LLM] 响应: user_preference: interpretable models (no pure black-box approaches)
+2026-05-05 11:15:51 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:15:51 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodu...
+2026-05-05 11:15:51 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:16:00 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+filter_requirements: must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings
+rejection_reasons: lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability)
+2026-05-05 11:16:00 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: interpretable models (no pure black-box approaches), research_task=research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+filter_requirements: must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings
+rejection_reasons: lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability)
+2026-05-05 11:16:00 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:16:00 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: interpretable models (no pure black-box approaches)
+
+Research task:
+research_direction: AI in medical image diagnosis for early screening of...
+2026-05-05 11:16:00 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:16:13 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:16:13 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:16:13 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:16:13 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:16:13 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: interpretable models (no pure black-box approaches)
+
+Current research task:
+research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+filter_requirements: must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hos...
+2026-05-05 11:16:13 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:16:28 [DEBUG] auto_slr - [System LLM] 响应: Topic: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+Model requirement: Interpretable models only (no pure black-box approaches)
+Lesion focus: Early-stage (Stage I-II)
+Required metrics: Diagnostic accuracy, sensitivity, and specificity
+Required setting: Testing in primary hospital settings
+Rejection criteria: Lacking any required metric, primary hospital setting, early-stage focus, or interpretability
+2026-05-05 11:16:28 [INFO] auto_slr - [Assistant] provide_context 输出: Topic: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+Model requirement: Interpretable models only (no pure black-box approaches)
+Lesion focus: Early-stage (Stage I-II)
+Required metrics: Diagnostic accuracy, sensitivity, and specificity
+Required setting: Testing ...
+2026-05-05 11:16:28 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+filter_requirements: must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings
+rejection_reasons: lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability), assistant_context=Topic: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+Model requirement: Interpretable models only (no pure black-box approaches)
+Lesion focus: Early-stage (Stage 
+2026-05-05 11:16:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:16:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:16:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: AI in medical image diagnosis for early screening of breast cancer and lung nodules
+filter_requirements: must report diagnostic accuracy, sensitivity, and specificity; focus on early-stage (Stage I-II) lesions; must include testing in primary hospital settings
+rejection_reasons: lacking specific metrics (accuracy, sensitivity, specificity) or settings (primary hospital settings, early-stage lesions, interpretability)
+Additional context: Topic: AI in medical ima...
+2026-05-05 11:16:58 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "(\"interpretable\" OR \"explainable\") AND (\"medical imaging\" OR \"diagnosis\") AND (\"breast cancer\" OR \"lung nodule\") AND (\"early stage\" OR \"screening\") AND (\"primary hospital\" OR \"community hospital\")",
+  "arxiv_query": "all:(\"interpretable\" OR \"explainable\") AND all:(\"medical imaging\" OR \"diagnosis\") AND all:(\"breast cancer\" OR \"lung nodule\") AND all:(\"early stage\" OR \"screening\") AND all:(\"primary hospital\" OR \"community hospital\")",
+  "year_range": "2018-2024",
+  "max_results": 20
+}
+```
+2026-05-05 11:17:03 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:17:03 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:17:03 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Preventive Medicine, focusing on chronic metabolic diseases and gut microbiota, familiar with gut microbiota detection techniques, and have participated in epidemiological surveys of metabolic diseases. Your academic preference is to focus on the feasibility and safety of interventions, value long-term follow-up data, and prefer studies combined with diet and lifestyle. You are now conducting a literature review, and your research question is: Research prog...
+2026-05-05 11:17:03 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:17:15 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent literature on gut microbiota and chronic metabolic diseases like diabetes and obesity. I need studies with human clinical trials, not animal models, and papers that include strain-level microbiota data. Please focus on those that clarify mechanisms rather than just correlations, and prioritize low-cost, scalable interventions like dietary changes. Also, I need long-term follow-up data of at least 6 months on the intervention effects. Thanks!
+2026-05-05 11:17:15 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent literature on gut microbiota and chronic metabolic diseases like diabetes and obesity. I need studies with human clinical trials, not animal models, and papers that include strain-level microbiota data. Please focus on those that clarify mechanisms rather than just correlations, and prioritize low-cost, scalable interventions like dietary changes. Also, I need long-term follow-up data of at least 6 months on the intervention effects. Thanks!
+2026-05-05 11:17:15 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent literature on gut microbiota and chronic metabolic diseases like diabetes and obesity. I need studies with human clinical trials, not animal models, and papers that include strain-level microbiota data. Please focus on those that clarify mechanisms rather than just correla...
+2026-05-05 11:17:15 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:17:15 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:17:15 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent literature on gut microbiota and chronic metabolic diseases like diabetes and obesity. I need studies with human clinical trials, not animal models, and papers that include strain-level microbiota data. Please focus on those that clarify mechanisms rather than just correlations, and prioritize low-cost, scalable interventions like dietary changes. Also, I need long-term follow-up data of at least 6 months on the intervention effects. Thanks!
+2026-05-05 11:17:36 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "prioritize low-cost, scalable interventions like dietary changes",
+  "research_direction": "gut microbiota and chronic metabolic diseases like diabetes and obesity",
+  "filter_requirements": "recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects",
+  "rejection_reasons": "animal models, purely correlational studies without mechanistic clarification",
+  "other_info": ""
+}
+```
+2026-05-05 11:17:36 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "prioritize low-cost, scalable interventions like dietary changes", "research_direction": "gut microbiota and chronic metabolic diseases like diabetes and obesity", "filter_requirements": "recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects", "rejection_reasons": "animal models, purely correlational studies without mechanistic clarification", "other_info": ""}
+2026-05-05 11:17:36 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:17:36 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: prioritize low-cost, scalable interventions like dietary changes
+2026-05-05 11:17:36 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:17:41 [DEBUG] auto_slr - [System LLM] 响应: user_preference: prioritize low-cost, scalable interventions like dietary changes
+2026-05-05 11:17:41 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:17:41 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_r...
+2026-05-05 11:17:41 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:17:51 [DEBUG] auto_slr - [System LLM] 响应: research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_requirements: recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects
+rejection_reasons: animal models, purely correlational studies without mechanistic clarification
+2026-05-05 11:17:51 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: prioritize low-cost, scalable interventions like dietary changes, research_task=research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_requirements: recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects
+rejection_reasons: animal models, purely correlational studies without mechanistic clarification
+2026-05-05 11:17:51 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:17:51 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: prioritize low-cost, scalable interventions like dietary changes
+
+Research task:
+research_direction: gut microbiota and chronic metabolic di...
+2026-05-05 11:17:51 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:18:07 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:18:07 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:18:07 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:18:07 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:18:07 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: prioritize low-cost, scalable interventions like dietary changes
+
+Current research task:
+research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_requirements: recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (n...
+2026-05-05 11:18:07 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:18:23 [DEBUG] auto_slr - [System LLM] 响应: Topic: Gut microbiota and chronic metabolic diseases (diabetes, obesity)
+Intervention focus: Low-cost, scalable interventions (e.g., dietary changes)
+Inclusion criteria: Recent literature, human clinical trials only, strain-level microbiota data, mechanistic clarification (not just correlation), ≥6 months follow-up on intervention effects
+Exclusion criteria: Animal models, purely correlational studies
+2026-05-05 11:18:23 [INFO] auto_slr - [Assistant] provide_context 输出: Topic: Gut microbiota and chronic metabolic diseases (diabetes, obesity)
+Intervention focus: Low-cost, scalable interventions (e.g., dietary changes)
+Inclusion criteria: Recent literature, human clinical trials only, strain-level microbiota data, mechanistic clarification (not just correlation), ≥6 ...
+2026-05-05 11:18:23 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_requirements: recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects
+rejection_reasons: animal models, purely correlational studies without mechanistic clarification, assistant_context=Topic: Gut microbiota and chronic metabolic diseases (diabetes, obesity)
+Intervention focus: Low-cost, scalable interventions (e.g., dietary changes)
+Inclusion criteria: Recent literature, human clini
+2026-05-05 11:18:23 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:18:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:18:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: gut microbiota and chronic metabolic diseases like diabetes and obesity
+filter_requirements: recent literature, human clinical trials only (exclude animal models), must include strain-level microbiota data, must clarify mechanisms (not just correlations), long-term follow-up data of at least 6 months on intervention effects
+rejection_reasons: animal models, purely correlational studies without mechanistic clarification
+Additional context: Topic: Gut microbiota ...
+2026-05-05 11:18:56 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "\"gut microbiota\" OR \"gut microbiome\" AND (\"diabetes\" OR \"obesity\") AND \"clinical trial\" AND \"strain\" AND \"mechanistic\" AND \"diet\" AND \"follow-up\"",
+  "arxiv_query": "all:\"gut microbiota\" AND all:(diabetes OR obesity) AND all:\"clinical trial\" AND all:strain AND all:mechanistic AND all:diet",
+  "year_range": "2020-2024",
+  "max_results": 30
+}
+```
+2026-05-05 11:19:03 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:19:03 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:19:03 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Condensed Matter Physics, focusing on two-dimensional materials and optoelectronic devices, with laboratory material preparation experience and familiar with TMDs material properties. Your academic preference is to focus on material preparation processes and performance optimization, value experimental reproducibility, and prefer studies with specific device applications. You are now conducting a literature review, and your research question is: Research pr...
+2026-05-05 11:19:03 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:19:04 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent papers on 2D TMDs for optoelectronic devices. I need studies with specific preparation process parameters, especially scalable methods like CVD or MOCVD. Please prioritize experimental work with stability data, and focus on photodetectors or flexible devices. Exclude purely theoretical papers. Thanks!
+2026-05-05 11:19:04 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent papers on 2D TMDs for optoelectronic devices. I need studies with specific preparation process parameters, especially scalable methods like CVD or MOCVD. Please prioritize experimental work with stability data, and focus on photodetectors or flexible devices. Exclude purely theoretical papers. Thanks!
+2026-05-05 11:19:04 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent papers on 2D TMDs for optoelectronic devices. I need studies with specific preparation process parameters, especially scalable methods like CVD or MOCVD. Please prioritize experimental work with stability data, and focus on photodetectors or flexible devices. Exclude purel...
+2026-05-05 11:19:04 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:19:04 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:19:04 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent papers on 2D TMDs for optoelectronic devices. I need studies with specific preparation process parameters, especially scalable methods like CVD or MOCVD. Please prioritize experimental work with stability data, and focus on photodetectors or flexible devices. Exclude purely theoretical papers. Thanks!
+2026-05-05 11:19:24 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD",
+  "research_direction": "2D TMDs for optoelectronic devices (photodetectors or flexible devices)",
+  "filter_requirements": "recent papers; must include specific preparation process parameters; exclude purely theoretical papers",
+  "rejection_reasons": "purely theoretical",
+  "other_info": ""
+}
+```
+2026-05-05 11:19:24 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD", "research_direction": "2D TMDs for optoelectronic devices (photodetectors or flexible devices)", "filter_requirements": "recent papers; must include specific preparation process parameters; exclude purely theoretical papers", "rejection_reasons": "purely theoretical", "other_info": ""}
+2026-05-05 11:19:24 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:19:24 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: prioritize experimental work with stability data; especially scalable methods like CVD or...
+2026-05-05 11:19:24 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:19:30 [DEBUG] auto_slr - [System LLM] 响应: user_preference: prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD
+2026-05-05 11:19:30 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:19:30 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_r...
+2026-05-05 11:19:30 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:19:37 [DEBUG] auto_slr - [System LLM] 响应: research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_requirements: recent papers; must include specific preparation process parameters; exclude purely theoretical papers
+rejection_reasons: purely theoretical
+2026-05-05 11:19:37 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD, research_task=research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_requirements: recent papers; must include specific preparation process parameters; exclude purely theoretical papers
+rejection_reasons: purely theoretical
+2026-05-05 11:19:37 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:19:37 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD
+
+Research task:
+research_direction: 2D TMDs ...
+2026-05-05 11:19:37 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:19:51 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:19:51 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:19:51 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:19:51 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:19:51 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: prioritize experimental work with stability data; especially scalable methods like CVD or MOCVD
+
+Current research task:
+research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_requirements: recent papers; must include specific preparation process parameters; exclude purely theoretical papers
+reject...
+2026-05-05 11:19:51 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:20:03 [DEBUG] auto_slr - [System LLM] 响应: 2D TMDs for optoelectronic devices (photodetectors or flexible devices); prioritize experimental work with stability data and scalable methods (CVD/MOCVD); recent papers only; must include specific preparation process parameters; exclude purely theoretical papers.
+2026-05-05 11:20:03 [INFO] auto_slr - [Assistant] provide_context 输出: 2D TMDs for optoelectronic devices (photodetectors or flexible devices); prioritize experimental work with stability data and scalable methods (CVD/MOCVD); recent papers only; must include specific preparation process parameters; exclude purely theoretical papers.
+2026-05-05 11:20:03 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_requirements: recent papers; must include specific preparation process parameters; exclude purely theoretical papers
+rejection_reasons: purely theoretical, assistant_context=2D TMDs for optoelectronic devices (photodetectors or flexible devices); prioritize experimental work with stability data and scalable methods (CVD/MOCVD); recent papers only; must include specific pr
+2026-05-05 11:20:03 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:20:03 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:20:03 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: 2D TMDs for optoelectronic devices (photodetectors or flexible devices)
+filter_requirements: recent papers; must include specific preparation process parameters; exclude purely theoretical papers
+rejection_reasons: purely theoretical
+Additional context: 2D TMDs for optoelectronic devices (photodetectors or flexible devices); prioritize experimental work with stability data and scalable methods (CVD/MOCVD); recent papers only; must include specific preparation p...
+2026-05-05 11:20:39 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "\"2D TMDs\" OR \"transition metal dichalcogenides\" AND (\"optoelectronic\" OR \"photodetector\" OR \"flexible\") AND (\"CVD\" OR \"MOCVD\" OR \"synthesis\" OR \"fabrication\")",
+  "arxiv_query": "(\"2D TMDs\" OR \"transition metal dichalcogenides\") AND (\"optoelectronic\" OR \"photodetector\" OR \"flexible\") AND (\"CVD\" OR \"MOCVD\" OR \"synthesis\" OR \"fabrication\")",
+  "year_range": "2021-2024",
+  "max_results": 30
+}
+```
+2026-05-05 11:20:46 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:20:46 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:20:46 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computational Physics, focusing on the intersection of machine learning and quantum simulation, proficient in Python and quantum computing tools, and have participated in material property prediction projects. Your academic preference is to focus on algorithm efficiency and accuracy, value comparisons with traditional computational methods, and prefer studies with open-source code. You are now conducting a literature review, and your research question is: A...
+2026-05-05 11:20:46 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:20:48 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for papers on machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction. I need studies that focus on complex quantum systems or multi-component materials, with clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods. Please exclude any papers without open-source code or datasets. I'm especially interested in work that combines ML with first-principles approaches and is relevant for novel material design.
+2026-05-05 11:20:48 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for papers on machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction. I need studies that focus on complex quantum systems or multi-component materials, with clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods. Please exclude any papers without open-source code or datasets. I'm especially interested in work that combines ML with first-principles approaches and is relevant for novel material design.
+2026-05-05 11:20:48 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for papers on machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction. I need studies that focus on complex quantum systems or multi-component materials, with clear comparisons of computational efficiency and ...
+2026-05-05 11:20:48 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:20:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:20:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for papers on machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction. I need studies that focus on complex quantum systems or multi-component materials, with clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods. Please exclude any papers without open-source code or datasets. I'm especially interested in work that combines ML with first-principl...
+2026-05-05 11:21:10 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "especially interested in work that combines ML with first-principles approaches and is relevant for novel material design",
+  "research_direction": "machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction",
+  "filter_requirements": "focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets",
+  "rejection_reasons": "lack of open-source code or datasets",
+  "other_info": ""
+}
+```
+2026-05-05 11:21:10 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "especially interested in work that combines ML with first-principles approaches and is relevant for novel material design", "research_direction": "machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction", "filter_requirements": "focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets", "rejection_reasons": "lack of open-source code or datasets", "other_info": ""}
+2026-05-05 11:21:10 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:21:10 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: especially interested in work that combines ML with first-principles approaches and is re...
+2026-05-05 11:21:10 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:21:17 [DEBUG] auto_slr - [System LLM] 响应: user_preference: especially interested in work that combines ML with first-principles approaches and is relevant for novel material design
+2026-05-05 11:21:17 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:21:17 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: machine learning applied to computational physics, specifically for quantum mech...
+2026-05-05 11:21:17 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:21:28 [DEBUG] auto_slr - [System LLM] 响应: research_direction: machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction
+filter_requirements: focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets
+rejection_reasons: lack of open-source code or datasets
+2026-05-05 11:21:28 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: especially interested in work that combines ML with first-principles approaches and is relevant for novel material design, research_task=research_direction: machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction
+filter_requirements: focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets
+rejection_reasons: lack of open-source code or datasets
+2026-05-05 11:21:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:21:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: especially interested in work that combines ML with first-principles approaches and is relevant for novel material design
+
+Research task:
+re...
+2026-05-05 11:21:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:21:42 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:21:42 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:21:42 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:21:42 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:21:42 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: especially interested in work that combines ML with first-principles approaches and is relevant for novel material design
+
+Current research task:
+research_direction: machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction
+filter_requirements: focus on complex quantum...
+2026-05-05 11:21:42 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:21:55 [DEBUG] auto_slr - [System LLM] 响应: Topic: Machine learning for quantum mechanics simulations and material property prediction.
+Focus: ML combined with first-principles approaches for novel material design; complex quantum systems or multi-component materials.
+Requirement: Must include clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods.
+Mandatory: Must have open-source code or datasets (exclude papers lacking either).
+2026-05-05 11:21:55 [INFO] auto_slr - [Assistant] provide_context 输出: Topic: Machine learning for quantum mechanics simulations and material property prediction.
+Focus: ML combined with first-principles approaches for novel material design; complex quantum systems or multi-component materials.
+Requirement: Must include clear comparisons of computational efficiency and...
+2026-05-05 11:21:55 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction
+filter_requirements: focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets
+rejection_reasons: lack of open-source code or datasets, assistant_context=Topic: Machine learning for quantum mechanics simulations and material property prediction.
+Focus: ML combined with first-principles approaches for novel material design; complex quantum systems or mu
+2026-05-05 11:21:55 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:21:55 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:21:55 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: machine learning applied to computational physics, specifically for quantum mechanics simulations and material property prediction
+filter_requirements: focus on complex quantum systems or multi-component materials; must have clear comparisons of computational efficiency and prediction accuracy against traditional first-principles methods; exclude papers without open-source code or datasets
+rejection_reasons: lack of open-source code or datasets
+Additional conte...
+2026-05-05 11:22:14 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "machine learning quantum mechanics simulation material property prediction first-principles efficiency multi-component",
+  "arxiv_query": "\"machine learning\" AND (\"quantum mechanics\" OR \"material property\") AND (\"first-principles\" OR DFT) AND (\"efficiency\" OR \"accuracy\")",
+  "year_range": "2019-2024",
+  "max_results": 20
+}
+```
+2026-05-05 11:22:20 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文
+2026-05-05 11:22:20 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:22:20 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Nuclear Physics, focusing on controlled nuclear fusion, familiar with magnetic confinement and inertial confinement fusion technologies, and have participated in nuclear fusion-related theoretical research. Your academic preference is to focus on experimental progress and technological breakthroughs, value engineering feasibility, and prefer studies related to major international projects. You are now conducting a literature review, and your research questi...
+2026-05-05 11:22:20 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:22:21 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent literature on nuclear fusion energy as a clean and sustainable source. I need experimental progress from the last 5 years, focusing on major projects like ITER and NIF. Key parameters like plasma confinement time and energy gain are important. Please prioritize papers with real experimental data, not just theory, and include anything on cost control or commercialization. Thanks!
+2026-05-05 11:22:21 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent literature on nuclear fusion energy as a clean and sustainable source. I need experimental progress from the last 5 years, focusing on major projects like ITER and NIF. Key parameters like plasma confinement time and energy gain are important. Please prioritize papers with real experimental data, not just theory, and include anything on cost control or commercialization. Thanks!
+2026-05-05 11:22:21 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent literature on nuclear fusion energy as a clean and sustainable source. I need experimental progress from the last 5 years, focusing on major projects like ITER and NIF. Key parameters like plasma confinement time and energy gain are important. Please prioritize papers with...
+2026-05-05 11:22:21 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:22:21 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:22:21 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent literature on nuclear fusion energy as a clean and sustainable source. I need experimental progress from the last 5 years, focusing on major projects like ITER and NIF. Key parameters like plasma confinement time and energy gain are important. Please prioritize papers with real experimental data, not just theory, and include anything on cost control or commercialization. Thanks!
+2026-05-05 11:22:44 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "prioritize papers with real experimental data, not just theory",
+  "research_direction": "nuclear fusion energy as a clean and sustainable source",
+  "filter_requirements": "last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization",
+  "rejection_reasons": "purely theoretical papers (lacking real experimental data)",
+  "other_info": ""
+}
+```
+2026-05-05 11:22:44 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "prioritize papers with real experimental data, not just theory", "research_direction": "nuclear fusion energy as a clean and sustainable source", "filter_requirements": "last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization", "rejection_reasons": "purely theoretical papers (lacking real experimental data)", "other_info": ""}
+2026-05-05 11:22:44 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:22:44 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: prioritize papers with real experimental data, not just theory
+2026-05-05 11:22:44 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:22:50 [DEBUG] auto_slr - [System LLM] 响应: user_preference: prioritize papers with real experimental data, not just theory
+2026-05-05 11:22:50 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:22:50 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: las...
+2026-05-05 11:22:50 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:23:00 [DEBUG] auto_slr - [System LLM] 响应: research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization
+rejection_reasons: purely theoretical papers (lacking real experimental data)
+2026-05-05 11:23:00 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: prioritize papers with real experimental data, not just theory, research_task=research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization
+rejection_reasons: purely theoretical papers (lacking real experimental data)
+2026-05-05 11:23:00 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:23:00 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: prioritize papers with real experimental data, not just theory
+
+Research task:
+research_direction: nuclear fusion energy as a clean and sust...
+2026-05-05 11:23:00 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:23:11 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 11:23:11 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 11:23:11 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 11:23:11 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:23:11 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: prioritize papers with real experimental data, not just theory
+
+Current research task:
+research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or c...
+2026-05-05 11:23:11 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 11:23:22 [DEBUG] auto_slr - [System LLM] 响应: Research direction: Nuclear fusion energy as a clean and sustainable source
+Timeframe: Last 5 years
+Focus areas: Major projects (ITER, NIF); key parameters (plasma confinement time, energy gain); cost control and commercialization
+Data constraint: Must include real experimental data; strictly exclude purely theoretical papers
+2026-05-05 11:23:22 [INFO] auto_slr - [Assistant] provide_context 输出: Research direction: Nuclear fusion energy as a clean and sustainable source
+Timeframe: Last 5 years
+Focus areas: Major projects (ITER, NIF); key parameters (plasma confinement time, energy gain); cost control and commercialization
+Data constraint: Must include real experimental data; strictly exclud...
+2026-05-05 11:23:22 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization
+rejection_reasons: purely theoretical papers (lacking real experimental data), assistant_context=Research direction: Nuclear fusion energy as a clean and sustainable source
+Timeframe: Last 5 years
+Focus areas: Major projects (ITER, NIF); key parameters (plasma confinement time, energy gain); cost
+2026-05-05 11:23:22 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:23:22 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 11:23:22 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: nuclear fusion energy as a clean and sustainable source
+filter_requirements: last 5 years; focusing on major projects like ITER and NIF; key parameters like plasma confinement time and energy gain; include anything on cost control or commercialization
+rejection_reasons: purely theoretical papers (lacking real experimental data)
+Additional context: Research direction: Nuclear fusion energy as a clean and sustainable source
+Timeframe: Last 5 years
+Focus areas: Ma...
+2026-05-05 11:23:54 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "\"nuclear fusion\" AND (ITER OR NIF OR \"National Ignition Facility\") AND (\"plasma confinement\" OR \"energy gain\" OR commercialization OR \"cost control\") AND experimental",
+  "arxiv_query": "all:(\"nuclear fusion\" OR \"fusion energy\") AND all:(ITER OR NIF OR \"National Ignition Facility\") AND all:(\"plasma confinement\" OR \"energy gain\" OR commercialization OR \"cost control\")",
+  "year_range": "2019-2024",
+  "max_results": 50
+}
+```
+2026-05-05 11:23:58 [INFO] auto_slr - [Executor] search_papers 输出: 找到 0 篇不重复论文

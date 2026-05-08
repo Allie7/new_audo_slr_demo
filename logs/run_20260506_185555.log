@@ -1,0 +1,3506 @@
+2026-05-06 18:55:55 [INFO] auto_slr - 日志系统初始化完成，级别: DEBUG，日志文件: D:\School\SAT404\pilot_study_code\new_auto_slr\logs\run_20260506_185555.log
+2026-05-06 18:55:55 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 18:55:55 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 18:55:55 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 18:55:56 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:55:56 [INFO] auto_slr - [User(Simulated)] 初始query: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:55:56 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:55:56 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:55:56 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 18:55:56 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:56:07 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "撰写文献综述"
+}
+```
+2026-05-06 18:56:07 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查", "filter_requirements": "", "rejection_reasons": "", "other_info": "撰写文献综述"}
+2026-05-06 18:56:07 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:56:07 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+(none)
+
+新提取的信息：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+2026-05-06 18:56:07 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:56:14 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+2026-05-06 18:56:14 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=, research_task=research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+2026-05-06 18:56:14 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:56:14 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献搜索评估专家。请判断用户提供的查询信息是否足够进行初步论文搜索。
+
+至少应包含：
+1. 明确的研究方向/主题
+2. 可推断的时间范围（如果未明确指定，默认近5年可以接受）
+
+用户信息：
+(none)
+
+研究任务：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+
+请判断信息是否充分，输出 JSON：
+{
+  "sufficient": true/false,
+  "missing_info": "缺失信息的描述（如果充分则为空字符串）"
+}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 18:56:14 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:56:19 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-06 18:56:19 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-06 18:56:19 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=搜索相关论文
+2026-05-06 18:56:19 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:56:19 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个助手，需要为执行者提供与当前任务相关的背景信息。
+
+当前用户信息：
+(none)
+
+当前研究任务：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+
+当前达标论文列表：
+(none)
+
+执行者即将执行的任务：搜索相关论文
+
+请从以上信息中提取最相关的背景信息，简洁地提供给执行者。只输出相关信息，不要输出其他内容。
+2026-05-06 18:56:19 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:56:28 [DEBUG] auto_slr - [System LLM] 响应: AI医学影像诊断；乳腺癌早期筛查；肺结节早期筛查；文献综述
+2026-05-06 18:56:28 [INFO] auto_slr - [Assistant] provide_context 输出: AI医学影像诊断；乳腺癌早期筛查；肺结节早期筛查；文献综述
+2026-05-06 18:56:28 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述, assistant_context=AI医学影像诊断；乳腺癌早期筛查；肺结节早期筛查；文献综述
+2026-05-06 18:56:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:56:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献搜索专家。根据给定的研究课题和要求，你需要为 Semantic Scholar API 和 arXiv 生成搜索查询关键词。
+
+请输出一个 JSON 对象：
+{{
+  "semantic_scholar_query": "搜索关键词",
+  "arxiv_query": "搜索关键词",
+  "year_range": "起始年份-结束年份 或 空字符串",
+  "max_results": 数字
+}}
+
+重要：两个 API 的查询语法不同，必须分别适配：
+
+【Semantic Scholar 查询语法】
+- 支持布尔运算符 AND / OR / NOT
+- 支持引号精确匹配，如 "breast cancer"
+- 示例："deep learning" AND "medical imaging" AND "breast cancer"
+
+【arXiv 查询语法 — 务必严格遵守】
+- arXiv 使用 Lucene 风格语法，支持字段前缀：ti:(标题)、abs:(摘要)、au:(作者)、cat:(分类)
+- **禁止使用 all: 前缀**：all: 要求所有字段精确...
+2026-05-06 18:56:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 研究任务: research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+补充背景: AI医学影像诊断；乳腺癌早期筛查；肺结节早期筛查；文献综述
+2026-05-06 18:56:48 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "(\"artificial intelligence\" OR \"deep learning\") AND \"medical imaging\" AND (\"breast cancer\" OR \"lung nodule\") AND (\"early detection\" OR \"screening\")",
+  "arxiv_query": "abs:(\"deep learning\" OR \"artificial intelligence\") AND abs:\"medical imaging\" AND abs:(\"breast cancer\" OR \"lung nodule\")",
+  "year_range": "2019-2024",
+  "max_results": 50
+}
+```
+2026-05-06 18:56:48 [INFO] auto_slr - [Semantic Scholar] 搜索: query=("artificial intelligence" OR "deep learning") AND "medical imaging" AND ("breas, year_range=2019-2024, limit=100, proxy=none, api_key=yes
+2026-05-06 18:56:53 [ERROR] auto_slr - [Semantic Scholar] 搜索出错 (api_key=yes): ConnectError: 
+2026-05-06 18:56:58 [ERROR] auto_slr - [Semantic Scholar] 搜索出错 (api_key=anonymous): ConnectError: 
+2026-05-06 18:56:58 [ERROR] auto_slr - [Semantic Scholar] 所有尝试均失败，最后一次错误: ConnectError: 
+2026-05-06 18:56:58 [INFO] auto_slr - [Semantic Scholar] 查询放宽: ("artificial intelligence" OR "deep learning") AND "medical  → ("artificial intelligence" OR "deep learning") AND "medical 
+2026-05-06 18:56:58 [INFO] auto_slr - [Semantic Scholar] 搜索: query=("artificial intelligence" OR "deep learning") AND "medical imaging", year_range=2019-2024, limit=100, proxy=none, api_key=yes
+2026-05-06 18:57:03 [ERROR] auto_slr - [Semantic Scholar] 搜索出错 (api_key=yes): ConnectError: 
+2026-05-06 18:57:08 [ERROR] auto_slr - [Semantic Scholar] 搜索出错 (api_key=anonymous): ConnectError: 
+2026-05-06 18:57:08 [ERROR] auto_slr - [Semantic Scholar] 所有尝试均失败，最后一次错误: ConnectError: 
+2026-05-06 18:57:08 [INFO] auto_slr - [arXiv] 搜索: query=abs:("deep learning" OR "artificial intelligence") AND abs:"medical imaging" AND, max_results=100, proxy=none
+2026-05-06 18:57:27 [INFO] auto_slr - [arXiv] 找到 98 篇论文 (query=abs:("deep learning" OR "artificial intelligence") AND abs:")
+2026-05-06 18:57:27 [INFO] auto_slr - [Executor] search_papers 输出: 找到 98 篇不重复论文
+2026-05-06 18:57:27 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=对论文进行初步筛选
+2026-05-06 18:57:27 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:57:27 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个助手，需要为执行者提供与当前任务相关的背景信息。
+
+当前用户信息：
+(none)
+
+当前研究任务：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+
+当前达标论文列表：
+(none)
+
+执行者即将执行的任务：对论文进行初步筛选
+
+请从以上信息中提取最相关的背景信息，简洁地提供给执行者。只输出相关信息，不要输出其他内容。
+2026-05-06 18:57:27 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:57:45 [DEBUG] auto_slr - [System LLM] 响应: 研究方向：AI在医学影像诊断中的应用
+重点领域：乳腺癌早期筛查、肺结节早期筛查
+任务目标：撰写文献综述
+筛选重点：关注AI技术（如深度学习等）在乳腺及肺部医学影像（如钼靶、CT等）早期筛查中的应用研究，兼顾代表性文献与前沿研究。
+2026-05-06 18:57:45 [INFO] auto_slr - [Assistant] provide_context 输出: 研究方向：AI在医学影像诊断中的应用
+重点领域：乳腺癌早期筛查、肺结节早期筛查
+任务目标：撰写文献综述
+筛选重点：关注AI技术（如深度学习等）在乳腺及肺部医学影像（如钼靶、CT等）早期筛查中的应用研究，兼顾代表性文献与前沿研究。
+2026-05-06 18:57:45 [INFO] auto_slr - [Executor] screen_papers_sample 输入: assistant_context=研究方向：AI在医学影像诊断中的应用
+重点领域：乳腺癌早期筛查、肺结节早期筛查
+任务目标：撰写文献综述
+筛选重点：关注AI技术（如深度学习等）在乳腺及肺部医学影像（如钼靶、CT等）早期筛查中的应用研究，兼顾代表性文献与前沿研究。
+2026-05-06 18:57:45 [INFO] auto_slr - 初步筛选: 共 98 篇, 未筛选 98 篇
+2026-05-06 18:57:45 [INFO] auto_slr - 筛选第 1 批, 共 10 篇
+2026-05-06 18:57:45 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:57:45 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 18:57:45 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用
+重点领域：乳腺癌早期筛查、肺结节早期筛查
+任务目标：撰写文献综述
+筛选重点：关注AI技术（如深度学习等）在乳腺及肺部医学影像（如钼靶、CT等）早期筛查中的应用研究，兼顾代表性文献与前沿研究。
+
+论文列表:
+--- 论文 1 ---
+标题: Deep Learning for Automated Medical Image Analysis
+年份: 2019
+作者: Wentao Zhu
+摘要: Medical imaging is an essential tool in many areas of medical applications, used for both diagnosis and treatment. However, reading medical images and making diagnosis or treatment recommendations require specially trained medical specialists. The current practice of readi...
+2026-05-06 18:58:19 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "摘要内容过于宽泛，仅一般性地讨论深度学习在医学影像分析中的应用，未具体涉及乳腺癌或肺结节早期筛查。"
+  },
+  {
+    "index": 2,
+    "decision": "include",
+    "reason": "研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。"
+  },
+  {
+    "index": 3,
+    "decision": "include",
+    "reason": "研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。"
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "研究CT图像中肺结节的对抗合成以改善监督学习任务，虽与肺结节相关，但主要侧重于数据增强方法而非直接的早期筛查应用，是否纳入取决于综述对辅助训练技术的涵盖范围。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "主要介绍多癌症全身PET/CT数据集，不专门针对乳腺癌或肺结节的早期筛查应用。"
+  },
+  {
+    "index": 6,
+    "decision": "include",
+    "reason": "应用VGG16算法对CT图像进行肺癌分类，明确提及肺结节早期检测的重要性，符合肺结节早期筛查及AI技术应用要求。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "提出半监督学习用于3D医学图像检测，但摘要未明确说明应用于乳腺或肺部影像，与特定筛查领域相关性不足。"
+  },
+  {
+    "index": 8,
+    "decision": "include",
+    "reason": "应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "研究乳腺癌组织病理学图像分类，属于病理学分析而非医学影像（如钼靶、CT等）早期筛查，不符合影像筛查要求。"
+  },
+  {
+    "index": 10,
+    "decision": "include",
+    "reason": "开发深度学习模型用于数字乳腺断层合成（DBT）中肿块和结构扭曲的检测，直接属于乳腺癌早期筛查的AI应用研究，且提供了大规模数据集。"
+  }
+]
+```
+2026-05-06 18:58:19 [INFO] auto_slr - 第 1 批筛选完成: included=5, excluded=4, not_sure=1
+2026-05-06 18:58:19 [INFO] auto_slr - [Executor] screen_papers_sample 输出: included=5, excluded=4, not_sure=1
+2026-05-06 18:58:19 [INFO] auto_slr - [Contactor] present_sample_papers 输入: 5 篇论文
+2026-05-06 18:58:19 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:58:19 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个学术助手，正在向用户展示筛选后的样例论文，并请求用户确认。
+
+以下是筛选出的样例论文：
+[论文 1]
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+作者: He Yang, Hengyong Yu, Ge Wang
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+[论文 2]
+标题: Improved Focus on Hard Samples for Lung Nodule Detection
+年份: 2024
+作者: Yujiang Chen, Mei Xie
+筛选理由: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+[论文 3]
+标题: Using VGG16 Algorithms for classification of lung cancer in CT scans Image
+年份: 2023
+作者: Hasan Hejbari Zargar, Saha...
+2026-05-06 18:58:19 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请向用户展示样例论文，并请求反馈。
+2026-05-06 18:58:44 [DEBUG] auto_slr - [System LLM] 响应: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for classification of lung cancer in CT scans Image
+*   **年份**: 2023
+*   **作者**: Hasan Hejbari Zargar, Saha Hejbari Zargar, Raziye Mehri, Farzane Tajidini
+*   **筛选理由**: 应用VGG16算法对CT图像进行肺癌分类，明确提及肺结节早期检测的重要性，符合肺结节早期筛查及AI技术应用要求。
+
+**[论文 4]**
+*   **标题**: Fine-tuned Transformer Models for Breast Cancer Detection and Classification
+*   **年份**: 2025
+*   **作者**: Showkat Osman, Md. Tajwar Munim Turzo, Maher Ali Rusho, Md. Makid Haider, Sazzadul Islam Sajin, Ayatullah Hasnat Behesti, Ahmed Faizul Haque Dhrubo, Md. Khurshid Jahan, Mohammad Abdul Qayum
+*   **筛选理由**: 应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。
+
+**[论文 5]**
+*   **标题**: Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model
+*   **年份**: 2020
+*   **作者**: Mateusz Buda, Ashirbani Saha, Ruth Walsh, Sujata Ghate, Nianyi Li, Albert Święcicki, Joseph Y. Lo, Maciej A. Mazurowski
+*   **筛选理由**: 开发深度学习模型用于数字乳腺断层合成（DBT）中肿块和结构扭曲的检测，直接属于乳腺癌早期筛查的AI应用研究，且提供了大规模数据集。
+
+---
+
+为了帮助我更精准地为您筛选后续的文献，想请您反馈一下：
+
+1. **哪些论文符合您的期望？**
+2. **哪些论文不符合您的期望？如果不符合，能否请您说明一下原因？**（例如：研究病种不符、AI技术过于陈旧、影像模态不匹配等）
+
+期待您的回复！
+2026-05-06 18:58:44 [INFO] auto_slr - [Contactor] present_sample_papers 输出: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Sam...
+2026-05-06 18:58:44 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=4条
+2026-05-06 18:58:44 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 18:58:44 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:58:44 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for ...
+2026-05-06 18:58:44 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+摘要: Deep learning, as a promising new area of machine learning, has attracted a rapidly increasing attention in the field of medical imaging. Compared to the conventional machine learning methods, deep learning requires no hand-tuned feature extractor, and has shown a superior performance in many visual...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 18:58:49 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏度、特异度等核心指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。
+   - **未涉及基层医院场景**：摘要未提及模型是否在基层医院或低资源环境下测试，无法判断其临床适配性。
+   - **可解释性不明**：摘要未讨论模型的可解释性，而纯黑箱模型不是我关注的重点。
+   - **年份偏早**：2016年的深度学习模型可能较为基础，对于当前综述而言，若缺乏后续对比数据，其参考价值有限。
+
+**建议**：如果您能调取该论文全文，确认其内部包含了我要求的诊断性能数据（准确率、灵敏度、特异度），且模型设计考虑了可解释性或基层适用性，则可以考虑纳入。但根据现有摘要信息，**暂不推荐**进入我的最终文献库。
+2026-05-06 18:58:49 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Deep Learning for the Classification of Lung Nodul': 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏
+2026-05-06 18:58:49 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Deep Learning for the Classification of Lung Nodules' 不满意: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“
+2026-05-06 18:58:49 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:58:49 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 18:58:49 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Deep Learning for the Classification of Lung Nodules' 不满意: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“
+2026-05-06 18:59:04 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "肺结节早期筛查",
+  "filter_requirements": "",
+  "rejection_reasons": "部分符合，但存在关键缺失",
+  "other_info": "论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类"
+}
+```
+2026-05-06 18:59:04 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "肺结节早期筛查", "filter_requirements": "", "rejection_reasons": "部分符合，但存在关键缺失", "other_info": "论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类"}
+2026-05-06 18:59:04 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:59:04 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+other_info: 撰写文献综述
+
+新提取的信息：
+research_direction: 肺结节早期筛查
+rejection_reasons: 部分符合，但存在关键缺失
+other_info: 论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类
+2026-05-06 18:59:04 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:59:13 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+rejection_reasons: 部分符合，但存在关键缺失
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=6条
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for ...
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+摘要: Deep learning, as a promising new area of machine learning, has attracted a rapidly increasing attention in the field of medical imaging. Compared to the conventional machine learning methods, deep learning requires no hand-tuned feature extractor, and has shown a superior performance in many visual...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏度、特异度等核心指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。
+   - **未涉及基层医院场景**：摘要未提及模型是否在基层医院或低资源环境下测试，无法判断其临床适配性。
+   - **可解释性不明**：摘要未讨论模型的可解释性，而纯黑箱模型不是我关注的重点。
+   - **年份偏早**：2016年的深度学习模型可能较为基础，对于当前综述而言，若缺乏后续对比数据，其参考价值有限。
+
+**建议**：如果您能调取该论文全文，确认其内部包含了我要求的诊断性能数据（准确率、灵敏度、特异度），且模型设计考虑了可解释性或基层适用性，则可以考虑纳入。但根据现有摘要信息，**暂不推荐*...
+2026-05-06 18:59:13 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Improved Focus on Hard Samples for Lung Nodule Detection
+年份: 2024
+筛选理由: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+摘要: Recently, lung nodule detection methods based on deep learning have shown excellent performance in the medical image processing field. Considering that only a few public lung datasets are available and lung nodules are more difficult to detect in CT images than in natural images, the existing method...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 18:59:19 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查”需求。
+   - **临床痛点贴合**：摘要中提到“肺结节比自然图像中的目标更难检测”，这恰恰是基层医院和低剂量CT筛查中常见的误诊/漏诊来源。聚焦“困难样本”意味着模型可能对早期、微小、不典型结节有更好的识别能力，这直接关系到早期（Ⅰ-Ⅱ期）病变的检出率。
+   - **前沿性**：2024年发表，代表了该领域的最新进展，适合作为综述中“近期方法”的代表。
+
+2. **潜在符合点（需确认全文）**：
+   - **诊断性能数据**：摘要虽未直接给出数字，但“聚焦困难样本”暗示作者可能提供了针对不同难度子集的灵敏度/特异度对比。我需要在全文确认其是否报告了**准确率、灵敏度、特异度**（尤其是针对早期结节的亚组分析）。
+   - **可解释性**：摘要未提及，但针对“困难样本”的改进方法（如注意力机制、难例挖掘）通常具有一定的可解释性。我需检查论文是否提供了可视化（如热力图）或错误分析。
+   - **基层场景适配性**：摘要提到“仅有少数公共肺数据集可用”，这可能暗示作者考虑了数据稀缺场景（类似基层医院数据不足的情况）。我需确认其是否在低剂量CT或不同设备来源的数据上进行了验证。
+
+**初步判断**：该论文的研究动机和方向与我的综述高度契合。如果全文能提供**针对早期结节的诊断性能数据**（如灵敏度≥90%且假阳性率可控），并包含**模型可解释性或在不同数据源上的泛化性分析**，则将是综述的重要文献。建议**标记为“待下载全文复审”**。
+2026-05-06 18:59:19 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Improved Focus on Hard Samples for Lung Nodule Det': 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查”需求。
+   - **临床痛点贴合**：摘要中提到“肺结节比自然图像中的目标更难检测”，这恰恰是基层医院和低剂量CT筛查中常见的误诊/漏诊来源。聚焦“困难样本”意味着模型可能对早期、微小、不典型结节
+2026-05-06 18:59:19 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Improved Focus on Hard Samples for Lung Nodule Detection' 感到满意: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查
+2026-05-06 18:59:19 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:59:19 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 18:59:19 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Improved Focus on Hard Samples for Lung Nodule Detection' 感到满意: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查
+2026-05-06 18:59:33 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "肺结节早期筛查",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配"
+}
+```
+2026-05-06 18:59:33 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "肺结节早期筛查", "filter_requirements": "", "rejection_reasons": "", "other_info": "对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配"}
+2026-05-06 18:59:33 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 18:59:33 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: AI在医学影像诊断中的应用，重点是乳腺癌和肺结节的早期筛查
+rejection_reasons: 部分符合，但存在关键缺失
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类
+
+新提取的信息：
+research_direction: 肺结节早期筛查
+other_info: 对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+2026-05-06 18:59:33 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 18:59:58 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查
+rejection_reasons: 部分符合，但存在关键缺失
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=8条
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for ...
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+摘要: Deep learning, as a promising new area of machine learning, has attracted a rapidly increasing attention in the field of medical imaging. Compared to the conventional machine learning methods, deep learning requires no hand-tuned feature extractor, and has shown a superior performance in many visual...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏度、特异度等核心指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。
+   - **未涉及基层医院场景**：摘要未提及模型是否在基层医院或低资源环境下测试，无法判断其临床适配性。
+   - **可解释性不明**：摘要未讨论模型的可解释性，而纯黑箱模型不是我关注的重点。
+   - **年份偏早**：2016年的深度学习模型可能较为基础，对于当前综述而言，若缺乏后续对比数据，其参考价值有限。
+
+**建议**：如果您能调取该论文全文，确认其内部包含了我要求的诊断性能数据（准确率、灵敏度、特异度），且模型设计考虑了可解释性或基层适用性，则可以考虑纳入。但根据现有摘要信息，**暂不推荐*...
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Improved Focus on Hard Samples for Lung Nodule Detection
+年份: 2024
+筛选理由: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+摘要: Recently, lung nodule detection methods based on deep learning have shown excellent performance in the medical image processing field. Considering that only a few public lung datasets are available and lung nodules are more difficult to detect in CT images than in natural images, the existing method...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查”需求。
+   - **临床痛点贴合**：摘要中提到“肺结节比自然图像中的目标更难检测”，这恰恰是基层医院和低剂量CT筛查中常见的误诊/漏诊来源。聚焦“困难样本”意味着模型可能对早期、微小、不典型结节有更好的识别能力，这直接关系到早期（Ⅰ-Ⅱ期）病变的检出率。
+   - **前沿性**：2024年发表，代表了该领域的最新进展，适合作为综述中“近期方法”的代表。
+
+2. **潜在符合点（需确认全文）**：
+   - **诊断性能数据**：摘要虽未直接给出数字，但“聚焦困难样本”暗示作者可能提供了针对不同难度子集的灵敏度/特异度对比。我需要在全文确认其是否报告了**准确率、灵敏度、特异度**（尤其是针对早期结节的亚组分析）。
+   - **可解释性**：摘要未提及，但针对“困难样本”的改进方法（如注意力机制、难例挖掘）通常具有一定的可解释性。我需检查论文是否提供了可视化（如热力图）或错误分析。...
+2026-05-06 18:59:58 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: 系统向你展示了一篇论文:
+标题: Using VGG16 Algorithms for classification of lung cancer in CT scans Image
+年份: 2023
+筛选理由: 应用VGG16算法对CT图像进行肺癌分类，明确提及肺结节早期检测的重要性，符合肺结节早期筛查及AI技术应用要求。
+摘要: Lung cancer is the leading reason behind cancer-related deaths within the world. Early detection of lung nodules is vital for increasing the survival rate of cancer patients. Traditionally, physicians should manually identify the world suspected of getting carcinoma. When developing these detection ...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度...
+2026-05-06 19:00:03 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。仅凭“应用VGG16算法”这一描述，无法判断其临床价值。
+
+2. **算法陈旧且缺乏创新性**
+   - VGG16是2014年提出的基础架构，到2023年已属非常成熟的基线模型。在综述中，除非该论文有重大的基层场景验证或与最新方法的系统对比，否则单纯使用VGG16进行分类的工作，学术贡献有限。
+   - 摘要提到“传统上医生需要手动识别”，但未说明该VGG16模型相比传统方法或更先进的CNN（如ResNet、EfficientNet）有何优势。
+
+3. **缺乏可解释性讨论**
+   摘要未提及任何关于模型可解释性的内容（如Grad-CAM可视化、注意力机制等）。VGG16本身是一个典型的“黑箱”模型，若论文未做任何可解释性改进或分析，则不符合我“避免纯黑箱模型”的要求。
+
+4. **基层场景适配性不明**
+   摘要未提及是否在低剂量CT、不同品牌设备或基层医院数据上进行验证。VGG16模型参数量较大（约1.38亿），在计算资源有限的基层场景中部署可行性存疑。
+
+**补充判断**：即使该论文在正文中报告了性能指标，使用单一VGG16架构且无基层验证的工作，对于综述中“AI模型的临床适配性”和“与传统诊断对比”这两个核心维度的支撑作用有限。建议**直接排除**。
+2026-05-06 19:00:03 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Using VGG16 Algorithms for classification of lung ': 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。仅凭“应用VGG16算法”这一描述，无法判断其临床价值。
+
+2. **算法陈旧且缺乏创新性**
+   - VGG16是2014年提出的基础架构，
+2026-05-06 19:00:03 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Using VGG16 Algorithms for classification of lung cancer in CT scans Image' 不满意: 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确
+2026-05-06 19:00:03 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:00:03 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:00:03 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Using VGG16 Algorithms for classification of lung cancer in CT scans Image' 不满意: 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确
+2026-05-06 19:00:23 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "",
+  "filter_requirements": "需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）",
+  "rejection_reasons": "不符合研究兴趣；摘要中未提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标）",
+  "other_info": ""
+}
+```
+2026-05-06 19:00:23 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "", "filter_requirements": "需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）", "rejection_reasons": "不符合研究兴趣；摘要中未提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标）", "other_info": ""}
+2026-05-06 19:00:23 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:00:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查
+rejection_reasons: 部分符合，但存在关键缺失
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+
+新提取的信息：
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）
+rejection_reasons: 不符合研究兴趣；摘要中未提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指...
+2026-05-06 19:00:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:00:46 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=10条
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for ...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+摘要: Deep learning, as a promising new area of machine learning, has attracted a rapidly increasing attention in the field of medical imaging. Compared to the conventional machine learning methods, deep learning requires no hand-tuned feature extractor, and has shown a superior performance in many visual...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏度、特异度等核心指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。
+   - **未涉及基层医院场景**：摘要未提及模型是否在基层医院或低资源环境下测试，无法判断其临床适配性。
+   - **可解释性不明**：摘要未讨论模型的可解释性，而纯黑箱模型不是我关注的重点。
+   - **年份偏早**：2016年的深度学习模型可能较为基础，对于当前综述而言，若缺乏后续对比数据，其参考价值有限。
+
+**建议**：如果您能调取该论文全文，确认其内部包含了我要求的诊断性能数据（准确率、灵敏度、特异度），且模型设计考虑了可解释性或基层适用性，则可以考虑纳入。但根据现有摘要信息，**暂不推荐*...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Improved Focus on Hard Samples for Lung Nodule Detection
+年份: 2024
+筛选理由: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+摘要: Recently, lung nodule detection methods based on deep learning have shown excellent performance in the medical image processing field. Considering that only a few public lung datasets are available and lung nodules are more difficult to detect in CT images than in natural images, the existing method...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查”需求。
+   - **临床痛点贴合**：摘要中提到“肺结节比自然图像中的目标更难检测”，这恰恰是基层医院和低剂量CT筛查中常见的误诊/漏诊来源。聚焦“困难样本”意味着模型可能对早期、微小、不典型结节有更好的识别能力，这直接关系到早期（Ⅰ-Ⅱ期）病变的检出率。
+   - **前沿性**：2024年发表，代表了该领域的最新进展，适合作为综述中“近期方法”的代表。
+
+2. **潜在符合点（需确认全文）**：
+   - **诊断性能数据**：摘要虽未直接给出数字，但“聚焦困难样本”暗示作者可能提供了针对不同难度子集的灵敏度/特异度对比。我需要在全文确认其是否报告了**准确率、灵敏度、特异度**（尤其是针对早期结节的亚组分析）。
+   - **可解释性**：摘要未提及，但针对“困难样本”的改进方法（如注意力机制、难例挖掘）通常具有一定的可解释性。我需检查论文是否提供了可视化（如热力图）或错误分析。...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: 系统向你展示了一篇论文:
+标题: Using VGG16 Algorithms for classification of lung cancer in CT scans Image
+年份: 2023
+筛选理由: 应用VGG16算法对CT图像进行肺癌分类，明确提及肺结节早期检测的重要性，符合肺结节早期筛查及AI技术应用要求。
+摘要: Lung cancer is the leading reason behind cancer-related deaths within the world. Early detection of lung nodules is vital for increasing the survival rate of cancer patients. Traditionally, physicians should manually identify the world suspected of getting carcinoma. When developing these detection ...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[8] role=assistant: 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。仅凭“应用VGG16算法”这一描述，无法判断其临床价值。
+
+2. **算法陈旧且缺乏创新性**
+   - VGG16是2014年提出的基础架构，到2023年已属非常成熟的基线模型。在综述中，除非该论文有重大的基层场景验证或与最新方法的系统对比，否则单纯使用VGG16进行分类的工作，学术贡献有限。
+   - 摘要提到“传统上医生需要手动识别”，但未说明该VGG16模型相比传统方法或更先进的CNN（如ResNet、EfficientNet）有何优势。
+
+3. **缺乏可解释性讨论**
+   摘要未提及任何关于模型可解释性的内容（如Grad-CAM可视化、注意力机制等）。VGG16本身是一个典型的“黑箱”模型，若论文未做任何可解释性改进或分析，则不符合我“避免纯黑箱模型”的要求。
+
+4. **基层场景适配性不明**
+   摘要未提及是否在低...
+2026-05-06 19:00:46 [DEBUG] auto_slr - [Simulator LLM] 输入[9] role=user: 系统向你展示了一篇论文:
+标题: Fine-tuned Transformer Models for Breast Cancer Detection and Classification
+年份: 2025
+筛选理由: 应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。
+摘要: Breast cancer is still the second top cause of cancer deaths worldwide and this emphasizes the importance of necessary steps for early detection. Traditional diagnostic methods, such as mammography, ultrasound, and thermography, which have limitations when it comes to catching subtle patterns and re...
+
+请判断这篇论文是否符合你的研究兴...
+2026-05-06 19:00:53 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对乳腺癌的检测与分类，摘要中提及了乳腺X线摄影、超声等影像模态，直接对应我综述中“乳腺癌早期筛查”的核心需求。
+
+2. **前沿性与临床痛点贴合**：
+   - 采用微调Transformer模型，属于2025年的前沿技术，适合作为综述中“近期前沿方法”的代表。
+   - 摘要明确指出传统诊断方法（乳腺X线、超声）“在捕捉细微模式和特征方面存在局限性”，这直接对应早期乳腺癌（如微小钙化、非对称致密）容易被漏诊的临床痛点。Transformer的自注意力机制理论上对全局上下文和细微异常更敏感，这与“提高早期病变检出率”的目标一致。
+
+3. **可能包含关键数据**：
+   - 摘要虽未直接给出性能数字，但“微调Transformer”和“与传统方法对比”的表述，暗示论文很可能提供了**准确率、灵敏度、特异度**等量化指标，并与传统诊断方法或基线CNN模型进行了对比。这完全符合我“偏爱与传统人工诊断对比”的学术偏好。
+   - 我需要确认全文是否报告了针对**早期（Ⅰ-Ⅱ期）乳腺癌**的亚组分析数据（如早期病变的灵敏度）。
+
+4. **潜在的可解释性**：Transformer模型通常可以借助注意力权重图（Attention Map）提供一定的可解释性，显示模型关注的图像区域。我需在全文确认作者是否提供了此类可视化分析。
+
+**初步判断**：该论文的研究方向、技术前沿性和临床针对性都非常契合我的综述。如果能从全文中提取到以下信息，将作为综述的重要文献：
+- 在独立测试集或不同设备来源数据上的诊断性能（灵敏度、特异度、AUC）
+- 与传统放射科医生诊断或基线CNN模型的对比结果
+- 针对早期乳腺癌的亚组分析数据
+- 模型可解释性分析（如注意力热力图）
+
+建议**标记为“优先下载全文复审”**。
+2026-05-06 19:00:53 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Fine-tuned Transformer Models for Breast Cancer De': 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对乳腺癌的检测与分类，摘要中提及了乳腺X线摄影、超声等影像模态，直接对应我综述中“乳腺癌早期筛查”的核心需求。
+
+2. **前沿性与临床痛点贴合**：
+   - 采用微调Transformer模型，属于2025年的前沿技术，适合作为综述中“近期前沿方法”的代表。
+   - 摘要明确
+2026-05-06 19:00:53 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Fine-tuned Transformer Models for Breast Cancer Detection and Classification' 感到满意: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对乳腺癌的检测与分类，摘要中提及了乳腺X线摄影、超声等影像模态，直接对应我综述中“
+2026-05-06 19:00:53 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:00:53 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:00:53 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Fine-tuned Transformer Models for Breast Cancer Detection and Classification' 感到满意: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对乳腺癌的检测与分类，摘要中提及了乳腺X线摄影、超声等影像模态，直接对应我综述中“
+2026-05-06 19:01:18 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "综述作者",
+  "user_preference": "倾向于纳入符合研究兴趣的论文",
+  "research_direction": "乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）",
+  "filter_requirements": "病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态",
+  "rejection_reasons": "",
+  "other_info": "正在撰写综述"
+}
+```
+2026-05-06 19:01:18 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "综述作者", "user_preference": "倾向于纳入符合研究兴趣的论文", "research_direction": "乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）", "filter_requirements": "病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态", "rejection_reasons": "", "other_info": "正在撰写综述"}
+2026-05-06 19:01:18 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:01:18 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的用户信息记录]和[新提取的用户相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+(none)
+
+新提取的信息：
+user_identity: 综述作者
+user_preference: 倾向于纳入符合研究兴趣的论文
+2026-05-06 19:01:18 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:01:24 [DEBUG] auto_slr - [System LLM] 响应: user_identity: 综述作者
+user_preference: 倾向于纳入符合研究兴趣的论文
+2026-05-06 19:01:24 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:01:24 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+
+新提取的信息：
+research_direct...
+2026-05-06 19:01:24 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:01:44 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=12条
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: 你好，我想做一篇关于AI在医学影像诊断中的应用文献综述，重点是乳腺癌和肺结节的早期筛查。请帮我筛选相关论文。
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: 您好！作为您的学术助手，我已经根据您的研究方向初步筛选了5篇样例论文。请您查看以下论文的详细信息：
+
+**[论文 1]**
+*   **标题**: Deep Learning for the Classification of Lung Nodules
+*   **年份**: 2016
+*   **作者**: He Yang, Hengyong Yu, Ge Wang
+*   **筛选理由**: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+
+**[论文 2]**
+*   **标题**: Improved Focus on Hard Samples for Lung Nodule Detection
+*   **年份**: 2024
+*   **作者**: Yujiang Chen, Mei Xie
+*   **筛选理由**: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+
+**[论文 3]**
+*   **标题**: Using VGG16 Algorithms for ...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: 系统向你展示了一篇论文:
+标题: Deep Learning for the Classification of Lung Nodules
+年份: 2016
+筛选理由: 研究深度卷积神经网络在胸部CT图像中肺结节分类的应用，直接符合肺结节早期筛查及AI技术应用的要求。
+摘要: Deep learning, as a promising new area of machine learning, has attracted a rapidly increasing attention in the field of medical imaging. Compared to the conventional machine learning methods, deep learning requires no hand-tuned feature extractor, and has shown a superior performance in many visual...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: 这篇论文**部分符合，但存在关键缺失**，我的态度是**暂不采用**。
+
+**理由如下：**
+
+1. **符合点**：研究主题是深度学习用于肺结节分类，直接对应我的“肺结节早期筛查”需求；摘要中提到“无需手工特征提取”这一深度学习优势，且论文年份较早（2016），属于该领域的经典工作，有引用价值。
+
+2. **不符合点（关键）**：
+   - **缺乏具体诊断性能数据**：摘要中未提及准确率、灵敏度、特异度等核心指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。
+   - **未涉及基层医院场景**：摘要未提及模型是否在基层医院或低资源环境下测试，无法判断其临床适配性。
+   - **可解释性不明**：摘要未讨论模型的可解释性，而纯黑箱模型不是我关注的重点。
+   - **年份偏早**：2016年的深度学习模型可能较为基础，对于当前综述而言，若缺乏后续对比数据，其参考价值有限。
+
+**建议**：如果您能调取该论文全文，确认其内部包含了我要求的诊断性能数据（准确率、灵敏度、特异度），且模型设计考虑了可解释性或基层适用性，则可以考虑纳入。但根据现有摘要信息，**暂不推荐*...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: 系统向你展示了一篇论文:
+标题: Improved Focus on Hard Samples for Lung Nodule Detection
+年份: 2024
+筛选理由: 研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。
+摘要: Recently, lung nodule detection methods based on deep learning have shown excellent performance in the medical image processing field. Considering that only a few public lung datasets are available and lung nodules are more difficult to detect in CT images than in natural images, the existing method...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度和理由。
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: 这篇论文**符合我的核心研究方向，我倾向于纳入**。
+
+**理由如下：**
+
+1. **高度符合点**：
+   - **病种与任务匹配**：明确针对CT图像中的肺结节检测，直接对应我的“肺结节早期筛查”需求。
+   - **临床痛点贴合**：摘要中提到“肺结节比自然图像中的目标更难检测”，这恰恰是基层医院和低剂量CT筛查中常见的误诊/漏诊来源。聚焦“困难样本”意味着模型可能对早期、微小、不典型结节有更好的识别能力，这直接关系到早期（Ⅰ-Ⅱ期）病变的检出率。
+   - **前沿性**：2024年发表，代表了该领域的最新进展，适合作为综述中“近期方法”的代表。
+
+2. **潜在符合点（需确认全文）**：
+   - **诊断性能数据**：摘要虽未直接给出数字，但“聚焦困难样本”暗示作者可能提供了针对不同难度子集的灵敏度/特异度对比。我需要在全文确认其是否报告了**准确率、灵敏度、特异度**（尤其是针对早期结节的亚组分析）。
+   - **可解释性**：摘要未提及，但针对“困难样本”的改进方法（如注意力机制、难例挖掘）通常具有一定的可解释性。我需检查论文是否提供了可视化（如热力图）或错误分析。...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: 系统向你展示了一篇论文:
+标题: Using VGG16 Algorithms for classification of lung cancer in CT scans Image
+年份: 2023
+筛选理由: 应用VGG16算法对CT图像进行肺癌分类，明确提及肺结节早期检测的重要性，符合肺结节早期筛查及AI技术应用要求。
+摘要: Lung cancer is the leading reason behind cancer-related deaths within the world. Early detection of lung nodules is vital for increasing the survival rate of cancer patients. Traditionally, physicians should manually identify the world suspected of getting carcinoma. When developing these detection ...
+
+请判断这篇论文是否符合你的研究兴趣，并简要表达你的态度...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[8] role=assistant: 这篇论文**不符合我的研究兴趣，我倾向于排除**。
+
+**理由如下：**
+
+1. **关键缺失：未提供具体诊断性能数据**
+   摘要中完全没有提及准确率、灵敏度、特异度、AUC等任何量化指标。我明确要求排除未提供具体诊断准确率、灵敏度和特异度数据的论文。仅凭“应用VGG16算法”这一描述，无法判断其临床价值。
+
+2. **算法陈旧且缺乏创新性**
+   - VGG16是2014年提出的基础架构，到2023年已属非常成熟的基线模型。在综述中，除非该论文有重大的基层场景验证或与最新方法的系统对比，否则单纯使用VGG16进行分类的工作，学术贡献有限。
+   - 摘要提到“传统上医生需要手动识别”，但未说明该VGG16模型相比传统方法或更先进的CNN（如ResNet、EfficientNet）有何优势。
+
+3. **缺乏可解释性讨论**
+   摘要未提及任何关于模型可解释性的内容（如Grad-CAM可视化、注意力机制等）。VGG16本身是一个典型的“黑箱”模型，若论文未做任何可解释性改进或分析，则不符合我“避免纯黑箱模型”的要求。
+
+4. **基层场景适配性不明**
+   摘要未提及是否在低...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[9] role=user: 系统向你展示了一篇论文:
+标题: Fine-tuned Transformer Models for Breast Cancer Detection and Classification
+年份: 2025
+筛选理由: 应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。
+摘要: Breast cancer is still the second top cause of cancer deaths worldwide and this emphasizes the importance of necessary steps for early detection. Traditional diagnostic methods, such as mammography, ultrasound, and thermography, which have limitations when it comes to catching subtle patterns and re...
+
+请判断这篇论文是否符合你的研究兴...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[10] role=assistant: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对乳腺癌的检测与分类，摘要中提及了乳腺X线摄影、超声等影像模态，直接对应我综述中“乳腺癌早期筛查”的核心需求。
+
+2. **前沿性与临床痛点贴合**：
+   - 采用微调Transformer模型，属于2025年的前沿技术，适合作为综述中“近期前沿方法”的代表。
+   - 摘要明确指出传统诊断方法（乳腺X线、超声）“在捕捉细微模式和特征方面存在局限性”，这直接对应早期乳腺癌（如微小钙化、非对称致密）容易被漏诊的临床痛点。Transformer的自注意力机制理论上对全局上下文和细微异常更敏感，这与“提高早期病变检出率”的目标一致。
+
+3. **可能包含关键数据**：
+   - 摘要虽未直接给出性能数字，但“微调Transformer”和“与传统方法对比”的表述，暗示论文很可能提供了**准确率、灵敏度、特异度**等量化指标，并与传统诊断方法或基线CNN模型进行了对比。这完全符合我“偏爱与传统人工诊断对比”的学术偏好。
+   - 我需要确认全文是否报告了针对**早期（Ⅰ-Ⅱ期...
+2026-05-06 19:01:44 [DEBUG] auto_slr - [Simulator LLM] 输入[11] role=user: 系统向你展示了一篇论文:
+标题: Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model
+年份: 2020
+筛选理由: 开发深度学习模型用于数字乳腺断层合成（DBT）中肿块和结构扭曲的检测，直接属于乳腺癌早期筛查的AI应用研究，且提供了大规模数据集。
+摘要: Breast cancer screening is one of the most common radiological tasks with over 39 million exams performed each year. While breast cancer screening has been one of the most studied medical imaging applications of artificial intelligence, the d...
+2026-05-06 19:01:51 [DEBUG] auto_slr - [Simulator LLM] 响应: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测，这两者都是乳腺癌早期筛查中的关键征象，直接对应综述核心需求。
+
+2. **临床适配性极强**：
+   - **大规模真实数据**：提供了包含5,060名患者的公开数据集，且数据来自真实临床筛查场景。这比小规模或私有数据集更有说服力，也暗示模型是在接近真实临床分布的样本上训练的。
+   - **DBT技术的临床价值**：DBT相比传统乳腺X线摄影在致密型乳腺中检出率更高，该论文聚焦DBT，说明作者关注了临床实际难题（致密乳腺中的早期病变漏诊）。
+
+3. **可能包含关键性能数据与基层适配性分析**：
+   - 摘要虽未直接给出数字，但作为2020年发表于顶级期刊（推测为*Medical Image Analysis*或*Radiology*类）的工作，通常提供了**灵敏度和假阳性率/特异度**等核心指标。
+   - 公开数据集意味着不同机构、不同设备来源的数据可能被纳入，这为评估模型在多样化场景（包括基层医院可能使用的不同品牌DBT设备）下的泛化性提供了基础。我需确认论文是否进行了多中心或不同设备子集的亚组分析。
+
+4. **可解释性潜力**：肿块和结构扭曲是形态学特征明确的病灶，深度学习模型通常可以通过热力图（如Grad-CAM）定位病灶区域。我需在全文确认作者是否提供了可视化结果以验证模型的决策依据。
+
+**初步判断**：该论文在数据集规模、临床任务针对性、公开可复现性方面均表现突出，非常适合作为综述中“AI在乳腺癌筛查中的代表性应用”的文献。如果能从全文中提取到以下信息，将作为综述的核心参考文献：
+- 在独立测试集上的灵敏度（尤其是针对早期、微小病变的亚组分析）
+- 与传统放射科医生诊断的对比结果（或人机协作的增益分析）
+- 模型在不同乳腺密度、不同设备来源数据上的泛化性能
+- 模型可解释性分析
+
+建议**标记为“优先下载全文复审”**。
+2026-05-06 19:01:51 [INFO] auto_slr - [User(Simulated)] 论文反馈 'Detection of masses and architectural distortions ': 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测，这两者都是乳腺癌早期筛查中的关键征象，直接对应综述核心需求。
+
+2. **临床适配性极强**：
+   - **大规模真实数据**：提供了包含5,060名患者的公开数据集，且数据来自真实临床筛查场景。这比小规模或私有数据集更有说
+2026-05-06 19:01:51 [INFO] auto_slr - [Assistant] extract_and_record 输入: 用户对论文 'Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model' 感到满意: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测，这两者都是乳腺癌早期筛查中
+2026-05-06 19:01:51 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:01:51 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:01:51 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户对论文 'Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model' 感到满意: 这篇论文**高度符合我的研究兴趣，我倾向于纳入**。
+
+**理由如下：**
+
+1. **病种与任务高度匹配**：明确针对数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测，这两者都是乳腺癌早期筛查中
+2026-05-06 19:02:09 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "对论文满意并倾向纳入，理由：病种与任务高度匹配（针对DBT图像中肿块和结构扭曲检测，属于乳腺癌早期筛查）"
+}
+```
+2026-05-06 19:02:09 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测", "filter_requirements": "", "rejection_reasons": "", "other_info": "对论文满意并倾向纳入，理由：病种与任务高度匹配（针对DBT图像中肿块和结构扭曲检测，属于乳腺癌早期筛查）"}
+2026-05-06 19:02:09 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:02:09 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息整合助手。以下是[已有的研究任务记录]和[新提取的研究任务相关信息]。
+请将两者合并，去除重复，并解决矛盾（以最新信息为准）。输出完整的整合版本。
+只输出整合后的文本，不要输出其他内容。
+
+已有记录：
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples fo...
+2026-05-06 19:02:09 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:02:35 [DEBUG] auto_slr - [System LLM] 响应: research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）；数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配；对论文满意并倾向纳入，理由：病种与任务高度匹配（针对DBT图像中肿块和结构扭曲检测，属于乳腺癌早期筛查）
+2026-05-06 19:02:35 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=对论文进行初步筛选
+2026-05-06 19:02:35 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:02:35 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个助手，需要为执行者提供与当前任务相关的背景信息。
+
+当前用户信息：
+user_identity: 综述作者
+user_preference: 倾向于纳入符合研究兴趣的论文
+
+当前研究任务：
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）；数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus...
+2026-05-06 19:02:35 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:02:52 [DEBUG] auto_slr - [System LLM] 响应: 研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+2026-05-06 19:02:52 [INFO] auto_slr - [Assistant] provide_context 输出: 研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+2026-05-06 19:02:52 [INFO] auto_slr - [Executor] screen_papers_sample 输入: assistant_context=研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文
+2026-05-06 19:02:52 [INFO] auto_slr - 初步筛选: 共 96 篇, 未筛选 88 篇
+2026-05-06 19:02:52 [INFO] auto_slr - 筛选第 1 批, 共 10 篇
+2026-05-06 19:02:52 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:02:52 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:02:52 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: Reliable Breast Cancer Molecular Subtype Prediction based on uncertainty-aware Bayesian Deep Learning by Mammography
+年份: 2024
+作者: Mohaddeseh Chegini, Ali Mahloojifar
+摘要: Breast cancer is a heterogeneous disease with ...
+2026-05-06 19:03:25 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据（如准确率、AUC等），不符合筛选要求1。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "论文主要关注图像合成以解决数据稀缺问题，非影像诊断任务，且未提供诊断性能数据，不符合筛选要求1和4。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "影像模态为组织病理学图像，不符合要求2（需乳腺X线摄影、超声等），且未提供具体诊断性能数据。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "未明确针对肺结节或乳腺癌，且未提供具体诊断性能数据，不符合筛选要求1和4。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "该论文为综述文章，不提供具体实验的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "该论文为综述文章，不提供具体实验的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  }
+]
+```
+2026-05-06 19:03:25 [INFO] auto_slr - 第 1 批筛选完成: included=0, excluded=10, not_sure=0
+2026-05-06 19:03:25 [INFO] auto_slr - 筛选第 2 批, 共 10 篇
+2026-05-06 19:03:25 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:03:25 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:03:25 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: Artificial intelligence technology in oncology: a new technological paradigm
+年份: 2019
+作者: Mario Coccia
+摘要: Artificial Intelligence (AI) technology is based on theory and development of computer systems able to perfor...
+2026-05-06 19:04:02 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "该论文为综述性文章，且摘要中未提供任何具体的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "摘要未提及针对肺结节或乳腺癌的具体应用，且未提供具体的诊断性能数据，不符合筛选要求1和4。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据，且未聚焦于用户指定的病种与任务，不符合筛选要求1和4。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "该论文基于组织病理学图像而非乳腺X线摄影、超声或DBT，不符合筛选要求2；且摘要未提供具体诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "该论文影像模态为MRI，任务为预测病理完全缓解而非检测与分类，不符合筛选要求2；且未提供具体诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "该论文针对前哨腋窝淋巴结的病理图像，不符合用户要求的乳腺X线摄影、超声或DBT模态，不符合筛选要求2；且未提供具体诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "该论文主要探讨损失函数对泛化能力的影响，偏向方法学研究，摘要未提供具体的临床诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "该论文任务为图像去噪和剂量减少，而非乳腺癌的检测与分类，不符合筛选要求2；且未提供诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "该论文主要提出一种解决数据不平衡的采样算法，摘要未提供具体的诊断性能量化指标（如灵敏度、特异度等），不符合筛选要求1。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "该论文提出一种通用的医学图像分割网络，未明确针对肺结节或乳腺癌，且未提供具体诊断性能数据，不符合筛选要求1和4。"
+  }
+]
+```
+2026-05-06 19:04:02 [INFO] auto_slr - 第 2 批筛选完成: included=0, excluded=20, not_sure=0
+2026-05-06 19:04:03 [INFO] auto_slr - 筛选第 3 批, 共 10 篇
+2026-05-06 19:04:03 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:04:03 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:04:03 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: CT-SGAN: Computed Tomography Synthesis GAN
+年份: 2021
+作者: Ahmad Pesaranghader, Yiping Wang, Mohammad Havaei
+摘要: Diversity in data is critical for the successful training of deep learning models. Leveraged by a recurren...
+2026-05-06 19:04:36 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "论文关注CT图像生成与数据增强，未涉及肺结节或乳腺癌的诊断任务，且未提供具体诊断性能数据。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "论文研究肺结节生成以提升肺分割模型的鲁棒性，任务为图像分割而非肺结节早期筛查诊断，且未提供诊断性能数据。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "论文关注持续学习以适应采集特征变化，属于通用机器学习方法论，未涉及特定病种诊断，且无具体诊断性能数据。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "论文研究解决采样偏差的损失函数，属于通用训练技巧，未涉及特定病种诊断，且无具体诊断性能数据。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "影像模态为乳腺癌组织病理学图像，不符合用户要求的乳腺X线摄影、超声及DBT模态，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "论文关注可解释性医学图像分类方法，未明确提及肺结节或乳腺癌病种，且未提供具体诊断性能数据。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "虽然涉及乳腺癌筛查分类任务，但摘要中未提供任何具体的诊断性能数据（如AUC、准确率等），不符合筛选要求1。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "虽然涉及乳腺癌检测与分类且模态包含乳腺X线摄影，但摘要中未提供任何具体的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "影像模态为热图像，不符合用户要求的乳腺X线摄影、超声及DBT模态，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "影像模态为组织病理学图像，不符合用户要求的乳腺X线摄影、超声及DBT模态，且摘要未提供具体诊断性能数据。"
+  }
+]
+```
+2026-05-06 19:04:36 [INFO] auto_slr - 第 3 批筛选完成: included=0, excluded=30, not_sure=0
+2026-05-06 19:04:36 [INFO] auto_slr - 筛选第 4 批, 共 10 篇
+2026-05-06 19:04:36 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:04:36 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:04:36 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: D-Cube: Exploiting Hyper-Features of Diffusion Model for Robust Medical Classification
+年份: 2024
+作者: Minhee Jang, Juheon Son, Thanaporn Viriyasaranon, Junho Kim, Jang-Hwan Choi
+摘要: The integration of deep learning tec...
+2026-05-06 19:05:16 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据（如准确率、AUC等），不符合筛选要求1。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "影像模态为深紫外荧光图像（DUV），不符合用户要求的乳腺X线摄影、超声或DBT模态；且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据（如准确率、灵敏度等），不符合筛选要求1。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "摘要未说明使用的影像模态，且未提供具体的诊断性能数据，不符合筛选要求1和2。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "该论文主要为模型代码仓库的发布，摘要未提供具体的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "研究方向为CT等3D图像的软分割方法，与肺结节筛查或乳腺癌检测分类不相关，且无诊断性能数据。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "虽然符合乳腺癌超声检测与分类的任务，但摘要未提供具体的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "影像模态为组织病理学图像，不符合用户要求的乳腺X线摄影、超声或DBT模态；且未提供具体诊断性能数据。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "主要关注多中心乳腺X线摄影数据的域泛化问题，摘要未提供具体的诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "研究任务为肺癌分类而非用户关注的肺结节早期筛查，且摘要未提供具体的诊断性能数据，不符合筛选要求1。"
+  }
+]
+```
+2026-05-06 19:05:16 [INFO] auto_slr - 第 4 批筛选完成: included=0, excluded=40, not_sure=0
+2026-05-06 19:05:16 [INFO] auto_slr - 筛选第 5 批, 共 10 篇
+2026-05-06 19:05:16 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:05:16 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:05:16 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: Diversified and Personalized Multi-rater Medical Image Segmentation
+年份: 2024
+作者: Yicheng Wu, Xiangde Luo, Zhe Xu, Xiaoqing Guo, Lie Ju, Zongyuan Ge, Wenjun Liao, Jianfei Cai
+摘要: Annotation ambiguity due to inherent d...
+2026-05-06 19:05:54 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "研究方向为多标注者医学图像分割，非用户关注的肺结节或乳腺癌检测与分类，且摘要无具体诊断性能数据。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据（如准确率、AUC等），不符合筛选要求1。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "影像模态为热成像，不符合用户要求的乳腺X线摄影、超声及DBT等模态；且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "研究方向为CT图像中的肿瘤合成（数据增强），非用户关注的诊断任务，且无具体诊断性能数据。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "任务为无监督图像分割而非乳腺癌检测与分类，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "影像模态为组织病理学图像，非用户关注的医学影像模态（X线、超声、DBT），且无具体诊断性能数据。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "研究方向为通用医学图像增强与分割，非用户关注的特定疾病诊断任务，且无具体诊断性能数据。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "虽然病种（乳腺癌）和模态（乳腺X线摄影）符合要求，但摘要未提供具体诊断性能数据，不符合筛选要求1。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "任务为乳腺密度评估而非乳腺癌检测与分类，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "未明确说明影像模态是否为用户要求的乳腺X线摄影或超声等，且摘要未提供具体诊断性能数据。"
+  }
+]
+```
+2026-05-06 19:05:54 [INFO] auto_slr - 第 5 批筛选完成: included=0, excluded=50, not_sure=0
+2026-05-06 19:05:54 [INFO] auto_slr - 筛选第 6 批, 共 10 篇
+2026-05-06 19:05:54 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:05:54 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:05:54 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: RCA-IUnet: A residual cross-spatial attention guided inception U-Net model for tumor segmentation in breast ultrasound imaging
+年份: 2021
+作者: Narinder Singh Punn, Sonali Agarwal
+摘要: The advancements in deep learning te...
+2026-05-06 19:06:26 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据（如准确率、AUC等），且研究任务为肿瘤分割而非用户要求的检测与分类。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据，不符合必须提供量化指标的筛选要求。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "摘要主要关注生成式扩散增强解决类别不平衡问题，未提供具体的诊断性能数据，不符合筛选要求。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "论文关注图像分割的不确定性建模，为通用方法，非特定病种诊断，且未提供诊断性能数据。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "论文关注测试时增强方法，为通用技术，非特定病种诊断，且未提供诊断性能数据。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "论文关注图像合成而非诊断任务，且未提供诊断性能数据，不符合研究方向。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "论文关注图像标准化预处理，非诊断任务，且未提供诊断性能数据，不符合研究方向。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "摘要未提供具体的诊断性能数据，且研究任务为分割而非用户要求的检测与分类。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "虽然研究方向涉及肺结节分类，但摘要未提供具体的诊断性能数据，不符合必须提供量化指标的筛选要求。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "论文关注可解释AI方法，非诊断任务，且未提供诊断性能数据，不符合研究方向。"
+  }
+]
+```
+2026-05-06 19:06:26 [INFO] auto_slr - 第 6 批筛选完成: included=0, excluded=60, not_sure=0
+2026-05-06 19:06:26 [INFO] auto_slr - 筛选第 7 批, 共 10 篇
+2026-05-06 19:06:26 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:06:26 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:06:26 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: Multi-modal Learning with Missing Modality in Predicting Axillary Lymph Node Metastasis
+年份: 2024
+作者: Shichuan Zhang, Sunyi Zheng, Zhongyi Shui, Honglin Li, Lin Yang
+摘要: Multi-modal Learning has attracted widespread a...
+2026-05-06 19:07:01 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "影像模态为病理全切片图像(WSI)，不符合乳腺X线摄影、超声或DBT的要求；且摘要未提供具体的诊断性能数据。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "虽然病种为乳腺癌且模态为超声，但摘要未提供具体的诊断性能量化指标（如准确率、AUC等），不符合筛选要求1。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "研究方向为病理学基础模型训练，与AI在肺结节或乳腺X线/超声/DBT影像诊断中的应用无关。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "未提及具体病种（肺结节或乳腺癌）和目标影像模态，与研究方向不匹配，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "研究方向为通用医学图像分割，与肺结节或乳腺癌检测分类无关，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "虽然涉及乳腺X线摄影中的乳腺癌检测，但摘要未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "研究方向为视觉语言模型(VLP)，非乳腺癌检测与分类任务，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "摘要未明确说明所使用的影像模态，且未提供具体的诊断性能量化指标，不符合筛选要求1和2。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "研究任务为全景分割而非检测与分类，且摘要未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "虽然涉及乳腺超声诊断，但摘要仅提及提高准确性，未提供具体的诊断性能量化指标，不符合筛选要求1。"
+  }
+]
+```
+2026-05-06 19:07:01 [INFO] auto_slr - 第 7 批筛选完成: included=0, excluded=70, not_sure=0
+2026-05-06 19:07:01 [INFO] auto_slr - 筛选第 8 批, 共 10 篇
+2026-05-06 19:07:01 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:07:01 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:07:01 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: THIR: Topological Histopathological Image Retrieval
+年份: 2025
+作者: Zahra Tabatabaei, Jon Sporring
+摘要: According to the World Health Organization, breast cancer claimed the lives of approximately 685,000 women in 2020. ...
+2026-05-06 19:07:39 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "模态为组织病理学图像，不符合乳腺X线摄影、超声或DBT的模态要求；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "模态为组织病理学图像，任务为辅助标注而非诊断检测与分类；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "虽然病种、任务和模态（乳腺癌检测、乳腺X线摄影）符合要求，但摘要未提供具体诊断性能量化指标，不符合筛选要求1。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "模态为组织病理学图像，不符合乳腺X线摄影、超声或DBT的模态要求；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "研究方向为CT图像中的通用病灶检测，不符合肺结节或乳腺癌等特定病种及模态要求；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "研究方向为模型可解释性，非特定病种诊断；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "任务为微钙化分割而非乳腺癌检测与分类；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "研究方向为通用的小样本学习，非特定病种诊断；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "模态为组织病理学图像，任务为HER2评分，不符合影像模态和检测分类任务要求；且摘要未提供具体诊断性能量化指标。"
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "研究方向为通用放射学图像病灶检测，非特定病种（肺结节或乳腺癌）；且摘要未提供具体诊断性能量化指标。"
+  }
+]
+```
+2026-05-06 19:07:39 [INFO] auto_slr - 第 8 批筛选完成: included=0, excluded=80, not_sure=0
+2026-05-06 19:07:39 [INFO] auto_slr - 筛选第 9 批, 共 8 篇
+2026-05-06 19:07:39 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:07:39 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献筛选专家。你将收到：
+1. 用户的研究需求和偏好
+2. 多篇论文的元数据和摘要
+
+请对每篇论文判断是否应纳入文献综述，输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "判断理由"
+  }},
+  ...
+]
+
+判断标准：
+- include: 论文与研究方向高度相关，且满足用户的所有筛选要求
+- exclude: 论文明显不相关，或明显不符合筛选要求
+- not_sure: 仅凭摘要无法确定是否应纳入
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:07:39 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 用户需求和偏好:
+研究方向：AI在医学影像诊断中的应用（肺结节早期筛查；乳腺癌检测与分类[基于乳腺X线摄影、超声及微调Transformer]；DBT图像中肿块和结构扭曲检测）。
+
+筛选要求：
+1. 必须提供具体诊断性能数据（准确率、灵敏度、特异度、AUC等量化指标），缺少则拒绝。
+2. 乳腺癌相关论文：病种须为乳腺癌，任务须为检测与分类，且涉及乳腺X线摄影、超声等影像模态。
+3. 倾向纳入病种与任务高度匹配的论文（如针对DBT图像中肿块和结构扭曲检测的乳腺癌早期筛查研究）。
+4. 拒绝不符合上述研究兴趣的论文。
+
+论文列表:
+--- 论文 1 ---
+标题: Conditional Deep Convolutional Neural Networks for Improving the Automated Screening of Histopathological Images
+年份: 2021
+作者: Gianluca Gerard, Marco Piastra
+摘要: Semantic segmentation of breast cancer metastases in hi...
+2026-05-06 19:08:13 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "影像模态为组织病理学切片，不符合要求的乳腺X线摄影、超声或DBT模态；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "主要研究风格迁移作为数据增强的方法，而非直接的检测与分类任务；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "未明确说明所使用的影像模态是否为乳腺X线摄影、超声或DBT；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "任务为图像分割，而非用户要求的检测与分类；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "影像模态为全切片病理图像（WSI），不符合要求的影像模态；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "影像模态为病理学图像（H&E和IHC），不符合要求的影像模态；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "未明确提及具体的病种（如乳腺癌或肺结节）和特定的影像模态；且摘要中未提供具体的诊断性能量化指标。"
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "该论文为综述文章，非原创性研究，不提供具体的模型诊断性能数据；且摘要中未包含符合要求的量化指标。"
+  }
+]
+```
+2026-05-06 19:08:13 [INFO] auto_slr - 第 9 批筛选完成: included=0, excluded=88, not_sure=0
+2026-05-06 19:08:13 [INFO] auto_slr - [Executor] screen_papers_sample 输出: included=0, excluded=88, not_sure=0
+2026-05-06 19:08:13 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:08:13 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个学术文献综述打分标准设计助手。请根据以下信息生成一套系统的、多维度的论文打分标准。
+
+用户信息：
+user_identity: 综述作者
+user_preference: 倾向于纳入符合研究兴趣的论文
+
+研究任务要求：
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）；数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文...
+2026-05-06 19:08:13 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 请执行上述请求。
+2026-05-06 19:09:00 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "评估论文所使用的影像模态（CT、乳腺X线摄影、超声、DBT等）及AI技术（微调Transformer、困难样本聚焦等深度学习方法）是否符合研究偏好。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "模态与技术均完全不相关",
+        "2": "模态或技术偏离重点关注范围，且技术手段陈旧",
+        "3": "模态或技术仅有一项符合（如使用了目标模态但方法非深度学习，或用了Transformer但模态非目标影像）",
+        "4": "使用目标模态但技术较常规，或使用前沿技术但模态非首选目标",
+        "5": "精准使用目标影像模态（CT/DBT/超声/乳腺X线）并结合前沿AI技术（微调Transformer/困难样本聚焦等）"
+      }
+    },
+    {
+      "name": "诊断性能数据的完整性",
+      "description": "评估论文是否提供了具体且关键的诊断性能量化指标（如准确率、灵敏度、特异度、AUC等），这是硬性筛选要求。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "未提供任何具体诊断性能数据，仅有定性描述（符合直接拒绝条件）",
+        "2": "量化指标严重不足，仅提供单一非核心指标，无法评估实际诊断效能",
+        "3": "仅提供基础指标（如准确率），缺乏临床关键指标（灵敏度/特异度/AUC）",
+        "4": "提供了主要量化指标（如AUC和灵敏度），但缺少部分次要指标",
+        "5": "完整提供核心量化指标（准确率、灵敏度、特异度、AUC等），数据详实且具有强说服力"
+      }
+    },
+    {
+      "name": "研究前沿性与数据支撑",
+      "description": "评估论文是否属于前沿研究（如2024年最新进展）、是否聚焦临床难点，以及是否提供大规模数据集验证。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "研究陈旧，无前沿性，数据支撑极弱",
+        "2": "研究较为常规，数据集规模小，缺乏参考价值",
+        "3": "常规研究，数据集规模一般，无明显创新点或临床难点聚焦",
+        "4": "研究具有一定前沿性，数据集规模中等，实验设计合理",
+        "5": "属于前沿研究，聚焦临床难点（如困难样本），并提供大规模数据集（如数千例公开数据集）验证"
+      }
+    },
+    {
+      "name": "综述纳入价值",
+      "description": "评估论文对正在撰写的文献综述的贡献度，是否具有代表性并能强有力支撑综述论点。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "无纳入价值，偏离综述主题",
+        "2": "与综述关联较弱，纳入价值低",
+        "3": "可作为边缘补充文献纳入，但非必要",
+        "4": "适合纳入综述，能较好地支撑特定子章节或技术路线分析",
+        "5": "高度契合综述框架，作为核心参考文献能强有力支撑论点，具有极高代表性"
+      }
+    }
+  ],
+  "total_max": 25
+}
+```
+2026-05-06 19:09:00 [INFO] auto_slr - 打分标准已生成并锁定: [{'name': '研究主题与病种任务的匹配度', 'description': '评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。', 'scale': '1-5', 'criteria': {'1': '完全不符合研究兴趣，病种与任务均不相关', '2': '仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点', '3': '部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）', '4': '基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近', '5': '完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）'}}, {'name': '影像模态与技术的契合度', 'description': '评估论文所使用的影像模态（CT、乳腺X线摄影、超声、DBT等）及AI技术（微调Transformer、困难样本聚焦等深度学习方法）是否符合研究偏好。', 'scale': '1-5', 'criteria': {'1': '模态与技术均完全不相关', '2': '模态或技术偏离重点关注范围，且技术手段陈旧', '3': '模态或技术仅有一项符合（如使用了目标模态但方法非深度学习，或用了Transformer但模态非目标影像）', '4': '使用目标模态但技术较常规，或使用前沿技术但模态非首选目标', '5': '精准使用目标影像模态（CT/DBT/超声/乳腺X线）并结合前沿AI技术（微调Transformer/困难样本聚焦等）'}}, {'name': '诊断性能数据的完整性', 'description': '评估论文是否提供了具体且关键的诊断性能量化指标（如准确率、灵敏度、特异度、AUC等），这是硬性筛选要求。', 'scale': '1-5', 'criteria': {'1': '未提供任何具体诊断性能数据，仅有定性描述（符合直接拒绝条件）', '2': '量化指标严重不足，仅提供单一非核心指标，无法评估实际诊断效能', '3': '仅提供基础指标（如准确率），缺乏临床关键指标（灵敏度/特异度/AUC）', '4': '提供了主要量化指标（如AUC和灵敏度），但缺少部分次要指标', '5': '完整提供核心量化指标（准确率、灵敏度、特异度、AUC等），数据详实且具有强说服力'}}, {'name': '研究前沿性与数据支撑', 'description': '评估论文是否属于前沿研究（如2024年最新进展）、是否聚焦临床难点，以及是否提供大规模数据集验证。', 'scale': '1-5', 'criteria': {'1': '研究陈旧，无前沿性，数据支撑极弱', '2': '研究较为常规，数据集规模小，缺乏参考价值', '3': '常规研究，数据集规模一般，无明显创新点或临床难点聚焦', '4': '研究具有一定前沿性，数据集规模中等，实验设计合理', '5': '属于前沿研究，聚焦临床难点（如困难样本），并提供大规模数据集（如数千例公开数据集）验证'}}, {'name': '综述纳入价值', 'description': '评估论文对正在撰写的文献综述的贡献度，是否具有代表性并能强有力支撑综述论点。', 'scale': '1-5', 'criteria': {'1': '无纳入价值，偏离综述主题', '2': '与综述关联较弱，纳入价值低', '3': '可作为边缘补充文献纳入，但非必要', '4': '适合纳入综述，能较好地支撑特定子章节或技术路线分析', '5': '高度契合综述框架，作为核心参考文献能强有力支撑论点，具有极高代表性'}}]
+2026-05-06 19:09:00 [INFO] auto_slr - [Executor] score_papers 输入: criteria={
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": 
+2026-05-06 19:09:00 [INFO] auto_slr - 开始打分，共 96 篇论文，每批 5 篇
+2026-05-06 19:09:00 [INFO] auto_slr - 打分第 1 批, 共 5 篇
+2026-05-06 19:09:00 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:09:00 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:09:00 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:10:01 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 1,
+      "综述纳入价值": 1
+    },
+    "total_score": 7,
+    "brief_comment": "宽泛的医学影像AI综述，无特定病种与模态，缺乏具体性能指标，年份较早且无前沿性，对综述无纳入价值。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 5,
+      "综述纳入价值": 5
+    },
+    "total_score": 21,
+    "brief_comment": "高度契合肺结节筛查与困难样本聚焦的核心方向，2024年前沿研究，但摘要仅含定性描述缺乏具体量化指标，触犯硬性拒绝条件。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 4,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 1,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "针对肺结节CT的数据增强研究，病种与模态吻合，但任务偏向合成而非直接检测，2018年研究较陈旧，且缺乏具体诊断性能指标。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "多癌种PET/CT数据集发布，模态部分交叉但病种与任务偏离核心筛查检测方向，无诊断性能指标，对特定综述支撑较弱。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 10,
+    "brief_comment": "宽泛的3D医学图像半监督检测，未明确目标病种与核心模态，2020年常规研究，摘要无量化指标，综述纳入价值低。"
+  }
+]
+```
+2026-05-06 19:10:01 [INFO] auto_slr - 第 1 批打分完成
+2026-05-06 19:10:01 [INFO] auto_slr - 打分第 2 批, 共 5 篇
+2026-05-06 19:10:01 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:10:01 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:10:01 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:11:31 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 17,
+    "brief_comment": "研究主题和模态技术高度契合乳腺癌检测与分类，但摘要缺乏诊断性能量化指标，前沿性与数据支撑一般。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "病种相符但影像模态为组织病理学而非医学影像，偏离核心影像方向，且缺乏性能指标，综述纳入价值低。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 18,
+    "brief_comment": "DBT肿块和结构扭曲检测完全匹配核心方向，数据集规模大，但年份较早且摘要未提供具体诊断性能指标。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 4,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 15,
+    "brief_comment": "使用乳腺X线摄影进行亚型预测，病种与模态匹配但任务略有偏离，且摘要缺乏诊断性能数据。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 16,
+    "brief_comment": "针对肺癌筛查的CT图像合成，主题匹配且技术前沿，但偏向数据生成而非直接诊断，且无诊断性能指标。"
+  }
+]
+```
+2026-05-06 19:11:31 [INFO] auto_slr - 第 2 批打分完成
+2026-05-06 19:11:31 [INFO] auto_slr - 打分第 3 批, 共 5 篇
+2026-05-06 19:11:31 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:11:31 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:11:31 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:12:48 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 1,
+      "综述纳入价值": 2
+    },
+    "total_score": 9,
+    "brief_comment": "研究乳腺癌分类但使用组织病理学图像，非目标影像模态；技术相对陈旧，摘要缺乏诊断性能指标，年份较早且无前沿性。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 17,
+    "brief_comment": "将前沿DINOv2/Transformer技术应用于3D医学影像(含CT)，技术契合度极高；但未明确聚焦肺结节或乳腺特定任务，且摘要未提供具体诊断性能数据。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 3
+    },
+    "total_score": 14,
+    "brief_comment": "乳腺癌筛查与乳腺X线摄影模态完全匹配，但作为综述文章且技术(ANN)较陈旧，无法提供具体诊断性能数据，前沿性不足，仅可作边缘补充。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 18,
+    "brief_comment": "完全匹配肺结节检测与分类核心任务，采用多任务残差网络，研究前沿且聚焦临床难点；但技术未涉及Transformer等首选前沿方法，且摘要缺乏量化指标。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 4
+    },
+    "total_score": 16,
+    "brief_comment": "乳腺X线摄影分类任务完全匹配，使用对抗性数据增强技术有一定参考价值；但年份较早前沿性一般，且摘要未提供具体诊断性能量化指标。"
+  }
+]
+```
+2026-05-06 19:12:48 [INFO] auto_slr - 第 3 批打分完成
+2026-05-06 19:12:48 [INFO] auto_slr - 打分第 4 批, 共 5 篇
+2026-05-06 19:12:48 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:12:48 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:12:48 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:14:11 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 16,
+    "brief_comment": "综述文章，研究主题（肺部病变检测分类）和模态（CT/X-ray）高度契合，但未提供具体诊断性能数据，且技术相对常规，前沿性一般，可作为背景参考文献。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 2,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 20,
+    "brief_comment": "针对乳腺X线摄影的乳腺癌检测，结合前沿的自监督学习技术，高度契合研究方向；聚焦数据稀缺难点，但摘要未展示具体的量化诊断指标，纳入综述有较好支撑作用。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 2,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 20,
+    "brief_comment": "针对肺结节早期筛查，使用CT模态及前沿的SAM与迁移学习技术，契合度极高；2024年研究具有前沿性，但摘要缺乏具体性能指标数据，适合纳入综述技术路线分析。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 9,
+    "brief_comment": "泛泛讨论肿瘤学AI，病种与任务偏离核心关注点，技术手段陈旧，无具体性能数据，研究较为常规，对综述的支撑力度弱。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 3
+    },
+    "total_score": 13,
+    "brief_comment": "聚焦数据稀缺临床难点，技术（迁移学习/自监督集成）较前沿，但未明确目标病种与影像模态，且无量化指标，仅能作为边缘补充文献。"
+  }
+]
+```
+2026-05-06 19:14:11 [INFO] auto_slr - 第 4 批打分完成
+2026-05-06 19:14:11 [INFO] auto_slr - 打分第 5 批, 共 5 篇
+2026-05-06 19:14:11 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:14:11 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:14:11 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:15:17 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 1
+    },
+    "total_score": 8,
+    "brief_comment": "研究主题宽泛，仅提及乳腺癌等病种但无具体筛查检测任务；散射变换非目标前沿AI技术；摘要无任何量化诊断指标；综述纳入价值极低。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 10,
+    "brief_comment": "乳腺癌分类任务部分符合，但模态为病理切片而非目标影像（CT/DBT/钼靶等）；胶囊网络非首选前沿技术；缺乏诊断性能数据，综述价值低。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "病种为乳腺癌但任务为治疗反应预测，偏离早期筛查与检测核心；使用MRI模态非首选，自注意力技术部分契合；无量化性能数据，参考价值有限。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 1
+    },
+    "total_score": 9,
+    "brief_comment": "乳腺癌相关但任务为淋巴结分期，非核心检测分类；CNN技术常规陈旧；摘要无诊断性能指标；研究前沿性不足，无综述纳入价值。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 4,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 4,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 17,
+    "brief_comment": "肺结节病种高度匹配核心方向；对比学习损失函数有一定技术相关性；提供了准确率、灵敏度、特异度等核心指标；但使用合成数据且非最新前沿，可作为边缘补充。"
+  }
+]
+```
+2026-05-06 19:15:17 [INFO] auto_slr - 第 5 批打分完成
+2026-05-06 19:15:17 [INFO] auto_slr - 打分第 6 批, 共 5 篇
+2026-05-06 19:15:17 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:15:17 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:15:17 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:16:25 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 16,
+    "brief_comment": "乳腺癌检测与DBT/乳腺X线模态高度契合，但摘要缺乏诊断性能量化指标，技术偏向去噪而非首选前沿检测分类技术。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 5,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 3
+    },
+    "total_score": 16,
+    "brief_comment": "肺结节检测与困难样本聚焦（不平衡采样）技术完美匹配，但年份较早且摘要未提供诊断性能量化数据，综述价值受限。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 9,
+    "brief_comment": "通用医学图像分割研究，未聚焦特定病种，技术常规且陈旧，缺乏诊断性能数据，与综述核心方向关联弱。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 10,
+    "brief_comment": "胸部CT数据合成研究，模态符合但任务偏离核心检测分类，无诊断性能指标，数据集规模小，综述纳入价值低。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 11,
+    "brief_comment": "涉及肺结节但任务为分割鲁棒性而非结节筛查，模态符合但技术非首选前沿，缺乏诊断性能数据，综述价值有限。"
+  }
+]
+```
+2026-05-06 19:16:25 [INFO] auto_slr - 第 6 批打分完成
+2026-05-06 19:16:25 [INFO] auto_slr - 打分第 7 批, 共 5 篇
+2026-05-06 19:16:25 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:16:25 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:16:25 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:18:00 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 9,
+    "brief_comment": "研究主题宽泛，关注持续学习与采集特征变化，未涉及特定目标病种和影像模态，摘要中缺乏诊断性能指标，与综述核心方向关联弱。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 2
+    },
+    "total_score": 9,
+    "brief_comment": "关注采样偏差与损失函数修正，属于通用AI方法研究，未聚焦目标病种与影像模态，无量化诊断指标，对综述支撑价值低。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "病种涉及乳腺癌但任务为组织病理学图像分析而非影像筛查，使用了ViT技术但模态非目标影像，缺乏具体性能指标，与影像筛查综述关联较弱。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 10,
+    "brief_comment": "侧重可解释性医学图像分类，未明确具体病种与影像模态，所用胶囊网络等技术非核心关注点，无诊断性能数据，对综述支撑有限。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 3
+    },
+    "total_score": 15,
+    "brief_comment": "主题高度契合乳腺癌筛查分类，模态大概率为目标乳腺影像但所用深度学习技术较常规，摘要缺乏量化指标且年份较早，仅可作为边缘参考。"
+  }
+]
+```
+2026-05-06 19:18:00 [INFO] auto_slr - 第 7 批打分完成
+2026-05-06 19:18:00 [INFO] auto_slr - 打分第 8 批, 共 5 篇
+2026-05-06 19:18:00 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:18:00 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:18:00 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:19:25 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 3
+    },
+    "total_score": 15,
+    "brief_comment": "研究主题与乳腺X线摄影模态高度契合，但使用DenseNet技术较常规，且摘要未提供任何诊断性能量化指标，研究年份较早，前沿性一般。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 3
+    },
+    "total_score": 17,
+    "brief_comment": "乳腺癌分类任务匹配，量子神经网络技术极具前沿性，但影像模态为热成像（非目标模态），且缺乏量化性能指标，对核心综述的支撑力度受限。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 11,
+    "brief_comment": "病种虽为乳腺癌，但任务偏向组织病理学分类而非影像学检测筛查，模态与技术均偏离核心关注点，缺乏性能数据，综述纳入价值低。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 18,
+    "brief_comment": "乳腺癌诊断任务匹配，结合扩散模型与对比学习的前沿技术具有创新性，但未明确具体影像模态，且缺乏量化指标，适合作为综述技术路线的补充文献。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 3
+    },
+    "total_score": 17,
+    "brief_comment": "乳腺癌分类任务契合，使用扩散概率模型进行数据增强具有前沿性，但影像模态为深紫外荧光（非CT/乳腺X线/DBT等目标模态），且无性能数据，综述纳入价值一般。"
+  }
+]
+```
+2026-05-06 19:19:25 [INFO] auto_slr - 第 8 批打分完成
+2026-05-06 19:19:25 [INFO] auto_slr - 打分第 9 批, 共 5 篇
+2026-05-06 19:19:25 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:19:25 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:19:25 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:20:56 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 15,
+    "brief_comment": "研究主题契合肺结节早期筛查，但使用胸部X线（CXR）而非目标首选CT模态，且摘要未提供任何具体的诊断性能量化指标，前沿性和数据支撑一般。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 3
+    },
+    "total_score": 15,
+    "brief_comment": "针对乳腺癌分类，年份较新，但采用脉冲神经网络（SNN）非首选前沿AI技术，且未明确影像模态，摘要缺乏诊断性能量化数据，综述纳入价值受限。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 4
+    },
+    "total_score": 17,
+    "brief_comment": "针对乳腺X线摄影分类，模态高度契合，作为元代码库对综述的方法对比有较好参考价值，但属于工程性研究，未提供具体诊断性能指标。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "使用CT模态但未聚焦肺结节或乳腺等目标病种，属于通用3D软分割方法，与综述核心方向偏离较大，且缺乏性能数据，纳入价值低。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 4
+    },
+    "total_score": 17,
+    "brief_comment": "针对超声乳腺癌检测与分类，病种与模态均高度契合，但方法为常规CNN改进（EfficientNet），且摘要缺乏量化诊断指标，可作为综述补充文献。"
+  }
+]
+```
+2026-05-06 19:20:56 [INFO] auto_slr - 第 9 批打分完成
+2026-05-06 19:20:56 [INFO] auto_slr - 打分第 10 批, 共 5 篇
+2026-05-06 19:20:56 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:20:56 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:20:56 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:22:13 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "研究主题与病种任务的匹配度": 3,
+      "影像模态与技术的契合度": 3,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 2
+    },
+    "total_score": 12,
+    "brief_comment": "研究乳腺癌分类但模态为组织病理学而非目标影像，使用了Transformer前沿技术，但摘要缺乏诊断性能量化数据，对影像筛查综述纳入价值较低。"
+  },
+  {
+    "index": 2,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 4,
+      "综述纳入价值": 4
+    },
+    "total_score": 18,
+    "brief_comment": "高度契合乳腺癌筛查主题并使用乳腺X线摄影，关注多中心域泛化前沿问题，但摘要未提供具体诊断性能量化指标，适合作为特定子章节补充文献。"
+  },
+  {
+    "index": 3,
+    "scores": {
+      "研究主题与病种任务的匹配度": 4,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 3
+    },
+    "total_score": 14,
+    "brief_comment": "基本匹配肺癌CT分类任务，但使用ResNet技术较常规，且摘要缺乏量化指标，研究前沿性不足，仅可作为边缘基线参考。"
+  },
+  {
+    "index": 4,
+    "scores": {
+      "研究主题与病种任务的匹配度": 2,
+      "影像模态与技术的契合度": 2,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 3,
+      "综述纳入价值": 1
+    },
+    "total_score": 9,
+    "brief_comment": "宽泛的医学图像分割研究，未聚焦目标病种与筛查任务，模态不明且技术偏离核心关注点，无量化数据，无综述纳入价值。"
+  },
+  {
+    "index": 5,
+    "scores": {
+      "研究主题与病种任务的匹配度": 5,
+      "影像模态与技术的契合度": 4,
+      "诊断性能数据的完整性": 1,
+      "研究前沿性与数据支撑": 2,
+      "综述纳入价值": 4
+    },
+    "total_score": 16,
+    "brief_comment": "完全匹配乳腺癌筛查主题，使用目标影像模态，关注可解释性临床痛点，但技术较常规且年份较早，缺乏量化数据，可支撑综述可解释性章节。"
+  }
+]
+```
+2026-05-06 19:22:13 [INFO] auto_slr - 第 10 批打分完成
+2026-05-06 19:22:13 [INFO] auto_slr - 打分第 11 批, 共 5 篇
+2026-05-06 19:22:13 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:13 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一名学术文献评审专家。你将收到：
+1. 一份固定的多维打分标准（JSON 格式，每个维度 1-5 分）
+2. 多篇论文的元数据和摘要
+
+请严格按照打分标准中的维度名称和评分标准对每篇论文打分。
+每个维度的分数必须是 1 到 5 的整数。
+总分 = 所有维度分数之和。
+
+输出一个 JSON 数组：
+[
+  {{
+    "index": 论文编号,
+    "scores": {{
+      "维度名称1": 分数(1-5),
+      "维度名称2": 分数(1-5)
+    }},
+    "total_score": 所有维度分数之和,
+    "brief_comment": "简要评语"
+  }},
+  ...
+]
+
+只输出 JSON 数组，不要输出其他内容。
+2026-05-06 19:22:13 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 打分标准:
+{
+  "dimensions": [
+    {
+      "name": "研究主题与病种任务的匹配度",
+      "description": "评估论文的研究主题、病种及具体任务是否与目标研究方向（肺结节早期筛查、乳腺癌检测与分类、DBT中肿块和结构扭曲检测）高度契合。",
+      "scale": "1-5",
+      "criteria": {
+        "1": "完全不符合研究兴趣，病种与任务均不相关",
+        "2": "仅宽泛涉及AI医学影像，但病种或任务偏离核心关注点",
+        "3": "部分符合，病种或任务仅有交叉（如其他器官结节，或乳腺非检测分类任务）",
+        "4": "基本匹配核心方向，病种与任务中有一项完全吻合，另一项相近",
+        "5": "完全匹配核心研究方向，病种与任务高度契合（如DBT肿块检测、肺结节筛查、乳腺X线摄影分类）"
+      }
+    },
+    {
+      "name": "影像模态与技术的契合度",
+      "description": "...
+2026-05-06 19:22:15 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:15 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 预防医学专业，主攻慢性代谢疾病与肠道微生态方向，熟悉肠道菌群检测技术，参与过代谢疾病流行病学调查的硕士学生，你的学术偏好是 关注干预措施的可行性和安全性，重视长期随访数据，偏爱与饮食、生活方式结合的研究，你现在要做一个literature review, 你的research question是Research progress on the relationship between gut microbiota and chronic metabolic diseases (diabetes, obesity): Mechanisms and intervention strategies.,你有一些自己还没有意识到的隐藏要求，比如 优先筛选包含人体临床试验（而非动物实验）的研究，需提供肠道菌群具体菌株的分析数据，排除仅探讨相关性、未明确机制的论文，同时关注低成本、易推广的干预策略（如饮食调整），收集干预效果的长期随访数据（≥6个月）。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的p...
+2026-05-06 19:22:15 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:17 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好，我想做一篇关于“肠道菌群与慢性代谢疾病（糖尿病、肥胖）关系”的文献综述，重点看机制和干预策略。我比较需要人体临床试验的数据，最好能提供具体的菌株信息，比如哪些菌在干预后变化明显。动物实验的暂时不考虑。另外，我只想纳入那些不光讲相关性、还明确讲了机制的论文。干预方面，我特别关注饮食调整这种低成本、易推广的策略，如果能有6个月以上的长期随访数据就更好了。你能帮我筛选一下吗？
+2026-05-06 19:22:17 [INFO] auto_slr - [User(Simulated)] 初始query: 你好，我想做一篇关于“肠道菌群与慢性代谢疾病（糖尿病、肥胖）关系”的文献综述，重点看机制和干预策略。我比较需要人体临床试验的数据，最好能提供具体的菌株信息，比如哪些菌在干预后变化明显。动物实验的暂时不考虑。另外，我只想纳入那些不光讲相关性、还明确讲了机制的论文。干预方面，我特别关注饮食调整这种低成本、易推广的策略，如果能有6个月以上的长期随访数据就更好了。你能帮我筛选一下吗？
+2026-05-06 19:22:17 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好，我想做一篇关于“肠道菌群与慢性代谢疾病（糖尿病、肥胖）关系”的文献综述，重点看机制和干预策略。我比较需要人体临床试验的数据，最好能提供具体的菌株信息，比如哪些菌在干预后变化明显。动物实验的暂时不考虑。另外，我只想纳入那些不光讲相关性、还明确讲了机制的论文。干预方面，我特别关注饮食调整这种低成本、易推广的策略，如果能有6个月以上的长期随访数据就更好了。你能帮我筛选一下吗？
+2026-05-06 19:22:17 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:17 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:17 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好，我想做一篇关于“肠道菌群与慢性代谢疾病（糖尿病、肥胖）关系”的文献综述，重点看机制和干预策略。我比较需要人体临床试验的数据，最好能提供具体的菌株信息，比如哪些菌在干预后变化明显。动物实验的暂时不考虑。另外，我只想纳入那些不光讲相关性、还明确讲了机制的论文。干预方面，我特别关注饮食调整这种低成本、易推广的策略，如果能有6个月以上的长期随访数据就更好了。你能帮我筛选一下吗？
+2026-05-06 19:22:18 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:18 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 计算机科学专业，主攻软件工程与大语言模型应用方向，有1年Python编程和LLM微调经验的硕士学生，你的学术偏好是 聚焦工程实践层面的技术落地，注重模型的实用性和可扩展性，反感纯理论、无实际应用价值的研究，你现在要做一个literature review, 你的research question是What are the current research status, core challenges, and future optimization paths of code generation technology based on Large Language Models (LLMs)?,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含具体的代码生成实验数据和落地案例，优先选择近3年（2023-2026）发表在顶会（ICML、NeurIPS、ICLR）的研究，排除仅探讨理论框架、未做实际测试的论文，且需重点关注模型在中小型项目中的适配性。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些...
+2026-05-06 19:22:18 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:20 [DEBUG] auto_slr - [Simulator LLM] 响应: 帮我筛选近三年（2023-2026）发表在ICML、NeurIPS、ICLR上的代码生成论文，要求有具体的实验数据和落地案例，排除纯理论框架的，重点看中小型项目的适配性。
+2026-05-06 19:22:20 [INFO] auto_slr - [User(Simulated)] 初始query: 帮我筛选近三年（2023-2026）发表在ICML、NeurIPS、ICLR上的代码生成论文，要求有具体的实验数据和落地案例，排除纯理论框架的，重点看中小型项目的适配性。
+2026-05-06 19:22:20 [INFO] auto_slr - [Assistant] extract_and_record 输入: 帮我筛选近三年（2023-2026）发表在ICML、NeurIPS、ICLR上的代码生成论文，要求有具体的实验数据和落地案例，排除纯理论框架的，重点看中小型项目的适配性。
+2026-05-06 19:22:20 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:20 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:20 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 帮我筛选近三年（2023-2026）发表在ICML、NeurIPS、ICLR上的代码生成论文，要求有具体的实验数据和落地案例，排除纯理论框架的，重点看中小型项目的适配性。
+2026-05-06 19:22:21 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:21 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 计算机科学专业，主攻隐私计算与机器学习交叉方向，熟悉联邦学习基础算法，参与过校内隐私保护相关课题的硕士学生，你的学术偏好是 关注技术的安全性和合规性，偏爱有具体场景验证的研究，重视算法的效率优化，你现在要做一个literature review, 你的research question是A literature review on the application of federated learning in privacy-preserving machine learning — taking medical data and financial data scenarios as examples.,你有一些自己还没有意识到的隐藏要求，比如 优先筛选涉及医疗/金融真实数据集的研究，需包含隐私攻击测试结果，排除未考虑数据脱敏的论文，同时关注联邦学习与差分隐私结合的相关研究，要求论文提供算法通信开销的具体对比数据。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的paper。
+2026-05-06 19:22:21 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:23 [DEBUG] auto_slr - [Simulator LLM] 响应: 我需要找关于联邦学习在隐私保护机器学习中的应用的文献综述，重点关注医疗和金融两个场景。请帮我筛选那些用了真实医疗或金融数据集的研究，最好包含隐私攻击测试结果，比如成员推断或梯度泄露攻击。另外，我特别关注联邦学习与差分隐私结合的工作，要排除那些没做数据脱敏的。还有，请确保论文里给出了通信开销的具体对比数据，比如跟非联邦或中心化方法的对比。时间上尽量近几年的。
+2026-05-06 19:22:23 [INFO] auto_slr - [User(Simulated)] 初始query: 我需要找关于联邦学习在隐私保护机器学习中的应用的文献综述，重点关注医疗和金融两个场景。请帮我筛选那些用了真实医疗或金融数据集的研究，最好包含隐私攻击测试结果，比如成员推断或梯度泄露攻击。另外，我特别关注联邦学习与差分隐私结合的工作，要排除那些没做数据脱敏的。还有，请确保论文里给出了通信开销的具体对比数据，比如跟非联邦或中心化方法的对比。时间上尽量近几年的。
+2026-05-06 19:22:23 [INFO] auto_slr - [Assistant] extract_and_record 输入: 我需要找关于联邦学习在隐私保护机器学习中的应用的文献综述，重点关注医疗和金融两个场景。请帮我筛选那些用了真实医疗或金融数据集的研究，最好包含隐私攻击测试结果，比如成员推断或梯度泄露攻击。另外，我特别关注联邦学习与差分隐私结合的工作，要排除那些没做数据脱敏的。还有，请确保论文里给出了通信开销的具体对比数据，比如跟非联邦或中心化方法的对比。时间上尽量近几年的。
+2026-05-06 19:22:23 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:23 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:23 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 我需要找关于联邦学习在隐私保护机器学习中的应用的文献综述，重点关注医疗和金融两个场景。请帮我筛选那些用了真实医疗或金融数据集的研究，最好包含隐私攻击测试结果，比如成员推断或梯度泄露攻击。另外，我特别关注联邦学习与差分隐私结合的工作，要排除那些没做数据脱敏的。还有，请确保论文里给出了通信开销的具体对比数据，比如跟非联邦或中心化方法的对比。时间上尽量近几年的。
+2026-05-06 19:22:25 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:25 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 计算机科学专业，主攻计算机视觉与深度学习方向，有医学影像处理相关实习经历，熟练使用PyTorch框架的硕士学生，你的学术偏好是 侧重模型在实际场景的落地效果，关注模型的轻量化设计，喜欢对比不同算法的性能差异，你现在要做一个literature review, 你的research question是Research progress of deep learning in image segmentation: Evolution and performance comparison from traditional CNN to Transformer architecture.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需重点关注医学影像（如CT、MRI）分割场景，优先选择有公开数据集（如BraTS、LIDC-IDRI）验证的研究，排除模型参数量过大、无法部署到终端设备的论文，且需包含模型推理速度的对比数据。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的paper。
+2026-05-06 19:22:25 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:26 [DEBUG] auto_slr - [Simulator LLM] 响应: 我需要做关于深度学习在图像分割中从CNN到Transformer演进的文献综述，重点看医学影像场景，比如CT和MRI。请帮我筛选有公开数据集验证的论文，排除模型太大没法部署的那种，最好能对比推理速度和性能差异。
+2026-05-06 19:22:26 [INFO] auto_slr - [User(Simulated)] 初始query: 我需要做关于深度学习在图像分割中从CNN到Transformer演进的文献综述，重点看医学影像场景，比如CT和MRI。请帮我筛选有公开数据集验证的论文，排除模型太大没法部署的那种，最好能对比推理速度和性能差异。
+2026-05-06 19:22:26 [INFO] auto_slr - [Assistant] extract_and_record 输入: 我需要做关于深度学习在图像分割中从CNN到Transformer演进的文献综述，重点看医学影像场景，比如CT和MRI。请帮我筛选有公开数据集验证的论文，排除模型太大没法部署的那种，最好能对比推理速度和性能差异。
+2026-05-06 19:22:26 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:26 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:26 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 我需要做关于深度学习在图像分割中从CNN到Transformer演进的文献综述，重点看医学影像场景，比如CT和MRI。请帮我筛选有公开数据集验证的论文，排除模型太大没法部署的那种，最好能对比推理速度和性能差异。
+2026-05-06 19:22:28 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:28 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 计算机科学专业，主攻边缘计算与物联网交叉方向，参与过智能物联网设备开发项目，了解边缘节点部署技术的硕士学生，你的学术偏好是 关注技术的工业落地价值，重视资源调度的实时性和低能耗，偏爱有实际测试场景的研究，你现在要做一个literature review, 你的research question是A literature review on resource scheduling strategies for the integration of edge computing and the Internet of Things (IoT).,你有一些自己还没有意识到的隐藏要求，比如 优先筛选针对工业物联网场景的研究，需包含边缘节点负载均衡的实验数据，排除仅基于仿真模拟、未做实际部署测试的论文，同时关注轻量化调度算法，重点收集支持低延迟场景（如工业控制）的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的paper。
+2026-05-06 19:22:28 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:30 [DEBUG] auto_slr - [Simulator LLM] 响应: 我正在做关于边缘计算与物联网集成的资源调度策略的文献综述。我需要你帮我筛选论文，重点针对工业物联网场景，特别是那些有实际部署测试数据的，不要只看仿真模拟的。另外我比较关心轻量化调度算法在低延迟场景（比如工业控制）中的表现，如果有边缘节点负载均衡的实验数据就更好了。
+2026-05-06 19:22:30 [INFO] auto_slr - [User(Simulated)] 初始query: 我正在做关于边缘计算与物联网集成的资源调度策略的文献综述。我需要你帮我筛选论文，重点针对工业物联网场景，特别是那些有实际部署测试数据的，不要只看仿真模拟的。另外我比较关心轻量化调度算法在低延迟场景（比如工业控制）中的表现，如果有边缘节点负载均衡的实验数据就更好了。
+2026-05-06 19:22:30 [INFO] auto_slr - [Assistant] extract_and_record 输入: 我正在做关于边缘计算与物联网集成的资源调度策略的文献综述。我需要你帮我筛选论文，重点针对工业物联网场景，特别是那些有实际部署测试数据的，不要只看仿真模拟的。另外我比较关心轻量化调度算法在低延迟场景（比如工业控制）中的表现，如果有边缘节点负载均衡的实验数据就更好了。
+2026-05-06 19:22:30 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:30 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:30 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 我正在做关于边缘计算与物联网集成的资源调度策略的文献综述。我需要你帮我筛选论文，重点针对工业物联网场景，特别是那些有实际部署测试数据的，不要只看仿真模拟的。另外我比较关心轻量化调度算法在低延迟场景（比如工业控制）中的表现，如果有边缘节点负载均衡的实验数据就更好了。
+2026-05-06 19:22:31 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:31 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 临床医学专业，主攻肿瘤内科方向，有半年临床实习经历，熟悉肺癌诊疗流程的硕士学生，你的学术偏好是 侧重临床实用性，关注治疗方案的安全性和患者耐受性，偏爱有大样本临床实验数据的研究，你现在要做一个literature review, 你的research question是What are the current research status, clinical application effects, and potential risks of immunotherapy in the treatment of advanced non-small cell lung cancer (NSCLC)?,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含晚期NSCLC患者的临床实验数据（样本量≥100），优先选择针对亚洲人群的研究，排除副作用未明确说明的论文，同时重点关注免疫联合化疗的治疗方案，收集不同年龄段患者的疗效差异数据。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的pap...
+2026-05-06 19:22:31 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:33 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好，我目前在做一个关于免疫治疗在晚期非小细胞肺癌中的文献综述。我需要筛选一些论文，具体要求是：必须有晚期NSCLC患者的临床试验数据，样本量至少100例以上；优先看亚洲人群的研究；副作用信息一定要明确说明；重点关注免疫联合化疗的方案，尤其是和化疗联用的临床效果和安全性数据。另外，如果能找到不同年龄段患者的疗效差异数据就更好了。麻烦帮我筛选一下符合这些条件的文献。
+2026-05-06 19:22:33 [INFO] auto_slr - [User(Simulated)] 初始query: 你好，我目前在做一个关于免疫治疗在晚期非小细胞肺癌中的文献综述。我需要筛选一些论文，具体要求是：必须有晚期NSCLC患者的临床试验数据，样本量至少100例以上；优先看亚洲人群的研究；副作用信息一定要明确说明；重点关注免疫联合化疗的方案，尤其是和化疗联用的临床效果和安全性数据。另外，如果能找到不同年龄段患者的疗效差异数据就更好了。麻烦帮我筛选一下符合这些条件的文献。
+2026-05-06 19:22:33 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好，我目前在做一个关于免疫治疗在晚期非小细胞肺癌中的文献综述。我需要筛选一些论文，具体要求是：必须有晚期NSCLC患者的临床试验数据，样本量至少100例以上；优先看亚洲人群的研究；副作用信息一定要明确说明；重点关注免疫联合化疗的方案，尤其是和化疗联用的临床效果和安全性数据。另外，如果能找到不同年龄段患者的疗效差异数据就更好了。麻烦帮我筛选一下符合这些条件的文献。
+2026-05-06 19:22:33 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:33 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:33 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好，我目前在做一个关于免疫治疗在晚期非小细胞肺癌中的文献综述。我需要筛选一些论文，具体要求是：必须有晚期NSCLC患者的临床试验数据，样本量至少100例以上；优先看亚洲人群的研究；副作用信息一定要明确说明；重点关注免疫联合化疗的方案，尤其是和化疗联用的临床效果和安全性数据。另外，如果能找到不同年龄段患者的疗效差异数据就更好了。麻烦帮我筛选一下符合这些条件的文献。
+2026-05-06 19:22:35 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:35 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 医学影像专业，主攻医学影像诊断与人工智能交叉方向，熟练使用影像处理软件，参与过AI辅助诊断相关课题的硕士学生，你的学术偏好是 关注AI模型的临床适配性，重视诊断准确率和误诊率数据，偏爱与传统人工诊断对比的研究，你现在要做一个literature review, 你的research question是A literature review on the application of artificial intelligence (AI) in medical image diagnosis — focusing on early screening of breast cancer and lung nodules.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含AI模型在基层医院场景的测试数据，优先选择针对早期（Ⅰ-Ⅱ期）病变的研究，排除未提供具体诊断准确率、灵敏度和特异度数据的论文，同时关注模型的可解释性，避免纯黑箱模型的相关研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 19:22:35 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:37 [DEBUG] auto_slr - [Simulator LLM] 响应: 帮我筛选乳腺癌和肺结节早期筛查中AI诊断的文献。重点看那些在基层医院测试过的模型，要有Ⅰ-Ⅱ期病变的数据，准确率、灵敏度、特异度必须齐全。尽量选能解释决策过程的，别用纯黑箱模型。最好有和传统人工诊断对比的结果。
+2026-05-06 19:22:37 [INFO] auto_slr - [User(Simulated)] 初始query: 帮我筛选乳腺癌和肺结节早期筛查中AI诊断的文献。重点看那些在基层医院测试过的模型，要有Ⅰ-Ⅱ期病变的数据，准确率、灵敏度、特异度必须齐全。尽量选能解释决策过程的，别用纯黑箱模型。最好有和传统人工诊断对比的结果。
+2026-05-06 19:22:37 [INFO] auto_slr - [Assistant] extract_and_record 输入: 帮我筛选乳腺癌和肺结节早期筛查中AI诊断的文献。重点看那些在基层医院测试过的模型，要有Ⅰ-Ⅱ期病变的数据，准确率、灵敏度、特异度必须齐全。尽量选能解释决策过程的，别用纯黑箱模型。最好有和传统人工诊断对比的结果。
+2026-05-06 19:22:37 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:37 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:37 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 帮我筛选乳腺癌和肺结节早期筛查中AI诊断的文献。重点看那些在基层医院测试过的模型，要有Ⅰ-Ⅱ期病变的数据，准确率、灵敏度、特异度必须齐全。尽量选能解释决策过程的，别用纯黑箱模型。最好有和传统人工诊断对比的结果。
+2026-05-06 19:22:38 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:38 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 凝聚态物理专业，主攻二维材料与光电器件方向，有实验室材料制备经验，熟悉TMDs材料特性的硕士学生，你的学术偏好是 关注材料的制备工艺和性能优化，重视实验可重复性，偏爱有具体器件应用的研究，你现在要做一个literature review, 你的research question是Research progress of two-dimensional (2D) transition metal dichalcogenides (TMDs) in optoelectronic devices: Properties, preparation methods, and application prospects.,你有一些自己还没有意识到的隐藏要求，比如 筛选的论文需包含TMDs材料的具体制备工艺参数，优先选择可规模化制备的研究，排除仅基于理论计算、未做实验验证的论文，同时关注材料的稳定性测试数据，重点收集在光探测器、柔性器件中的应用研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的pa...
+2026-05-06 19:22:38 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:40 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好，我想做关于二维TMDs材料在光电器件中的应用综述，重点看它们的制备方法、材料性能和器件应用前景。我比较关注有具体制备工艺参数的研究，最好能规模化制备的，排除纯理论计算那种。另外希望包含稳定性测试数据，特别是光探测器和柔性器件方向。能帮我筛选一批符合这些条件的论文吗？
+2026-05-06 19:22:40 [INFO] auto_slr - [User(Simulated)] 初始query: 你好，我想做关于二维TMDs材料在光电器件中的应用综述，重点看它们的制备方法、材料性能和器件应用前景。我比较关注有具体制备工艺参数的研究，最好能规模化制备的，排除纯理论计算那种。另外希望包含稳定性测试数据，特别是光探测器和柔性器件方向。能帮我筛选一批符合这些条件的论文吗？
+2026-05-06 19:22:40 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好，我想做关于二维TMDs材料在光电器件中的应用综述，重点看它们的制备方法、材料性能和器件应用前景。我比较关注有具体制备工艺参数的研究，最好能规模化制备的，排除纯理论计算那种。另外希望包含稳定性测试数据，特别是光探测器和柔性器件方向。能帮我筛选一批符合这些条件的论文吗？
+2026-05-06 19:22:40 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:40 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:40 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好，我想做关于二维TMDs材料在光电器件中的应用综述，重点看它们的制备方法、材料性能和器件应用前景。我比较关注有具体制备工艺参数的研究，最好能规模化制备的，排除纯理论计算那种。另外希望包含稳定性测试数据，特别是光探测器和柔性器件方向。能帮我筛选一批符合这些条件的论文吗？
+2026-05-06 19:22:41 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:41 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 计算物理专业，主攻机器学习与量子模拟交叉方向，熟练使用Python和量子计算相关工具，参与过材料性质预测课题的硕士学生，你的学术偏好是 关注算法的效率和精度，重视与传统计算方法的对比，偏爱有开源代码的研究，你现在要做一个literature review, 你的research question是A literature review on the application of machine learning in computational physics — focusing on quantum mechanics simulations and material property prediction.,你有一些自己还没有意识到的隐藏要求，比如 优先筛选针对复杂量子系统、多组分材料的研究，需包含算法计算效率和预测精度的对比数据，排除未提供开源代码或数据集的论文，同时关注机器学习与第一性原理结合的相关研究，重点收集可应用于新型材料设计的研究。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来...
+2026-05-06 19:22:41 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:43 [DEBUG] auto_slr - [Simulator LLM] 响应: 你好，我想做一个关于机器学习在计算物理中应用的文献综述，重点在量子力学模拟和材料性质预测。我特别关注那些针对复杂量子系统、多组分材料的研究，最好有算法效率和预测精度的对比数据。另外，如果能提供开源代码或数据集就更好了，还有那些和第一性原理结合的工作也请帮我重点筛出来。谢谢！
+2026-05-06 19:22:43 [INFO] auto_slr - [User(Simulated)] 初始query: 你好，我想做一个关于机器学习在计算物理中应用的文献综述，重点在量子力学模拟和材料性质预测。我特别关注那些针对复杂量子系统、多组分材料的研究，最好有算法效率和预测精度的对比数据。另外，如果能提供开源代码或数据集就更好了，还有那些和第一性原理结合的工作也请帮我重点筛出来。谢谢！
+2026-05-06 19:22:43 [INFO] auto_slr - [Assistant] extract_and_record 输入: 你好，我想做一个关于机器学习在计算物理中应用的文献综述，重点在量子力学模拟和材料性质预测。我特别关注那些针对复杂量子系统、多组分材料的研究，最好有算法效率和预测精度的对比数据。另外，如果能提供开源代码或数据集就更好了，还有那些和第一性原理结合的工作也请帮我重点筛出来。谢谢！
+2026-05-06 19:22:43 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:43 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:43 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 你好，我想做一个关于机器学习在计算物理中应用的文献综述，重点在量子力学模拟和材料性质预测。我特别关注那些针对复杂量子系统、多组分材料的研究，最好有算法效率和预测精度的对比数据。另外，如果能提供开源代码或数据集就更好了，还有那些和第一性原理结合的工作也请帮我重点筛出来。谢谢！
+2026-05-06 19:22:45 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-06 19:22:45 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: 你是一个 核物理专业，主攻可控核聚变方向，了解磁约束和惯性约束聚变技术，参与过核聚变相关理论研究的硕士学生，你的学术偏好是 关注实验进展和技术突破，重视工程可行性，偏爱国际重大项目的相关研究，你现在要做一个literature review, 你的research question是What are the current research status, experimental progress, and technical challenges of nuclear fusion energy as a clean and sustainable energy source?,你有一些自己还没有意识到的隐藏要求，比如 优先筛选国际重大项目（如ITER、NIF）的最新实验成果，需包含等离子体约束时间、能量增益等关键参数，排除仅探讨理论可行性、未做实验验证的论文，同时关注核聚变装置的成本控制和商业化应用相关研究，重点收集近5年的最新进展。现在有一个automatic literature review的agent系统可以帮你筛选paper,请你和它进行一些对话，来筛选你要的paper...
+2026-05-06 19:22:45 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: 你正在与一个自动文献综述系统对话。请根据你的人设，用简短自然的语言陈述你的文献综述需求。
+你不需要重复整个人设——只需陈述你的核心需求，就像一个真实的学生那样。
+直接输出你想对系统说的话，不要加任何前缀或说明。
+2026-05-06 19:22:46 [DEBUG] auto_slr - [Simulator LLM] 响应: 帮我找一下近5年关于核聚变能源的实验进展，重点关注ITER和NIF的最新成果。我需要包含等离子体约束时间、能量增益系数Q这些具体参数，最好有工程可行性和成本方面的讨论。纯理论推导的不要，只找有实验验证的。
+2026-05-06 19:22:46 [INFO] auto_slr - [User(Simulated)] 初始query: 帮我找一下近5年关于核聚变能源的实验进展，重点关注ITER和NIF的最新成果。我需要包含等离子体约束时间、能量增益系数Q这些具体参数，最好有工程可行性和成本方面的讨论。纯理论推导的不要，只找有实验验证的。
+2026-05-06 19:22:46 [INFO] auto_slr - [Assistant] extract_and_record 输入: 帮我找一下近5年关于核聚变能源的实验进展，重点关注ITER和NIF的最新成果。我需要包含等离子体约束时间、能量增益系数Q这些具体参数，最好有工程可行性和成本方面的讨论。纯理论推导的不要，只找有实验验证的。
+2026-05-06 19:22:46 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-06 19:22:46 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: 你是一个信息抽取助手。你的任务是从给定的对话内容中提取以下类别的信息：
+
+1. **用户身份与背景**：如学生身份、学术领域、教育水平
+2. **用户偏好**：如论文语言偏好、发表类型偏好
+3. **研究方向**：具体的研究主题/方向
+4. **论文筛选要求**：时间范围、关键词、排除标准等
+5. **用户拒绝论文的原因**：对某篇论文不满意的原因
+6. **其他有用信息**
+
+请以 JSON 格式输出，键为类别名称，值为提取到的信息（字符串）。如果某个类别没有提取到信息，对应的值为空字符串。
+示例：
+{{
+  "user_identity": "计算机专业硕士研究生",
+  "user_preference": "",
+  "research_direction": "LLM Agent 记忆管理",
+  "filter_requirements": "近两年",
+  "rejection_reasons": "",
+  "other_info": ""
+}}
+
+只输出 JSON，不要输出其他内容。
+2026-05-06 19:22:46 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: 帮我找一下近5年关于核聚变能源的实验进展，重点关注ITER和NIF的最新成果。我需要包含等离子体约束时间、能量增益系数Q这些具体参数，最好有工程可行性和成本方面的讨论。纯理论推导的不要，只找有实验验证的。

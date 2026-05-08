@@ -1,0 +1,2 @@
+user_identity: 文献综述研究者
+user_preference: 论文语言偏好：英文；发表类型偏好：影响力大的论文

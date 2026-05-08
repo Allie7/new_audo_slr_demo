@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Improved Focus on Hard Samples for Lung Nodule Detection",
+    "abstract": "Recently, lung nodule detection methods based on deep learning have shown excellent performance in the medical image processing field. Considering that only a few public lung datasets are available and lung nodules are more difficult to detect in CT images than in natural images, the existing methods face many bottlenecks when detecting lung nodules, especially hard ones in CT images. In order to solve these problems, we plan to enhance the focus of our network. In this work, we present an improved detection network that pays more attention to hard samples and datasets to deal with lung nodules by introducing deformable convolution and self-paced learning. Experiments on the LUNA16 dataset demonstrate the effectiveness of our proposed components and show that our method has reached competitive performance.",
+    "year": 2024,
+    "authors": "Yujiang Chen, Mei Xie",
+    "venue": "",
+    "citation_count": 0,
+    "url": "http://arxiv.org/abs/2403.04478v1",
+    "arxiv_id": "2403.04478v1",
+    "source": "arxiv",
+    "screening_decision": "include",
+    "screening_reason": "研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。",
+    "include_reason": "研究基于深度学习的CT图像肺结节检测方法，聚焦困难样本检测，属于肺结节早期筛查的前沿研究（2024年）。",
+    "user_satisfied": true
+  },
+  {
+    "title": "Fine-tuned Transformer Models for Breast Cancer Detection and Classification",
+    "abstract": "Breast cancer is still the second top cause of cancer deaths worldwide and this emphasizes the importance of necessary steps for early detection. Traditional diagnostic methods, such as mammography, ultrasound, and thermography, which have limitations when it comes to catching subtle patterns and reducing false positives. New technologies like artificial intelligence (AI) and deep learning have brought about the revolution in medical imaging analysis. Nevertheless, typical architectures such as Convolutional Neural Networks (CNNs) often have problems with modeling long-range dependencies. It explores the application of visual transformer models (here: Swin Tiny, DeiT, BEiT, ViT, and YOLOv8) for breast cancer detection through a collection of mammographic image sets. The ViT model reached the highest accuracy of 99.32% which showed its superiority in detecting global patterns as well as subtle image features. Data augmenting approaches, such as resizing croppings, flippings, and normalization, were further applied to the model for achieving higher performance. Although there were interesting results, the issues of dataset diversity and model optimization which present new avenues of research are also still present. Through this study, the crystal potential of transformer-based AI models in changing the detecting process of breast cancer and, thus, to patients health, is suggested.",
+    "year": 2025,
+    "authors": "Showkat Osman, Md. Tajwar Munim Turzo, Maher Ali Rusho, Md. Makid Haider, Sazzadul Islam Sajin, Ayatullah Hasnat Behesti, Ahmed Faizul Haque Dhrubo, Md. Khurshid Jahan, Mohammad Abdul Qayum",
+    "venue": "",
+    "citation_count": 0,
+    "url": "http://arxiv.org/abs/2512.02091v2",
+    "arxiv_id": "2512.02091v2",
+    "source": "arxiv",
+    "screening_decision": "include",
+    "screening_reason": "应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。",
+    "include_reason": "应用微调Transformer模型进行乳腺癌检测与分类，明确提及乳腺X线摄影等影像模态，符合乳腺癌早期筛查及AI前沿技术应用要求。",
+    "user_satisfied": true
+  },
+  {
+    "title": "Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model",
+    "abstract": "Breast cancer screening is one of the most common radiological tasks with over 39 million exams performed each year. While breast cancer screening has been one of the most studied medical imaging applications of artificial intelligence, the development and evaluation of the algorithms are hindered due to the lack of well-annotated large-scale publicly available datasets. This is particularly an issue for digital breast tomosynthesis (DBT) which is a relatively new breast cancer screening modality. We have curated and made publicly available a large-scale dataset of digital breast tomosynthesis images. It contains 22,032 reconstructed DBT volumes belonging to 5,610 studies from 5,060 patients. This included four groups: (1) 5,129 normal studies, (2) 280 studies where additional imaging was needed but no biopsy was performed, (3) 112 benign biopsied studies, and (4) 89 studies with cancer. Our dataset included masses and architectural distortions which were annotated by two experienced radiologists. Additionally, we developed a single-phase deep learning detection model and tested it using our dataset to serve as a baseline for future research. Our model reached a sensitivity of 65% at 2 false positives per breast. Our large, diverse, and highly-curated dataset will facilitate development and evaluation of AI algorithms for breast cancer screening through providing data for training as well as common set of cases for model validation. The performance of the model developed in our study shows that the task remains challenging and will serve as a baseline for future model development.",
+    "year": 2020,
+    "authors": "Mateusz Buda, Ashirbani Saha, Ruth Walsh, Sujata Ghate, Nianyi Li, Albert Święcicki, Joseph Y. Lo, Maciej A. Mazurowski",
+    "venue": "",
+    "citation_count": 0,
+    "url": "http://arxiv.org/abs/2011.07995v4",
+    "arxiv_id": "2011.07995v4",
+    "source": "arxiv",
+    "screening_decision": "include",
+    "screening_reason": "开发深度学习模型用于数字乳腺断层合成（DBT）中肿块和结构扭曲的检测，直接属于乳腺癌早期筛查的AI应用研究，且提供了大规模数据集。",
+    "include_reason": "开发深度学习模型用于数字乳腺断层合成（DBT）中肿块和结构扭曲的检测，直接属于乳腺癌早期筛查的AI应用研究，且提供了大规模数据集。",
+    "user_satisfied": true
+  }
+]

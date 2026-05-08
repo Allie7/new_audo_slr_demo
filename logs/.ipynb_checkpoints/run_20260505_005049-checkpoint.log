@@ -1,0 +1,2639 @@
+2026-05-05 00:50:49 [INFO] auto_slr - 日志系统初始化完成，级别: DEBUG，日志文件: D:\School\SAT404\pilot_study_code\new_auto_slr\logs\run_20260505_005049.log
+2026-05-05 00:50:49 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 00:50:49 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 00:50:49 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 00:50:51 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 00:50:51 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 00:50:51 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers...
+2026-05-05 00:50:51 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:50:51 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 00:50:51 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 00:51:02 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "top conference papers (ICML, NeurIPS, ICLR)",
+  "research_direction": "LLM-based code generation, focusing on practical engineering and real-world deployment",
+  "filter_requirements": "2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects",
+  "rejection_reasons": "purely theoretical without actual testing",
+  "other_info": ""
+}
+```
+2026-05-05 00:51:02 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "top conference papers (ICML, NeurIPS, ICLR)", "research_direction": "LLM-based code generation, focusing on practical engineering and real-world deployment", "filter_requirements": "2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects", "rejection_reasons": "purely theoretical without actual testing", "other_info": ""}
+2026-05-05 00:51:02 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:51:02 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing user information record] and the [newly extracted user-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+2026-05-05 00:51:02 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 00:51:10 [DEBUG] auto_slr - [System LLM] 响应: user_preference: top conference papers (ICML, NeurIPS, ICLR)
+2026-05-05 00:51:10 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:51:10 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+(none)
+
+Newly extracted information:
+research_direction: LLM-based code generation, focusing on practical engineering and real-world depl...
+2026-05-05 00:51:10 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 00:51:18 [DEBUG] auto_slr - [System LLM] 响应: research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+2026-05-05 00:51:18 [INFO] auto_slr - [Executor] check_query_sufficiency 输入: user_info=user_preference: top conference papers (ICML, NeurIPS, ICLR), research_task=research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+2026-05-05 00:51:18 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:51:18 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search evaluation expert. Determine whether the user's provided query information is sufficient for an initial paper search.
+
+At minimum, it should contain:
+1. A clear research direction/topic
+2. An inferable time range (if not explicitly specified, the last 5 years is acceptable by default)
+
+User information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+
+Research task:
+research_direction: LLM-based code generation, focusing on practical engineering...
+2026-05-05 00:51:18 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 00:51:26 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "sufficient": true,
+  "missing_info": ""
+}
+```
+2026-05-05 00:51:26 [INFO] auto_slr - [Executor] check_query_sufficiency 输出: {'sufficient': True, 'missing_info': ''}
+2026-05-05 00:51:26 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Search for relevant papers
+2026-05-05 00:51:26 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:51:26 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+
+Current research task:
+research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely t...
+2026-05-05 00:51:26 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 00:51:36 [DEBUG] auto_slr - [System LLM] 响应: Topic: LLM-based code generation (practical engineering and real-world deployment)
+Venues: ICML, NeurIPS, ICLR
+Year: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (especially for small to medium-sized projects)
+Exclusions: Purely theoretical papers without actual testing
+2026-05-05 00:51:36 [INFO] auto_slr - [Assistant] provide_context 输出: Topic: LLM-based code generation (practical engineering and real-world deployment)
+Venues: ICML, NeurIPS, ICLR
+Year: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (especially for small to medium-sized projects)
+Exclusions: Purely theoretical papers without actu...
+2026-05-05 00:51:36 [INFO] auto_slr - [Executor] search_papers 输入: research_task=research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing, assistant_context=Topic: LLM-based code generation (practical engineering and real-world deployment)
+Venues: ICML, NeurIPS, ICLR
+Year: 2023-2026
+Requirements: Must include specific experimental data and deployment case
+2026-05-05 00:51:36 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:51:36 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature search expert. Given a research topic and requirements, you need to generate search queries for the Semantic Scholar API and arXiv.
+
+Please output a JSON object:
+{{
+  "semantic_scholar_query": "search keywords",
+  "arxiv_query": "search keywords",
+  "year_range": "start_year-end_year or empty",
+  "max_results": number
+}}
+
+Output only JSON.
+2026-05-05 00:51:36 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Research task: research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+Additional context: Topic: LLM-based code generation (practical engineering and real-world deployment)
+Venues: ICML, NeurIPS, ICLR
+Year: 2023-2026
+Requirements: Must include spe...
+2026-05-05 00:51:55 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "semantic_scholar_query": "\"code generation\" \"large language model\" deployment empirical \"case study\" venue:ICML|NeurIPS|ICLR",
+  "arxiv_query": "ti:\"code generation\" AND abs:(\"large language model\" OR LLM) AND abs:(deployment OR empirical OR \"case study\" OR \"real-world\")",
+  "year_range": "2023-2026",
+  "max_results": 30
+}
+```
+2026-05-05 00:52:17 [INFO] auto_slr - [Executor] search_papers 输出: 找到 100 篇不重复论文
+2026-05-05 00:52:17 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Perform initial screening of papers
+2026-05-05 00:52:17 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:52:17 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+
+Current research task:
+research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely t...
+2026-05-05 00:52:17 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 00:52:28 [DEBUG] auto_slr - [System LLM] 响应: Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+2026-05-05 00:52:28 [INFO] auto_slr - [Assistant] provide_context 输出: Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actua...
+2026-05-05 00:52:28 [INFO] auto_slr - [Executor] screen_papers_sample 输入: assistant_context=Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases 
+2026-05-05 00:52:28 [INFO] auto_slr - 初步筛选: 共 100 篇, 未筛选 100 篇
+2026-05-05 00:52:28 [INFO] auto_slr - 筛选第 1 批, 共 10 篇
+2026-05-05 00:52:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:52:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:52:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: Holistic Evaluation of State-of-the-Art LLMs for Code Generation
+Year: 2025
+Authors: Le Zhang, Suresh Kothari
+Abstract:...
+2026-05-05 00:53:29 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "Focuses on evaluating LLMs on LeetCode algorithmic problems, which lacks real-world deployment cases and practical engineering focus required by the user."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "Proposes a new dataset and tasks for version-controllable code generation, but does not present specific deployment cases or practical engineering projects as required."
+  },
+  {
+    "index": 3,
+    "decision": "not_sure",
+    "reason": "Focuses on the practitioners' perspective and empirically grounded evaluation, which aligns with practical engineering, but the abstract does not clearly state if it includes specific deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "Presents a security-focused code generation framework (Codexity), but the abstract lacks explicit mention of deployment cases in real-world small to medium-sized projects, though it integrates with static analysis tools."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "Conducts an empirical analysis of developer-LLM conversations (DevGPT), which provides insights into real-world usage but does not present specific deployment cases or practical engineering projects."
+  },
+  {
+    "index": 6,
+    "decision": "include",
+    "reason": "Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement for practical engineering, deployment cases, and small to medium-sized projects."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "Focuses on a security-centric evaluation of LLM-generated web application code, but it is an evaluation study that does not present actual deployment cases or practical engineering projects."
+  },
+  {
+    "index": 8,
+    "decision": "include",
+    "reason": "Focuses on deployability-centric Infrastructure-as-Code generation and DevOps simulation, directly addressing real-world deployment concerns and practical engineering utility."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "Assesses the impact of requirement ambiguity on code generation, which is an empirical study lacking specific deployment cases or practical engineering project implementations."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "Focuses on LLM-driven code generation for accelerating diffusion models (ML inference optimization), which deviates from the user's focus on practical software engineering deployment for small to medium-sized projects."
+  }
+]
+```
+2026-05-05 00:53:29 [INFO] auto_slr - 第 1 批筛选完成: included=2, excluded=6, not_sure=2
+2026-05-05 00:53:29 [INFO] auto_slr - 筛选第 2 批, 共 10 篇
+2026-05-05 00:53:29 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:53:29 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:53:29 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: AICoderEval: Improving AI Domain Code Generation of Large Language Models
+Year: 2024
+Authors: Yinghui Xia, Yuyan Chen, ...
+2026-05-05 00:54:39 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "not_sure",
+    "reason": "The paper focuses on real-world tasks in code generation and provides an evaluation dataset (experimental data), but the abstract does not explicitly mention deployment cases or a focus on small to medium-sized projects."
+  },
+  {
+    "index": 2,
+    "decision": "not_sure",
+    "reason": "Addresses controlled code generation for real-world applications with strict constraints, which is relevant to practical engineering. However, it lacks explicit mention of deployment cases or SME project focus in the abstract."
+  },
+  {
+    "index": 3,
+    "decision": "not_sure",
+    "reason": "Aims to improve LLM programming comprehension to address limitations in practical adoption, but as a methodology paper, it is unclear from the abstract whether it includes specific deployment cases or testing on SME projects."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "Focuses on practical web UI code generation with accessibility compliance, aligning with real-world engineering needs. However, the abstract does not confirm the presence of specific deployment cases or SME focus."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "The paper uses code generation as a representation method for 3D articulated object reconstruction rather than software engineering code generation. It does not meet the topic requirement of LLM-based code generation for practical software engineering."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "This is a survey paper which aggregates existing literature. It does not provide specific experimental data or deployment cases of its own, failing the user's screening requirements."
+  },
+  {
+    "index": 7,
+    "decision": "not_sure",
+    "reason": "Evaluates secure code generation in real-world repositories and provides experimental data. However, the abstract does not explicitly mention deployment cases or a focus on small to medium-sized projects."
+  },
+  {
+    "index": 8,
+    "decision": "not_sure",
+    "reason": "Highly relevant empirical study on Small Language Models (SLMs) for code generation, which aligns well with the 'small to medium-sized projects' preference, and includes specific experimental data. However, it is unclear if it contains actual deployment cases."
+  },
+  {
+    "index": 9,
+    "decision": "not_sure",
+    "reason": "Proposes a benchmark aligned with real-world code repositories and includes experimental evaluations. However, it lacks explicit mention of deployment cases or a specific focus on small to medium-sized projects."
+  },
+  {
+    "index": 10,
+    "decision": "not_sure",
+    "reason": "Evaluates LLMs on developer-preferred code adjustments with experimental data, relevant to practical engineering. However, the abstract does not mention deployment cases or SME project focus."
+  }
+]
+```
+2026-05-05 00:54:39 [INFO] auto_slr - 第 2 批筛选完成: included=2, excluded=8, not_sure=10
+2026-05-05 00:54:39 [INFO] auto_slr - 筛选第 3 批, 共 10 篇
+2026-05-05 00:54:39 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:54:39 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:54:39 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models
+Year: 2024
+Authors: Jiashe...
+2026-05-05 00:55:33 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "This is a benchmark proposal paper. While it evaluates code quality dimensions for real-world development, it does not present specific deployment cases or experimental data for small to medium-sized projects."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "This is a roadmap and vision paper that provides analysis and future directions. It is purely theoretical without actual testing, experimental data, or deployment cases."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "This paper focuses on adversarial attacks and vulnerabilities in LLM-generated code. It does not address practical engineering deployment or provide deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "The paper proposes DomAgent for domain-specific code generation in real-world software development. While it targets practical engineering challenges, the abstract is cut off, making it unclear if it includes the required specific experimental data and deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "The paper focuses on robot task planning using linear temporal logic, which falls outside the scope of practical software engineering and real-world deployment of LLM-based code generation."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "The paper addresses requirement alignment in code generation. It likely focuses on benchmark evaluations rather than providing real-world deployment cases or experimental data for small to medium-sized projects."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "This is an evaluation paper focusing on LLM performance on real-world class-level code. It assesses readiness for production but does not present actual deployment cases or practical engineering implementations for small to medium-sized projects."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "This paper focuses on evaluating social bias in code generation. It is a benchmarking/evaluation study and does not include practical engineering deployment cases."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "This is an empirical study on the robustness and reliability of LLM code generation. It evaluates LLM outputs rather than presenting deployment cases or practical engineering implementations for real-world projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "The paper proposes a self-collaboration framework for code generation. While it mimics real-world teamwork, it is likely evaluated on standard benchmarks rather than demonstrating actual deployment cases in small to medium-sized projects."
+  }
+]
+```
+2026-05-05 00:55:33 [INFO] auto_slr - 第 3 批筛选完成: included=2, excluded=17, not_sure=11
+2026-05-05 00:55:33 [INFO] auto_slr - 筛选第 4 批, 共 10 篇
+2026-05-05 00:55:33 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:55:33 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:55:33 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: Secure Code Generation via Online Reinforcement Learning with Vulnerability Reward Model
+Year: 2026
+Authors: Tianyi Wu,...
+2026-05-05 00:56:41 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "not_sure",
+    "reason": "The paper addresses secure code generation and mentions the barrier to real-world deployment, which aligns with the topic. However, the abstract does not explicitly confirm the presence of specific deployment cases or a focus on small to medium-sized projects."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "This paper proposes a benchmark (DevEval) for evaluating LLM coding abilities. It does not focus on practical engineering deployment cases or specific deployment data for small to medium-sized projects."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "This is an empirical study on knowledge conflicts from evolving APIs. It focuses on analyzing LLM behavior rather than presenting practical engineering deployment cases or specific deployment data."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "The paper introduces a framework (CoCoST) for complex code generation in real-world scenarios, which is relevant to practical engineering. However, the abstract does not explicitly mention specific deployment cases or a focus on small to medium-sized projects."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "This is a Systematic Literature Review (SLR) on sustainable code generation. It is rejected based on the exclusion criterion of purely theoretical/review papers without actual testing and deployment cases."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "The paper focuses on unveiling provider bias in LLMs, which is an empirical analysis/study rather than a practical engineering deployment case with specific deployment data."
+  },
+  {
+    "index": 7,
+    "decision": "not_sure",
+    "reason": "The paper explores exception safety code generation for real-world software development, aligning with the practical engineering topic. However, it does not explicitly state whether it includes specific deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "This paper reveals a security threat (HACKODE) targeting LLM coding assistants. It focuses on security vulnerabilities and attacks rather than practical deployment cases or engineering data."
+  },
+  {
+    "index": 9,
+    "decision": "not_sure",
+    "reason": "The paper introduces an agent system and benchmark for real-world repo-level code generation, which is highly relevant to practical engineering. However, the abstract focuses on benchmark evaluation and does not explicitly confirm specific deployment cases in small to medium-sized projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "This paper proposes a benchmark (IndustryCode) for industry code generation. While it mentions industrial applications, it is fundamentally a benchmark paper and does not provide specific deployment cases or engineering data for small to medium-sized projects."
+  }
+]
+```
+2026-05-05 00:56:41 [INFO] auto_slr - 第 4 批筛选完成: included=2, excluded=23, not_sure=15
+2026-05-05 00:56:41 [INFO] auto_slr - 筛选第 5 批, 共 10 篇
+2026-05-05 00:56:41 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:56:41 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:56:41 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: Is Your AI-Generated Code Really Safe? Evaluating Large Language Models on Secure Code Generation with CodeSecEval
+Year...
+2026-05-05 00:58:07 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "The paper introduces a benchmark (CodeSecEval) for evaluating secure code generation. It focuses on benchmarking and evaluation rather than practical engineering, and lacks specific deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "This is an empirical study on search-induced issues in web-augmented code generation. While it uses commercial APIs, it focuses on detecting and repairing errors rather than presenting real-world deployment cases."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "The paper proposes a multimodal model (MM-Coder) integrating visual inputs for code generation. It focuses on model architecture and training, and does not mention deployment cases or practical engineering for small to medium-sized projects."
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "This paper presents a benchmark (HumanEvo) for repository-level code generation. It is an evaluation-focused study that lacks deployment cases and real-world engineering applications."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "The paper proposes a prompting framework (M^2WF) based on metamemory mechanisms. It is primarily a methodological/theoretical contribution without evidence of real-world deployment cases or practical engineering focus."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "The paper introduces a benchmark (MT-Sec) for evaluating multi-turn code generation. It focuses on benchmarking correctness and security rather than practical deployment or engineering cases."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "The paper proposes LEVER, a verification framework for language-to-code generation. It focuses on improving generation accuracy through verification rather than presenting deployment cases for practical engineering."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "This is an empirical study assessing the representativeness of code generation benchmarks. It focuses on benchmark evaluation and lacks deployment cases or practical engineering applications."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "The paper proposes Seeker, a multi-agent framework for exception safety in code generation. While it addresses a practical issue, the abstract does not mention deployment cases or testing on small to medium-sized real-world projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "The paper introduces Design2Code, a benchmark for automated front-end engineering. Although it uses real-world webpages as test cases, it is a benchmarking study and lacks actual deployment cases or practical engineering deployment scenarios."
+  }
+]
+```
+2026-05-05 00:58:07 [INFO] auto_slr - 第 5 批筛选完成: included=2, excluded=33, not_sure=15
+2026-05-05 00:58:07 [INFO] auto_slr - 筛选第 6 批, 共 10 篇
+2026-05-05 00:58:07 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:58:07 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:58:07 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: SolEval: Benchmarking Large Language Models for Repository-level Solidity Code Generation
+Year: 2025
+Authors: Zhiyuan P...
+2026-05-05 00:59:29 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "The paper introduces a benchmark (SolEval) for Solidity code generation. It focuses on evaluation rather than practical engineering or real-world deployment cases, thus failing to meet the requirement for deployment cases."
+  },
+  {
+    "index": 2,
+    "decision": "not_sure",
+    "reason": "The paper addresses real-world ambiguity in NL prompts for data science code generation using I/O specifications. It likely contains experimental data, but the abstract does not explicitly mention deployment cases or focus on small to medium-sized projects."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "The paper proposes a theoretical framework for designing empirical studies on LLM-based code generation. It falls under the exclusion criterion of being a purely theoretical paper without actual testing or deployment cases."
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "The paper introduces a benchmark (ReCUBE) to evaluate repository-level context utilization. It is an evaluation/benchmark paper and does not present deployment cases or practical engineering projects."
+  },
+  {
+    "index": 5,
+    "decision": "not_sure",
+    "reason": "The paper focuses on generating gas-efficient and secure Solidity code, which are critical for real-world smart contract deployment, and uses SFT/DPO. It likely contains experimental data, but it is unclear if it includes actual deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 6,
+    "decision": "not_sure",
+    "reason": "The paper presents a practical, automated framework for frontend code generation and mentions 'real-world user...' (likely interfaces or studies), aligning with practical engineering. However, the abstract is cut off, making it uncertain whether it includes specific deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "The paper introduces a benchmark (MRG-Bench) for repository-level code generation. It focuses on evaluation rather than practical deployment cases, failing to meet the core requirement."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "The paper evaluates LLM code generation in competitive game environments (ProxyWar). While it tests operational characteristics, game arenas do not constitute real-world deployment cases for practical software engineering projects."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "The paper is a survey on ensemble learning for LLMs in text and code generation. It does not present specific experimental data or deployment cases, thus failing the inclusion criteria."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "The paper is an empirical study analyzing the types and causes of mistakes in LLM-generated code. It focuses on error analysis rather than practical engineering, real-world deployment, or small to medium-sized project cases."
+  }
+]
+```
+2026-05-05 00:59:29 [INFO] auto_slr - 第 6 批筛选完成: included=2, excluded=40, not_sure=18
+2026-05-05 00:59:29 [INFO] auto_slr - 筛选第 7 批, 共 10 篇
+2026-05-05 00:59:29 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 00:59:29 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 00:59:29 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: On the Effectiveness of Training Data Optimization for LLM-based Code Generation: An Empirical Study
+Year: 2025
+Authors...
+2026-05-05 01:00:37 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "The paper focuses on training data optimization techniques for LLMs. While it is an empirical study with experimental data, it does not mention real-world deployment cases or focus on small to medium-sized projects."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "The paper investigates interaction smells in multi-turn human-LLM collaboration. It lacks specific deployment cases and does not focus on practical engineering or real-world deployment for small to medium-sized projects."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "The paper explores personality-guided code generation. It is an empirical study but lacks focus on practical engineering, real-world deployment cases, and small to medium-sized projects."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "The paper benchmarks the robustness of quantized LLMs, which is highly relevant to practical engineering and deployment. It includes experimental data, but as a benchmarking study, it is unclear if it provides specific deployment cases focusing on small to medium-sized projects."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "The paper introduces a multi-expert LLM architecture specifically for Verilog code generation. It lacks mention of real-world deployment cases or focus on small to medium-sized software projects."
+  },
+  {
+    "index": 6,
+    "decision": "not_sure",
+    "reason": "The paper explicitly focuses on identifying conditions for effective and safe real-world deployment of code generation assistants, aligning well with the practical engineering requirement. However, it is a comparative analysis, and the abstract does not confirm if it includes specific deployment cases focusing on small to medium-sized projects."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "The paper proposes a KV cache optimization method to reduce computational demands for code generation. While relevant to deployment efficiency, it focuses on system optimization rather than providing specific deployment cases or focusing on small to medium-sized projects."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "The paper introduces a closed-loop verifiable code generation paradigm (Clover). It focuses on correctness and consistency checking rather than real-world deployment cases or practical engineering for small to medium-sized projects."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "The paper proposes an evaluation benchmark (SR-Eval) for stepwise requirement refinement. It is a benchmarking/evaluation study and lacks specific deployment cases or focus on small to medium-sized projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "The paper presents an MCTS-based decoding algorithm for RTL code generation. It focuses on algorithmic optimization for hardware description languages rather than real-world deployment cases for small to medium-sized software projects."
+  }
+]
+```
+2026-05-05 01:00:37 [INFO] auto_slr - 第 7 批筛选完成: included=2, excluded=48, not_sure=20
+2026-05-05 01:00:37 [INFO] auto_slr - 筛选第 8 批, 共 10 篇
+2026-05-05 01:00:37 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:00:37 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 01:00:37 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: RealBench: A Repo-Level Code Generation Benchmark Aligned with Real-World Software Development Practices
+Year: 2026
+Aut...
+2026-05-05 01:02:16 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "not_sure",
+    "reason": "The abstract is truncated. While it introduces a benchmark aligned with real-world software development and enterprise applications, it is unclear if it includes specific deployment cases in small to medium-sized projects or just benchmark evaluation data."
+  },
+  {
+    "index": 2,
+    "decision": "not_sure",
+    "reason": "The abstract is truncated. It proposes a user-centric evaluation method for deciding whether to use LLMs in software production, which aligns with practical engineering. However, it is unclear if it provides specific experimental data and deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "The paper presents an 'empirical study design' and introduces a tool (CURRANTE), but being a study design implies it may lack actual experimental results and deployment cases, failing the requirement for specific experimental data and actual testing."
+  },
+  {
+    "index": 4,
+    "decision": "not_sure",
+    "reason": "The abstract is truncated. It proposes a framework addressing practical challenges in code evolution (API changes), which is relevant to real-world deployment. However, it is unclear from the truncated abstract whether it includes specific experimental data and deployment cases for small to medium-sized projects."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "The paper focuses on using LLMs for scientific research and data analysis, which does not align with the user's requirement of practical engineering and real-world software deployment cases."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "This is a benchmark paper (CodeIF-Bench) focused on evaluating instruction-following capabilities in interactive code generation. It lacks deployment cases in small to medium-sized projects, focusing instead on benchmark metrics."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "This is a benchmark paper (EvoCodeBench) focused on evolving data and domain-specific evaluation. It provides benchmark evaluation data but lacks real-world deployment cases in small to medium-sized projects."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "This is a benchmark paper (WebApp1K) for test-driven development. Although it reflects real-world software development practices and covers multiple application domains, it evaluates LLMs on challenges rather than presenting actual deployment cases in projects."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "The paper focuses on measuring code generation stability via structural entropy. It is a metric/evaluation paper without deployment cases, leaning towards theoretical analysis without actual deployment in real-world projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "This is a benchmark paper (CodeMixBench) evaluating LLMs on code-mixed prompts. It focuses on benchmark evaluation rather than practical engineering deployment cases in small to medium-sized projects."
+  }
+]
+```
+2026-05-05 01:02:16 [INFO] auto_slr - 第 8 批筛选完成: included=2, excluded=55, not_sure=23
+2026-05-05 01:02:16 [INFO] auto_slr - 筛选第 9 批, 共 10 篇
+2026-05-05 01:02:16 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:02:16 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 01:02:16 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Venues: ICML, NeurIPS, ICLR
+Topic: LLM-based code generation (practical engineering, real-world deployment)
+Years: 2023-2026
+Requirements: Must include specific experimental data and deployment cases (focus on small to medium-sized projects)
+Exclusions: Reject purely theoretical papers without actual testing
+
+Paper list:
+--- Paper 1 ---
+Title: Code-as-Symbolic-Planner: Foundation Model-Based Robot Planning via Symbolic Code Generation
+Year: 2025
+Authors: Yongch...
+2026-05-05 01:03:06 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "Focuses on robot task and motion planning using code generation, which is robotics-oriented rather than practical software engineering or real-world deployment of software projects."
+  },
+  {
+    "index": 2,
+    "decision": "include",
+    "reason": "Directly addresses project-level code generation for real-world software engineering, aiming to generate complete software projects from complex requirements, which aligns perfectly with the focus on practical engineering and deployment."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "Focuses on evaluating and uncovering bias in code generation for ML pipelines, which is a fairness/evaluation study rather than a practical engineering or deployment case for software projects."
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "Targets code generation specifically for SAT-solving strategies, which is a narrow algorithmic optimization problem rather than practical software engineering or real-world project deployment."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "Centers on benchmarking prompt engineering for secure code generation, which is an evaluation/security study rather than a paper presenting deployment cases or practical engineering projects."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "Proposes a benchmark for evaluating code generation models. While it uses real developer telemetry, it is a benchmarking/evaluation paper and does not present deployment cases or practical engineering projects."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "Focuses on improving code generation through RLHF and Bayesian optimization, which is a model training/alignment methodology paper rather than a practical deployment or engineering case study."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "Presents a case study of customizing LLMs for physics-based simulation code generation. While it involves a specific deployment case, it is highly domain-specific to simulation tools rather than general practical software engineering or small-to-medium software projects."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "Proposes a self-debugging technique with self-generated tests to boost code generation performance. It is a technical improvement paper and lacks focus on real-world deployment cases or practical engineering projects."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "Focuses on embodied robotic manipulation using code generation as a planner, which falls under robotics rather than practical software engineering or real-world software deployment."
+  }
+]
+```
+2026-05-05 01:03:06 [INFO] auto_slr - 第 9 批筛选完成: included=3, excluded=64, not_sure=23
+2026-05-05 01:03:06 [INFO] auto_slr - [Executor] screen_papers_sample 输出: included=3, excluded=64, not_sure=23
+2026-05-05 01:03:06 [INFO] auto_slr - [Contactor] present_sample_papers 输入: 3 篇论文
+2026-05-05 01:03:06 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:03:06 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic assistant presenting screened sample papers to the user and asking for their confirmation.
+
+Below are the screened sample papers:
+[Paper 1]
+Title: Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+Year: 2026
+Authors: Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+Screening rationale: Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement ...
+2026-05-05 01:03:06 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please present the sample papers to the user and ask for their feedback.
+2026-05-05 01:03:25 [DEBUG] auto_slr - [System LLM] 响应: Hello! I have screened a set of sample papers based on your criteria. Here are three papers that closely align with the focus on practical engineering, real-world deployment, and small to medium-sized projects:
+
+**[Paper 1]**
+* **Title:** Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+* **Year:** 2026
+* **Authors:** Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+* **Screening Rationale:** Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement for practical engineering, deployment cases, and small to medium-sized projects.
+
+**[Paper 2]**
+* **Title:** Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation
+* **Year:** 2025
+* **Authors:** Tianyi Zhang, Shidong Pan, Zejun Zhang, Zhenchang Xing, Xiaoyu Sun
+* **Screening Rationale:** Focuses on deployability-centric Infrastructure-as-Code generation and DevOps simulation, directly addressing real-world deployment concerns and practical engineering utility.
+
+**[Paper 3]**
+* **Title:** Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling
+* **Year:** 2025
+* **Authors:** Qianhui Zhao, Li Zhang, Fang Liu, Junhang Cheng, Chengru Wu, Junchen Ai, Qiaoyuanhe Meng, Lichen Zhang, Xiaoli Lian, Shubin Song, Yuanping Guo
+* **Screening Rationale:** Directly addresses project-level code generation for real-world software engineering, aiming to generate complete software projects from complex requirements, which aligns perfectly with the focus on practical engineering and deployment.
+
+Could you please review these and let me know:
+1. **Which papers meet your expectations?**
+2. **Which ones do not? If a paper doesn't meet your expectations, could you please explain why?** 
+
+Your feedback will help me refine the screening process!
+2026-05-05 01:03:25 [INFO] auto_slr - [Contactor] present_sample_papers 输出: Hello! I have screened a set of sample papers based on your criteria. Here are three papers that closely align with the focus on practical engineering, real-world deployment, and small to medium-sized projects:
+
+**[Paper 1]**
+* **Title:** Ro-SLM: Onboard Small Language Models for Robot Task Planning...
+2026-05-05 01:03:25 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=4条
+2026-05-05 01:03:25 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 01:03:25 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 01:03:25 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: Hello! I have screened a set of sample papers based on your criteria. Here are three papers that closely align with the focus on practical engineering, real-world deployment, and small to medium-sized projects:
+
+**[Paper 1]**
+* **Title:** Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+* **Year:** 2026
+* **Authors:** Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+* **Screening Rationale:** Directly addresses real-world deployment of LLMs/SLMs on resour...
+2026-05-05 01:03:25 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: The system has presented a paper to you:
+Title: Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+Year: 2026
+Screening rationale: Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement for practical engineering, deployment cases, and small to medium-sized projects.
+Abstract: Recent advances in large language models (LLMs) provide robots with contextual reaso...
+2026-05-05 01:03:28 [DEBUG] auto_slr - [Simulator LLM] 响应: This paper looks promising and aligns well with my research interests. The focus on deploying small language models on resource-constrained robots (UAVs, ground vehicles) is exactly the kind of real-world, practical engineering I'm looking for. It directly addresses model adaptability in small-to-medium-scale hardware environments, which is a key hidden requirement I have. I also appreciate that it tackles the deployment bottleneck of cloud dependency—a core challenge in LLM-based code generation for embedded systems.
+
+**However**, I have a slight concern: the year is 2026, which is technically outside my specified 2023-2026 range if we're strictly interpreting "past 3 years." But since it's listed as a relevant paper and the topic is highly practical, I'm still interested. Could you confirm if this paper includes **specific experimental data** (e.g., success rates, latency measurements, or code generation accuracy on real robot tasks) rather than just theoretical feasibility? If it has concrete numbers and deployment cases, I'd like to keep it.
+2026-05-05 01:03:28 [INFO] auto_slr - [User(Simulated)] Paper feedback 'Ro-SLM: Onboard Small Language Models for Robot Ta': This paper looks promising and aligns well with my research interests. The focus on deploying small language models on resource-constrained robots (UAVs, ground vehicles) is exactly the kind of real-w
+2026-05-05 01:03:28 [INFO] auto_slr - [Assistant] extract_and_record 输入: User is satisfied with paper 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation': This paper looks promising and aligns well with my research interests. The focus on deploying small 
+2026-05-05 01:03:28 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:03:28 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 01:03:28 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User is satisfied with paper 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation': This paper looks promising and aligns well with my research interests. The focus on deploying small 
+2026-05-05 01:03:42 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "Robot task planning and operation code generation using small language models",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "Satisfied with paper 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation'"
+}
+```
+2026-05-05 01:03:42 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Robot task planning and operation code generation using small language models", "filter_requirements": "", "rejection_reasons": "", "other_info": "Satisfied with paper 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation'"}
+2026-05-05 01:03:42 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:03:42 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+research_direction: LLM-based code generation, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026...
+2026-05-05 01:03:42 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 01:04:01 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Robot task planning and operation code generation using small language models, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+other_info: Satisfied with paper 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation'
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=6条
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: Hello! I have screened a set of sample papers based on your criteria. Here are three papers that closely align with the focus on practical engineering, real-world deployment, and small to medium-sized projects:
+
+**[Paper 1]**
+* **Title:** Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+* **Year:** 2026
+* **Authors:** Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+* **Screening Rationale:** Directly addresses real-world deployment of LLMs/SLMs on resour...
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: The system has presented a paper to you:
+Title: Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+Year: 2026
+Screening rationale: Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement for practical engineering, deployment cases, and small to medium-sized projects.
+Abstract: Recent advances in large language models (LLMs) provide robots with contextual reaso...
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: This paper looks promising and aligns well with my research interests. The focus on deploying small language models on resource-constrained robots (UAVs, ground vehicles) is exactly the kind of real-world, practical engineering I'm looking for. It directly addresses model adaptability in small-to-medium-scale hardware environments, which is a key hidden requirement I have. I also appreciate that it tackles the deployment bottleneck of cloud dependency—a core challenge in LLM-based code generatio...
+2026-05-05 01:04:01 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: The system has presented a paper to you:
+Title: Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation
+Year: 2025
+Screening rationale: Focuses on deployability-centric Infrastructure-as-Code generation and DevOps simulation, directly addressing real-world deployment concerns and practical engineering utility.
+Abstract: Infrastructure-as-Code (IaC) generation holds significant promise for automating cloud infrastructure pr...
+2026-05-05 01:04:04 [DEBUG] auto_slr - [Simulator LLM] 响应: This paper is a strong match for my research interests. The focus on **deployability-centric** code generation and the **DevOps simulation** approach directly addresses one of my core concerns: ensuring generated code actually works in real-world environments, not just in isolated benchmarks. The "Fail, Learn, Refine, and Succeed" iterative framework suggests practical engineering rigor with empirical validation.
+
+**My attitude:** Positive, with some specific questions. I'm particularly interested in whether this paper provides:
+1. **Quantitative metrics** on deployment success rates (e.g., how many generated IaC templates actually passed cloud deployment tests).
+2. **Case studies on small to medium-scale projects** (e.g., typical microservice deployments or single-server setups), not just enterprise-scale cloud infrastructure.
+3. **Comparison with baseline methods** like simple LLM prompting or template-based generation.
+
+If it includes these elements, this paper is definitely a keeper for my literature review. The 2025 publication year also falls nicely within my 2023-2026 window.
+2026-05-05 01:04:04 [INFO] auto_slr - [User(Simulated)] Paper feedback 'Deployability-Centric Infrastructure-as-Code Gener': This paper is a strong match for my research interests. The focus on **deployability-centric** code generation and the **DevOps simulation** approach directly addresses one of my core concerns: ensuri
+2026-05-05 01:04:04 [INFO] auto_slr - [Assistant] extract_and_record 输入: User is satisfied with paper 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation': This paper is a strong match for my research interests. The focus on **deployability-centric** code 
+2026-05-05 01:04:04 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:04:04 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 01:04:04 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User is satisfied with paper 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation': This paper is a strong match for my research interests. The focus on **deployability-centric** code 
+2026-05-05 01:04:20 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "User is satisfied with the paper 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation'"
+}
+```
+2026-05-05 01:04:20 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation", "filter_requirements": "", "rejection_reasons": "", "other_info": "User is satisfied with the paper 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation'"}
+2026-05-05 01:04:20 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:04:20 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+research_direction: Robot task planning and operation code generation using small language models, focusing on practical engineering and ...
+2026-05-05 01:04:20 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 01:04:48 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation, and robot task planning and operation code generation using small language models, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+other_info: Satisfied with papers 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation' and 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation'
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=8条
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=assistant: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, focusing on practical engineering and real-world deployment. I need studies that include specific experimental data and deployment cases, especially for small to medium-sized projects. Please prioritize top conference papers (ICML, NeurIPS, ICLR) and skip anything purely theoretical without actual testing. Thanks!
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[2] role=user: Hello! I have screened a set of sample papers based on your criteria. Here are three papers that closely align with the focus on practical engineering, real-world deployment, and small to medium-sized projects:
+
+**[Paper 1]**
+* **Title:** Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+* **Year:** 2026
+* **Authors:** Wenhao Wang, Yanyan Li, Long Jiao, Jiawei Yuan
+* **Screening Rationale:** Directly addresses real-world deployment of LLMs/SLMs on resour...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[3] role=user: The system has presented a paper to you:
+Title: Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation
+Year: 2026
+Screening rationale: Directly addresses real-world deployment of LLMs/SLMs on resource-constrained robots (UAVs and small ground vehicles), perfectly fitting the requirement for practical engineering, deployment cases, and small to medium-sized projects.
+Abstract: Recent advances in large language models (LLMs) provide robots with contextual reaso...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[4] role=assistant: This paper looks promising and aligns well with my research interests. The focus on deploying small language models on resource-constrained robots (UAVs, ground vehicles) is exactly the kind of real-world, practical engineering I'm looking for. It directly addresses model adaptability in small-to-medium-scale hardware environments, which is a key hidden requirement I have. I also appreciate that it tackles the deployment bottleneck of cloud dependency—a core challenge in LLM-based code generatio...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[5] role=user: The system has presented a paper to you:
+Title: Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation
+Year: 2025
+Screening rationale: Focuses on deployability-centric Infrastructure-as-Code generation and DevOps simulation, directly addressing real-world deployment concerns and practical engineering utility.
+Abstract: Infrastructure-as-Code (IaC) generation holds significant promise for automating cloud infrastructure pr...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[6] role=assistant: This paper is a strong match for my research interests. The focus on **deployability-centric** code generation and the **DevOps simulation** approach directly addresses one of my core concerns: ensuring generated code actually works in real-world environments, not just in isolated benchmarks. The "Fail, Learn, Refine, and Succeed" iterative framework suggests practical engineering rigor with empirical validation.
+
+**My attitude:** Positive, with some specific questions. I'm particularly interest...
+2026-05-05 01:04:48 [DEBUG] auto_slr - [Simulator LLM] 输入[7] role=user: The system has presented a paper to you:
+Title: Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling
+Year: 2025
+Screening rationale: Directly addresses project-level code generation for real-world software engineering, aiming to generate complete software projects from complex requirements, which aligns perfectly with the focus on practical engineering and deployment.
+Abstract: In recent years, Large Language Models (LLMs) have achieved...
+2026-05-05 01:04:53 [DEBUG] auto_slr - [Simulator LLM] 响应: This paper is an excellent match for my research interests and is likely the most relevant among the three presented. The focus on **project-level code generation** for real-world software engineering directly addresses my core interest in **small to medium-sized projects**—this is exactly the scale where current LLMs struggle most (generating a full project structure, not just isolated functions). The **multi-agent collaboration** and **semantic architecture modeling** approaches suggest a practical, engineering-driven solution rather than pure theoretical speculation.
+
+**My attitude:** Very positive, with strong interest. I have a few specific requirements to confirm:
+
+1. **Does this paper include concrete experimental results?** I need to see metrics like project completion rate, build success rate, or functional correctness on real-world project-level tasks (e.g., generating a complete CRUD application or a REST API service).
+
+2. **Are there deployment case studies?** For example, did they actually run the generated projects, test them, or deploy them in a CI/CD pipeline? I need to see evidence of real-world validation, not just benchmark scores.
+
+3. **What is the project scale?** Does it target projects with, say, 10-50 files and multiple modules, or is it limited to simple single-file generation? The former would be ideal for my research focus.
+
+If this paper provides solid empirical evidence and deployment validation, it will be a cornerstone of my literature review. The 2025 publication date is also perfect.
+2026-05-05 01:04:53 [INFO] auto_slr - [User(Simulated)] Paper feedback 'Towards Realistic Project-Level Code Generation vi': This paper is an excellent match for my research interests and is likely the most relevant among the three presented. The focus on **project-level code generation** for real-world software engineering
+2026-05-05 01:04:53 [INFO] auto_slr - [Assistant] extract_and_record 输入: User is not satisfied with paper 'Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling': This paper is an excellent match for my research interests and is likely the most relevant among the
+2026-05-05 01:04:53 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:04:53 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 01:04:53 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User is not satisfied with paper 'Towards Realistic Project-Level Code Generation via Multi-Agent Collaboration and Semantic Architecture Modeling': This paper is an excellent match for my research interests and is likely the most relevant among the
+2026-05-05 01:05:16 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "user_identity": "",
+  "user_preference": "",
+  "research_direction": "Project-Level Code Generation, Multi-Agent Collaboration, Semantic Architecture Modeling",
+  "filter_requirements": "",
+  "rejection_reasons": "",
+  "other_info": "User finds the paper highly relevant to their interests but is still dissatisfied; text is truncated."
+}
+```
+2026-05-05 01:05:16 [INFO] auto_slr - [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Project-Level Code Generation, Multi-Agent Collaboration, Semantic Architecture Modeling", "filter_requirements": "", "rejection_reasons": "", "other_info": "User finds the paper highly relevant to their interests but is still dissatisfied; text is truncated."}
+2026-05-05 01:05:16 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:05:16 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information integration assistant. Below are the [existing research task record] and the [newly extracted research task-related information].
+Please merge the two, remove duplicates, and resolve contradictions (prioritizing the latest information). Output a complete integrated version.
+Output only the integrated text, nothing else.
+
+Existing record:
+research_direction: Deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation, and robot task planning and...
+2026-05-05 01:05:16 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 01:05:43 [DEBUG] auto_slr - [System LLM] 响应: research_direction: Deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation, robot task planning and operation code generation using small language models, Project-Level Code Generation, Multi-Agent Collaboration, Semantic Architecture Modeling, focusing on practical engineering and real-world deployment
+filter_requirements: 2023-2026, must include specific experimental data and deployment cases, especially for small to medium-sized projects
+rejection_reasons: purely theoretical without actual testing
+other_info: Satisfied with papers 'Ro-SLM: Onboard Small Language Models for Robot Task Planning and Operation Code Generation' and 'Deployability-Centric Infrastructure-as-Code Generation: Fail, Learn, Refine, and Succeed through LLM-Empowered DevOps Simulation'; User finds the paper highly relevant to their interests but is still dissatisfied; text is truncated.
+2026-05-05 01:05:43 [INFO] auto_slr - [Assistant] provide_context 输入: task_description=Perform initial screening of papers
+2026-05-05 01:05:43 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:05:43 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an assistant that needs to provide the executor with background information relevant to the current task.
+
+Current user information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+
+Current research task:
+research_direction: Deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation, robot task planning and operation code generation using small language models, Project-Level Code Generation, Multi-Agent Collaboration, Semantic Architecture Model...
+2026-05-05 01:05:43 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 01:05:59 [DEBUG] auto_slr - [System LLM] 响应: Research Focus: Deployability-centric Infrastructure-as-Code (IaC) generation, LLM-Empowered DevOps Simulation, Robot task planning and operation code generation using Small Language Models (SLMs), Project-Level Code Generation, Multi-Agent Collaboration, and Semantic Architecture Modeling.
+Key Requirement: Focus on practical engineering and real-world deployment.
+Time Range: 2023-2026.
+Specifics: Must include specific experimental data and deployment cases (especially for small to medium-sized projects); reject purely theoretical papers without actual testing.
+Venue Preference: Top conference papers (ICML, NeurIPS, ICLR).
+Reference Examples: 'Ro-SLM' (SLMs on resource-constrained robots) and 'Deployability-Centric Infrastructure-as-Code Generation' (iterative feedback for deployability).
+2026-05-05 01:05:59 [INFO] auto_slr - [Assistant] provide_context 输出: Research Focus: Deployability-centric Infrastructure-as-Code (IaC) generation, LLM-Empowered DevOps Simulation, Robot task planning and operation code generation using Small Language Models (SLMs), Project-Level Code Generation, Multi-Agent Collaboration, and Semantic Architecture Modeling.
+Key Requ...
+2026-05-05 01:05:59 [INFO] auto_slr - [Executor] screen_papers_sample 输入: assistant_context=Research Focus: Deployability-centric Infrastructure-as-Code (IaC) generation, LLM-Empowered DevOps Simulation, Robot task planning and operation code generation using Small Language Models (SLMs), Pr
+2026-05-05 01:05:59 [INFO] auto_slr - 初步筛选: 共 99 篇, 未筛选 10 篇
+2026-05-05 01:05:59 [INFO] auto_slr - 筛选第 1 批, 共 10 篇
+2026-05-05 01:05:59 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:05:59 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature screening expert. You will receive:
+1. User's research requirements and preferences
+2. Metadata and abstracts of multiple papers
+
+For each paper, determine whether it should be included in the literature review. Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "decision": "include" | "exclude" | "not_sure",
+    "reason": "justification for the decision"
+  }},
+  ...
+]
+
+Criteria:
+- include: The paper is highly relevant to the research direction and meets al...
+2026-05-05 01:05:59 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: User requirements and preferences:
+Research Focus: Deployability-centric Infrastructure-as-Code (IaC) generation, LLM-Empowered DevOps Simulation, Robot task planning and operation code generation using Small Language Models (SLMs), Project-Level Code Generation, Multi-Agent Collaboration, and Semantic Architecture Modeling.
+Key Requirement: Focus on practical engineering and real-world deployment.
+Time Range: 2023-2026.
+Specifics: Must include specific experimental data and deployment cases (es...
+2026-05-05 01:06:43 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "decision": "exclude",
+    "reason": "Focuses on self-evolving curriculum and behavior code generation for complex decision-making, which does not align with the specific research focuses such as IaC generation, DevOps, Robot task planning with SLMs, or project-level code generation."
+  },
+  {
+    "index": 2,
+    "decision": "exclude",
+    "reason": "Focuses on benchmarking LLMs for quantum code generation, which is entirely outside the specified research directions."
+  },
+  {
+    "index": 3,
+    "decision": "exclude",
+    "reason": "Focuses on preprocessing techniques and data embedding for engineering code generation. It lacks focus on the specific areas like IaC, DevOps, Robot SLMs, or multi-agent collaboration, and does not emphasize practical deployment cases."
+  },
+  {
+    "index": 4,
+    "decision": "exclude",
+    "reason": "Focuses on DocString compression for code generation efficiency. It is a prompt optimization technique and does not meet the requirements for practical engineering deployment or the specific research topics."
+  },
+  {
+    "index": 5,
+    "decision": "exclude",
+    "reason": "Focuses on exception handling in code generation using knowledge-driven AI chaining. While it touches on code reliability, it does not cover the core topics like IaC, Robot SLMs, or project-level code generation with deployment cases."
+  },
+  {
+    "index": 6,
+    "decision": "exclude",
+    "reason": "Although it mentions project-level code generation, it is a user study on interaction strategies with ChatGPT rather than an engineering solution or system for project-level code generation with actual deployment cases. It lacks the practical deployment focus required."
+  },
+  {
+    "index": 7,
+    "decision": "exclude",
+    "reason": "Focuses on benchmarking LLMs across general and domain-specific code generation. It is an evaluation/benchmark study without the practical engineering deployment cases required by the screening criteria."
+  },
+  {
+    "index": 8,
+    "decision": "exclude",
+    "reason": "Focuses on security vulnerabilities (hijacking) in retrieval-augmented code generation. It does not align with the core research focuses such as IaC, DevOps, or Robot SLMs."
+  },
+  {
+    "index": 9,
+    "decision": "exclude",
+    "reason": "Focuses on a fine-tuning method (Gibbs Fine-Tuning) for code generation using synthetic data. It is a training methodology paper rather than a practical engineering or deployment-centric study."
+  },
+  {
+    "index": 10,
+    "decision": "exclude",
+    "reason": "Focuses on evaluating and unveiling the real capability of LLMs in code generation beyond familiar data. It is an evaluation paper and lacks the practical deployment cases and specific focus on IaC, DevOps, or Robot SLMs."
+  }
+]
+```
+2026-05-05 01:06:43 [INFO] auto_slr - 第 1 批筛选完成: included=0, excluded=10, not_sure=0
+2026-05-05 01:06:43 [INFO] auto_slr - [Executor] screen_papers_sample 输出: included=0, excluded=10, not_sure=0
+2026-05-05 01:06:43 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:06:43 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review rubric design assistant. Please generate a systematic, multi-dimensional paper scoring rubric based on the following information.
+
+User information:
+user_preference: top conference papers (ICML, NeurIPS, ICLR)
+
+Research task requirements:
+research_direction: Deployability-centric Infrastructure-as-Code generation, LLM-Empowered DevOps Simulation, robot task planning and operation code generation using small language models, Project-Level Code Generation, Mul...
+2026-05-05 01:06:43 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Please execute the above request.
+2026-05-05 01:07:32 [DEBUG] auto_slr - [System LLM] 响应: ```json
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; mentions deployment but lacks actionable utility or practical focus.",
+        "3": "Addresses a practical engineering problem but remains mostly conceptual or limited to standard benchmarks without deployment focus.",
+        "4": "Strong engineering utility with a clear deployability focus (e.g., IaC, DevOps simulation), but lacks complete end-to-end real-world integration.",
+        "5": "Directly solves a real-world deployment problem with high practical utility, perfectly aligning with deployability-centric engineering needs (similar to IaC generation or onboard robot planning)."
+      }
+    },
+    {
+      "name": "Experimental Rigor & Deployment Case Validation",
+      "description": "Assesses the presence and quality of specific experimental data and real-world deployment cases, particularly emphasizing small to medium-sized projects over purely synthetic or large-scale hypothetical scenarios.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "No experimental data or deployment cases provided; purely theoretical.",
+        "2": "Limited synthetic experiments only; no real deployment testing or case studies.",
+        "3": "Standard benchmark experiments with some simulated deployment scenarios, but lacking specific real-world case data.",
+        "4": "Good experimental data with specific deployment cases, but limited to large-scale, highly controlled, or non-SME environments.",
+        "5": "Comprehensive experimental data with concrete, real-world deployment cases, specifically demonstrating success in small to medium-sized projects or resource-constrained settings."
+      }
+    },
+    {
+      "name": "Resource Efficiency & Small Model Applicability",
+      "description": "Measures the paper's focus on resource constraints and the applicability of Small Language Models (SLMs) or efficient methods for edge/onboard deployment, avoiding reliance on massive, inaccessible API models.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Relies entirely on massive models with no consideration for resource constraints or deployability.",
+        "2": "Uses large models with minor mentions of efficiency, but no actual implementation of small models or edge deployment.",
+        "3": "Explores model optimization or uses mid-sized models, but doesn't achieve actual resource-constrained deployment.",
+        "4": "Successfully applies small language models (SLMs) or optimization techniques, showing good performance under constrained resources.",
+        "5": "Exemplary implementation of SLMs on resource-constrained hardware (e.g., UAVs, small ground vehicles) or for SME-scale projects, demonstrating state-of-the-art efficiency and performance."
+      }
+    },
+    {
+      "name": "System Complexity & Project-Level Scope",
+      "description": "Evaluates whether the paper handles complex, project-level tasks (e.g., Infrastructure-as-Code, semantic architecture modeling, multi-agent collaboration) rather than isolated, single-turn code generation.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Focuses on isolated, single-turn tasks (e.g., snippet generation) with no system-level scope.",
+        "2": "Handles slightly complex tasks but lacks multi-agent collaboration or project-level integration.",
+        "3": "Addresses multi-step tasks or basic multi-agent collaboration, but falls short of full project-level or architectural scope.",
+        "4": "Tackles project-level code generation, semantic architecture modeling, or complex multi-agent collaboration effectively.",
+        "5": "Seamlessly handles end-to-end project-level generation, complex semantic architecture modeling, or sophisticated multi-agent DevOps simulation with robust system integration."
+      }
+    },
+    {
+      "name": "Top-Tier Venue Alignment & Scientific Novelty",
+      "description": "Assesses the scientific novelty and rigor of the paper, ensuring it meets the high standards of top conferences (ICML, NeurIPS, ICLR) while bridging theory and practical deployment.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Lacks novelty and rigor; unlikely to pass peer review at any major venue.",
+        "2": "Incremental engineering work with minimal scientific contribution; unsuitable for top conferences.",
+        "3": "Adequate novelty and rigor, potentially suitable for mid-tier venues or workshops, but lacks the depth expected at ICML/NeurIPS/ICLR.",
+        "4": "Strong scientific contribution with rigorous methodology, meeting the standard for top conferences.",
+        "5": "Exceptional novelty and rigor, introducing a paradigm-shifting approach or highly impactful findings clearly worthy of a top conference spotlight."
+      }
+    }
+  ],
+  "total_max": 25
+}
+```
+2026-05-05 01:07:32 [INFO] auto_slr - 打分标准已生成并锁定: [{'name': 'Real-World Deployability & Engineering Utility', 'description': 'Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.', 'scale': '1-5', 'criteria': {'1': 'Purely theoretical; no engineering context or deployment relevance.', '2': 'Marginal engineering relevance; mentions deployment but lacks actionable utility or practical focus.', '3': 'Addresses a practical engineering problem but remains mostly conceptual or limited to standard benchmarks without deployment focus.', '4': 'Strong engineering utility with a clear deployability focus (e.g., IaC, DevOps simulation), but lacks complete end-to-end real-world integration.', '5': 'Directly solves a real-world deployment problem with high practical utility, perfectly aligning with deployability-centric engineering needs (similar to IaC generation or onboard robot planning).'}}, {'name': 'Experimental Rigor & Deployment Case Validation', 'description': 'Assesses the presence and quality of specific experimental data and real-world deployment cases, particularly emphasizing small to medium-sized projects over purely synthetic or large-scale hypothetical scenarios.', 'scale': '1-5', 'criteria': {'1': 'No experimental data or deployment cases provided; purely theoretical.', '2': 'Limited synthetic experiments only; no real deployment testing or case studies.', '3': 'Standard benchmark experiments with some simulated deployment scenarios, but lacking specific real-world case data.', '4': 'Good experimental data with specific deployment cases, but limited to large-scale, highly controlled, or non-SME environments.', '5': 'Comprehensive experimental data with concrete, real-world deployment cases, specifically demonstrating success in small to medium-sized projects or resource-constrained settings.'}}, {'name': 'Resource Efficiency & Small Model Applicability', 'description': "Measures the paper's focus on resource constraints and the applicability of Small Language Models (SLMs) or efficient methods for edge/onboard deployment, avoiding reliance on massive, inaccessible API models.", 'scale': '1-5', 'criteria': {'1': 'Relies entirely on massive models with no consideration for resource constraints or deployability.', '2': 'Uses large models with minor mentions of efficiency, but no actual implementation of small models or edge deployment.', '3': "Explores model optimization or uses mid-sized models, but doesn't achieve actual resource-constrained deployment.", '4': 'Successfully applies small language models (SLMs) or optimization techniques, showing good performance under constrained resources.', '5': 'Exemplary implementation of SLMs on resource-constrained hardware (e.g., UAVs, small ground vehicles) or for SME-scale projects, demonstrating state-of-the-art efficiency and performance.'}}, {'name': 'System Complexity & Project-Level Scope', 'description': 'Evaluates whether the paper handles complex, project-level tasks (e.g., Infrastructure-as-Code, semantic architecture modeling, multi-agent collaboration) rather than isolated, single-turn code generation.', 'scale': '1-5', 'criteria': {'1': 'Focuses on isolated, single-turn tasks (e.g., snippet generation) with no system-level scope.', '2': 'Handles slightly complex tasks but lacks multi-agent collaboration or project-level integration.', '3': 'Addresses multi-step tasks or basic multi-agent collaboration, but falls short of full project-level or architectural scope.', '4': 'Tackles project-level code generation, semantic architecture modeling, or complex multi-agent collaboration effectively.', '5': 'Seamlessly handles end-to-end project-level generation, complex semantic architecture modeling, or sophisticated multi-agent DevOps simulation with robust system integration.'}}, {'name': 'Top-Tier Venue Alignment & Scientific Novelty', 'description': 'Assesses the scientific novelty and rigor of the paper, ensuring it meets the high standards of top conferences (ICML, NeurIPS, ICLR) while bridging theory and practical deployment.', 'scale': '1-5', 'criteria': {'1': 'Lacks novelty and rigor; unlikely to pass peer review at any major venue.', '2': 'Incremental engineering work with minimal scientific contribution; unsuitable for top conferences.', '3': 'Adequate novelty and rigor, potentially suitable for mid-tier venues or workshops, but lacks the depth expected at ICML/NeurIPS/ICLR.', '4': 'Strong scientific contribution with rigorous methodology, meeting the standard for top conferences.', '5': 'Exceptional novelty and rigor, introducing a paradigm-shifting approach or highly impactful findings clearly worthy of a top conference spotlight.'}}]
+2026-05-05 01:07:32 [INFO] auto_slr - [Executor] score_papers 输入: criteria={
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and prov
+2026-05-05 01:07:32 [INFO] auto_slr - 开始打分，共 99 篇论文，每批 5 篇
+2026-05-05 01:07:32 [INFO] auto_slr - 打分第 1 批, 共 5 篇
+2026-05-05 01:07:32 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:07:32 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:07:32 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:08:21 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 10,
+    "brief_comment": "Evaluates SOTA LLMs on LeetCode problems, which are isolated, single-turn tasks. Lacks real-world deployment focus, relies on massive models, and offers incremental empirical novelty."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 13,
+    "brief_comment": "Addresses the practical problem of library updates with novel tasks (VSCC, VACM) and a new dataset. Strong scientific contribution, but relies on large models and handles slightly complex tasks rather than project-level scope."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "Focuses on practitioners' perspectives for LLM code generation, addressing practical relevance. However, it lacks deployment case validation, relies on large models, and falls short of project-level scope."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 15,
+    "brief_comment": "Proposes Codexity, a security-focused framework integrating LLMs with static analysis tools, showing strong engineering utility and multi-step task handling. Lacks SLM focus and complete end-to-end real-world integration."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Empirical analysis using the DevGPT dataset of real developer conversations, providing good real-world experimental data. However, it evaluates ChatGPT (no SLM focus) and addresses conversational support rather than project-level complexity."
+  }
+]
+```
+2026-05-05 01:08:21 [INFO] auto_slr - 第 1 批打分完成
+2026-05-05 01:08:21 [INFO] auto_slr - 打分第 2 批, 共 5 篇
+2026-05-05 01:08:21 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:08:21 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:08:21 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:09:44 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 5,
+      "Experimental Rigor & Deployment Case Validation": 5,
+      "Resource Efficiency & Small Model Applicability": 5,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 23,
+    "brief_comment": "Directly solves real-world onboard deployment for resource-constrained robots using SLMs. Exemplary resource efficiency and practical utility, handling multi-step task planning with strong scientific contribution."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Addresses practical security concerns in LLM-generated code but remains an evaluation study without deployment focus. Relies on large models and focuses on function-level generation with incremental novelty."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 5,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 5,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 20,
+    "brief_comment": "Highly deployability-centric approach to IaC generation using DevOps simulation. Excellent project-level scope and novelty, though it relies on large LLMs without focusing on resource efficiency or SLMs."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 10,
+    "brief_comment": "Empirical study on requirement ambiguity with marginal engineering utility. Focuses on isolated function-level code generation using massive models, lacking system complexity and resource efficiency considerations."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 3,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 19,
+    "brief_comment": "End-to-end LLM-driven framework for diffusion acceleration, addressing real-world deployment overhead. Good system complexity and experimental rigor, exploring model optimization though not specifically targeting SLMs."
+  }
+]
+```
+2026-05-05 01:09:44 [INFO] auto_slr - 第 2 批打分完成
+2026-05-05 01:09:44 [INFO] auto_slr - 打分第 3 批, 共 5 篇
+2026-05-05 01:09:44 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:09:44 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:09:44 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:10:50 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Constructs a benchmark for high-level AI domain code generation, addressing practical tasks but remaining mostly a conceptual benchmark without deployment focus or resource efficiency considerations."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Addresses practical code style and structural constraints, but focuses on isolated controlled generation tasks rather than project-level scope or resource-constrained deployment."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "Focuses on improving fundamental programming comprehension (data/control flow) in LLMs, which has marginal engineering deployability and handles isolated reasoning tasks rather than project-level complexity."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 16,
+    "brief_comment": "Strong engineering utility in aligning LLMs for accessibility-compliant web UI generation, introducing a novel reward function with solid scientific contribution, though lacking SLM focus and full project-level scope."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 17,
+    "brief_comment": "Novel approach bridging vision and LLMs for articulated object reconstruction via code, showing strong deployability for robotics and good experimental rigor, though it relies on large models without resource-constrained optimization."
+  }
+]
+```
+2026-05-05 01:10:50 [INFO] auto_slr - 第 3 批打分完成
+2026-05-05 01:10:50 [INFO] auto_slr - 打分第 4 批, 共 5 篇
+2026-05-05 01:10:50 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:10:50 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:10:50 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:11:57 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 1,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 9,
+    "brief_comment": "A broad survey on Code LLMs. It mentions practical significance (e.g., GitHub Copilot) but lacks actionable engineering utility, experimental data, focus on resource constraints, and project-level scope."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Introduces a benchmark for secure code generation in real-world repositories. Addresses practical security issues and project-level complexity, but remains a benchmark without deployment cases or focus on resource efficiency."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 4,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 15,
+    "brief_comment": "Empirical study on SLMs for code generation in resource-constrained environments. Strong focus on resource efficiency and SLM applicability, but relies on standard benchmarks without real-world deployment cases or project-level scope."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Proposes an evolving benchmark aligned with real-world code repositories. Captures project-level dependencies and distributions well, but lacks deployment validation and resource efficiency considerations."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 10,
+    "brief_comment": "Evaluates LLM instruction-following on standalone coding problems. Addresses developer expectations but uses synthetic/limited experiments, lacks resource efficiency focus, and handles isolated tasks rather than project-level scope."
+  }
+]
+```
+2026-05-05 01:11:57 [INFO] auto_slr - 第 4 批打分完成
+2026-05-05 01:11:57 [INFO] auto_slr - 打分第 5 批, 共 5 篇
+2026-05-05 01:11:57 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:11:57 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:11:57 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:13:22 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Proposes a multi-dimensional benchmark (RACE) evaluating code beyond correctness. Addresses practical code quality dimensions but remains a benchmarking tool without deployment focus, project-level scope, or resource efficiency considerations."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 1,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 8,
+    "brief_comment": "A roadmap/survey paper discussing challenges in real-world code generation. Mentions deployment but lacks actionable utility, experimental validation, and focus on resource efficiency. Minimal scientific novelty as it is a vision paper."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 10,
+    "brief_comment": "Focuses on adversarial attacks to generate vulnerable code. Highlights a real-world security danger but is an attack-focused study rather than a deployment solution. Uses isolated single-turn tasks with no resource efficiency focus, though the adversarial methodology is novel and rigorous."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 18,
+    "brief_comment": "Addresses real-world domain-specific code generation challenges using Knowledge Graphs and Case-Based Reasoning. Strong engineering utility and project-level scope through an agent-based approach, with good experimental validation. Lacks focus on small models or resource-constrained deployment."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 5,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 19,
+    "brief_comment": "Directly solves a real-world robot task planning problem by translating NL to LTL for motion planning, perfectly aligning with onboard deployability needs. Features complex system integration (NL -> LTL -> Path Planning) and strong novelty, though it relies on standard LLMs without explicit resource optimization for edge deployment."
+  }
+]
+```
+2026-05-05 01:13:22 [INFO] auto_slr - 第 5 批打分完成
+2026-05-05 01:13:22 [INFO] auto_slr - 打分第 6 批, 共 5 篇
+2026-05-05 01:13:22 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:13:22 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:13:22 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:14:12 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Addresses the practical issue of specification alignment in LLM code generation, but remains mostly conceptual with likely standard benchmarks and no focus on resource efficiency or small models."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 18,
+    "brief_comment": "Strong focus on real-world class-level code generation and authentic project contexts, moving beyond synthetic benchmarks. Lacks resource efficiency considerations but demonstrates high system complexity and scientific novelty."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 14,
+    "brief_comment": "Tackles the important and novel issue of social bias in code generation with a specialized benchmark. However, it focuses on evaluation rather than project-level generation or deployment, and lacks resource efficiency focus."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "Empirical study on the robustness and reliability of ChatGPT for code generation. Addresses practical reliability concerns but relies entirely on a massive API model and focuses on snippet-level (StackOverflow) tasks rather than project-level complexity."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Proposes a multi-agent self-collaboration framework for complex code generation, addressing system complexity through role-playing. However, it relies on ChatGPT with no consideration for resource constraints, and experimental validation is likely standard."
+  }
+]
+```
+2026-05-05 01:14:12 [INFO] auto_slr - 第 6 批打分完成
+2026-05-05 01:14:12 [INFO] auto_slr - 打分第 7 批, 共 5 篇
+2026-05-05 01:14:12 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:14:12 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:14:12 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:15:21 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 14,
+    "brief_comment": "Proposes an online RL framework for secure code generation that addresses the functionality-security paradox. Good scientific novelty and practical relevance, but focuses on standard code generation without addressing resource constraints or project-level scope."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Introduces a manually-annotated benchmark aligned with real-world repositories, capturing code and dependency distributions. Useful for evaluation but lacks deployment focus, resource efficiency considerations, and has incremental scientific novelty typical of benchmark papers."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 14,
+    "brief_comment": "Systematic empirical study on context-memory conflicts in LLMs due to evolving APIs. Offers strong scientific insights and practical relevance for RAG-based code generation, but remains an empirical analysis without proposing a deployable system or addressing resource constraints."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Presents a framework for complex code generation using online searching and correctness testing. Addresses multi-step tasks and practical challenges, but relies on large models, lacks real-world deployment validation, and offers incremental scientific novelty."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 1,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 9,
+    "brief_comment": "A systematic literature review focusing on the sustainability of LLM-generated code. While the angle on generated code efficiency is interesting, it lacks experimental data, deployment cases, and practical system implementation, resulting in low scientific novelty."
+  }
+]
+```
+2026-05-05 01:15:21 [INFO] auto_slr - 第 7 批打分完成
+2026-05-05 01:15:21 [INFO] auto_slr - 打分第 8 批, 共 5 篇
+2026-05-05 01:15:21 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:15:21 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:15:21 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:16:22 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 9,
+    "brief_comment": "Reveals provider bias in LLM code generation, which is an interesting analytical finding, but lacks actionable engineering utility, system-level scope, and consideration for resource efficiency."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Addresses the practical problem of exception safety using an intermediate language agent framework, offering moderate engineering utility and multi-step complexity, but lacks focus on resource constraints or full project-level scope."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 13,
+    "brief_comment": "Identifies a novel and rigorous real-world security threat (HACKODE) with strong top-venue potential, but focuses on vulnerability injection rather than deployable solutions, system complexity, or resource efficiency."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 5,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 19,
+    "brief_comment": "Tackles real-world repo-level code generation using tool-integrated agents, demonstrating high system complexity and strong engineering utility, though it lacks focus on small model applicability and resource constraints."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 17,
+    "brief_comment": "Proposes a multi-domain industry benchmark that addresses practical engineering needs and project-level scope, but as a benchmark paper, it has limited algorithmic novelty and lacks focus on resource-constrained deployment."
+  }
+]
+```
+2026-05-05 01:16:22 [INFO] auto_slr - 第 8 批打分完成
+2026-05-05 01:16:22 [INFO] auto_slr - 打分第 9 批, 共 5 篇
+2026-05-05 01:16:22 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:16:22 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:16:22 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:17:41 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Addresses the practical problem of secure code generation but is primarily an evaluation/benchmark paper. Lacks project-level scope and focus on resource-efficient models."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Identifies a novel failure mode (SII) in web-augmented code generation with practical relevance, but remains an empirical study on large models without system-level scope or SLM focus."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 15,
+    "brief_comment": "Integrates UML diagrams and flowcharts for code generation, bridging semantic architecture modeling with implementation. However, relies on large multimodal models without resource efficiency considerations."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 15,
+    "brief_comment": "Tackles repository-level code generation with an evolution-aware benchmark, addressing project-level scope. Still, it's an evaluation paper using large models without deployment validation or SLM applicability."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 11,
+    "brief_comment": "Proposes a novel metamemory framework for data-free code generation, but focuses on isolated, single-turn tasks (HumanEval/StudentEval) with no engineering deployability or resource efficiency focus."
+  }
+]
+```
+2026-05-05 01:17:41 [INFO] auto_slr - 第 9 批打分完成
+2026-05-05 01:17:41 [INFO] auto_slr - 打分第 10 批, 共 5 篇
+2026-05-05 01:17:41 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:17:41 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:17:41 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:18:39 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 13,
+    "brief_comment": "Introduces a novel multi-turn security benchmark (MT-Sec) addressing real-world iterative development, but remains a benchmarking study with no focus on resource efficiency or actual deployment."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 15,
+    "brief_comment": "Proposes a practical verification method (LEVER) for language-to-code generation with solid experimental data, but focuses on single-turn tasks and relies on large models without resource constraints."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 1,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 9,
+    "brief_comment": "An empirical study assessing benchmark representativeness using Knowledge Units. Lacks engineering utility, focuses on isolated benchmark tasks, and relies on massive models with no deployment focus."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 16,
+    "brief_comment": "Presents Seeker, a multi-agent IR framework for exception safety. Features complex multi-agent collaboration and strong novelty, but lacks real-world deployment validation and relies on large models."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 17,
+    "brief_comment": "Introduces Design2Code for automated front-end engineering with strong practical utility and real-world webpage test cases. Lacks focus on small models/edge deployment and falls slightly short of full project-level scope."
+  }
+]
+```
+2026-05-05 01:18:39 [INFO] auto_slr - 第 10 批打分完成
+2026-05-05 01:18:39 [INFO] auto_slr - 打分第 11 批, 共 5 篇
+2026-05-05 01:18:39 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:18:39 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:18:39 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:19:32 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "Introduces a repository-level benchmark for Solidity, addressing project-level scope, but as a benchmark paper, it lacks actionable deployment utility, real-world case validation, and resource efficiency considerations."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "Addresses the practical problem of NL ambiguity using I/O specifications, but focuses on data science scripts rather than project-level systems, with no focus on resource constraints or edge deployment."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 1,
+      "Experimental Rigor & Deployment Case Validation": 1,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 6,
+    "brief_comment": "A purely theoretical framework for designing empirical studies; lacks experimental data, deployment relevance, system complexity, and the scientific novelty required for top-tier ML venues."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 11,
+    "brief_comment": "Proposes a benchmark for repository-level context utilization (masked file reconstruction), offering some system complexity, but remains a synthetic benchmark with no deployment focus or resource efficiency."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Strong engineering utility by aligning LLMs with gas optimization and security for real-world smart contract deployment, though it lacks focus on small models/resource constraints and falls short of full project-level architecture generation."
+  }
+]
+```
+2026-05-05 01:19:32 [INFO] auto_slr - 第 11 批打分完成
+2026-05-05 01:19:32 [INFO] auto_slr - 打分第 12 批, 共 5 篇
+2026-05-05 01:19:32 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:19:32 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:19:32 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:20:41 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 15,
+    "brief_comment": "Automated VLM critic for frontend code refinement offers strong engineering utility and novelty, but lacks focus on resource efficiency and project-level scope."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 4,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 15,
+    "brief_comment": "Introduces a multi-language repository-level benchmark addressing real-world context, but as a benchmark paper, it lacks deployment validation and resource efficiency focus."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 14,
+    "brief_comment": "Novel evaluation framework using game arenas for dynamic assessment with strong scientific contribution, but has marginal real-world engineering relevance and no focus on efficiency."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 1,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 9,
+    "brief_comment": "Survey on LLM ensemble techniques; lacks experimental data, deployment cases, and scientific novelty, with minimal focus on resource constraints or project-level complexity."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 13,
+    "brief_comment": "Empirical study on LLM code generation mistakes considering external dependencies; addresses practical issues but lacks resource efficiency focus and top-tier novelty."
+  }
+]
+```
+2026-05-05 01:20:41 [INFO] auto_slr - 第 12 批打分完成
+2026-05-05 01:20:41 [INFO] auto_slr - 打分第 13 批, 共 5 篇
+2026-05-05 01:20:41 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:20:41 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:20:41 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:21:38 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 12,
+    "brief_comment": "A large-scale empirical study on training data optimization techniques. While systematically evaluating existing methods, it lacks direct engineering deployability, focuses on standard benchmarks without real-world deployment cases, and does not address resource efficiency or project-level complexity."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Investigates interaction smells in multi-turn human-LLM collaboration, addressing a practical problem in conversational code generation. It touches on multi-step tasks but lacks real-world deployment validation, resource efficiency considerations, and falls short of project-level scope."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 2,
+      "Experimental Rigor & Deployment Case Validation": 2,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 1,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 8,
+    "brief_comment": "Explores personality-guided code generation, which is an interesting theoretical concept but lacks practical engineering utility. It relies on large models without considering resource constraints, focuses on isolated code generation tasks, and offers incremental scientific novelty."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 4,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 17,
+    "brief_comment": "Systematically benchmarks the robustness of quantized LLMs in code generation. Strongly aligns with deployability and resource efficiency through quantization optimization. However, it focuses on standard benchmarks rather than specific deployment cases and handles function-level rather than project-level complexity."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 15,
+    "brief_comment": "Proposes a multi-expert LLM architecture for Verilog code generation, addressing a specific engineering domain with architectural novelty. It handles different levels of design abstraction but lacks focus on resource efficiency (using multiple LLMs) and relies on standard benchmarks without real-world deployment cases."
+  }
+]
+```
+2026-05-05 01:21:38 [INFO] auto_slr - 第 13 批打分完成
+2026-05-05 01:21:38 [INFO] auto_slr - 打分第 14 批, 共 5 篇
+2026-05-05 01:21:38 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:21:38 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:21:38 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...
+2026-05-05 01:22:32 [DEBUG] auto_slr - [System LLM] 响应: ```json
+[
+  {
+    "index": 1,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 2
+    },
+    "total_score": 11,
+    "brief_comment": "Analyzes conditions for secure code generation, addressing a practical deployment concern, but remains a comparative study without system-level scope, resource efficiency considerations, or high scientific novelty."
+  },
+  {
+    "index": 2,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 4,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 17,
+    "brief_comment": "Proposes an anchor attention mechanism with small cache to reduce memory overhead, demonstrating strong engineering utility and resource efficiency for deployment, though limited to inference optimization rather than project-level scope."
+  },
+  {
+    "index": 3,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 3,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 2,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 13,
+    "brief_comment": "Introduces the Clover paradigm for closed-loop verifiable code generation, offering good scientific novelty and practical relevance for correctness, but lacks focus on resource efficiency and handles isolated code generation tasks."
+  },
+  {
+    "index": 4,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 3,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 1,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 3
+    },
+    "total_score": 14,
+    "brief_comment": "Addresses the gap in evaluating LLMs on stepwise requirement refinement and iterative workflows, providing a valuable benchmark with good experimental rigor, but lacks resource efficiency focus and is an evaluation rather than a deployable solution."
+  },
+  {
+    "index": 5,
+    "scores": {
+      "Real-World Deployability & Engineering Utility": 4,
+      "Experimental Rigor & Deployment Case Validation": 4,
+      "Resource Efficiency & Small Model Applicability": 2,
+      "System Complexity & Project-Level Scope": 3,
+      "Top-Tier Venue Alignment & Scientific Novelty": 4
+    },
+    "total_score": 17,
+    "brief_comment": "Integrates MCTS for PPA-aware RTL code generation, showing strong engineering utility for hardware design and good experimental validation. However, MCTS adds computational overhead, and it focuses on specific hardware generation rather than broader project-level scope."
+  }
+]
+```
+2026-05-05 01:22:32 [INFO] auto_slr - 第 14 批打分完成
+2026-05-05 01:22:32 [INFO] auto_slr - 打分第 15 批, 共 5 篇
+2026-05-05 01:22:32 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 01:22:32 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an academic literature review expert. You will receive:
+1. A fixed multi-dimensional scoring rubric (JSON format, each dimension scored 1-5)
+2. Metadata and abstracts of multiple papers
+
+Please score each paper strictly according to the dimension names and criteria in the scoring rubric.
+Each dimension score must be an integer from 1 to 5.
+Total score = sum of all dimension scores.
+
+Output a JSON array:
+[
+  {{
+    "index": paper number,
+    "scores": {{
+      "dimension_name_1": score(1-...
+2026-05-05 01:22:32 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Scoring rubric:
+{
+  "dimensions": [
+    {
+      "name": "Real-World Deployability & Engineering Utility",
+      "description": "Evaluates whether the paper directly addresses real-world deployment challenges and provides practical engineering utility, rather than focusing solely on theoretical algorithmic improvements.",
+      "scale": "1-5",
+      "criteria": {
+        "1": "Purely theoretical; no engineering context or deployment relevance.",
+        "2": "Marginal engineering relevance; menti...

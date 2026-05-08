@@ -1,0 +1,3 @@
+research_direction: self-evolving multi-agent system, 大模型agent在文本处理场景下的实际应用和落地
+filter_requirements: 近三年
+other_info: 希望多推荐几篇

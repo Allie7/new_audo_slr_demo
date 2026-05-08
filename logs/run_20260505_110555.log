@@ -1,0 +1,18 @@
+2026-05-05 11:05:55 [INFO] auto_slr - 日志系统初始化完成，级别: DEBUG，日志文件: D:\School\SAT404\pilot_study_code\new_auto_slr\logs\run_20260505_110555.log
+2026-05-05 11:05:55 [DEBUG] auto_slr - [Simulator LLM] 请求, model=deepseek-chat, messages=2条
+2026-05-05 11:05:55 [DEBUG] auto_slr - [Simulator LLM] 输入[0] role=system: You are a master's student majoring in Computer Science, focusing on software engineering and large language model applications, with 1 year of Python programming and LLM fine-tuning experience. Your academic preference is to focus on engineering practice and technical implementation, emphasizing model practicality and scalability, and disliking purely theoretical research with no practical application value. You are now conducting a literature review, and your research question is: What are the...
+2026-05-05 11:05:55 [DEBUG] auto_slr - [Simulator LLM] 输入[1] role=user: You are talking to an automatic literature review system. Based on your profile, please state your literature review needs in a short, natural language message.
+You don't need to repeat your entire profile — just state your core needs, as a real student would.
+Output directly what you want to say to the system, without any prefix or explanation.
+2026-05-05 11:05:57 [DEBUG] auto_slr - [Simulator LLM] 响应: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, or ICLR. I need studies that include actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects, so adaptability in that context is key. Can you help me find relevant papers?
+2026-05-05 11:05:57 [INFO] auto_slr - [User(Simulated)] Initial query: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, or ICLR. I need studies that include actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects, so adaptability in that context is key. Can you help me find relevant papers?
+2026-05-05 11:05:57 [INFO] auto_slr - [Assistant] extract_and_record 输入: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, or ICLR. I need studies that include actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these ...
+2026-05-05 11:05:57 [DEBUG] auto_slr - [System LLM] 请求, model=glm-5.1, messages=2条
+2026-05-05 11:05:57 [DEBUG] auto_slr - [System LLM] 输入[0] role=system: You are an information extraction assistant. Your task is to extract the following categories of information from the given conversation content:
+
+1. **User identity and background**: e.g., student status, academic field, education level
+2. **User preferences**: e.g., paper language preference, publication type preference
+3. **Research direction**: specific research topic/direction
+4. **Paper screening requirements**: time range, keywords, exclusion criteria, etc.
+5. **Reasons for user rejecting...
+2026-05-05 11:05:57 [DEBUG] auto_slr - [System LLM] 输入[1] role=user: Hi, I'm looking for recent papers (2023-2026) on LLM-based code generation, specifically from top venues like ICML, NeurIPS, or ICLR. I need studies that include actual experimental data and real-world deployment cases, not just theoretical frameworks. Also, I'm particularly interested in how these models perform on small to medium-sized projects, so adaptability in that context is key. Can you help me find relevant papers?
