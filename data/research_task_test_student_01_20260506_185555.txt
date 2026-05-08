@@ -1,0 +1,4 @@
+research_direction: AI在医学影像诊断中的应用，重点是肺结节的早期筛查；乳腺癌检测与分类（基于乳腺X线摄影、超声等影像模态及微调Transformer模型）；数字乳腺断层合成（DBT）图像中肿块和结构扭曲的检测
+filter_requirements: 需要提供具体诊断性能数据（如准确率、灵敏度、特异度、AUC等量化指标）；病种为乳腺癌，任务为检测与分类，涉及乳腺X线摄影、超声等影像模态
+rejection_reasons: 不符合研究兴趣；部分符合，但存在关键缺失（摘要中未提供具体诊断性能数据，如准确率、灵敏度、特异度、AUC等量化指标）
+other_info: 正在撰写文献综述；论文'Deep Learning for the Classification of Lung Nodules'的符合点为研究主题是深度学习用于肺结节分类；对论文'Improved Focus on Hard Samples for Lung Nodule Detection'感到满意，因为其针对CT图像中的肺结节检测，病种与任务匹配；对论文满意并倾向纳入，理由：病种与任务高度匹配（针对DBT图像中肿块和结构扭曲检测，属于乳腺癌早期筛查）
