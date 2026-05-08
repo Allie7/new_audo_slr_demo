@@ -330,7 +330,7 @@ def _search_arxiv(query: str, max_results: int = 50, year_range: str | None = No
     import re
 
     proxy = HTTPS_PROXY or HTTP_PROXY
-    logger.info(f"[arXiv] 搜索: query={query[:80]}, max_results={max_results}, year_range={year_range}, proxy={proxy or 'none']}")
+    logger.info(f"[arXiv] 搜索: query={query[:80]}, max_results={max_results}, year_range={year_range}, proxy={proxy or 'none'}")
 
     # 如果有代理，设置环境变量（arxiv 底层使用 httpx/requests）
     import os as _os
