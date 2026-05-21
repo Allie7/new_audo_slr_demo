@@ -1,0 +1,6 @@
+research_direction: Tricyclics or related drugs versus any treatments for nocturnal enuresis  
+research_direction: Antidepressant Drugs  
+research_direction: Medical audit in general practice. I: Effects on doctors' clinical behaviour for common childhood conditions.  
+
+Types of studies, Types of participants, Types of interventions, Types of outcome measures, Primary outcomes, Secondary outcomes  
+Intervention: clinical standard setting and audit aimed at general practitioner trainers. Tricyclics and imipramine for enuresis used as exemplar conditions

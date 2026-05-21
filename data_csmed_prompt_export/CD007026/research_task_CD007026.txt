@@ -1,0 +1,62 @@
+```json
+{
+  "research_direction": "Cerebrovascular disorders, basal ganglia cerebrovascular disease, brain ischemia, carotid artery diseases, carotid artery thrombosis, carotid artery, internal, dissection, stroke, lacunar, intracranial arterial diseases, cerebral arterial diseases, infarction, anterior cerebral artery, infarction, middle cerebral artery, infarction, posterior cerebral artery, education technology学中的CASTA和CARS结果差异分析, Neurotrophic Factors Treatment on Stroke Volume",
+  "filter_requirements": {
+    "两年内发表的随机对照试验（RCTs）": true,
+    "随机对照试验（RCT）": true,
+    "排除标准": {
+      "未经过神经影像诊断确认的患者": true,
+      "非控制研究": true,
+      "quasi-RCT": true
+    },
+    "纳入标准": {
+      "随机对照试验（RCTs）比较Cerebrolysin与安慰剂或无治疗",
+      "患者症状 onset在48小时内",
+      "其他符合研究需求的纳入条件"
+    },
+    "类型干预": true,
+    "类型测量": true,
+    "结果分析": true,
+    "排除quasi-RCT的定义": {
+      "quasi-RCTs是指那些没有隐藏随机化分配机制的试验，例如通过改变随机数生成器、使用预设的种子值或手动调整随机分组来实现的。",
+      "这些试验通常被排除在严格的随机对照试验之外，因为它们无法保证干预组和对照组之间的等同性。",
+      "quasi-RCTs可能引入偏差，并且其结果不可靠。"
+    },
+    "关键词": {
+      "随机对照试验（RCT）": true
+    },
+    "Cochrane Library搜索策略": {
+      "ID SearchHits#1 [mh ^"cerebrovascular disorders"] or [mh ^"basal ganglia cerebrovascular disease"] or [mh "brain ischemia"] or [mh ^"carotid artery diseases"] or [mh ^"carotid artery thrombosis"] or [mh ^"carotid artery, internal, dissection"] or [mh ^"stroke, lacunar"] or [mh ^"intracranial arterial diseases"] or [mh ^"cerebral arterial diseases"] or [mh ^"infarction, anterior cerebral artery"] or [mh ^"infarction, middle cerebral artery"] or [mh ^"infarction, posterior cerebral artery"] or [mh "intracranial embolism and thrombosis"] or [mh ^stroke] or [mh "brain infarction"] or [mh ^"vertebral artery dissection"]#2 ((brain or cerebr* or cerebell* or vertebrobasil* or hemispher* or intracran* or intracerebral or infratentorial or supratentorial or middle cerebr* or mca* or anterior circulation) near/5 (isch*emi* or infarct* or thrombo* or emboli* or occlus* or hypoxi*)):ti,ab,kw#3 (isch*emi* near/6 (stroke* or apoplex* or cerebral vasc* or cerebrovasc* or cva or attack*)):ti,ab,kw#4 #1 or #2 or #3#5 (cerebrolysin* or CERE or "FPF‐1070" or FPF1070 or "FPF 1070" or "FPF 10‐70"):ti,ab,kw#6 #4 and #5"
+    }
+  },
+  "filter_requirements": {
+    "6个月和12个月后发表的随机对照试验（RCTs）": true,
+    "随机对照试验（RCT）": true,
+    "排除标准": {
+      "未经过神经影像诊断确认的患者": true,
+      "非控制研究": true,
+      "quasi-RCT": true
+    },
+    "纳入标准": {
+      "随机对照试验（RCTs）比较Cerebrolysin与安慰剂或无治疗",
+      "患者症状 onset在48小时内",
+      "其他符合研究需求的纳入条件"
+    },
+    "类型干预": true,
+    "类型测量": true,
+    "结果分析": true,
+    "排除quasi-RCT的定义": {
+      "quasi-RCTs是指那些没有隐藏随机化分配机制的试验，例如通过改变随机数生成器、使用预设的种子值或手动调整随机分组来实现的。",
+      "这些试验通常被排除在严格的随机对照试验之外，因为它们无法保证干预组和对照组之间的等同性。",
+      "quasi-RCTs可能引入偏差，并且其结果不可靠。"
+    },
+    "关键词": {
+      "随机对照试验（RCT）": true
+    },
+    "Cochrane Library搜索策略": {
+      "ID SearchHits#1 [mh ^"cerebrovascular disorders"] or [mh ^"basal ganglia cerebrovascular disease"] or [mh "brain ischemia"] or [mh ^"carotid artery diseases"] or [mh ^"carotid artery thrombosis"] or [mh ^"carotid artery, internal, dissection"] or [mh ^"stroke, lacunar"] or [mh ^"intracranial arterial diseases"] or [mh ^"cerebral arterial diseases"] or [mh ^"infarction, anterior cerebral artery"] or [mh ^"infarction, middle cerebral artery"] or [mh ^"infarction, posterior cerebral artery"] or [mh "intracranial embolism and thrombosis"] or [mh ^stroke] or [mh "brain infarction"] or [mh ^"vertebral artery dissection"]#2 ((brain or cerebr* or cerebell* or vertebrobasil* or hemispher* or intracran* or intracerebral or infratentorial or supratentorial or middle cerebr* or mca* or anterior circulation) near/5 (isch*emi* or infarct* or thrombo* or emboli* or occlus* or hypoxi*)):ti,ab,kw#3 (isch*emi* near/6 (stroke* or apoplex* or cerebral vasc* or cerebrovasc* or cva or attack*)):ti,ab,kw#4 #1 or #2 or #3#5 (cerebrolysin* or CERE or "FPF‐1070" or FPF1070 or "FPF 1070"或 "FPF 10‐70"):ti,ab,kw#6 #4 and #5"
+    },
+    "user_identity": "",
+    "user_preference": ""
+}
+```

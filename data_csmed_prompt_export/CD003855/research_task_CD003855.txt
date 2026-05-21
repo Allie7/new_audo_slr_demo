@@ -1,0 +1,30 @@
+research_direction: Randomised controlled trials (RCTs) comparing roller-ball endometrial ablation and levonorgestrel intrauterine system (LNG-IUS) in the treatment of abnormal uterine bleeding.
+
+filter_requirements:  
+1. Menstrual blood loss, measured at one year*, two years, five years and 10 years. *If studies did not report this outcome at one year we included measures at less than one year and have highlighted where this is the case. a) Objective assessment of menstrual blood loss, e.g. measured by the modified alkaline haematin method (Hallberg 1964). b) Subjective assessment of menstrual blood loss, e.g. measured by pictorial blood assessment chart (PBAC) (Higham 1990), or a woman's perception of improvement recorded in a reproducible and validated format.  
+2. Satisfaction rate.  
+3. Adverse effects.  
+4. Quality of life: self reported change in quality of life, recorded in a reproducible and validated format.  
+5. Requirement for additional surgical or medical treatment for heavy menstrual bleeding.  
+6. Cost and resource use.
+
+Inclusion criteria: Women of reproductive age with regular abnormal menstrual periods measured either objectively (e.g. via the alkaline haematin test) or subjectively (e.g. via the pictorial blood loss assessment chart (PBAC), a menstrual blood loss diary or according to a woman's personal judgement). Exclusion criteria: Postmenopausal bleeding (over one year since the last menstrual period). Irregular menses or intermenstrual bleeding. Pathological causes of heavy menstrual bleeding (e.g. uterine cancer). Iatrogenic (treatment‐related) causes of heavy menstrual bleeding (e.g. non‐progestogen‐releasing intrauterine contraceptive device).
+
+other_info: This appears to be a list of search strategies or keywords used in academic databases (e.g., PsycINFO, CINAHL) to retrieve literature on topics related to menstrual disorders, contraceptive methods, and surgical interventions for uterine conditions. Each appendix seems to focus on specific aspects of research questions, such as hysterectomy, IUDs, or contraceptive effectiveness.
+
+### Key Observations:
+1. **Appendix 1**: Focuses on terms like "menorrhagia," "hysterectomy," "progestin," and various contraceptive methods (e.g., levonorgestrel, LNG-IUS). This appendix seems to target studies on surgical interventions for menstrual disorders.
+
+2. **Appendix 2**: Includes terms related to menstrual bleeding patterns, hysterectomy, and specific procedures like laser ablation or cryoablation. This appendix appears to focus on studies comparing different surgical techniques for treating abnormal menstrual cycles.
+
+3. **Appendix 3**: Similar to Appendix 1 but includes additional terms like "prostaglandin synthase inhibitor" (PGSI) and focuses on NSAIDs, which suggests a broader search strategy for studies involving anti-inflammatory or analgesic drugs in the context of menstrual disorders.
+
+4. **Appendix 4**: Includes terms related to surgical interventions, laser ablation, photodynamic therapy, and specific procedures like transcervical resection. This appendix seems to target studies on less invasive surgical methods for uterine conditions.
+
+5. **Appendix 5**: Focuses on terms like "menstrual disorders," "hysterectomy," "progestin," and contraceptive methods (e.g., danazol, Levonorgestrel). This appendix appears to be similar to Appendix 1 but with a slightly different emphasis on specific drugs or procedures.
+
+6. **Appendix 6**: Includes terms related to clinical trials, randomization, placebo groups, and study design aspects. This appendix seems to focus on methodological considerations for studies on menstrual disorders and contraceptive effectiveness.
+
+### Suggestions:
+- If you're looking to retrieve literature on a specific topic (e.g., "hysterectomy" or "progestin"), these appendices provide a structured list of keywords to use in academic databases.
+- If you need help refining your search strategy, let me know the specific topic or study question, and I can assist further!

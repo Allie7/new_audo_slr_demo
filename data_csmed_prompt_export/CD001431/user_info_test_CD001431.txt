@@ -1,0 +1,2 @@
+user_identity: 研究人员/学生  
+user_preference: 英语和中文

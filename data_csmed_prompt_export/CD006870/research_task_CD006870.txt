@@ -1,0 +1,2 @@
+research_direction: 冠状动脉综合征  
+rejection_reasons: 不接受随机对照试验

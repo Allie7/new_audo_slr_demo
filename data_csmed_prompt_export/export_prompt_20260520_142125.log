@@ -1,0 +1,65 @@
+2026-05-20 14:21:26,270 [INFO] export_prompt: 测试参数: {'num_reviews': 100, 'offset': 0, 'skip_prescreen': False, 'workers': 3}
+2026-05-20 14:21:26,271 [INFO] export_prompt: 已清空旧记录: D:\School\SAT404\pilot_study_code\new_auto_slr\data_csmed_prompt_export\executor_prompt_record.txt
+2026-05-20 14:21:26,301 [INFO] export_prompt: Reviews metadata 加载完成: 213 个 reviews
+2026-05-20 14:21:26,940 [INFO] export_prompt: 论文集加载完成: 3333 篇去重论文
+2026-05-20 14:21:26,944 [INFO] export_prompt: Gold standard 加载完成: 213 个 reviews, 3333 条决策
+2026-05-20 14:21:26,944 [INFO] export_prompt: 可测试的 review 数: 213
+2026-05-20 14:21:26,944 [INFO] export_prompt: 本次测试 100 个 review, 并发线程数: 3
+2026-05-20 14:21:26,949 [INFO] export_prompt: ============================================================
+2026-05-20 14:21:26,949 [INFO] export_prompt: ============================================================
+2026-05-20 14:21:26,949 [INFO] export_prompt: 开始处理 review: CD000009
+2026-05-20 14:21:26,949 [INFO] export_prompt: 开始处理 review: CD000014
+2026-05-20 14:21:26,949 [INFO] export_prompt: ============================================================
+2026-05-20 14:21:26,950 [INFO] export_prompt: Review title: Acupuncture and related interventions for smoking cessation
+2026-05-20 14:21:26,950 [INFO] export_prompt: Review title: Amnioinfusion for meconium‐stained liquor in labour
+2026-05-20 14:21:26,950 [INFO] export_prompt: 开始处理 review: CD000031
+2026-05-20 14:21:26,950 [INFO] export_prompt: 总论文数: 5, gold included: 4
+2026-05-20 14:21:26,951 [INFO] export_prompt: 总论文数: 1, gold included: 0
+2026-05-20 14:21:26,951 [INFO] export_prompt: Review title: Antidepressants for smoking cessation
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 14:21:26,951 [INFO] export_prompt: 总论文数: 127, gold included: 108
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1a] 初始 query: Acupuncture and related interventions for smoking cessation
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1a] 初始 query: Amnioinfusion for meconium‐stained liquor in labour
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 14:21:26,951 [INFO] auto_slr: [Assistant] extract_and_record 输入: Acupuncture and related interventions for smoking cessation
+2026-05-20 14:21:26,951 [INFO] auto_slr: [Assistant] extract_and_record 输入: Amnioinfusion for meconium‐stained liquor in labour
+2026-05-20 14:21:26,951 [INFO] export_prompt: [阶段1a] 初始 query: Antidepressants for smoking cessation
+2026-05-20 14:21:26,952 [INFO] auto_slr: [Assistant] extract_and_record 输入: Antidepressants for smoking cessation
+2026-05-20 14:21:34,781 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:34,785 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Acupuncture and related interventions for smoking cessation", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 14:21:36,700 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:36,701 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Antidepressants for smoking cessation", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 14:21:39,787 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:39,788 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Amnioinfusion for meconium‐stained liquor in labour", "filter_requirements": "", "rejection_reasons": "", "other_info": "Amnioinfusion is a medical treatment used to manage meconium-stained liquor, which can be encountered during labor. This paper likely discusses its application or effectiveness in Neonatal Intensive Care Units."}
+2026-05-20 14:21:41,150 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:41,151 [INFO] export_prompt: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Acupuncture and related techniques are promoted as a treatment for smoking cessation in the belief that they may reduce nicotine withdrawal symptom
+2026-05-20 14:21:41,151 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Acupuncture and related techniques are promoted as a treatment for smoking cessation in the belief that they may reduce nicotine withdrawal symptoms.    Objectives The objectives of this review are to determine the effectiveness of acupuncture and...
+2026-05-20 14:21:43,807 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:43,808 [INFO] export_prompt: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background The pharmacological profiles and mechanisms of antidepressants are varied. However, there are common reasons why they might help people to stop smo
+2026-05-20 14:21:43,808 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background The pharmacological profiles and mechanisms of antidepressants are varied. However, there are common reasons why they might help people to stop smoking tobacco: nicotine withdrawal can produce short‐term low mood that antidepressants may relieve; ...
+2026-05-20 14:21:46,255 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:46,256 [INFO] export_prompt: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Amnioinfusion is thought to dilute meconium present in the amniotic fluid and so reduce the risk of meconium aspiration.    Objectives To assess th
+2026-05-20 14:21:46,256 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Amnioinfusion is thought to dilute meconium present in the amniotic fluid and so reduce the risk of meconium aspiration.    Objectives To assess the effects of amnioinfusion for meconium‐stained liquor on perinatal outcome.   Search methods We sea...
+2026-05-20 14:21:50,440 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:50,441 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Acupuncture and related interventions for smoking cessation", "filter_requirements": "Randomized controlled trials (RCT) comparing acupuncture, acupressure, laser therapy, or electrostimulation with no intervention, sham treatment, or other interventions for smoking cessation", "rejection_reasons": "", "other_info": "The review searched multiple databases and Cochrane registers, focusing on randomized trials. It assessed the effectiveness of various acupuncture-related interventions compared to control groups."}
+2026-05-20 14:21:55,800 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:21:55,801 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Antidepressant medications for smoking cessation", "filter_requirements": "Randomised controlled trials (RCTs) comparing antidepressant medications with placebo or no pharmacological treatment, alternative pharmacotherapy, or the same medication used differently. Excluded trials had fewer than six months of follow-up in efficacy analyses; included trials were evaluated for any follow-up length regarding harms.", "rejection_reasons": "", "other_info": "The study reviewed multiple drugs including bupropion, varenicline, and nortriptyline, assessing their effects on smoking cessation rates, adverse events, and tolerability. High certainty was found for bupropion's efficacy but moderate to low certainty regarding its safety profile."}

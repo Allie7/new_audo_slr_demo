@@ -1,0 +1,82 @@
+```json
+{
+  "research_direction": {
+    "direction": "asthma inhaler steroids withdrawal and exacerbations",
+    "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access: Omalizumab provides long-term control in patients with moderate-to-severe allergic asthma"
+  },
+  "study_type": {
+    "type": "randomized controlled trial",
+    "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access:"
+  },
+  "patient_population": {
+    "adult_and_children": "成人和儿童慢性哮喘",
+    "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access:"
+  },
+  "interventions": {
+    "anti-IgE_therapy_and_placebo": {
+      "description": "anti-IgE therapy与placebo比较（双盲设计）",
+      "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access:"
+    }
+  },
+  "outcome_measures": {
+    "asthma_symptoms_and_quality_of_life": {
+      "description": "哮喘症状、生活质量",
+      "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access:"
+    },
+    "lung_function Testing": {
+      "description": "肺功能测试",
+      "other_info": "It seems you have already provided a structured JSON format with various sections of data related to omalizumab. Below is a more organized version of your data, formatted for clarity and ease of access:"
+    }
+  },
+  "additional_outcomes": {
+    "p_value": {
+      "value": 0.67,
+      "note": "No significant difference in rescue medication between IV and placebo."
+    },
+    "statistics_on_omalizumab": {
+      "rescue_medication_use": {
+        "iv": {
+          "pef_increase": 30.7,
+          "fev1": null
+        },
+        "aerosolized": {
+          "pef_increase": null,
+          "fev1": null
+        }
+      },
+      "lung_function": {
+        "iv": {
+          "pef_increase": 30.7,
+          "fev1": null
+        },
+        "aerosolized": {
+          "pef_increase": null,
+          "fev1": null
+        }
+      }
+    },
+    "adverse_events": {
+      "aerosolized": {
+        "headaches": 9,
+        "igg_and_iga_antibodies": 1
+      },
+      "iv": {
+        "albuterol_use": {
+          "reduction": 14
+        }
+      }
+    },
+    "symptom_scores": {
+      "asthma_symptom_scores": {
+        "mean_difference": 0.6,
+        "p_value": 0.008
+      },
+      "health_related_quality_of_life": {
+        "asthma_quality_of_life_questionnaire": {
+          "increase": 1.4
+        }
+      }
+    }
+  }
+}
+```

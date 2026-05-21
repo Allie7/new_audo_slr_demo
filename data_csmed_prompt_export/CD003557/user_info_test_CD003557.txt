@@ -1,0 +1,2 @@
+user_identity: 医学生
+user_preference: 抗生素和消毒剂治疗

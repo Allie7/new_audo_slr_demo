@@ -1,0 +1,5 @@
+research_direction: Study of handwashing in intensive care  
+rejection_reasons: 研究已被拒绝，原因在于研究方向为手洗在重症监护室的情况；Not a randomised controlled trial; summary of previously published studies  
+filter_requirements: 排除标准: Participants were randomised to two groups. Group 1 participants were tested after one hour and group 2 participants were tested after two hours. Participants were not scrub team members or ordinary外科医生/护士.  
+randomization_unit: scrub team、 individual scrub team members 或普通外科医生/护士  
+other_info: 结局测量：术后感染发生率及手部细菌数量，包括皮肤科分型情况比较。

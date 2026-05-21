@@ -1,0 +1,2 @@
+research_direction: 卵巢癌、输卵管或原发性腹膜癌、化疗药物、辅助治疗  
+filter_requirements: 最近两年 | 包括MeSH术语：Ovarian Neoplasms, Surgical Procedures, Operative, intervall, debulk*, cytoreduc*, secondary. 研究类型为前瞻性的单臂研究，排除标准：参与者必须在接受intraperitoneal化疗和手术前没有经过激进的腹膜转移性疾病（PDS）治疗

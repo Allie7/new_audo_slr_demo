@@ -1,0 +1,1 @@
+user_identity: Children aged 15 years or younger, diagnosed as having TB in category 1, 2, or 3 according to the WHO diagnostic categories (Appendix 1). Children diagnosed under category 4 (multiple-drug resistant TB) by the WHO (Appendix 1).

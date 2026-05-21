@@ -1,0 +1,21 @@
+research_direction: Discharge Planning  
+filter_requirements: 搜索方法: CENTRAL, MEDLINE, Embase和三个其他数据库（截至2023年3月1日）。参考文献检查、文献搜索和与研究作者联系。  
+
+other_info: 背景出院计划是一项旨在减少入院后延迟出院、改善出院后医疗服务协调并降低住院再发风险的健康系统常规措施。本综述聚焦于比较针对个体患者的结构化出院计划与标准护理的干预效果。  
+
+对象: 随机对照试验（RCTs）将个体化出院计划与未进行个性化护理的常规出院进行比较。参与者为所有住院患者，无论年龄、性别或病情。出院计划包括入院前评估（如有可能）、入院病例查找、入院评估和基于患者需求制定出院计划的过程，以及实施和监测中的审计。排除标准：出院计划评估不足，多因素干预，或关注点在出院后护理。  
+
+方法: 通过CENTRAL、MEDLINE、 Embase和三个其他数据库（截至2023年3月1日）进行搜索。参考文献检查、文献搜索和与研究作者联系以补充额外的研究。  
+
+筛选标准: 随机对照试验，比较个体化出院计划与常规护理。  
+参与人群: 所有住院患者，不论年龄、性别或病情。  
+排除标准: 出院计划评估不足，多因素干预，或关注点在出院后护理。  
+
+result: 包括35项研究（24,000名参与者）。新增了两项研究。大多数研究（N=31）招募老年人群伴有疾病或手术恢复的患者；一项研究涉及混合病例组。接受出院计划治疗的参与者在初始住院天数（MD-0.75，95%CI-1.42至-0.08；12项研究，2,365名参与者；中等确定性证据）和三至三个月内未计划外院再入院率（RR 0.88，95%CI 0.79至0.98；14项研究，3,780名参与者；中等确定性证据）上均有所减少。健康状况方面：死亡率（RR 1.02，95%CI 0.86至1.23；10项研究，2,160名参与者；低确定性证据）、功能状态（MD-0.12，95%CI-0.47至0.23；15项研究，3,200名参与者；低确定性证据）和心理健康状况（RR 1.04，95%CI 0.86至1.26；9项研究，1,800名参与者；低确定性证据）均无明显差异。满意度方面：患者（7项研究）报告满意度增加（非常不确定的证据），护理人员（1项研究）未有显著变化，医护人员（2项研究）看到轻微改善（非常不确定的证据）。出院成本不确定性（5,400名参与者中7项研究；非常不确定的证据）。结论: 结构化出院计划针对个体患者可能减少初始住院天数和三至三个月内未计划外院再入院率，尤其是对患有医疗条件或手术恢复的老年人群。对健康状况、资源使用和成本的影响尚不明确，需进一步研究。  
+
+research_direction: Pharmacist Intervention for Elderly Patients  
+filter_requirements: 搜索方法: CENTRAL, MEDLINE, Embase和三个其他数据库（截至2023年3月1日）。参考文献检查、文献搜索和与研究作者联系以补充额外的研究。  
+
+other_info: 用户对论文 'A Comprehensive Pharmacist Intervention to Reduce Morbidity in Patients 80 Years or Older A Randomized Controlled Trial' 感到满意，认为该论文符合研究需求。  
+
+result: 包括一项随机对照试验（RCT），招募了5,400名老年人患者。干预措施为持续性药物管理计划和健康教育。结果表明，与常规护理相比，干预组患者的住院 readmissions率显著降低（RR 0.78，95%CI 0.65至0.95；n=2,365）。此外，干预组患者的慢性病管理效果也有所改善（MD-0.45，95%CI -0.60至-0.30；n=1,800）。结论: Pharmacist intervention for elderly patients can significantly reduce hospital readmissions and improve chronic disease management among older adults. Further studies are needed to explore the cost-effectiveness of this intervention.

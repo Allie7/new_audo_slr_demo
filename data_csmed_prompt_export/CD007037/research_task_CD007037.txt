@@ -1,0 +1,15 @@
+research_direction: Beta-blocker therapy effects on paediatric heart failure  
+filter_requirements: Randomised, controlled trials; Paediatric participants (0-18 years); Exclusion of infants younger than 28 days; Up to 18 years of age; 2014-2023; Participants inclusion criteria not met. Heart failure secondary to thalassaemia.  
+other_info: Evaluation endpoints include improvement in congestive heart failure (New York Heart Association classification, Ross Score), adverse events, left ventricular ejection fraction (LVEF), left ventricular free wall systolic mass (LVFS), biomarkers such as BNP levels, and cardiovascular parameters. To extract and organize the required information from the provided structured data entries, follow these steps:  
+1. **Understand Data Structure**: Each entry (MEDLINE, EMBASE, LILACS, CENTRAL) has a JSON structure with sections like keywords, headings, and specific terms.  
+2. **Identify Keywords for Drug Names**: Look for explicit mentions of drug names such as "acebutolol," "atenolol," etc., to extract the full name and type (e.g., beta-blocker).  
+3. **Determine Indications**: Check headings like "Heart Failure" or "Ventricular Dysfunction" for indication purposes.  
+4. **Extract Dosage Forms and Routes**: Look for sections mentioning "tw." which often indicate dosage forms, and note any specific routes mentioned, such as IV or oral.  
+5. **Identify Patient Populations**: Check for age groups (e.g., 0-18 years) under headings related to demographics.  
+6. **Determine Trial Types**: Look for descriptors like "randomized controlled trial" in sections labeled with terms such as "pt." or "fs."  
+7. **Map to Example Output Format**: Use the provided example structure to format each entry, ensuring consistency across all sources.  
+8. **Handle Variations Between Sources**: Adjust extraction methods based on differences in headings and descriptors between sources like MEDLINE and EMBASE.  
+9. **Ensure Data Accuracy**: Verify that extracted information accurately reflects the data without missing fields or inaccuracies.  
+10. **Scripting for Automation**: Develop scripts to parse JSON structures, identify relevant keywords, and compile outputs consistently.  
+
+By following these steps, you can systematically extract and organize the required information into a coherent format, ensuring clarity and accuracy across all entries.

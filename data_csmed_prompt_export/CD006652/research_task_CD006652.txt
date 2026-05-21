@@ -1,0 +1,3 @@
+research_direction: colorectal cancer, laparoscopic surgery  
+filter_requirements: exclude reports on patients with cancer who had a surgical procedure; includes 5 reports  
+rejection_reasons: Not the population of interest (patients with cancer who had a surgical procedure)

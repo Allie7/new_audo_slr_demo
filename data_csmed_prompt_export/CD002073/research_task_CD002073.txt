@@ -1,0 +1,4 @@
+research_direction: 胎盘套位（TTTS）治疗及预后分析. 研究方向包括评估准随机对照试验和非随机对照试验中涉及胎盘套位（TTTS）治疗的有效性，排除随机对照试验。研究需涉及多个预后指标如死亡率、神经发育延迟等. filter_requirements: 近两年.
+
+research_direction: twin-twin transfusion syndrome
+other_info: 论文标题为 'A prospective, randomized, multicenter trial of amnioreduction vs selective fetoscopic laser photocoagulation for the treatment of severe twin-twin transfusion syndrome'，主题涉及治疗方法的选择.

@@ -1,0 +1,2 @@
+research_direction: 研究药物对胆固醇代谢的影响；医学/药学  
+filter_requirements: 需要更新的高质量系统综述；长期数据缺乏；需要扩展研究范围。拒绝理由：Allocation: not randomised, pooled analysis.

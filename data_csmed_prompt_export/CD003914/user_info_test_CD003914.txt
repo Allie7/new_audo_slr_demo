@@ -1,0 +1,2 @@
+user_identity: 计算机专业硕士研究生
+user_preference: 对药理学或临床医学领域的研究感兴趣

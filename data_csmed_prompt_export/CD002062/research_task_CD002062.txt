@@ -1,0 +1,2 @@
+research_direction: 免疫调节治疗  
+rejection_reasons: Compared corticosteroids with intravenous immunoglobulin and not with placebo or no treatment. Included in Eftimov 2013

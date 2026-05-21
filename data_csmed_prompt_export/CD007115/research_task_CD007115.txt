@@ -1,0 +1,5 @@
+Research_direction: 药物治疗糖尿病神经痛  
+Duloxetine has been shown to be effective for treating chronic pain, including various types such as chronic neuropathic pain, fibromyalgia, and postherpetic neuralgia. Specifically, 60 mg daily of Duloxetine has demonstrated efficacy in reducing pain in conditions like painful diabetic peripheral neuropathy (RR ≥50% reduction at 12 weeks: 1.73; NNTB 5), fibromyalgia (RR ≥50% reduction at 12 weeks: 1.57; NNTB 8), and depression-related physical symptoms (RR ≥50% reduction at 12 weeks: 1.37; NNTB 8). The study did not show significant efficacy in reducing central neuropathic pain, with no effect observed in a single small high-quality trial.
+
+Research_direction: 药物在糖尿病周围神经痛患者中的随机、安慰剂对照比较  
+Filter_requirements: Open label study with dosage control only

@@ -1,0 +1,2 @@
+user_identity: 研究人员/学生（医学/神经科学领域）
+user_preference: skin health, infection prevention, preterm infant care

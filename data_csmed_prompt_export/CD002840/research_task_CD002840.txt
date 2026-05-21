@@ -1,0 +1,3 @@
+research_direction: 神经康复与认知障碍治疗，包括评估任何强度和持续时间超过单次治疗的步行机训练和体重支持的研究，并预测步行机训练对非行走型患者康复的响应因素。必要时，通过联系研究者获取详细数据。此外，可以通过 ClinicalTrials.gov 筛选出符合条件的临床试验：使用“stroke”、“treadmill”、“ambulate*”或“gait*”等关键词，并结合 Boolean 运算符进行筛选。同时，筛选成人或老年 Demographics 和近期日期范围。支持步行机训练以早期帮助截瘫患者恢复行走。
+
+other_info: Predictors of Response to Treadmill Exercise in Stroke Survivors

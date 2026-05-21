@@ -1,3 +1,0 @@
-research_direction: Agentic Neural Networks, Self-Evolving Multi-Agent Systems, Textual Backpropagation  
-filter_requirements: 近三年，NLP和agent落地方向，最有影响力  
-other_info: 用户对论文 'Agentic Neural Networks: Self-Evolving Multi-Agent Systems via Textual Backpropagation' 感到满意，认为其概念创新性极强。

@@ -1,0 +1,25 @@
+research_direction: Intrampartum Antibiotics  
+research_direction: Women with early (< 34 weeks') spontaneous preterm birth requiring prophylactic antibiotics during the interpregnancy interval  
+
+filter_requirements:  
+- Types of studies: Randomised controlled trials (RCTs) including cluster-RCTs were eligible for inclusion. Quasi-RCTs were not eligible for inclusion. Only studies comparing any intervention with placebo or no treatment arm would be considered.  
+- Types of participants: Women in their second or third trimester of pregnancy before labour and delivery, who had a previous spontaneous preterm delivery (< 34 weeks). We included routine prophylaxis only for these women with high risk of preterm birth. High risk was defined as having a previous spontaneous preterm delivery, history of having an infant with a low birthweight, having bacterial vaginosis (BV) in the current pregnancy, or a pre-pregnancy weight less than 50 kg.  
+- Types of interventions: Prophylactic antibiotics given during labour and intrapartum.  
+- Types of outcome measures:  
+  - Maternal outcomes: Preterm prelabour rupture of membranes (membrane rupture before gestational age of 37 weeks and before labour), preterm delivery, puerperal sepsis/postpartum endometritis, wound infection, urinary tract infection  
+  - Neonatal outcomes: Low birthweight, clinical neonatal sepsis, blood culture confirming sepsis  
+- Primary outcomes:  
+  - Maternal outcomes: Preterm prelabour rupture of membranes (membrane rupture before gestational age of 37 weeks and before labour), preterm delivery, puerperal sepsis/postpartum endometritis, wound infection, urinary tract infection  
+- Secondary outcomes:  
+  - Maternal outcomes: Prelabour rupture of membranes (membrane rupture after gestational age of 37 weeks but before labour), chorioamnionitis, intrapartum fever needing treatment with antibiotics, serious maternal complications of puerperal infection (requiring laparotomy for infection or hysterectomy), death, gonococcal cervicitis (postpartum detected) (not prespecified), maternal side effects of antibiotic prophylaxis (e.g., allergy, gastrointestinal disturbance, etc.), duration of hospital stay, satisfaction with care, compliance with medication regimens  
+  - Neonatal outcomes: Mean gestational age, admission to neonatal intensive care unit, mean birthweight, ophthalmia neonatorum, congenital abnormality, small-for-gestational age, abnormal neurological development, perinatal mortality, childhood allergies, childhood gastrointestinal problems, childhood functional impairment, childhood cerebral palsy  
+- Other information:  
+  - Neonatal outcomes: Low birthweight, clinical neonatal sepsis, blood culture confirming sepsis  
+  - Preliminary rupture of membranes before or after gestational age 37 weeks; Membrane rupture and intrapartum fever needing antibiotics; Serious maternal complications like infection requiring surgery or hysterectomy; Gonococcal cervicitis postpartum; Maternal side effects such as allergies or gastrointestinal disturbances. Hospital stay duration, patient satisfaction, medication adherence  
+  - Mean gestational age, birthweight, neonatal conditions like ophthalmia and cerebral palsy; Perinatal mortality and childhood complications  
+
+research_background: Some studies have suggested that prophylactic antibiotics may improve pregnancy outcomes, but others have found no effect or negative effects. The research methods included searching the Cochrane Pregnancy and Childbirth Group's registered trials and references, focusing on randomised controlled trials (RCTs). Main results indicated that prophylactic antibiotics in certain specific situations might help reduce preterm birth and infection-related maternal complications, but overall evidence quality was low, with significant biases. The conclusion stated that there currently insufficient evidence to support the routine use of prophylactic antibiotics to prevent infections during pregnancy.  
+
+research_methods: The study included women with positive fetal fibronectin as a selection criterion for research. Only studies comparing any intervention with placebo or no treatment arm would be considered.  
+
+rejection_reasons: The trial had two treatment arms. The intervention group received three courses of sulphadoxine-pyrimethamine and azithromycin, while the control group received one course of sulphadoxine-pyrimethamine and chloroquin. Without a placebo arm, it does not meet inclusion criteria.

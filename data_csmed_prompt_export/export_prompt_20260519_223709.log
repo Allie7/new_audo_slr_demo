@@ -1,0 +1,61 @@
+2026-05-19 22:37:10,197 [INFO] export_prompt: 测试参数: {'num_reviews': 1, 'offset': 0, 'skip_prescreen': False, 'workers': 3}
+2026-05-19 22:37:10,225 [INFO] export_prompt: Reviews metadata 加载完成: 213 个 reviews
+2026-05-19 22:37:10,875 [INFO] export_prompt: 论文集加载完成: 3333 篇去重论文
+2026-05-19 22:37:10,880 [INFO] export_prompt: Gold standard 加载完成: 213 个 reviews, 3333 条决策
+2026-05-19 22:37:10,881 [INFO] export_prompt: 可测试的 review 数: 213
+2026-05-19 22:37:10,881 [INFO] export_prompt: 本次测试 1 个 review, 并发线程数: 3
+2026-05-19 22:37:10,886 [INFO] export_prompt: ============================================================
+2026-05-19 22:37:10,887 [INFO] export_prompt: 开始处理 review: CD000009
+2026-05-19 22:37:10,887 [INFO] export_prompt: Review title: Acupuncture and related interventions for smoking cessation
+2026-05-19 22:37:10,887 [INFO] export_prompt: 总论文数: 3333, gold included: 4
+2026-05-19 22:37:10,887 [INFO] export_prompt: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-19 22:37:10,887 [INFO] export_prompt: [阶段1a] 初始 query: Acupuncture and related interventions for smoking cessation
+2026-05-19 22:37:10,887 [INFO] auto_slr: [Assistant] extract_and_record 输入: Acupuncture and related interventions for smoking cessation
+2026-05-19 22:37:17,135 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:17,139 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Acupuncture and related interventions for smoking cessation", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-19 22:37:19,076 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:19,077 [INFO] export_prompt: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Acupuncture and related techniques are promoted as a treatment for smoking cessation in the belief that they may reduce nicotine withdrawal symptom
+2026-05-19 22:37:19,077 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Acupuncture and related techniques are promoted as a treatment for smoking cessation in the belief that they may reduce nicotine withdrawal symptoms.    Objectives The objectives of this review are to determine the effectiveness of acupuncture and...
+2026-05-19 22:37:23,121 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:23,122 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "researcher or student", "user_preference": "", "research_direction": "intervention", "filter_requirements": "Cochrane Tobacco Addiction Group Specialized Register, MEDLINE, EMBASE, PsycINFO; four Chinese databases in September 2013: Sino‐Med, China National Knowledge Infrastructure, Wanfang Data and VIP; randomization with comparison to no intervention, sham treatment or another intervention for smoking cessation", "rejection_reasons": "", "other_info": "Systematic review on the effectiveness of acupuncture, acupressure, laser therapy and electrostimulation in smoking cessation compared to control interventions."}
+2026-05-19 22:37:24,623 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:27,600 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:27,601 [INFO] export_prompt: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+All randomized controlled trials comparing acupuncture, acupressure, laser therapy or electrostimulation with either no intervention, or a sham form of the intervention, or an
+2026-05-19 22:37:27,601 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+All randomized controlled trials comparing acupuncture, acupressure, laser therapy or electrostimulation with either no intervention, or a sham form of the intervention, or another intervention, for smoking cessation. Tobacco smokers of any age who wished to stop smoking. No...
+2026-05-19 22:37:31,041 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:31,042 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "针灸、艾灸、激光疗法和电刺激用于戒烟", "filter_requirements": "不限时间范围，关键词包括随机对照试验，针灸干预，艾灸干预，激光疗法干预，电刺激干预；排除标准为非药物干预，不区分西方与传统针灸结果", "rejection_reasons": "", "other_info": ""}
+2026-05-19 22:37:34,442 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:34,444 [INFO] export_prompt: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "All randomized controlled trials comparing acupuncture, acupressure, laser therapy or electrostimulation with either no intervention, or a sham form of 
+2026-05-19 22:37:34,444 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "All randomized controlled trials comparing acupuncture, acupressure, laser therapy or electrostimulation with either no intervention, or a sham form of the intervention, or another intervention, for smoking cessation.",
+  "Types of participants": "Toba...
+2026-05-19 22:37:38,451 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:38,451 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "中文学术文章，中文核心期刊", "research_direction": "Types of studies: All randomized controlled trials comparing acupuncture, acupressure, laser therapy or electrostimulation with either no intervention, or a sham form of the intervention, or another intervention, for smoking cessation. Types of participants: Tobacco smokers of any age who wished to stop smoking. Types of interventions: Non‐pharmacological stimulation interventions involving needle puncture, finger pressure or laser therapy in areas of the body described by the study's author as acupuncture points, which includes points on the ear, face and body, or the related intervention of electrostimulation to the head region, through surface electrodes. Had we located any, studies using a Western acupuncture approach would have been considered separately from those using a traditional approach. Types of outcome measures: Complete abstinence from smoking. The review has not been limited to studies where the outcome was confirmed biochemically.", "filter_requirements": "2018-2023", "rejection_reasons": "", "other_info": ""}
+2026-05-19 22:37:39,715 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:43,537 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:43,538 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-19 22:37:46,977 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:46,977 [INFO] auto_slr: [Assistant] provide_context 输出: 研究方向为系统回顾，比较针灸、acupressure、激光疗法和电刺激在戒烟方面的有效性，与无干预或其他干预进行比较。干预类型包括所有随机对照试验，这些试验将这些非药物刺激疗法与其他疗法（如安慰剂）或无干预进行比较。参与者是任何年龄段的吸烟者，希望戒掉吸烟。系统回顾的重点在于完全戒烟的结果，而不考虑生物化学确认。研究限定在2018-2023年的中文学术文章，特别是中文核心期刊。
+2026-05-19 22:37:46,978 [INFO] export_prompt: [阶段1.5] Metadata 初筛: 从 3333 篇论文中过滤不符合元数据要求的
+2026-05-19 22:37:46,979 [INFO] export_prompt: [Metadata初筛] 排除 272 篇不符合要求的论文 (无摘要/无标题/年份不符)
+2026-05-19 22:37:46,980 [INFO] export_prompt: [Metadata初筛] 全量 3333 篇 → 保留 3061 篇, 排除 272 篇
+2026-05-19 22:37:47,569 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=仅根据论文标题判断是否与研究方向相关，做保守筛选
+2026-05-19 22:37:49,588 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:37:49,589 [INFO] auto_slr: [Assistant] provide_context 输出: 研究方向：系统回顾针灸、acupressure、激光疗法和电刺激在戒烟方面的有效性，与对照组（无干预或安慰剂）比较，参与者为任何年龄的吸烟者，目标是完全戒断吸烟。筛选时间范围2018-2023年，仅考虑完全戒断结果，不涉及生物标志物检测。
+2026-05-19 22:37:49,589 [INFO] export_prompt: [阶段1.8] Title 筛选: 3061 篇论文
+2026-05-19 22:38:01,471 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:38:13,128 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:38:25,821 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:38:39,444 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 22:38:53,264 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"

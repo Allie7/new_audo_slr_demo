@@ -1,0 +1,7 @@
+research_direction: 临床医学/肿瘤学  
+other_info: 研究旨在评估不同抗凝药物在治疗活动性癌症患者中VTE的长期效果。研究比较了低分子量肝素钠（LMWHs）、直接口服抗凝药物（DOACs）、维生素K拮抗剂（VKAs）以及Fondaparinux等药物，并将随机临床试验纳入比较tinzaparin和warfarin在治疗癌症患者急性VTE中的长期效果。研究的纳入标准为患有活动性癌症且确认有VTE诊断的任何人，包括任何年龄段、实体或血液系统癌症患者，不论其阶段或治疗类型。排除标准基于参与者的百分比，以及按子组分析结果。研究方法包括持续更新的文献综述，筛选和评估随机对照试验（RCTs），使用Cochrane Central Register of Controlled Trials、MEDLINE (Ovid)、Embase (Ovid)等数据库进行搜索。Types of interventions: LMWHs, DOACs, VKAs, Fondaparinux, tinzaparin, warfarin  
+Types of outcome measures: All-cause mortality, symptomatic recurrent VTE, PE, bleeding types, thrombocytopenia, health quality of life, postphlebitis syndrome  
+Primary outcomes: All-cause mortality  
+Secondary outcomes: Symptomatic recurrent VTE and related conditions
+
+研究方向为Factor Xa Inhibitor With Low Molecular Weight Heparin in Patients With Cancer With Venous Thromboembolism，干预措施为LMWHs，长期效果评估指标包括All-cause mortality、symptomatic recurrent VTE等。

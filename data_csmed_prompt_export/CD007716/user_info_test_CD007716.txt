@@ -1,0 +1,2 @@
+user_identity: 学术研究者  
+user_preference: Sample size at least 50 cases and excluding non-randomized controlled trials

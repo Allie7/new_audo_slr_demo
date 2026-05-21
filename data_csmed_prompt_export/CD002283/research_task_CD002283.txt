@@ -1,0 +1,6 @@
+research_direction: Orthodontic studies on tooth arch stability and related outcomes  
+filter_requirements: Filtered to include only studies published within the last two years, focusing on randomised controlled trials (RCTs). Participants must be children or adults who have had retainers fitted or undergone adjunctive procedures following orthodontic brace treatment. Exclusions include individuals with surgical jaw correction, cleft lip/palate syndromes, or orthodontic treatments based solely on extractions or passive space maintainers. Interventions involve the use of retainers or adjunctive techniques post-orthodontic brace treatment; only studies completing the full course of treatment are included. Outcome measures include:  
+1. Stability assessment using Little's Irregularity Index, intercanine/intermolar width, arch length, and occlusion measurements.  
+2. Retainer failure rates.  
+3. Adverse effects on teeth and gums.  
+4. Patient satisfaction outcomes. Primary outcome is the stability assessment; secondary outcomes include retention failure rates, adverse effects, and patient satisfaction.

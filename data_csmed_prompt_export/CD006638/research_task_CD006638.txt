@@ -1,0 +1,6 @@
+医学工程 - 生物医学工程, 神经外科  
+研究方向：脑手术配合冷却技术  
+筛选要求：随机化或准随机对照试验；接受血管、肿瘤或脑损伤手术的患者（不限年龄和性别）；比较冷疗策略在术前或术后一段时间的效果。时间范围近三年，关键词包括 Milani 2011, 随机化 controlled trials, quasi-randomized controlled trials; 排除非随机化 controlled trials.  
+排除条件：(动物不 (人类和动物)).sh.  
+筛选要求补充：对之前的研究进行后分析（post hoc analysis）  
+关键词：Hypothermia, Induced；Cryotherapy, Explode all trees；Neurosurgical Procedures, Explode all trees；Brain Injuries, Explode all trees；Intracranial Aneurysm, Explode all trees

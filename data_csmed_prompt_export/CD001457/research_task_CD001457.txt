@@ -1,0 +1,19 @@
+research_direction: Types of studies  
+filter_requirements: We included controlled trials using random or quasi-random participant allocation. Due to the nature of the intervention, we excluded crossover trials. Where trials were reported as abstracts only, we aimed to include them provided there was sufficient information to assess eligibility. We contacted the authors requesting further information if we could not decide after reading the abstract.  
+other_info: ```json
+{
+  "user_identity": "",
+  "user_preference": "Cochrane Central Register of Controlled Trials (CENTRAL)  Wiley http://onlinelibrary.wiley.com/  #1 MeSH descriptor: [Infant, Newborn] explode all trees #2 MeSH descriptor: [Premature Birth] this term only #3 (neonat$ or neo nat$):ti,ab,kw #4 (newborn$ or new born$ or newly born$):ti,ab,kw #5 (preterm or preterms or pre term or pre terms):ti,ab,kw #6 (premie$ or premie or premies):ti,ab,kw #7 (prematur$ adj3 (birth$ or born$ or deliver$)):ti,ab,kw #8 (low adj3 (birthweight$ or birth weight$)):ti,ab,kw #9 (lbw or vlbw or elbw):ti,ab,kw #10 infan$:ti,ab,kw #11 (baby or babies):ti,ab,kw #12 Enterocolitis, Necrotizing/13 enterocolitis.ti,ab.kw #14 necr.ti,ab.kw",
+  "user_preference continued": "randomized controlled trial.pt. controlled clinical trial.pt. randomized.ab. placebo.ab. drug therapy.fs.",
+  "user_identity_background": "Academic researcher focusing on Neonatal Medicine and Premature Birth studies",
+  "user_identity_purpose": "Systematic review of studies on NEC (Necrotizing Enterocolitis) and Enterocolitis in premature infants",
+  "study_characteristics": "Systematic search across multiple databases including PubMed, Clinical Trials.gov, mRCT, WHO ICTRP, and Cochrane Library with a focus on randomized controlled trials published between 2007 and 2015 focusing on NEC or Enterocolitis in premature infants.",
+  "user_preferences continued": "Focus on studies involving infants (0-1 year old) and premature births (preterm: <37 weeks gestation)",
+  "user_preferences further": "Specifically looking for studies on Necrotizing Enterocolitis (NEC) and Enterocolitis, with a focus on randomized controlled trials.",
+  "study_characteristics": "Systematic search across multiple databases including PubMed, Clinical Trials.gov, mRCT, WHO ICTRP, and Cochrane Library with a focus on randomized controlled trials published between 2007 and 2015 focusing on NEC or Enterocolitis in premature infants.",
+  "user_preferences continued further": "Focus on studies involving infants (0-1 year old) and premature births (preterm: <37 weeks gestation)",
+  "user_preferences further detailed": "Specifically looking for studies on Necrotizing Enterocolitis (NEC) and Enterocolitis, with a focus on randomized controlled trials.",
+}
+```
+
+研究_direction: Glutamine-enriched enteral nutrition in very-low-birth-weight infants and effects on feeding tolerance and infectious morbidity: a randomized controlled trial

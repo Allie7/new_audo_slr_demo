@@ -1,0 +1,3 @@
+research_direction: Gastrointestinal and gynecological malignancies; Management and outcomes of bowel obstruction in patients with stage IV colon cancer; Bowel obstruction in elderly ovarian cancer patients: A population-based study; Colorectal Stent Placement  
+filter_requirements: Systematic review, Cohort studies, Well‐designed case‐control retrospective studies, Longitudinal surveys or case histories  
+rejection_reasons: Results not specific to gastrointestinal or gynaecological cancers. Results reported for all tumour groups and multiple surgical diagnoses; Stents only. De novo verses advanced not known at the time of stenting

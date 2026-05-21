@@ -1,0 +1,3 @@
+research_direction: Dopamine agonists and contingency management for individuals with methamphetamine dependence; 时间范围: 2015年1月12日及以后；数据库: Cochrane Drugs and Alcohol Group, PubMed, EMBASE, CINAHL, PsycINFO, ICTRP, clinicaltrials.gov, Cochrane Psychiatric Group; 筛选标准: 随机对照试验（RCTs）、分组随机对照试验（CCTs）和多参数临床试验（PMCTs），专注于使用 Dopamine agonists 和 contingency management 作为人群药物滥用的治疗手段。参与者可能有其他诊断，如物质依赖症。纳入标准: 对象需符合DSM III、IV或V中的吗啡依赖诊断；允许参与亚组分析的研究。排除标准: 年龄小于18岁和孕妇；排除接受精神刺激药物（如阿普拉他）的参与者。干预措施: Dopamine agonists单独使用，或与行为疗法结合使用，同时加入利多卡因联合治疗。研究方向还包括：安全性、耐受性和有效性评估，涉及两项双盲、随机、临床试验及多参数临床试验。
+
+rejection_reasons: Outcomes measures not in the inclusion criteria

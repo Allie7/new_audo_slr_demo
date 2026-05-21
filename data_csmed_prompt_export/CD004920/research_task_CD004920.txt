@@ -1,0 +1,7 @@
+research_direction: 我们考虑了涉及随机、双盲、安慰剂对照试验的抗ungal药物比较研究，包括与安慰剂、无菌治疗或其他抗ungal药物（系统性或非吸收性）的比较。我们纳入了在非细菌学诊断明确之前开始抗ungal药物治疗的病例（不受靶向选择的影响），以及高风险成人在临界护理环境中的预防性治疗研究；机器学习算法优化。
+
+database: Cochrane Central Register of Controlled Trials (CENTRAL), EMBASE (OVID)
+
+filter_requirements: 试验必须包括非中性粒细胞缺乏的重症患者，其比例小于25%或患者的数据提供情况。此外，我们纳入了高风险成人中临界护理环境中的随机、双盲、安慰剂对照试验，用于预防侵袭性念珠菌感染的研究。
+
+other_info: 论文标题：MSG-01: A Randomized, Double-Blind, Placebo-Controlled Trial of Caspofungin Prophylaxis Followed by Preemptive Therapy for Invasive Candidiasis in High-Risk Adults in the Critical Care Setting

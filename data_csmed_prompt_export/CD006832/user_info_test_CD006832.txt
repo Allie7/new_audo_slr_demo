@@ -1,0 +1,2 @@
+user_identity: Medical researcher focusing on neuro-muscular degenerative diseases  
+user_preference: Neuro-muscular degenerative diseases, specifically polyneuropathy, muscle weakness, and related therapeutic interventions

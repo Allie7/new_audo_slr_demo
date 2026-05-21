@@ -1,0 +1,5 @@
+research_direction: Statins effects on CKD patients: benefits and harms  
+other_info: HMG-CoA再加酶抑制剂（即statins）在慢性肾病（CKD）患者的治疗中具有显著的益处和潜在风险。研究表明，statins能够有效降低心血管系统相关死亡率及主要心血管事件的发生率，包括心肌梗死、缺血性心脏病等。然而，其潜在危害也包括肌肉功能障碍、肝功能异常、药物退出困难以及癌症风险增加等问题。这些研究通常通过随机对照试验（RCT）和准随机对照试验（quasi-RCT）进行评估，比较statins与安慰剂、常规治疗或其他 statins 的疗效效果。尽管这些研究提供了关于死亡率、心血管事件、肾功能保留（GFR）以及肝酶升高等结果的数据，但由于不同研究间的异质性，其影响仍存在一定的不确定性。针对成人肾移植患者的研究显示，随机交叉对照试验和至少持续八周的试验是评估statins疗效的重要方法，并且排除了与其他非利他昔明方案（如第二代他汀或他汀加他汀）的比较。这些研究进一步揭示了statins在改善心血管健康方面的作用，同时需要注意潜在的药物相互作用风险。Hydroxymethylglutaryl-CO酶抑制剂的研究主题集中在筛选与评估，使用MEDLINE、EBASEDE等数据库，筛选要求包括近两年内发表、排除未包含特定药物的研究，并且不使用随机数字表等方法。此外，研究还探讨了肾移植患者中早期实施降脂治疗的益处，表明这可能有助于改善心血管健康并延长患者的无事件生存期。
+
+ research_direction: Nephrology Dialysis Transplantation Therapy of post-renal transplantation hyperlipidaemia: comparative study with simvastatin and fish oil  
+other_info: 比较研究显示，simvastatin和fish oil在治疗后移植物性肾病hyperlipidaemia方面具有不同的疗效和安全性表现。通过active comparator（非statin）的比较，研究结果为临床实践中选择合适的降脂药物提供了参考依据。

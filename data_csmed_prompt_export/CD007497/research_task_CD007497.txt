@@ -1,0 +1,8 @@
+research_direction: HIV/AIDS临床试验  
+filter_requirements: 时间范围: 近两年; 筛选标准: Viral load < 200 copies/ml, Major side effects, Secondary outcomes; 方法: 涉及斯他达韦作为ART组合治疗的低剂量和高剂量对比研究  
+other_info: 研究主要药物为Stavudine，分为低剂量（30mg）和高剂量（40mg）两种类型。此外，临床试验还涉及多种 HIV药物，包括 nevirapine、efavirenz、zidovudine 和 stavudine，探索了不同治疗策略和新药的疗效与安全性。这些研究覆盖了儿童、HIV/AIDS成人患者以及伴有特定健康问题（如脂代谢障碍或衰老）的患者群体。通过评估药物耐受性、治疗依从性和多药联合作用，研究旨在优化抗逆转录病毒疗法的效果。此外，试验还关注了病毒载量和CD4细胞数量的变化作为治疗成功的关键指标，并探索了脂质代谢监测等新型干预措施。这些临床试验从1973年到2000年初进行了系统的研究，反映了长期的HIV研究承诺以及治疗策略的持续发展。
+
+研究主题: HIV感染治疗效果研究  
+期刊名称: AIDS Care  
+
+研究方向: Tox

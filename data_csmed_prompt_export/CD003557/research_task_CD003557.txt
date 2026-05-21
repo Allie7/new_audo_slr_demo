@@ -1,0 +1,177 @@
+research_direction: Topical Antiseptics for Venous Leg Ulcers  
+Systemic or topical antibiotics for venous leg ulcers; Controlled trial of Iodosorb in chronic venous ulcers  
+
+filter_requirements: We included prospective randomised controlled trials (RCTs) evaluating topical antiseptics, specifically iodosorb, for the treatment of chronic venous leg ulcers. RCTs reported in abstract form only were eligible for inclusion if they provided adequate information or data from authors. Studies using quasi-randomisation were excluded. The focus is on chronic venous leg ulceration with specific attention to the intervention and outcomes related to Iodosorb.
+
+other_info: Here is the structured and organized presentation of the extracted information:
+
+---
+
+**Medical Study Terms Extraction:**
+
+1. **venous leg ulceration**
+   - Baseline ulcer duration
+   - Wound surface area
+
+2. **intention-to-treat (ITT) analysis**
+   - Definition: Analysis conducted when all trial participants are analyzed in the group to which they are assigned, regardless of treatment received or other protocol irregularities.
+
+3. **aspirin**  
+   - Not applicable  
+
+4. **baseline comparability**  
+   - Predictor variables: Baseline ulcer duration and wound surface area  
+     - Note: Data on these variables are likely to be positively skewed, making median values preferred for assessment.
+
+5. **randomisation adequacy**  
+   - Low-risk methods: Random number tables, computerized random number generator, dice throwing, coin tossing.  
+   - High-risk method: Alternation, date of birth, date of presentation or case record number.
+
+6. **allocation concealment**  
+   - Low-risk adequate methods: Central randomization by a third party, serially numbered opaque envelopes.  
+   - High-risk methods: Alternation, date-based systems without concealment.
+
+7. **blinding participants**  
+   - Low-risk: Participants were blind; information provided in report.  
+
+8. **blinding outcome assessors**  
+   - Low-risk: Outcome assessors were blind; information provided.  
+
+9. **withdrawal rates**  
+   - ITT analysis: RCT reports stating withdrawal rates did not exceed 20% per group, or balanced reasons across groups.  
+   - As-treated or per-protocol analyses: Reported unless significant imbalance affects treatment effect.
+
+10. **comparability at baseline**  
+    - Predictor variables: Baseline ulcer duration and wound surface area  
+      - Note: Median values preferred for assessment due to positive skewness in data distribution.
+
+---
+
+**Randomised Controlled Trial (RCT) Assessment Criteria:**  
+1. **Adequacy of sequence generation (randomisation)**  
+   - Low-risk: Methods include random number tables, computerized generators.  
+   - High-risk: Alternation or date-based systems without concealment.
+
+2. **Adequacy of allocation concealment**  
+   - Low-risk: Adequate methods like central randomization or opaque envelopes.  
+   - High-risk: Methods without concealment leading to potential bias.
+
+3. **Blinding participants**  
+   - Low-risk: Participants were blind; information provided in report.  
+
+4. **Blinding outcome assessors**  
+   - Low-risk: Outcome assessors were blind; information provided.  
+
+5. **Incomplete outcome data addressed (withdrawal)**  
+   - Low-risk: Data missing but balanced across groups or no withdrawals reported.  
+   - High-risk: Withdrawals evident without balanced data affecting analysis.
+
+6. **Incomplete outcome data addressed (withdrawal rate)**  
+   - Low-risk: Withdrawal rates ≤20% per group, with balanced reasons.  
+   - High-risk: Withdrawal rates >20%, imbalanced across groups.
+
+7. **Incomplete outcome data addressed (ITT analysis)**  
+   - Low-risk: ITT confirmed; no significant differences in treatment effect.  
+   - High-risk: ITT not confirmed, small numbers excluded affecting estimates.
+
+8. **Cost-effectiveness analysis**  
+   - If applicable, cost-effectiveness analysis was conducted to evaluate the economic impact of interventions on outcomes such as quality-adjusted life years (QALYs), costs per QALY, incremental cost-effectiveness ratio (ICER), and cost-utility ratios.
+
+---
+
+**New Extracted Information:**
+
+论文标题为 'Randomized controlled trial and cost-effectiveness analysis of silver-donating antimicrobial dressings for venous leg ulcers (VULCAN trial)'，用户认为该论文符合研究需求。
+
+new research_direction: Evaluation of the Efficacy and Tolerability of a Solution Containing Propyl Betaine and Polihexanide for Wound Irrigation
+
+---
+
+**整合后的文本：**
+
+research_direction: Topical Antiseptics for Venous Leg Ulcers  
+Systemic or topical antibiotics for venous leg ulcers; Controlled trial of Iodosorb in chronic venous ulcers  
+
+filter_requirements: We included prospective randomised controlled trials (RCTs) evaluating topical antiseptics, specifically iodosorb, for the treatment of chronic venous leg ulcers. RCTs reported in abstract form only were eligible for inclusion if they provided adequate information or data from authors. Studies using quasi-randomisation were excluded. The focus is on chronic venous leg ulceration with specific attention to the intervention and outcomes related to Iodosorb.
+
+other_info: Here is the structured and organized presentation of the extracted information:
+
+---
+
+**Medical Study Terms Extraction:**
+
+1. **venous leg ulceration**
+   - Baseline ulcer duration
+   - Wound surface area
+
+2. **intention-to-treat (ITT) analysis**
+   - Definition: Analysis conducted when all trial participants are analyzed in the group to which they are assigned, regardless of treatment received or other protocol irregularities.
+
+3. **aspirin**  
+   - Not applicable  
+
+4. **baseline comparability**  
+   - Predictor variables: Baseline ulcer duration and wound surface area  
+     - Note: Data on these variables are likely to be positively skewed, making median values preferred for assessment.
+
+5. **randomisation adequacy**  
+   - Low-risk methods: Random number tables, computerized random number generator, dice throwing, coin tossing.  
+   - High-risk method: Alternation, date of birth, date of presentation or case record number.
+
+6. **allocation concealment**  
+   - Low-risk adequate methods: Central randomization by a third party, serially numbered opaque envelopes.  
+   - High-risk methods: Alternation, date-based systems without concealment.
+
+7. **blinding participants**  
+   - Low-risk: Participants were blind; information provided in report.  
+
+8. **blinding outcome assessors**  
+   - Low-risk: Outcome assessors were blind; information provided.  
+
+9. **withdrawal rates**  
+   - ITT analysis: RCT reports stating withdrawal rates did not exceed 20% per group, or balanced reasons across groups.  
+   - As-treated or per-protocol analyses: Reported unless significant imbalance affects treatment effect.
+
+10. **comparability at baseline**  
+    - Predictor variables: Baseline ulcer duration and wound surface area  
+      - Note: Median values preferred for assessment due to positive skewness in data distribution.
+
+---
+
+**Randomised Controlled Trial (RCT) Assessment Criteria:**  
+1. **Adequacy of sequence generation (randomisation)**  
+   - Low-risk: Methods include random number tables, computerized generators.  
+   - High-risk: Alternation or date-based systems without concealment.
+
+2. **Adequacy of allocation concealment**  
+   - Low-risk: Adequate methods like central randomization or opaque envelopes.  
+   - High-risk: Methods without concealment leading to potential bias.
+
+3. **Blinding participants**  
+   - Low-risk: Participants were blind; information provided in report.  
+
+4. **Blinding outcome assessors**  
+   - Low-risk: Outcome assessors were blind; information provided.  
+
+5. **Incomplete outcome data addressed (withdrawal)**  
+   - Low-risk: Data missing but balanced across groups or no withdrawals reported.  
+   - High-risk: Withdrawals evident without balanced data affecting analysis.
+
+6. **Incomplete outcome data addressed (withdrawal rate)**  
+   - Low-risk: Withdrawal rates ≤20% per group, with balanced reasons.  
+   - High-risk: Withdrawal rates >20%, imbalanced across groups.
+
+7. **Incomplete outcome data addressed (ITT analysis)**  
+   - Low-risk: ITT confirmed; no significant differences in treatment effect.  
+   - High-risk: ITT not confirmed, small numbers excluded affecting estimates.
+
+8. **Cost-effectiveness analysis**  
+   - If applicable, cost-effectiveness analysis was conducted to evaluate the economic impact of interventions on outcomes such as quality-adjusted life years (QALYs), costs per QALY, incremental cost-effectiveness ratio (ICER), and cost-utility ratios.
+
+---
+
+**新提取的信息：**
+
+论文标题为 'Randomized controlled trial and cost-effectiveness analysis of silver-donating antimicrobial dressings for venous leg ulcers (VULCAN trial)'，用户认为该论文符合研究需求。
+
+new research_direction: Evaluation of the Efficacy and Tolerability of a Solution Containing Propyl Betaine and Polihexanide for Wound Irrigation

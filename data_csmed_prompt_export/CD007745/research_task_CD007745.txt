@@ -1,0 +1,3 @@
+研究方向：评估ivermectin与benzimidazoles治疗Strongyloides感染的效果  
+筛选要求：搜索方法包括Cochrane Infectious Diseases Group Specialized Register、Cochrane Central Register of Controlled Trials、CIDG SRa、MEDLINEb、EMBASEb、LILACSb和metaRegister；选择标准为参与者未被随机分组。数据收集和分析方法包括从文献中提取数据并评估风险偏倚，使用风险比（RRs）和95%置信区间（CIs），以及混合效应模型。  
+拒绝理由：Participants not randomized

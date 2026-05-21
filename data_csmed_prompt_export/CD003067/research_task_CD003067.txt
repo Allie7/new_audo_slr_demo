@@ -1,0 +1,8 @@
+research_direction: Oral Health - Caries Prevention and Preventive Dentistry  
+filter_requirements: Not an RCT  
+研究方向包括儿童和青少年的口腔健康问题研究，涉及Cochrane Oral Health的Trials Register、MEDLINE Ovid、Embase Ovid、美国国家医学图书馆 TRIALRegistry和世界卫生组织CTRP平台。时间范围不限，但至少12个月的随访期。筛选标准为非随机对照试验（Non-RCT）。研究方法包括对多个数据库进行搜索，如Cochrane Trials Register、CENTRAL、MEDLINE Obid、Embase Ovid、美国国家医学图书馆 TRIALRegistry和世界卫生组织CTRP平台。研究主要比较牙胶密封剂和氟化物沉淀物在儿童和青少年中的应用效果，包括不同类型的牙胶密封剂（如树脂基或玻璃离子基）和不同的随访时间点。
+
+研究方向还包括儿童恒牙龋的预防，筛选标准为非随机对照试验 (Non-RCT)；12个月随访；平行组研究；裂 mouth研究设计；干预组为牙胶或牙胶加氟化剂；控制组为氟化剂仅用组。研究包括除第一代树脂基质牙胶外的所有牙胶材料，干预组可以是直接应用或经过打磨处理的牙胶，并评估临床检查、DMF变化、牙洞进展、操作时间和 dentist 访ite 次数等指标。
+
+other_info: 论文标题：'Randomized trial on fluorides and sealant for fissure caries prevention'  
+研究主题：氟化物和牙胶剂在防止裂纹龋中的应用
