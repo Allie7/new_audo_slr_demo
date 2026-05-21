@@ -1,0 +1,1220 @@
+2026-05-20 22:36:17,716 [INFO] test_csmed: 测试参数: {'num_reviews': 10, 'offset': 100, 'skip_prescreen': False, 'workers': 3}
+2026-05-20 22:36:17,749 [INFO] test_csmed: Reviews metadata 加载完成: 213 个 reviews
+2026-05-20 22:36:18,462 [INFO] test_csmed: 论文集加载完成: 3333 篇去重论文
+2026-05-20 22:36:18,467 [INFO] test_csmed: Gold standard 加载完成: 213 个 reviews, 3333 条决策
+2026-05-20 22:36:18,468 [INFO] test_csmed: 可测试的 review 数: 213
+2026-05-20 22:36:18,468 [INFO] test_csmed: 本次测试 10 个 review, 并发线程数: 3
+2026-05-20 22:36:18,468 [WARNING] test_csmed: 论文 CD008081-bib-0019 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,469 [INFO] test_csmed: build_paper_list_for_review: 跳过 1 篇无效论文，剩余 6 篇
+2026-05-20 22:36:18,469 [WARNING] test_csmed: 论文 CD008093-bib-0027 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,469 [WARNING] test_csmed: 论文 CD008093-bib-0058 的 title 或 abstract 为空，跳过 (title=空, abstract=空)
+2026-05-20 22:36:18,469 [INFO] test_csmed: build_paper_list_for_review: 跳过 2 篇无效论文，剩余 9 篇
+2026-05-20 22:36:18,469 [WARNING] test_csmed: 论文 CD008170-bib-0041 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,469 [INFO] test_csmed: build_paper_list_for_review: 跳过 1 篇无效论文，剩余 21 篇
+2026-05-20 22:36:18,469 [WARNING] test_csmed: 论文 CD008345-bib-0001 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,469 [INFO] test_csmed: build_paper_list_for_review: 跳过 1 篇无效论文，剩余 17 篇
+2026-05-20 22:36:18,470 [WARNING] test_csmed: 论文 CD008366-bib-0056 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,470 [WARNING] test_csmed: 论文 CD008366-bib-0194 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,470 [WARNING] test_csmed: 论文 CD008366-bib-0212 的 title 或 abstract 为空，跳过 (title=空, abstract=空)
+2026-05-20 22:36:18,470 [WARNING] test_csmed: 论文 CD008366-bib-0305 的 title 或 abstract 为空，跳过 (title=空, abstract=空)
+2026-05-20 22:36:18,470 [INFO] test_csmed: build_paper_list_for_review: 跳过 4 篇无效论文，剩余 81 篇
+2026-05-20 22:36:18,470 [WARNING] test_csmed: 论文 CD008426-bib-0012 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 22:36:18,470 [INFO] test_csmed: build_paper_list_for_review: 跳过 1 篇无效论文，剩余 1 篇
+2026-05-20 22:36:18,471 [INFO] test_csmed: ============================================================
+2026-05-20 22:36:18,471 [INFO] test_csmed: 开始处理 review: CD008081
+2026-05-20 22:36:18,471 [INFO] test_csmed: ============================================================
+2026-05-20 22:36:18,471 [INFO] test_csmed: Review title: Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinopathy
+2026-05-20 22:36:18,471 [INFO] test_csmed: ============================================================
+2026-05-20 22:36:18,471 [INFO] test_csmed: 开始处理 review: CD008093
+2026-05-20 22:36:18,472 [INFO] test_csmed: 总论文数: 6, gold included: 4
+2026-05-20 22:36:18,472 [INFO] test_csmed: 开始处理 review: CD008170
+2026-05-20 22:36:18,472 [INFO] test_csmed: Review title: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 22:36:18,472 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:36:18,472 [INFO] test_csmed: Review title: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 22:36:18,472 [INFO] test_csmed: 总论文数: 9, gold included: 7
+2026-05-20 22:36:18,472 [INFO] test_csmed: [阶段1a] 初始 query: Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinopathy
+2026-05-20 22:36:18,472 [INFO] test_csmed: 总论文数: 21, gold included: 17
+2026-05-20 22:36:18,473 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:36:18,473 [INFO] auto_slr: [Assistant] extract_and_record 输入: Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinopathy
+2026-05-20 22:36:18,473 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:36:18,473 [INFO] test_csmed: [阶段1a] 初始 query: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 22:36:18,473 [INFO] test_csmed: [阶段1a] 初始 query: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 22:36:18,473 [INFO] auto_slr: [Assistant] extract_and_record 输入: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 22:36:18,473 [INFO] auto_slr: [Assistant] extract_and_record 输入: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 22:36:25,085 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:25,091 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:36:28,757 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:28,758 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:36:32,340 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:32,340 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinopathy", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:36:34,165 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:34,166 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 系统综述摘要:
+Background Sudden cardiac death (SCD) is one of the main causes of cardiac death. There are two main strategies to prevent it: managing cardiovascular risk factors and reducing the risk of ven
+2026-05-20 22:36:34,166 [INFO] auto_slr: [Assistant] extract_and_record 输入: 系统综述摘要:
+Background Sudden cardiac death (SCD) is one of the main causes of cardiac death. There are two main strategies to prevent it: managing cardiovascular risk factors and reducing the risk of ventricular arrhythmias. Implantable cardiac defibrillators (ICDs) constitute the standard therapy for ...
+2026-05-20 22:36:35,917 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:35,918 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background This is the first update of a Cochrane Review first published in 2015. Renin angiotensin system (RAS) inhibitors include angiotensin converting enz
+2026-05-20 22:36:35,919 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background This is the first update of a Cochrane Review first published in 2015. Renin angiotensin system (RAS) inhibitors include angiotensin converting enzyme (ACE) inhibitors, angiotensin receptor blockers (ARBs) and renin inhibitors. They are widely pre...
+2026-05-20 22:36:37,955 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:37,956 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Diagnostic
+
+系统综述摘要:
+Background Diabetic macular oedema (DMO) is a thickening of the central retina, or the macula, and is associated with long‐term visual loss in people with diabe
+2026-05-20 22:36:37,956 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Diagnostic
+
+系统综述摘要:
+Background Diabetic macular oedema (DMO) is a thickening of the central retina, or the macula, and is associated with long‐term visual loss in people with diabetic retinopathy (DR). Clinically significant macular oedema (CSMO) is the most severe form of DMO. A...
+2026-05-20 22:36:43,117 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:43,118 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Sudden Cardiac Death (SCD) prevention", "filter_requirements": "Search methods: Cochrane Central Register of Controlled Trials (CENTRAL), MEDLINE (OVID), EMBASE (OVID), CINAHL (EBSCO), and LILACS on 26 March 2015. Selection criteria: Randomised and quasi-randomised trials assessing the efficacy of amiodarone versus placebo, no intervention, or other antiarrhythmics in adults.", "rejection_reasons": "", "other_info": "The study concluded that amiodarone reduces SCD, cardiac mortality, and all-cause mortality when compared to placebo or no intervention for primary prevention. However, its effects were superior to other antiarrhythmics but uncertain for secondary prevention due to low evidence quality. Amiodarone was associated with increased pulmonary and thyroid adverse events."}
+2026-05-20 22:36:45,764 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:45,764 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "RAS Inhibitors Comparison", "filter_requirements": "近两年", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:36:49,843 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:49,844 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Diabetic macular oedema (DMO)", "filter_requirements": "Cochrane Database of Systematic Reviews (CDSR), Database of Abstracts of Reviews of Effects (DARE), Health Technology Assessment Database (HTA), NHS Economic Evaluation Database (NHSEED), Ovid MEDLINE, Ovid MEDLINE In-Process and Other Non-Indexed Citations, Ovid MEDLINE Daily, Ovid OLDMEDLINE, EMBASE, Web of Science Conference Proceedings Citation Index - Science (CPCI-S), BIOSIS Previews, MEDION, ARIF", "rejection_reasons": "", "other_info": "The review assesses the diagnostic accuracy of OCT for detecting DMO and CSMO in patients referred to ophthalmologists after DR detection. It includes studies from 1998 to 2012, with a focus on sensitivity and specificity, but notes limitations such as unclear study quality and applicability."}
+2026-05-20 22:36:53,611 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:53,612 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number. Adults (1
+2026-05-20 22:36:53,612 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number. Adults (16 years or older) with: reduced LVEF (< 40%), independent of the aetiology (ischaemic or non‐ischaem...
+2026-05-20 22:36:55,641 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:55,642 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum f
+2026-05-20 22:36:55,642 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum follow‐up of six months. People with primary elevated BP (that equals or exceeds 130/85 mmHg). We cho...
+2026-05-20 22:36:58,468 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:36:58,469 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+We planned to include all prospective and retrospective consecutive series of patients and case‐control studies that evaluated the accuracy of OCT for diagnosing DMO. As discu
+2026-05-20 22:36:58,470 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+We planned to include all prospective and retrospective consecutive series of patients and case‐control studies that evaluated the accuracy of OCT for diagnosing DMO. As discussed above, we acknowledge that the clinical pathway is unclear and may vary across settings and cou...
+2026-05-20 22:37:04,648 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:04,649 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Heart rhythm disorders and sudden cardiac death", "filter_requirements": "Randomised and quasi-randomised controlled trials; adults (16 years or older) with reduced LVEF (<40%), independent of the aetiology (ischaemic or non-ischaemic); or high risk for SCD, e.g. participants without structural heart disease but with a high risk cardiac condition, such as refractory sustained or non-sustained VT, or non-suppressible malignant arrhythmias induced by EP study; adults (16 years or older) who have recovered from cardiac arrest or syncope due to VT/VF of non-ischaemic aetiology, or of ischaemic aetiology after 48 hours from the ischaemic event; studies involving participants with an ICD plus amiodarone versus ICD plus placebo or another antiarrhythmic drug; people with genetic arrhythmia syndromes such as Brugada syndrome, long QT syndrome, and arrhythmogenic right ventricular dysplasia", "rejection_reasons": "", "other_info": "Focus on RCTs and specific patient populations with heart rhythm disorders or high risk for sudden cardiac death; includes studies comparing amiodarone to other antiarrhythmic drugs; excludes certain sequential drug combinations; focuses on endpoints such as sudden cardiac death, all-cause mortality, cardiac mortality, quality of life, and adverse effects"}
+2026-05-20 22:37:10,855 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:10,856 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Antihypertensive Drug Research", "filter_requirements": "RCTs with parallel design; double-blind; minimum follow-up of six months. People with primary elevated BP (that equals or exceeds 130/85 mmHg). Excluded people with proven secondary hypertension.", "rejection_reasons": "", "other_info": "ACE inhibitors include: alacepril, altiopril, benazepril, captopril, ceronapril, cilazapril, delapril, derapril, enalapril, enalaprilat, fosinopril, idapril, imidapril, lisinopril, moexipril, moveltipril, pentopril, perindopril, quinapril, ramipril, spirapril, temocapril, trandolapril, and zofenopril. ARBs include: candesartan, eprosartan, irbesartan, losartan, olmesartan, tasosartan, telmisartan, valsartan, and KT3-671. Renin inhibitors include: aliskiren, remikiren. Any other antihypertensive drug class including: thiazides, beta-blockers, CCBs, alpha-blockers, or central nervous system (CNS) active drugs. Total CV events: fatal and non-fatal MI; fatal and non-fatal stroke; fatal and non-fatal congestive heart failure (CHF) requiring hospitalizations. Renal outcomes: ESRF (defined as a requirement for maintenance dialysis). Change in or end-point systolic and diastolic BP. Change in or end-point heart rate."}
+2026-05-20 22:37:15,376 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:15,377 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Diabetic Retinopathy (DMO) and Age-Related Macular Degeneration (CSMO)", "filter_requirements": "Time range unspecified, keywords include OCT, case-consecutive series of patients, case-control studies; Exclusion criteria: no 2x2 table with dichotomized results or lack of detailed results description", "rejection_reasons": "", "other_info": "ETDRS 1985 defines DMO and CSMO based on stereoscopic fundus photography. OCT is increasingly considered a new reference standard for DMO, but clinical examination remains recommended by AAO PPP."}
+2026-05-20 22:37:24,801 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:24,802 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case r
+2026-05-20 22:37:24,802 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number.",
+  "Types of participants": "Adults (16 years or older) with: reduced LVEF (< 40%), i...
+2026-05-20 22:37:31,255 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:31,256 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; 
+2026-05-20 22:37:31,257 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum follow‐up of six months.",
+  "Types of participants": "People with primary ele...
+2026-05-20 22:37:35,360 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:35,361 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We planned to include all prospective and retrospective consecutive series of patients and case‐control studies that evaluated the accuracy of OCT for d
+2026-05-20 22:37:35,361 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We planned to include all prospective and retrospective consecutive series of patients and case‐control studies that evaluated the accuracy of OCT for diagnosing DMO. As discussed above, we acknowledge that the clinical pathway is unclear and may vary ...
+2026-05-20 22:37:43,127 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:43,128 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Types of studies: Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number.\n\nTypes of participants: Adults (16 years or older) with: reduced LVEF (< 40%), independent of the aetiology (ischaemic or non‐ischaemic); or high risk for SCD, e.g. participants without structural heart disease but with a high risk cardiac condition, such as refractory sustained or non sustained VT, or non‐suppressible malignant arrhythmias induced by EP study. reduced LVEF (< 40%), independent of the aetiology (ischaemic or non‐ischaemic); or high risk for SCD, e.g. participants without structural heart disease but with a high risk cardiac condition, such as refractory sustained or non sustained VT, or non‐suppressible malignant arrhythmias induced by EP study. Adults (16 years or older) who have recovered from cardiac arrest or syncope due to VT/VF of non‐ischaemic aetiology, or of ischaemic aetiology after 48 hours from the ischaemic event. We also included studies involving participants with an ICD plus amiodarone versus ICD plus placebo or another antiarrhythmic drug. People with genetic arrhythmia syndromes with specific treatments, such as: Brugada syndrome; long QT syndrome; arrhythmogenic right ventricular dysplasia.\n\nPrimary prevention: Adults (16 years or older) with: reduced LVEF (< 40%), independent of the aetiology (ischaemic or non‐ischaemic); or high risk for SCD, e.g. participants without structural heart disease but with a high risk cardiac condition, such as refractory sustained or non sustained VT, or non‐suppressible malignant arrhythmias induced by EP study.", "filter_requirements": "Exclusion criteria: People with genetic arrhythmia syndromes with specific treatments, such as: Brugada syndrome; long QT syndrome; arrhythmogenic right ventricular dysplasia.\n\nTypes of interventions: Amiodarone at ≥ 200 mg/d, by any route of administration, for at least six months, compared to other antiarrhythmics, placebo or no intervention.We excluded studies of amiodarone combined with other antiarrhythmic drugs in a sequential manner (i.e. based on EP studies).\n\nTypes of outcome measures: Sudden cardiac death (as defined in the studies) All‐cause mortality Cardiac mortality (as defined in the studies) Quality of life Adverse effects Quality of life Adverse effects", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:37:46,748 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:46,750 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "心血管疾病/肾脏病", "filter_requirements": "RCTs with parallel design; double‐blind; minimum follow‐up of six months. Participants: people with primary elevated BP (≥130/85 mmHg). Excluded: people with proven secondary hypertension.", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:37:50,682 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:50,683 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "眼科学 博士", "user_preference": "", "research_direction": "黄斑变性 外周黄斑病变", "filter_requirements": "近两年 关键词：黄斑变性 外周黄斑病变 视网膜功能障碍；排除标准：不涉及青光眼或视网膜脱离", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:37:59,975 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:37:59,977 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy": "CENTRAL #1 MeSH descriptor: [Amiodarone] this term only #2 amiodaron* #3 cordarex #4 amiobeta #5 amiodarex #6 cordaron* #7 trangorex #8 amio
+2026-05-20 22:37:59,977 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy": "CENTRAL #1 MeSH descriptor: [Amiodarone] this term only #2 amiodaron* #3 cordarex #4 amiobeta #5 amiodarex #6 cordaron* #7 trangorex #8 amiohexal #9 aratac #10 braxan #11 corbionax #12 kordaron #13 ortacrone #14 rytmarone #15 tachydaron #16...
+2026-05-20 22:38:06,618 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:06,619 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Database: Ovid MEDLINE(R) 1946 to Present with Daily Update Search Date: 20 November 2017 ‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+2026-05-20 22:38:06,619 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Database: Ovid MEDLINE(R) 1946 to Present with Daily Update Search Date: 20 November 2017 ‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ 1 exp Angiotensin‐Converting Enzyme Inhibitors/  2 ((angiotensin$ or...
+2026-05-20 22:38:08,301 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:21,338 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:21,340 [INFO] auto_slr: 从自然语言中提取了 10 条筛选结果
+2026-05-20 22:38:21,340 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"other_info": "[{'index': 1, 'decision': 'not_sure', 'reason': 'Begin by parsing the JSON structure to access each entry within the \"extracts\" key.'}, {'index': 2, 'decision': 'not_sure', 'reason': 'For each entry, examine the fields such as \"database\", \"text\", and metadata (e.g., dates). Focus on extracting trial names, phases, drugs, demographics, outcomes, etc., from the \"text\" field.'}, {'index': 3, 'decision': 'not_sure', 'reason': '- **Trial Names and Phases**: Identify phrases like \"Amiodarone Phase 2 Clinical Trial\" or \"Cordarex Phase 3 Clinical Trial\" to extract trial names and their respective phases.\\n   - **Drug Names**: Extract drug names such as \"Amiodarone\", \"Cordarex\", etc., from the text.'}, {'index': 4, 'decision': 'not_sure', 'reason': 'Look for mentions of patient demographics, such as \"adult patients\" or \"older adults\".'}, {'index': 5, 'decision': 'exclude', 'reason': 'Note outcomes like recovery rates or adverse event reductions.'}, {'index': 6, 'decision': 'not_sure', 'reason': 'Extract dates (created, last modified, extracted) to track information sources and updates.'}, {'index': 7, 'decision': 'not_sure', 'reason': 'Cross-reference similar phrases across entries to ensure consistent extraction of trial details.'}, {'index': 8, 'decision': 'not_sure', 'reason': 'Format the extracted data into a structured format like CSV or JSON for clarity and usability.'}, {'index': 9, 'decision': 'not_sure', 'reason': 'Use tools like Python with libraries such as NLTK or spaCy for automated text processing, especially if dealing with large datasets.'}, {'index': 10, 'decision': 'not_sure', 'reason': 'Clarify desired outputs to ensure alignment with user needs, addressing potential variations in data presentation across databases.\\n\\nBy following these steps, you can systematically extract and organize the necessary information from the provided JSON data, ensuring accuracy and relevance to amiodarone clinical trials.'}]"}
+2026-05-20 22:38:31,926 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:31,927 [WARNING] auto_slr: JSON 提取失败，原始文本: To address your query regarding extracting information on hypertension treatments, particularly focusing on beta-blockers and related interventions, here is a structured summary based on the data from Google Scholar, ClinicalTrials.gov, and WHO International Clinical Trials Registry Platform:
+
+### 1. **Drug Classes and Mechanisms**
+- **Beta-Blockers**: 
+  - Primidolol
+  - Soquinolol
+  - Procinolol
+
+These agents are classified under beta-blocker therapy, which is a common class of drugs used to treat hypertension by blocking the effects of adrenaline on heart rate.
+
+### 2. **Conditions and Interventions**
+- **Hypertension Treatments**:
+  - Angiotensin-Converting Enzyme Inhibitors (ACEI)
+  - Angiotensin Receptor Antagonists (ARB)
+
+These interventions are specifically targeted for hypertension management, aiding in blood pressure regulation.
+
+### 3. **Study Types**
+- **Randomized Controlled Trials**: 
+  - These studies provide evidence-based insights into the efficacy of various treatments.
+  
+- **Crossover Procedures**: 
+  - Often used in clinical trials to compare different treatments effectively.
+
+### 4. **Recruitment Status**
+- The interventions listed are conducted across diverse recruitment statuses, including those with specific conditions like pregnancy or preeclampsia, though these may be included unless specified otherwise.
+
+This summary provides a focused view on the relevant information for your query, emphasizing the use of beta-blockers and other hypertension treatments.
+2026-05-20 22:38:31,927 [WARNING] auto_slr: JSON 解析失败，第 1/3 次重试
+2026-05-20 22:38:36,055 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:36,056 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Methodological quality assessment guidance for QUADAS 2": "DOMAIN    yes (high)    no    unclear      PATIENT SELECTION    Describe methods of patient selectio
+2026-05-20 22:38:36,056 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Methodological quality assessment guidance for QUADAS 2": "DOMAIN    yes (high)    no    unclear      PATIENT SELECTION    Describe methods of patient selection: Describe included patients (prior testing, presentation, intended use of index test and setting):...
+2026-05-20 22:38:49,483 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:49,484 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:38:59,356 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:38:59,357 [INFO] auto_slr: 从自然语言中提取了 3 条筛选结果
+2026-05-20 22:38:59,357 [INFO] auto_slr: 第 1 次重试成功提取 JSON
+2026-05-20 22:38:59,357 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"other_info": "[{'index': 1, 'decision': 'exclude', 'reason': '**\\n   - Use search terms like \"primidolol,\" \"soquinolol,\" and \"sotalol\" to find studies on specific drugs.\\n   - Utilize advanced search features to filter by conditions such as \"hypertension\" or \"high blood pressure.\"'}, {'index': 2, 'decision': 'include', 'reason': '**\\n   - Focus on interventions related to angiotensin-converting enzyme inhibitors (ACEI) and antagonists (ARB).\\n   - Look for terms like \"aliskiren,\" \"remikiren,\" \"candesartan,\" etc., under the intervention section.\\n   - Check conditions listed, which often include hypertension.'}, {'index': 3, 'decision': 'not_sure', 'reason': '**\\n   - Search using similar interventions as in ClinicalTrials.gov but may offer additional context on recruitment status or region.\\n\\n### Drug Classifications and Conditions\\n\\n- **Drug Classes:** Focus on beta-blockers, adrenergics (alpha-1), diuretics, ACE inhibitors, ARBs.\\n- **Conditions:** Primarily hypertension, with potential hypertensive complications such as preeclampsia.\\n\\n### Data Extraction Tips\\n\\n- Combine search terms across databases to find comprehensive studies.\\n- Note similarities and differences in study design (e.g., RCTs vs. observational studies).\\n\\n### Interpretation and Compilation\\n\\n- Compile a list of relevant trials, noting interventions and conditions.\\n- Consider reaching out for assistance if more detailed information is needed.\\n\\nBy following this strategy, you can effectively search the databases and gather the necessary information on clinical trials involving angiotensin inhibitors for hypertension.'}]"}
+2026-05-20 22:39:03,845 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:03,846 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "眼科；糖尿病视网膜病变（DR）；使用OCT技术和麦克耳波谱分析", "filter_requirements": "近两年；关键词包括：OCT、糖尿病、糖尿病视网膜病变（DR）、麦克耳波谱分析等；排除标准：如未进行详细的眼底检查或不符合特定的疾病定义", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:39:09,956 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:09,957 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】心律失常与 sudden cardiac death  
+【关键词】Amiodarone, 准随机化对照试验, 左心室射出分数<40%, 高危群体, 心律失常干预, 停搏事件  
+【筛选要求】- 研究必须为随机化或准随机化对照试验（randomised or quasi-randomised controlled trials）\n  - 研究评估Amiodarone与其他抗arrhythmics的疗效，包括安慰剂或无干预\n  - 对象为成人，左心室射出分数<40%，无论病因（心源性或非心源性）\n  - 高危人群：有不可抑制的VT/VF或非抑制性致命心律失常，或因临床或 int...
+2026-05-20 22:39:09,958 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 9 篇进入筛选
+2026-05-20 22:39:09,958 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+2026-05-20 22:39:09,958 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 9 篇进入阶段2
+2026-05-20 22:39:09,958 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:39:09,958 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:39:15,025 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:15,026 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:39:22,219 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:22,220 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:39:32,059 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:32,060 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】心律失常与猝死
+【关键词】心脏节律失常, 报告药物试验, 心脏骤停风险, 虽然药物, 研究人群特征
+【筛选要求】
+- 数据库：Cochrane Central Register of Controlled Trials (CENTRAL), MEDLINE (OVID), EMBASE (OVID), CINAHL (EBSCO), 和 LILACS
+- 临床试验类型：随机对照试验（RCT）或准随机对照试验（quasi-RCT）
+- 研究人群特征：16岁以上成年人，左心室射出分数<40%，无论病因（缺血性或非缺血性），高危猝死风险（如无法抑制的持续性颤动或不可抑制的心脏 arrhy...
+2026-05-20 22:39:32,061 [INFO] test_csmed:   未筛选论文: 9 篇
+2026-05-20 22:39:37,207 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:37,208 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】ACE抑制剂、ARBs和RINs与心血管疾病/肾脏病交互作用的研究  
+【关键词】ACE抑制剂, ARBs, RINs, 心血管疾病, 器官功能衰竭, 随机对照试验, 双盲, 最小随访期6个月  
+【筛选要求】随机对照试验（RCT）；平行分组设计；双盲法；最小随访期为6个月；参与者为高血压患者（≥130/85 mmHg），排除已证实的二次高血压患者  
+【排除标准】不包括ACE抑制剂、ARBs和RINs以外的抗高血压药物；不包括既往证实的二次高血压患者  
+【已确认满意论文的共同特征】达标论文摘要中应包含以下共性特征：研究对象为高血压患者，干预措施为ACE抑制剂、ARBs或RINs...
+2026-05-20 22:39:37,209 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 21 篇进入筛选
+2026-05-20 22:39:37,209 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.8095, 'recall': 1.0, 'f1': 0.8947, 'num_relevant': 17, 'num_retrieved': 21, 'num_true_positives': 17}
+2026-05-20 22:39:37,209 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 21 篇进入阶段2
+2026-05-20 22:39:37,209 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:39:37,209 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:39:42,430 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:42,431 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】糖尿病视网膜病变及黄斑变性的诊断准确性评估  
+【关键词】黄斑变性,外周黄斑病变,视网膜功能障碍,ETDRS,OCT,麦克耳波谱分析  
+【筛选要求】基于摘要可判断的硬性条件：  
+- 糖尿病视网膜病变或相关疾病  
+- 使用OCT技术和麦克耳波谱分析作为诊断方法  
+- 排除青光眼和视网膜脱离  
+- 基于ETDRS 1985定义的黄斑变性和CSMO  
+【排除标准】基于摘要可判断的排除方向：  
+- 不涉及黄斑变性以外的视网膜病变（如外周黄斑病变）  
+- 不涉及青光眼或视网膜脱离  
+- 基于立体视图定义的疾病（ETDRS 1985）  
+【已确认满意论文的共同特征】使用OC...
+2026-05-20 22:39:42,431 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 6 篇进入筛选
+2026-05-20 22:39:42,431 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+2026-05-20 22:39:42,431 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 6 篇进入阶段2
+2026-05-20 22:39:42,431 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:39:42,432 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:39:53,092 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:53,094 [WARNING] auto_slr: JSON 提取失败，原始文本: 以下是根据提供的文献摘要提取的关键信息：
+
+---
+
+### **文献 1**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了低剂量阿米达龙（amiodarone）和安慰剂在治疗无症状室上性早搏患者中的效果。
+- **主要结果**：
+  - 研究显示，低剂量阿米达龙减少了室上性早搏的发生率。
+  - 但长期使用可能导致心房颤动风险增加。
+
+---
+
+### **文献 2**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了阿米达龙和电生理引导干预（如抗 arrhythmics 和冠状动脉介入治疗）在预防 sudden cardiac death 中的效果。
+- **主要结果**：
+  - 阿米达龙组的 1 年死亡率略高于干预组。
+  - 没有发现显著差异在 arrhythmia 再发或死亡率上。
+
+---
+
+### **文献 3**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了低剂量阿米达龙和安慰剂在治疗心力衰竭患者中的效果。
+- **主要结果**：
+  - 阿米达龙组患者的 1 年死亡率略高于安慰剂组。
+  - 减少室性早搏后，死亡率相似。
+
+---
+
+### **文献 4**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了 sotalol 和阿米达龙在治疗室颤患者中的长期效果。
+- **主要结果**：
+  - Sotalol 显著优于阿米达龙，减少了 arrhythmia 再发率。
+
+---
+
+### **文献 5**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了阿米达龙和 sotalol 在预防室颤相关死亡中的效果。
+- **主要结果**：
+  - 阿米达龙组的 1 年死亡率略高于 sotalol 组。
+
+---
+
+### **文献 6**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了阿米达龙和 sotalol 在治疗室颤患者中的长期效果。
+- **主要结果**：
+  - Sotalol 显著优于阿米达龙，减少了 arrhythmia 再发率。
+
+---
+
+### **文献 7**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了低剂量阿米达龙和安慰剂在预防室上性早搏患者中的效果。
+- **主要结果**：
+  - 阿米达龙组的室上性早搏频率显著低于安慰剂组。
+
+---
+
+### **文献 8**
+- **研究类型**：随机对照试验
+- **主要方法**：比较了阿米达龙和电生理引导干预在预防 sudden cardiac death 中的效果。
+- **主要结果**：
+  - 没有发现显著差异在长期死亡率或 arrhythmia 再发率上。
+
+---
+
+### **文献 9**
+- **研究类型**：综述
+- **主要方法**：总结了阿米达龙在 ICD 患者中的应用。
+- **主要结果**：
+  - 阿米达龙是改善 ICD 患者的生存率的有效药物。
+  - 但需注意避免不适当的电击治疗。
+
+---
+
+### 总结
+这些文献主要探讨了阿米达龙在预防室颤、减少 arrhythmia 再发以及降低 sudden cardiac death 中的效果。研究结果表明，低剂量阿米达龙在某些情况下（如预防室上性早搏或减少 arrhythmia 再发）具有显著优势，但长期使用可能增加心房颤动风险。此外，与电生理引导干预相比，阿米达龙在预防 sudden cardiac death 中的效果有限。
+
+如果需要更详细的分析或特定研究的摘要，请进一步说明！
+2026-05-20 22:39:53,095 [WARNING] auto_slr: JSON 解析失败，第 1/3 次重试
+2026-05-20 22:39:56,446 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:39:56,446 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】心血管疾病与肾脏病联合治疗的效果评估  
+【关键词】ACEI/ARB/RIN联合治疗,高血压患者,随机对照试验,双盲,六个月随访  
+【筛选要求】  
+- 随机对照试验（RCT）  
+- 平行组设计  
+- 双盲方法  
+- 最小随访期为6个月  
+【排除标准】  
+- 排除既往证实的2型高血压患者  
+【已确认满意论文的共同特征】  
+ACEI/ARB/RIN联合治疗对高血压患者的血压控制效果显著；研究对象为伴有1级及以上高血压（≥130/85 mmHg）的患者；研究时间为6个月以上；排除有既往证实2型高血压的患者。
+2026-05-20 22:39:56,447 [INFO] test_csmed:   未筛选论文: 21 篇
+2026-05-20 22:40:02,560 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:02,561 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】糖尿病视网膜病变及黄斑变性的诊断准确性评估  
+【关键词】黄斑变性,外周黄斑病变,视网膜功能障碍,糖尿病视网膜病变,麦克耳波谱分析,OCT技术,ETDRS 1985  
+【筛选要求】摘要中需明确研究对象为黄斑变性和外周黄斑病变患者，研究方法涉及OCT技术和麦克耳波谱分析，排除涉及青光眼或视网膜脱离的研究。  
+【排除标准】摘要中明确不涉及青光眼或视网膜脱离  
+【已确认满意论文的共同特征】研究对象为黄斑变性和外周黄斑病变患者；研究方法使用OCT技术和麦克耳波谱分析评估诊断准确性；基于ETDRS 1985标准进行分类和定义。
+2026-05-20 22:40:02,562 [INFO] test_csmed:   未筛选论文: 6 篇
+2026-05-20 22:40:16,357 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:16,358 [WARNING] auto_slr: JSON 提取失败，原始文本: 以下是根据提供的摘要对相关研究的关键信息进行的整理和总结：
+
+---
+
+### **文献 1**
+- **标题**: 阿米替林在预防心室颤动中的效果
+- **研究类型**: 随机对照试验
+- **主要目标**: 比较阿米替林与安慰剂在预防心室颤动方面的效果。
+- **干预措施**: 14天内每日一次，每次50mg。
+- **主要结果**:
+  - 心室颤动发生率：阿米替林组显著低于安慰剂组（P < 0.001）。
+  - 死亡率：阿米替林组显著低于安慰剂组（P = 0.024）。
+
+---
+
+### **文献 2**
+- **标题**: 阿米替林对心室颤动患者死亡率的影响
+- **研究类型**: 随机对照试验
+- **主要目标**: 比较阿米替林与安慰剂对心室颤动患者的长期死亡率影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室颤动患者中，阿米替林组的死亡率显著低于安慰剂组（P < 0.001）。
+
+---
+
+### **文献 3**
+- **标题**: 阿米替林对心室 fibrillation 的长期效果
+- **研究类型**: 随机对照试验
+- **主要目标**: 比较阿米替林与安慰剂对心室 fibrillation 的长期效果。
+- **干预措施**: 6个月，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 fibrillation 发生率：安慰剂组显著高于阿米替林组（P = 0.023）。
+
+---
+
+### **文献 4**
+- **标题**: 阿米替林对心室 ectopy 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 ectopy 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 ectopy 发生率：阿米替林组显著低于安慰剂组（P < 0.001）。
+
+---
+
+### **文献 5**
+- **标题**: 阿米替林对心室 arrhythmia 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 arrhythmia 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 arrhythmia 发生率：安慰剂组显著高于阿米替林组（P < 0.001）。
+
+---
+
+### **文献 6**
+- **标题**: 阿米替林对心室 arrhythmia 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 arrhythmia 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 arrhythmia 发生率：安慰剂组显著高于阿米替林组（P < 0.001）。
+
+---
+
+### **文献 7**
+- **标题**: 阿米替林对心室 arrhythmia 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 arrhythmia 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 arrhythmia 发生率：安慰剂组显著高于阿米替林组（P < 0.001）。
+
+---
+
+### **文献 8**
+- **标题**: 阿米替林对心室 arrhythmia 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 arrhythmia 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 arrhythmia 发生率：安慰剂组显著高于阿米替林组（P < 0.001）。
+
+---
+
+### **文献 9**
+- **标题**: 阿米替林对心室 arrhythmia 的长期效果
+- **研究类型**: 横断面研究
+- **主要目标**: 分析阿米替林对心室 arrhythmia 的长期影响。
+- **干预措施**: 12周，每日一次，每次50mg。
+- **主要结果**:
+  - 心室 arrhythmia 发生率：安慰剂组显著高于阿米替林组（P < 0.001）。
+
+---
+
+以上是对所有摘要的关键信息提取和总结。如果需要更详细的数据或进一步分析，请提供更多具体要求！
+2026-05-20 22:40:16,358 [WARNING] auto_slr: JSON 解析失败，第 2/3 次重试
+2026-05-20 22:40:23,809 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:29,848 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:29,849 [INFO] test_csmed:   本轮筛选: included=5, excluded=1, not_sure=0
+2026-05-20 22:40:29,850 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Detection of Diabetic Foveal Edema Contact Lens Biomicroscopy Compared With Optical Coherence Tomography' 应纳入，理由: 研究对象为糖尿病视网膜病变患者，使用了OCT技术和麦克耳波谱分析，符合筛选标准。
+2026-05-20 22:40:45,963 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:45,964 [INFO] auto_slr: 从自然语言中提取了 6 条筛选结果
+2026-05-20 22:40:45,964 [INFO] auto_slr: 第 2 次重试成功提取 JSON
+2026-05-20 22:40:45,964 [INFO] test_csmed:   本轮筛选: included=0, excluded=1, not_sure=8
+2026-05-20 22:40:45,966 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Comparison of ␤-Blockers, Amiodarone Plus ␤-Blockers, or Sotalol for Prevention of Shocks From Implantable Cardioverter Defibrillators The OPTIC Study: A Randomized Trial' 应纳入。系统误判为排除。
+2026-05-20 22:40:58,858 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:40:58,859 [INFO] auto_slr: 从自然语言中提取了 4 条筛选结果
+2026-05-20 22:41:01,579 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:01,580 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "糖尿病视网膜病变患者的视网膜结构分析", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:41:05,263 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:05,264 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "β-Blockers, Amiodarone Plus β-Blockers, or Sotalol for Prevention of Shocks From Implantable Cardioverter Defibrillators", "filter_requirements": "", "rejection_reasons": "", "other_info": "系统误判为排除。"}
+2026-05-20 22:41:07,536 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:07,537 [INFO] test_csmed:   本轮筛选: included=0, excluded=1, not_sure=20
+2026-05-20 22:41:07,542 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Age-Race Subgroup Compared With Renin Profile as Predictors of Blood Pressure Response to Antihypertensive Therapy' 应排除，排除原因: 摘要中提到这是一个随机对照试验，但未明确说明是否为平行组设计或双盲方法。此外，研究时间未提及，可能不符合六个月的随访要求。
+2026-05-20 22:41:13,638 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:13,639 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Topography of Diabetic Macular Edema with Optical Coherence Tomography' 应纳入，理由: 研究方法涉及OCT技术，排除了青光眼或视网膜脱离，符合筛选要求。
+2026-05-20 22:41:25,766 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:25,767 [INFO] test_csmed:   对 8 篇 not_sure 论文基于 gold standard 提供反馈
+2026-05-20 22:41:25,768 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Quality of Life with Defibrillator Therapy or Amiodarone in Heart Failure' 应纳入。系统之前无法确定。
+2026-05-20 22:41:30,627 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:30,628 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "", "filter_requirements": "随机对照试验是否为平行组设计或双盲方法未明确说明；研究时间未提及，可能不符合六个月的随访要求", "rejection_reasons": "摘要中提到这是一个随机对照试验，但未明确说明是否为平行组设计或双盲方法。此外，研究时间未提及，可能不符合六个月的随访要求。", "other_info": ""}
+2026-05-20 22:41:34,460 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:34,460 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Diabetic Macular Edema with Optical Coherence Tomography", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:41:38,642 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:38,643 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "医学或生物学领域（更具体地说，是心脏失常治疗效果对生活质量的影响）", "filter_requirements": "系统之前无法确定是否纳入", "rejection_reasons": "", "other_info": "用户纠正了系统未能正确识别的论文应纳入"}
+2026-05-20 22:41:44,529 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:44,530 [INFO] test_csmed:   对 20 篇 not_sure 论文基于 gold standard 提供反馈
+2026-05-20 22:41:44,530 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Major Outcomes in High-Risk Hypertensive Patients Randomized to Angiotensin-Converting Enzyme Inhibitor or Calcium Channel Blocker vs Diuretic The Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT)' 应纳入。系统之前无法确定。
+2026-05-20 22:41:50,030 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:41:50,031 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Automated Detection of Clinically Significant Macular Edema by Grid Scanning Optical Coherence Tomography' 应纳入，理由: 研究对象为糖尿病视网膜病变患者，使用了OCT技术和麦克耳波谱分析，符合筛选标准。
+2026-05-20 22:42:00,145 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:00,146 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Absence of bilateral vision loss from amiodarone: A randomized trial' 应纳入。系统之前无法确定。
+2026-05-20 22:42:03,198 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:03,199 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Angiotensin-Converting Enzyme Inhibitor or Calcium Channel Blocker vs Diuretic", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:42:06,735 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:06,736 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Macular Edema", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:42:09,599 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:09,600 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "", "filter_requirements": "将论文 'Absence of bilateral vision loss from amiodarone: A randomized trial' 包入", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:42:15,327 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:15,329 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Baseline Characteristics of the Diabetic Participants in the Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT)' 应纳入。系统之前无法确定。
+2026-05-20 22:42:21,666 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:21,667 [INFO] test_csmed:     累计满意 3 ≥ 3 或正确标注 3 > 5，跳过剩余反馈
+2026-05-20 22:42:21,668 [INFO] test_csmed:     反馈过程中已达标（satisfied=3≥3 或 labeled_correctly=3>5），跳过剩余反馈
+2026-05-20 22:42:21,668 [INFO] test_csmed:   本轮反馈: 确认纳入=3, 确认排除=0, 纠正=0, 一致=3, 累计satisfied=3/3, labeled_correctly=3/5
+2026-05-20 22:42:21,668 [INFO] test_csmed:   累计满意 3 ≥ 3 或正确标注 3 > 5，退出迭代
+2026-05-20 22:42:21,669 [INFO] test_csmed: [阶段2 完成] 共 1 轮迭代, satisfied=3, labeled_correctly=3, included=5, excluded=1, not_sure=0
+2026-05-20 22:42:21,669 [INFO] test_csmed: [阶段2→2.5] 重置 1 篇 not_sure/exclude 论文为 unscreened（用户拒绝的保留），将在阶段2.5重新筛选
+2026-05-20 22:42:21,669 [INFO] test_csmed: [阶段2.5 轮次1] 全量筛选剩余 1 篇 unscreened 论文
+2026-05-20 22:42:21,670 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:42:28,953 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:28,953 [INFO] test_csmed:     累计满意 3 ≥ 3 或正确标注 2 > 5，跳过剩余反馈
+2026-05-20 22:42:28,955 [INFO] test_csmed:   本轮反馈: 确认纳入=3, 确认排除=0, 纠正=1, 一致=2, 累计satisfied=3/3, labeled_correctly=2/5
+2026-05-20 22:42:28,955 [INFO] test_csmed:   累计满意 3 ≥ 3 或正确标注 2 > 5，退出迭代
+2026-05-20 22:42:28,955 [INFO] test_csmed: [阶段2 完成] 共 1 轮迭代, satisfied=3, labeled_correctly=2, included=3, excluded=0, not_sure=6
+2026-05-20 22:42:28,955 [INFO] test_csmed: [阶段2→2.5] 重置 6 篇 not_sure/exclude 论文为 unscreened（用户拒绝的保留），将在阶段2.5重新筛选
+2026-05-20 22:42:28,955 [INFO] test_csmed: [阶段2.5 轮次1] 全量筛选剩余 6 篇 unscreened 论文
+2026-05-20 22:42:28,955 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:42:32,325 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:32,326 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Baseline Characteristics of the Diabetic Participants", "filter_requirements": "", "rejection_reasons": "", "other_info": "论文 'Baseline Characteristics of the Diabetic Participants in the Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT)' 应纳入。系统之前无法确定。"}
+2026-05-20 22:42:37,768 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:37,769 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】糖尿病视网膜病变的麦克耳波谱分析与OCT技术在视网膜小结节样变性诊断中的应用
+【关键词】Macular Grid 5, OCT, Diabetic Macular Edema, 视网膜小结节样变性（CSME）
+【筛选要求】研究对象为糖尿病视网膜病变患者，使用了OCT技术和麦克耳波谱分析
+【排除标准】无
+【已确认满意论文的共同特征】研究主要评估了Macular Grid 5和OCT在糖尿病视网膜病变患者的视网膜小结节样变性诊断中的应用及其性能表现
+2026-05-20 22:42:42,607 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:42,607 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】用一句话概括核心研究主题  
+抗凝药物预防心源性突然死亡的随机对照试验  
+
+【关键词】3-8个核心关键词，用逗号分隔  
+amiodarone, defibrillator, placebo, 研究, 心源性突然死亡  
+
+【筛选要求】基于摘要可判断的硬性条件（如特定疾病、特定方法、特定人群），不要列出需要阅读全文才能判断的条件  
+为随机对照试验，比较三种干预措施：amiodarone、defibrillator和placebo，评估预防心源性突然死亡的效果，随访时间为12周  
+
+【排除标准】基于摘要可判断的排除方向  
+排除既存心血管疾病患者、凝血异常者或其他不适合的研究对...
+2026-05-20 22:42:48,534 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:48,535 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'OR-69 THE EFFECT OF LOW BLOOD PRESSURE GOALS ON ACHIEVED BLOOD PRESSURE IN HIGH RISK HYPERTENSIVES' 应纳入。系统之前无法确定。
+2026-05-20 22:42:52,023 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:52,025 [INFO] test_csmed: [阶段2.5 完成] 共 1 轮全量筛选, included=5, excluded=1, not_sure=0
+2026-05-20 22:42:52,025 [INFO] test_csmed: [最终统计] included=5, excluded=1, not_sure=0, unscreened=0, 总论文数=6, 三类总计=6
+2026-05-20 22:42:52,025 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 0.6, 'recall': 0.75, 'f1': 0.6667, 'num_relevant': 4, 'num_retrieved': 5, 'num_true_positives': 3}
+2026-05-20 22:42:52,026 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 0.6, 'recall': 0.75, 'f1': 0.6667, 'num_relevant': 4, 'num_retrieved': 5, 'num_true_positives': 3}
+2026-05-20 22:42:52,026 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=0.6, R=0.75, F1=0.6667
+2026-05-20 22:42:52,026 [INFO] test_csmed:   系统 include: 5, Gold included: 4, 交集: 3
+2026-05-20 22:42:52,026 [INFO] test_csmed:   正确纳入 (TP): 3
+2026-05-20 22:42:52,026 [INFO] test_csmed:   遗漏 (FN): 1
+2026-05-20 22:42:52,026 [INFO] test_csmed:   误判 (FP): 2
+2026-05-20 22:42:52,027 [INFO] test_csmed: ============================================================
+2026-05-20 22:42:52,027 [INFO] test_csmed: [完成] review CD008081 (1/10)
+2026-05-20 22:42:52,027 [INFO] test_csmed: 开始处理 review: CD008185
+2026-05-20 22:42:52,027 [INFO] test_csmed: Review title: Enzyme replacement therapy with idursulfase for mucopolysaccharidosis type II (Hunter syndrome)
+2026-05-20 22:42:52,027 [INFO] test_csmed: 总论文数: 3, gold included: 2
+2026-05-20 22:42:52,027 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:42:52,027 [INFO] test_csmed: [阶段1a] 初始 query: Enzyme replacement therapy with idursulfase for mucopolysaccharidosis type II (Hunter syndrome)
+2026-05-20 22:42:52,027 [INFO] auto_slr: [Assistant] extract_and_record 输入: Enzyme replacement therapy with idursulfase for mucopolysaccharidosis type II (Hunter syndrome)
+2026-05-20 22:42:58,536 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:42:58,538 [INFO] test_csmed: [阶段2.5 完成] 共 1 轮全量筛选, included=5, excluded=0, not_sure=4
+2026-05-20 22:42:58,538 [INFO] test_csmed: [最终统计] included=5, excluded=0, not_sure=4, unscreened=0, 总论文数=9, 三类总计=9
+2026-05-20 22:42:58,538 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+2026-05-20 22:42:58,538 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 1.0, 'recall': 0.7143, 'f1': 0.8333, 'num_relevant': 7, 'num_retrieved': 5, 'num_true_positives': 5}
+2026-05-20 22:42:58,538 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=0.7778, R=1.0, F1=0.875
+2026-05-20 22:42:58,539 [INFO] test_csmed:   系统 include: 9, Gold included: 7, 交集: 7
+2026-05-20 22:42:58,539 [INFO] test_csmed:   正确纳入 (TP): 7
+2026-05-20 22:42:58,539 [INFO] test_csmed:   遗漏 (FN): 0
+2026-05-20 22:42:58,539 [INFO] test_csmed:   误判 (FP): 2
+2026-05-20 22:42:58,539 [INFO] test_csmed: ============================================================
+2026-05-20 22:42:58,539 [INFO] test_csmed: [完成] review CD008093 (2/10)
+2026-05-20 22:42:58,539 [INFO] test_csmed: 开始处理 review: CD008213
+2026-05-20 22:42:58,540 [INFO] test_csmed: Review title: Surgical interventions for primary congenital glaucoma
+2026-05-20 22:42:58,540 [INFO] test_csmed: 总论文数: 6, gold included: 4
+2026-05-20 22:42:58,540 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:42:58,540 [INFO] test_csmed: [阶段1a] 初始 query: Surgical interventions for primary congenital glaucoma
+2026-05-20 22:42:58,540 [INFO] auto_slr: [Assistant] extract_and_record 输入: Surgical interventions for primary congenital glaucoma
+2026-05-20 22:43:01,791 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:01,792 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "心血管疾病", "filter_requirements": "之前未能识别的论文编号OR-69", "rejection_reasons": "", "other_info": "OR-69"}
+2026-05-20 22:43:05,579 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:05,580 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Enzyme replacement therapy for mucopolysaccharidosis type II", "filter_requirements": "", "rejection_reasons": "", "other_info": "药物为idursulfase，研究疾病为mucopolysaccharidosis type II"}
+2026-05-20 22:43:07,834 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:07,834 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Surgical interventions for primary congenital glaucoma", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:43:12,123 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:12,124 [INFO] test_csmed:     累计满意 3 ≥ 3 或正确标注 4 > 5，跳过剩余反馈
+2026-05-20 22:43:12,125 [INFO] test_csmed:   本轮反馈: 确认纳入=3, 确认排除=1, 纠正=0, 一致=4, 累计satisfied=3/3, labeled_correctly=4/5
+2026-05-20 22:43:12,126 [INFO] test_csmed:   累计满意 3 ≥ 3 或正确标注 4 > 5，退出迭代
+2026-05-20 22:43:12,126 [INFO] test_csmed: [阶段2 完成] 共 1 轮迭代, satisfied=3, labeled_correctly=4, included=3, excluded=1, not_sure=17
+2026-05-20 22:43:12,126 [INFO] test_csmed: [阶段2→2.5] 重置 17 篇 not_sure/exclude 论文为 unscreened（用户拒绝的保留），将在阶段2.5重新筛选
+2026-05-20 22:43:12,126 [INFO] test_csmed: [阶段2.5 轮次1] 全量筛选剩余 17 篇 unscreened 论文
+2026-05-20 22:43:12,126 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:43:13,797 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:13,798 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Mucopolysaccharidosis II, also known as Hunter syndrome, is a rare, X‐linked disease caused by a deficiency of the lysosomal enzyme iduronate‐2‐sul
+2026-05-20 22:43:13,799 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Mucopolysaccharidosis II, also known as Hunter syndrome, is a rare, X‐linked disease caused by a deficiency of the lysosomal enzyme iduronate‐2‐sulfatase, which catalyses a step in the catabolism of glycosaminoglycans. The glycosaminoglycans accum...
+2026-05-20 22:43:15,697 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:15,699 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Primary congenital glaucoma (PCG) is an optic neuropathy with high intraocular pressure (IOP) that manifests within the first few years of a child'
+2026-05-20 22:43:15,699 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Primary congenital glaucoma (PCG) is an optic neuropathy with high intraocular pressure (IOP) that manifests within the first few years of a child's life and is not associated with other systemic or ocular abnormalities. PCG results in considerabl...
+2026-05-20 22:43:21,391 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:21,392 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】
+1. 高血压控制与降脂药物效果研究
+2. 高密度脂蛋白胆固醇的影响因素分析
+3. 血压单药和多药联用的效果评估
+
+【关键词】
+1. 血压控制, 降脂药物, 单药治疗, 多药联用, HAT试验, JNC报告, 肾功能, 心血管事件
+
+【筛选要求】
+1. 基于摘要可判断的硬性条件：
+   - 研究需评估降压效果（血压控制率）
+   - 需评估多药联用的效果
+   - 需分析单药治疗组和多药治疗组的BP控制情况
+
+【排除标准】
+1. 基于摘要可判断的排除方向：
+   - 不涉及特定疾病或人群筛选
+   - 不涉及特定治疗方法的详细效果评估（如统计方法）
+
+【已确认满意论文的共同特征】
+...
+2026-05-20 22:43:23,692 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:23,692 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Enzyme Replacement Therapy for Mucopolysaccharidosis Type II", "filter_requirements": "Randomised and quasi-randomised controlled trials; idursulfase therapy vs. placebo or no intervention; 53 weeks study duration", "rejection_reasons": "", "other_info": "The current evidence is limited due to small sample size and lack of long-term follow-up data."}
+2026-05-20 22:43:28,153 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:28,153 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Original glaucoma intervention", "filter_requirements": "Cochrane Central Register of Controlled Trials (CENTRAL), Ovid MEDLINE, Embase.com, PubMed, metaRegister of Controlled Trials, ClinicalTrials.gov, and the World Health Organization (WHO) International Clinical Trials Registry Platform. Search last conducted on 27 April 2020.", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:43:51,882 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:55,544 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:55,545 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled clinical trials of parallel or cross‐over design. Individuals with MPS II (Hunter syndrome) of any age and any degree of disease sev
+2026-05-20 22:43:55,545 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled clinical trials of parallel or cross‐over design. Individuals with MPS II (Hunter syndrome) of any age and any degree of disease severity. Diagnosis should be established by enzyme assay in leukocytes, fibroblasts or plasma, using s...
+2026-05-20 22:43:58,301 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:43:58,302 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+We included randomized controlled trials (RCTs) and quasi‐RCTs. We included trials that enrolled children with PCG, diagnosed and surgically treated at or before five years of
+2026-05-20 22:43:58,302 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+We included randomized controlled trials (RCTs) and quasi‐RCTs. We included trials that enrolled children with PCG, diagnosed and surgically treated at or before five years of age. We used five years as the cut‐off because by definition, glaucoma diagnosed after five years i...
+2026-05-20 22:44:06,691 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:06,697 [INFO] test_csmed: [阶段2.5 完成] 共 1 轮全量筛选, included=3, excluded=8, not_sure=10
+2026-05-20 22:44:06,697 [INFO] test_csmed: [最终统计] included=3, excluded=8, not_sure=10, unscreened=0, 总论文数=21, 三类总计=21
+2026-05-20 22:44:06,698 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 1.0, 'recall': 0.7647, 'f1': 0.8667, 'num_relevant': 17, 'num_retrieved': 13, 'num_true_positives': 13}
+2026-05-20 22:44:06,698 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 1.0, 'recall': 0.1765, 'f1': 0.3, 'num_relevant': 17, 'num_retrieved': 3, 'num_true_positives': 3}
+2026-05-20 22:44:06,698 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=1.0, R=0.7647, F1=0.8667
+2026-05-20 22:44:06,698 [INFO] test_csmed:   系统 include: 13, Gold included: 17, 交集: 13
+2026-05-20 22:44:06,698 [INFO] test_csmed:   正确纳入 (TP): 13
+2026-05-20 22:44:06,698 [INFO] test_csmed:   遗漏 (FN): 4
+2026-05-20 22:44:06,698 [INFO] test_csmed:   误判 (FP): 0
+2026-05-20 22:44:06,699 [INFO] test_csmed: ============================================================
+2026-05-20 22:44:06,699 [INFO] test_csmed: [完成] review CD008170 (3/10)
+2026-05-20 22:44:06,699 [INFO] test_csmed: 开始处理 review: CD008265
+2026-05-20 22:44:06,699 [INFO] test_csmed: Review title: Endoscopic release for carpal tunnel syndrome
+2026-05-20 22:44:06,699 [INFO] test_csmed: 总论文数: 3, gold included: 1
+2026-05-20 22:44:06,699 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:44:06,699 [INFO] test_csmed: [阶段1a] 初始 query: Endoscopic release for carpal tunnel syndrome
+2026-05-20 22:44:06,699 [INFO] auto_slr: [Assistant] extract_and_record 输入: Endoscopic release for carpal tunnel syndrome
+2026-05-20 22:44:11,616 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:11,616 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "MPS II 病症的治疗方法及临床试验设计", "filter_requirements": "纳入标准包括随机化和准随机化的平行或交叉设计的临床试验，诊断标准为酶活性检测，研究终点为体重和身高Z分数、6分钟步行测试等。", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:44:15,980 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:15,981 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "researcher in ophthalmology", "user_preference": "surgical interventions for glaucoma treatment", "research_direction": "adolescent glaucoma surgery, intraocular pressure reduction techniques", "filter_requirements": "within the last two years; randomized controlled trials (RCTs) and quasi‐RCTs; children with glaucoma diagnosed before or at five years of age; no developmental glaucomas due to associated ocular or systemic anomalies; comparisons of surgical interventions in a head‐to‐head design", "rejection_reasons": "", "other_info": "Focus on intraocular pressure (IOP) reduction, surgical success metrics, visual outcomes, and quality of life assessments"}
+2026-05-20 22:44:19,284 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:19,285 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Endoscopic release for carpal tunnel syndrome", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:44:23,349 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:23,350 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled clinical trials of parallel or cross‐over design.",
+  "Types of participants": "Individuals with MPS II (Hunt
+2026-05-20 22:44:23,350 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled clinical trials of parallel or cross‐over design.",
+  "Types of participants": "Individuals with MPS II (Hunter syndrome) of any age and any degree of disease severity. Diagnosis should be established by enzym...
+2026-05-20 22:44:24,891 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:26,713 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:26,714 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Carpal tunnel syndrome (CTS) is the most common compressive neuropathy of the upper extremity. It is caused by increased pressure on the median ner
+2026-05-20 22:44:26,715 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Carpal tunnel syndrome (CTS) is the most common compressive neuropathy of the upper extremity. It is caused by increased pressure on the median nerve between the transverse carpal ligament and the carpal bones. Surgical treatment consists of the r...
+2026-05-20 22:44:32,764 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:32,764 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Metabolic syndrome management", "filter_requirements": "Randomised and quasi‐randomised controlled clinical trials of parallel or cross‐over design. Participants with type 2 diabetes and metabolic syndrome. Interventions: Enzyme replacement therapy with idursulfase compared to no intervention, placebo, or other options. Outcomes: Z scores for height, weight, and six-minute walk test (6MWT) as primary outcomes; lung function, overnight apnoea‐hypopnoea index (AHI), joint mobility score, liver and spleen volume, quality of life, pain, rate of hospitalizations, resources required for home care support, changes in glycosaminoglycans (GAGs) urinary excretion, developmental score, audiologic assessment, age at death, and adverse effects (AE) and toxicity of treatment as secondary outcomes.", "rejection_reasons": "", "other_info": "Study aimed to evaluate the effectiveness of enzyme replacement therapy with idursulfase in managing metabolic syndrome. The intervention was compared to no intervention, placebo, or other options. Primary outcomes included Z scores for height, weight, and six-minute walk test (6MWT). Secondary outcomes were a comprehensive list of measures related to lung function, sleep apnea, joint mobility, liver and spleen volume, quality of life, pain, hospitalization rates, resource requirements, GAGs levels, developmental score, audiologic assessments, age at death, and adverse effects."}
+2026-05-20 22:44:36,487 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:36,488 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We included randomized controlled trials (RCTs) and quasi‐RCTs.",
+  "Types of participants": "We included trials that enrolled children with PCG, diagno
+2026-05-20 22:44:36,489 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We included randomized controlled trials (RCTs) and quasi‐RCTs.",
+  "Types of participants": "We included trials that enrolled children with PCG, diagnosed and surgically treated at or before five years of age. We used five years as the cut‐off because...
+2026-05-20 22:44:40,653 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:40,654 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Endoscopic Techniques of Carpal Tunnel Release", "filter_requirements": "searches conducted up to 5 November 2012, randomised controlled trials (RCTs) and quasi‐RCTs comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention for the treatment of CTS were included", "rejection_reasons": "", "other_info": "The review found no significant difference in overall improvement between ECTR and OCTR in the short term, but ECTR led to faster return to work. ECTR was associated with fewer minor complications compared to OCTR, but major complications were equally common."}
+2026-05-20 22:44:45,564 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:45,565 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy ‐ Medline via PubMed": "#1 Mucopolysaccharidosis II [mh] #2 Mucopolysaccharidosis IIs #3 Mucopolysaccharidoses IIs #4 Hunter Syndrome Gargoylis
+2026-05-20 22:44:45,566 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy ‐ Medline via PubMed": "#1 Mucopolysaccharidosis II [mh] #2 Mucopolysaccharidosis IIs #3 Mucopolysaccharidoses IIs #4 Hunter Syndrome Gargoylism #5 Hunter Syndrome Gargoylisms #6 Hunter's Syndrome #7 Hunters Syndrome #8 Hunter Syndrome #9 MPSI...
+2026-05-20 22:44:49,781 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:49,782 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "眼科专业硕士研究生", "user_preference": "近两年", "research_direction": "儿童青光眼手术效果", "filter_requirements": "筛选了近两年的论文，并排除了使用过滤性手术或不满足条件的时间点的论文", "rejection_reasons": "对某篇论文不满意的原因是不符合筛选标准（如时间不符或研究方法不当）", "other_info": ""}
+2026-05-20 22:44:53,515 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:53,516 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+We considered any randomised controlled trial (RCT) and quasi‐RCT comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention for the treatment of c
+2026-05-20 22:44:53,516 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+We considered any randomised controlled trial (RCT) and quasi‐RCT comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention for the treatment of carpal tunnel syndrome (CTS). We did not apply any language restriction. Measurement of particular ou...
+2026-05-20 22:44:57,726 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:44:57,727 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Mucopolysaccharidosis II, Mucopolysaccharidosis IIs, Hunter Syndrome Gargoylism, Hunter Syndrome Gargoylisms, Hunter's Syndrome", "filter_requirements": "randomized controlled trial [pt], controlled clinical trial [pt], randomized [tiab], placebo [tiab], drug therapy [sh], randomly [tiab], trial [tiab], groups [tiab]", "rejection_reasons": "", "other_info": "Search strategy via Medline, LILACS, and EMBASE databases with specific keywords and filters including randomized controlled trials, clinical trials, and exclusion of animal studies."}
+2026-05-20 22:44:59,653 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:05,633 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:05,634 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Carpal Tunnel Syndrome (CTS) Treatment Studies", "filter_requirements": "We considered any randomised controlled trial (RCT) and quasi‐RCT comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention for the treatment of carpal tunnel syndrome (CTS). We did not apply any language restriction. Measurement of particular outcomes was not used as an eligibility criterion for study inclusion.", "rejection_reasons": "", "other_info": "We included studies with participants with clinical diagnosis of CTS with or without electrophysiological confirmation. We accepted the authors’ definition of CTS and their views of what constituted electrophysiological confirmation. We considered studies comparing ECTR with any other surgical intervention. This included open carpal tunnel release (OCTR) and its variations, OCTR with mini‐open technique and concomitant interventions (such as lengthening of flexor retinaculum, internal neurolysis, epineurotomy or tenosynovectomy). We also evaluated the risk of complications as reported by the authors."}
+2026-05-20 22:45:11,805 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:11,807 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:45:16,158 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:16,160 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. CENTRAL search strategy": "#1 MeSH descriptor Glaucoma explode all trees with qualifier: CN#2 glaucoma* near/5 (congenital or neonat* or pediatric* or paediatr
+2026-05-20 22:45:16,160 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. CENTRAL search strategy": "#1 MeSH descriptor Glaucoma explode all trees with qualifier: CN#2 glaucoma* near/5 (congenital or neonat* or pediatric* or paediatric* or child*)#3 PCG#4 (#1 OR #2 OR #3)#5 MeSH descriptor Trabeculectomy#6 goniotom*#7 trabeculotom*...
+2026-05-20 22:45:21,025 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:21,026 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We considered any randomised controlled trial (RCT) and quasi‐RCT comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention
+2026-05-20 22:45:21,026 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We considered any randomised controlled trial (RCT) and quasi‐RCT comparing endoscopic carpal tunnel release (ECTR) with any other surgical intervention for the treatment of carpal tunnel syndrome (CTS). We did not apply any language restriction. Measu...
+2026-05-20 22:45:26,592 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:26,593 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】酶替换疗法在多糖尿症II型及代谢综合征管理中的临床效果评估  
+【关键词】酶替换疗法, 多糖尿症II型, Hunter综合征, 代谢综合征, 随机化对照试验, 药物治疗  
+【筛选要求】  
+- 研究设计为随机化对照试验（RCT）或药物治疗（drug therapy）  
+- 参与者包括多糖尿症患者、2型糖尿病患者及代谢综合征患者  
+- 研究终点包括体重、身高Z分数和6分钟步行测试等指标，为期53周  
+【排除标准】  
+- 排除不适用酶活性检测的多糖尿症患者（如多发性神经病变患者）  
+- 研究仅限于随机化对照试验和药物治疗干预措施  
+【已确认满意论文的共同特征】无
+2026-05-20 22:45:26,594 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 3 篇进入筛选
+2026-05-20 22:45:26,594 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 2, 'num_retrieved': 3, 'num_true_positives': 2}
+2026-05-20 22:45:26,594 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 3 篇进入阶段2
+2026-05-20 22:45:26,594 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:45:26,594 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:45:30,859 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:30,860 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "计算机专业硕士研究生", "user_preference": "过滤手术类型偏好 Glaucoma Drainage Implants", "research_direction": "Glaucoma", "filter_requirements": "近两年 glaucoma* near/5 (congenital or neonat* or pediatric* or paediatric* or child*)", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:45:34,794 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:34,795 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Types of studies", "filter_requirements": "Types of outcome measures, Types of participants, Types of interventions, Types of outcome measures", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:45:40,198 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:40,199 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】酶替代疗法在多糖尿症II型、Hunter综合征及其相关形式和代谢综合征管理中的临床应用  
+【关键词】酶替代疗法, 多糖尿症II型, Hunter综合征及其相关形式, 代谢综合征管理  
+【筛选要求】  
+- 研究方法：随机化对照试验（RCT）或药物治疗（drug therapy）  
+- 诊断标准：酶活性检测或2型糖尿病、代谢综合征的临床特征  
+- 研究终点：体重、身高Z分数、6分钟步行测试等  
+- 时间范围：为期53周  
+【排除标准】  
+- 不排除多糖尿症I型患者  
+- 不排除其他类型多糖尿症患者  
+- 不排除2型糖尿病患者  
+- 不排除代谢综合征患者  
+【已确...
+2026-05-20 22:45:40,199 [INFO] test_csmed:   未筛选论文: 3 篇
+2026-05-20 22:45:42,774 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:47,470 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:47,470 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Cochrane Neuromuscular Disease Group Specialized Register search strategy": "#1 MeSH DESCRIPTOR Carpal Tunnel Syndrome [REFERENCE] [STANDARD] #2 \"carpal tunne
+2026-05-20 22:45:47,471 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Cochrane Neuromuscular Disease Group Specialized Register search strategy": "#1 MeSH DESCRIPTOR Carpal Tunnel Syndrome [REFERENCE] [STANDARD] #2 \"carpal tunnel\" [REFERENCE] [STANDARD] #3 (\"nerve entrapment\" or \"nerve compression\" or \"entrapment neuropa...
+2026-05-20 22:45:52,167 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:52,168 [INFO] test_csmed:   本轮筛选: included=2, excluded=1, not_sure=0
+2026-05-20 22:45:52,169 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Long-term, open-labeled extension study of idursulfase in the treatment of Hunter syndrome' 应纳入，理由: 符合研究方向、筛选要求和论文特征。摘要显示使用随机化对照试验，评估了6分钟步行距离等终点，并且时间范围为53周。
+2026-05-20 22:45:56,641 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:45:56,643 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:46:00,496 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:00,497 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "其他", "filter_requirements": "Cochrane Library (CENTRAL), MEDLINE (OvidSP), EMBASE (OvidSP), Search for ongoing trials", "rejection_reasons": "", "other_info": "详细搜索策略包括多个数据库的组合筛选，如Cochrane Library, MEDLINE, EMBASE以及寻找正在进行的临床试验。"}
+2026-05-20 22:46:03,606 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:03,607 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Hunter syndrome", "filter_requirements": "53周", "rejection_reasons": "", "other_info": "摘要显示使用随机化对照试验，评估了6分钟步行距离等终点"}
+2026-05-20 22:46:08,189 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:08,190 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】青光眼手术效果评估  
+【关键词】glaucoma, IOP reduction, surgical success rate, visual outcomes, quality of life assessment, drainage implants  
+【筛选要求】研究类型为RCTs或quasi-RCTs；发表时间在2023年4月后；研究对象为先天性、 neonatal*, pediatrics*, paediatric*, 或 child* 群体  
+【排除标准】不涉及过滤手术类型为Drainage Implants的条件  
+【已确认满意论文的共同特征】基于摘要可判断的研...
+2026-05-20 22:46:08,191 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 6 篇进入筛选
+2026-05-20 22:46:08,191 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+2026-05-20 22:46:08,191 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 6 篇进入阶段2
+2026-05-20 22:46:08,191 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:46:08,191 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:46:12,524 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:12,525 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:46:18,700 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:18,702 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'A phase II/III clinical study of enzyme replacement therapy with idursulfase in mucopolysaccharidosis II (Hunter syndrome)' 应纳入，理由: 符合研究方向、筛选要求和论文特征。摘要显示使用随机化对照试验，评估了6分钟步行距离等终点，并且时间范围为53周。
+2026-05-20 22:46:24,027 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:24,028 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】青光眼手术效果评估  
+【关键词】glaucoma, reduction in intraocular pressure (IOP), surgical success rate, visual outcome assessment, quality of life evaluation  
+【筛选要求】  
+- 研究类型：对照试验（RCTs）或准对照试验（quasi-RCTs）  
+- 时间范围：发表于2023年4月至最近一年之间  
+- 患者群体：先天性青光眼、neonatal*, pediatrics*, paediatric*, 或 child* 群体  
+【排除标准】  ...
+2026-05-20 22:46:24,029 [INFO] test_csmed:   未筛选论文: 6 篇
+2026-05-20 22:46:26,728 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:26,728 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】Carpal Tunnel Syndrome and Its Treatments  
+【关键词】Carpal Tunnel Syndrome, Endoscopic Carpal Tunnel Release, Randomised Controlled Trials, Quasi-RCTs  
+【筛选要求】RCTs和准RCTs比较ECTR与其他手术干预治疗CTS  
+【排除标准】不涉及语言限制或测量结果，基于摘要可判断的研究类型  
+【已确认满意论文的共同特征】所有满意论文均研究Carpal Tunnel Syndrome的治疗，使用RCT和准RCT进行比较，不涉及特定语言要求...
+2026-05-20 22:46:26,729 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 3 篇进入筛选
+2026-05-20 22:46:26,729 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.3333, 'recall': 1.0, 'f1': 0.5, 'num_relevant': 1, 'num_retrieved': 3, 'num_true_positives': 1}
+2026-05-20 22:46:26,729 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 3 篇进入阶段2
+2026-05-20 22:46:26,729 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:46:26,729 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:46:30,675 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:30,676 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "酶替代疗法在Mucopolysaccharidosis II中的应用", "filter_requirements": "最近53周", "rejection_reasons": "", "other_info": "摘要显示使用随机化对照试验，评估了6分钟步行距离等终点"}
+2026-05-20 22:46:36,614 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:36,614 [INFO] test_csmed:   本轮筛选: included=3, excluded=3, not_sure=0
+2026-05-20 22:46:36,616 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Combined trabeculotomy-trabeculectomy versus Ahmed valve implantation for refractory primary congenital glaucoma in Egyptian patients: a long-term follow-up' 应纳入，理由: 摘要比较了两种手术方法在先天性青光眼中的效果，属于对照试验（RCTs），符合筛选要求。
+2026-05-20 22:46:43,917 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:43,918 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】Carpal Tunnel Syndrome and Its Treatments  
+【关键词】Systematic Review, Carpal Tunnel Syndrome (CTS), Endoscopic Carpal Tunnel Release (ECTR), Randomized Controlled Trials (RCTs) or Quasi-RCTs  
+【筛选要求】摘要必须包含“systematic review”、“Carpal Tunnel Syndrome (CTS)”、“Endoscopic Carpal Tunnel Release (ECTR)...
+2026-05-20 22:46:43,918 [INFO] test_csmed:   未筛选论文: 3 篇
+2026-05-20 22:46:49,108 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:49,109 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'A phase I/II study of intrathecal idursulfase-IT in children with severe mucopolysaccharidosis II' 应排除，排除原因: 不完全符合筛选要求。摘要提到研究方法是随机化对照试验和药物治疗，但没有明确给出主要终点数据或统计显著性，且时间范围不明确。
+2026-05-20 22:46:52,955 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:52,956 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "眼科手术", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:46:58,646 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:46:58,646 [INFO] test_csmed:   本轮筛选: included=1, excluded=2, not_sure=0
+2026-05-20 22:46:58,647 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Outcomes of endoscopic surgery compared with open surgery for carpal tunnel syndrome among employed patients: randomised controlled trial' 应纳入，理由: 摘要中提到了系统综述、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较了RCTs和Quasi-RCTs，符合筛选要求。
+2026-05-20 22:47:02,072 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:02,073 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "mucopolysaccharidosis II", "filter_requirements": "时间范围不明确和主要终点数据缺失", "rejection_reasons": "不完全符合筛选要求", "other_info": ""}
+2026-05-20 22:47:06,581 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:06,582 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'A Comparative Study: The Use of Collagen Implant versus Mitomycin-C in Combined Trabeculotomy and Trabeculectomy for Treatment of Primary Congenital Glaucoma' 应纳入，理由: 摘要比较了Ologen和MMC植入物在手术中的效果，属于对照试验（RCTs），符合筛选要求。
+2026-05-20 22:47:11,011 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:11,011 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)", "filter_requirements": "符合筛选要求", "rejection_reasons": "", "other_info": "摘要中提到了系统综述、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较了RCTs和Quasi-RCTs"}
+2026-05-20 22:47:14,975 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:14,976 [INFO] test_csmed:   本轮反馈: 确认纳入=2, 确认排除=1, 纠正=0, 一致=3, 累计satisfied=2/3, labeled_correctly=3/5
+2026-05-20 22:47:14,976 [INFO] test_csmed: [阶段2 轮次2] 开始: satisfied=2/3
+2026-05-20 22:47:14,976 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:47:18,229 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:18,229 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "先天性青光眼的手术治疗", "filter_requirements": "近两年", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:47:22,181 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:22,182 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'DESCOMPRESSÃO DO TÚNEL DO CARPO PELA TÉCNICA ENDOSCÓPICA Estudo comparativo com a técnica convencional aberta' 应排除，排除原因: 摘要中提到了endoscopic和conventional open technique的比较，但没有明确提到systematic review、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较RCTs或Quasi-RCTs。
+2026-05-20 22:47:26,900 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:26,901 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】使用随机对照试验评估idursulfase对MPS II患者的影响
+【关键词】idursulfase, MPS II, 6分钟步行测试, 肺活量百分比预测值, 血清GAG
+【筛选要求】研究对象为患有败血症性链球菌尿道综合征（MPS II）的患者，研究设计为随机化对照试验
+【排除标准】无具体排除标准可从摘要中判断
+【已确认满意论文的共同特征】研究方法为随机对照试验；评估终点包括6分钟步行测试和肺活量百分比预测值；研究对象为MPS II患者；使用血清GAG作为指标；观察到每周一次或每两天一次的给药方案优于每两天一次
+2026-05-20 22:47:26,901 [INFO] test_csmed:   未筛选论文: 0 篇
+2026-05-20 22:47:26,902 [INFO] test_csmed:   所有论文已筛选完毕，退出迭代
+2026-05-20 22:47:26,902 [INFO] test_csmed: [阶段2 完成] 共 2 轮迭代, satisfied=2, labeled_correctly=3, included=2, excluded=1, not_sure=0
+2026-05-20 22:47:26,902 [INFO] test_csmed: [阶段2.5] 无剩余 unscreened 论文，跳过全量筛选
+2026-05-20 22:47:26,902 [INFO] test_csmed: [最终统计] included=2, excluded=1, not_sure=0, unscreened=0, 总论文数=3, 三类总计=3
+2026-05-20 22:47:26,902 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 2, 'num_retrieved': 2, 'num_true_positives': 2}
+2026-05-20 22:47:26,902 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 2, 'num_retrieved': 2, 'num_true_positives': 2}
+2026-05-20 22:47:26,902 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=1.0, R=1.0, F1=1.0
+2026-05-20 22:47:26,902 [INFO] test_csmed:   系统 include: 2, Gold included: 2, 交集: 2
+2026-05-20 22:47:26,902 [INFO] test_csmed:   正确纳入 (TP): 2
+2026-05-20 22:47:26,902 [INFO] test_csmed:   遗漏 (FN): 0
+2026-05-20 22:47:26,902 [INFO] test_csmed:   误判 (FP): 0
+2026-05-20 22:47:26,903 [INFO] test_csmed: ============================================================
+2026-05-20 22:47:26,903 [INFO] test_csmed: [完成] review CD008185 (4/10)
+2026-05-20 22:47:26,903 [INFO] test_csmed: 开始处理 review: CD008345
+2026-05-20 22:47:26,903 [INFO] test_csmed: Review title: Case management approaches to home support for people with dementia
+2026-05-20 22:47:26,903 [INFO] test_csmed: 总论文数: 17, gold included: 6
+2026-05-20 22:47:26,903 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:47:26,903 [INFO] test_csmed: [阶段1a] 初始 query: Case management approaches to home support for people with dementia
+2026-05-20 22:47:26,903 [INFO] auto_slr: [Assistant] extract_and_record 输入: Case management approaches to home support for people with dementia
+2026-05-20 22:47:30,821 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:30,823 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Evaluation the adjunctive use of combined bevacizumab and mitomycinc to trabeculectomy in management of recurrent pediatric glaucoma' 应排除，排除原因:  Not population of interest 。系统误判为纳入。
+2026-05-20 22:47:35,089 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:35,089 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Carpal Tunnel Syndrome", "filter_requirements": "摘要中提到了endoscopic和conventional open technique的比较，但没有明确提到systematic review、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较RCTs或Quasi-RCTs", "rejection_reasons": "摘要中提到了endoscopic和conventional open technique的比较，但没有明确提到systematic review、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较RCTs或Quasi-RCTs", "other_info": ""}
+2026-05-20 22:47:37,763 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:37,764 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Case Management Approaches to Home Support for People with Dementia", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:47:41,024 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:41,025 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "眼科药物治疗", "filter_requirements": "系统误判为纳入", "rejection_reasons": "Not population of interest", "other_info": ""}
+2026-05-20 22:47:44,068 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:44,069 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Carpal tunnel syndrome, the search for a cost-effective surgical intervention: a randomised controlled trial' 应排除，排除原因: 摘要中提到了RCTs，但没有明确提到systematic review、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较其他手术干预。
+2026-05-20 22:47:45,807 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:45,808 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Over 35 million people are estimated to be living with dementia in the world and the societal costs are very high. Case management is a widely used
+2026-05-20 22:47:45,808 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Over 35 million people are estimated to be living with dementia in the world and the societal costs are very high. Case management is a widely used and strongly promoted complex intervention for organising and co‐ordinating care at the level of th...
+2026-05-20 22:47:49,878 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:49,879 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Deep sclerectomy in pediatric glaucoma filtering surgery' 应纳入。系统误判为排除。
+2026-05-20 22:47:53,550 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:53,552 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Carpal Tunnel Syndrome, Endoscopic Carpal Tunnel Release", "filter_requirements": "RCTs mentioned but no Systematic Review, CTS, ECTR or comparison of other surgical interventions", "rejection_reasons": "摘要中提到了RCTs，但没有明确提到systematic review、Carpal Tunnel Syndrome (CTS)、Endoscopic Carpal Tunnel Release (ECTR)以及比较其他手术干预。", "other_info": ""}
+2026-05-20 22:47:56,918 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:56,918 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "研究人员", "user_preference": "case management", "research_direction": "case management", "filter_requirements": "近两年, 关键词: case management intervention, 筛选标准: 随机对照试验 (RCTs)、焦点小组讨论等", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:47:59,547 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:47:59,548 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "眼科手术", "filter_requirements": "误判为排除", "rejection_reasons": "误判为排除", "other_info": ""}
+2026-05-20 22:48:03,572 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:03,573 [INFO] test_csmed:   本轮反馈: 确认纳入=1, 确认排除=2, 纠正=0, 一致=3, 累计satisfied=1/3, labeled_correctly=3/5
+2026-05-20 22:48:03,573 [INFO] test_csmed: [阶段2 轮次2] 开始: satisfied=1/3
+2026-05-20 22:48:03,573 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:48:05,309 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:08,797 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:08,798 [INFO] test_csmed:     累计满意 3 ≥ 3 或正确标注 2 > 5，跳过剩余反馈
+2026-05-20 22:48:08,798 [INFO] test_csmed:     反馈过程中已达标（satisfied=3≥3 或 labeled_correctly=2>5），跳过 not_sure 反馈
+2026-05-20 22:48:08,799 [INFO] test_csmed:   本轮反馈: 确认纳入=3, 确认排除=1, 纠正=2, 一致=2, 累计satisfied=3/3, labeled_correctly=2/5
+2026-05-20 22:48:08,799 [INFO] test_csmed:   累计满意 3 ≥ 3 或正确标注 2 > 5，退出迭代
+2026-05-20 22:48:08,799 [INFO] test_csmed: [阶段2 完成] 共 1 轮迭代, satisfied=3, labeled_correctly=2, included=3, excluded=3, not_sure=0
+2026-05-20 22:48:08,800 [INFO] test_csmed: [阶段2→2.5] 重置 2 篇 not_sure/exclude 论文为 unscreened（用户拒绝的保留），将在阶段2.5重新筛选
+2026-05-20 22:48:08,800 [INFO] test_csmed: [阶段2.5 轮次1] 全量筛选剩余 2 篇 unscreened 论文
+2026-05-20 22:48:08,800 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:48:13,463 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:13,464 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】用一句话概括核心研究主题  
+比较两种手肘问题治疗方法（经皮和内镜式复极板插入术）的效果  
+
+【关键词】  
+Carpal Tunnel Syndrome, Endoscopic Carpal Tunnel Release, 随机对照试验 (RCTs), Quasi-RCTs  
+
+【筛选要求】基于摘要可判断的硬性条件  
+研究设计为随机对照试验（RCTs或Quasi-RCTs），比较了两种治疗方法的效果  
+
+【排除标准】基于摘要可判断的排除方向  
+无明确排除方向  
+
+【已确认满意论文的共同特征】  
+使用RCTs或Quasi-RCTs进行研究，比较了经皮和内镜式复极板插入...
+2026-05-20 22:48:13,464 [INFO] test_csmed:   未筛选论文: 0 篇
+2026-05-20 22:48:13,464 [INFO] test_csmed:   所有论文已筛选完毕，退出迭代
+2026-05-20 22:48:13,464 [INFO] test_csmed: [阶段2 完成] 共 2 轮迭代, satisfied=1, labeled_correctly=3, included=1, excluded=2, not_sure=0
+2026-05-20 22:48:13,464 [INFO] test_csmed: [阶段2.5] 无剩余 unscreened 论文，跳过全量筛选
+2026-05-20 22:48:13,465 [INFO] test_csmed: [最终统计] included=1, excluded=2, not_sure=0, unscreened=0, 总论文数=3, 三类总计=3
+2026-05-20 22:48:13,465 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+2026-05-20 22:48:13,465 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+2026-05-20 22:48:13,465 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=1.0, R=1.0, F1=1.0
+2026-05-20 22:48:13,465 [INFO] test_csmed:   系统 include: 1, Gold included: 1, 交集: 1
+2026-05-20 22:48:13,465 [INFO] test_csmed:   正确纳入 (TP): 1
+2026-05-20 22:48:13,465 [INFO] test_csmed:   遗漏 (FN): 0
+2026-05-20 22:48:13,465 [INFO] test_csmed:   误判 (FP): 0
+2026-05-20 22:48:13,466 [INFO] test_csmed: ============================================================
+2026-05-20 22:48:13,466 [INFO] test_csmed: [完成] review CD008265 (6/10)
+2026-05-20 22:48:13,466 [INFO] test_csmed: 开始处理 review: CD008366
+2026-05-20 22:48:13,466 [INFO] test_csmed: Review title: Community wide interventions for increasing physical activity
+2026-05-20 22:48:13,467 [INFO] test_csmed: 总论文数: 81, gold included: 23
+2026-05-20 22:48:13,467 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:48:13,467 [INFO] test_csmed: [阶段1a] 初始 query: Community wide interventions for increasing physical activity
+2026-05-20 22:48:13,467 [INFO] auto_slr: [Assistant] extract_and_record 输入: Community wide interventions for increasing physical activity
+2026-05-20 22:48:16,331 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:16,332 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+We considered all relevant randomised controlled trials (RCTs), and economic evaluations conducted alongside the RCTs. We judged that the RCTs located were sufficient in numbe
+2026-05-20 22:48:16,332 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+We considered all relevant randomised controlled trials (RCTs), and economic evaluations conducted alongside the RCTs. We judged that the RCTs located were sufficient in number and participants to perform meta‐analysis and to justify the exclusion of quasi‐randomised studies...
+2026-05-20 22:48:20,202 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:20,202 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】先天性青光眼的处理方法
+【关键词】先天性青光眼, CTTM, 深结膜切除术, 假低视力
+【筛选要求】基于摘要可判断的硬性条件：研究对象为先天性青光眼患者，使用CCTM和深结膜切除术，无明显并发症
+【排除标准】基于摘要可判断的排除方向：排除有严重并发症或不适合手术的患者
+【已确认满意论文的共同特征】研究使用了CCTM和深结膜切除术，无显著低IOP并发症，并且结果显示成功
+2026-05-20 22:48:23,410 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:23,411 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Community wide interventions for increasing physical activity", "filter_requirements": "", "rejection_reasons": "", "other_info": "机器学习模型分析干预效果；不同社区需求差异"}
+2026-05-20 22:48:28,659 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:28,661 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "case management interventions; dementia", "filter_requirements": "randomised controlled trials (RCTs), economic evaluations alongside RCTs, exclusion of quasi-randomised studies such as controlled before-and-after studies (CBAs) and interrupted time series (ITSs). Eligibility criteria include individuals with any type of dementia living in the community, carers, case management interventions delivered in the community, treatment as usual or non-case management controls. Outcomes grouped into short-term (<12 months), medium-term (≥12 months <18 months) and longer-term (≥18 months). Eligible studies focus on patients or carer-dyads.", "rejection_reasons": "", "other_info": "Outcomes include institutionalisation, hospital admission, mortality, quality of life for participants and carers, service use and costs. Analysis focuses on 10-12 months post-intervention."}
+2026-05-20 22:48:32,054 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:32,055 [INFO] test_csmed: [阶段2.5 完成] 共 1 轮全量筛选, included=4, excluded=1, not_sure=1
+2026-05-20 22:48:32,055 [INFO] test_csmed: [最终统计] included=4, excluded=1, not_sure=1, unscreened=0, 总论文数=6, 三类总计=6
+2026-05-20 22:48:32,056 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 0.8, 'recall': 1.0, 'f1': 0.8889, 'num_relevant': 4, 'num_retrieved': 5, 'num_true_positives': 4}
+2026-05-20 22:48:32,056 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 4, 'num_retrieved': 4, 'num_true_positives': 4}
+2026-05-20 22:48:32,056 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=0.8, R=1.0, F1=0.8889
+2026-05-20 22:48:32,056 [INFO] test_csmed:   系统 include: 5, Gold included: 4, 交集: 4
+2026-05-20 22:48:32,056 [INFO] test_csmed:   正确纳入 (TP): 4
+2026-05-20 22:48:32,056 [INFO] test_csmed:   遗漏 (FN): 0
+2026-05-20 22:48:32,056 [INFO] test_csmed:   误判 (FP): 1
+2026-05-20 22:48:32,056 [INFO] test_csmed: ============================================================
+2026-05-20 22:48:32,056 [INFO] test_csmed: [完成] review CD008213 (5/10)
+2026-05-20 22:48:32,057 [INFO] test_csmed: 开始处理 review: CD008426
+2026-05-20 22:48:32,057 [INFO] test_csmed: Review title: House dust mite reduction and avoidance measures for treating eczema
+2026-05-20 22:48:32,057 [INFO] test_csmed: 总论文数: 1, gold included: 1
+2026-05-20 22:48:32,057 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 22:48:32,057 [INFO] test_csmed: [阶段1a] 初始 query: House dust mite reduction and avoidance measures for treating eczema
+2026-05-20 22:48:32,057 [INFO] auto_slr: [Assistant] extract_and_record 输入: House dust mite reduction and avoidance measures for treating eczema
+2026-05-20 22:48:34,371 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:34,372 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Multi‐strategic community wide interventions for physical activity are increasingly popular but their ability to achieve population level improveme
+2026-05-20 22:48:34,372 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Multi‐strategic community wide interventions for physical activity are increasingly popular but their ability to achieve population level improvements is unknown.    Objectives To evaluate the effects of community wide, multi‐strategic interventio...
+2026-05-20 22:48:39,441 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:39,442 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We considered all relevant randomised controlled trials (RCTs), and economic evaluations conducted alongside the RCTs. We judged that the RCTs located w
+2026-05-20 22:48:39,442 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "We considered all relevant randomised controlled trials (RCTs), and economic evaluations conducted alongside the RCTs. We judged that the RCTs located were sufficient in number and participants to perform meta‐analysis and to justify the exclusion of q...
+2026-05-20 22:48:41,919 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:41,919 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "医学/药学专业学生", "user_preference": "", "research_direction": "House dust mite reduction and avoidance measures for treating eczema", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:48:45,771 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:45,772 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Community wide interventions for physical activity", "filter_requirements": "Search methods: Cochrane Register of Studies, MEDLINE, EMBASE, CINAHL, LILACS, PsycINFO, ASSIA, British Nursing Index, Chinese CNKI databases, EPPI Centre (DoPHER, TRoPHI), ERIC, HMIC, Sociological Abstracts, SPORTDiscus, Transport Database and Web of Science. Reference lists of relevant systematic reviews, guidelines, and primary studies were searched. Search update date: 16 January 2014. Selection criteria: Cluster randomised controlled trials, randomised controlled trials, quasi-experimental designs with control population, interrupted time-series studies, prospective controlled cohort studies; minimum six-month follow-up; community-wide interventions with at least two broad strategies for the whole population; exclusion of studies randomising individuals from the same community.", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:48:51,022 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:51,022 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "", "filter_requirements": "10-12 months, randomised controlled trials (RCTs), economic evaluations, case management interventions, institutionalisation outcomes, quality of life measures for both participants and carers", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:48:52,477 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:57,222 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:48:57,223 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+It is recognised that public health and health promotion interventions are evaluated using a wide variety of approaches and designs. We permitted the inclusion of cluster rand
+2026-05-20 22:48:57,223 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+It is recognised that public health and health promotion interventions are evaluated using a wide variety of approaches and designs. We permitted the inclusion of cluster randomised controlled trials, randomised controlled trials (RCTs), quasi‐experimental designs which used...
+2026-05-20 22:49:03,168 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:03,169 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Source   Search strategy   Hits retrieved (in the February 2012 search)     1. ALOIS (www.medicine.ox.ac.uk/alois)   \"Case Management\" O
+2026-05-20 22:49:03,170 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Source   Search strategy   Hits retrieved (in the February 2012 search)     1. ALOIS (www.medicine.ox.ac.uk/alois)   \"Case Management\" OR \"care management\" OR \"multi‐component\"   31     2. MEDLINE In‐process and other non‐indexed ci...
+2026-05-20 22:49:04,927 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:04,928 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Eczema is an inflammatory skin disease that tends to involve skin creases, such as the folds of the elbows or knees; it is an intensely itchy skin 
+2026-05-20 22:49:04,928 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background Eczema is an inflammatory skin disease that tends to involve skin creases, such as the folds of the elbows or knees; it is an intensely itchy skin condition, which can relapse and remit over time. As many as a third of people with eczema who have ...
+2026-05-20 22:49:10,427 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:10,428 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "whole‐of‐community interventions; physical activity", "filter_requirements": "Time frame: at least two of the six strategies aimed at physical activity (social marketing, communication strategies, individual counselling, collaboration with organisations andvoluntary bodies, specific settings, environmental change strategies). Follow-up period: at least six months from start to outcome measurement. Intervention type: must be community wide as per defined criteria.", "rejection_reasons": "", "other_info": "The review focuses on whole‐of‐community interventions for physical activity, requiring studies to use at least two of six strategies (social marketing, communication strategies, individual counselling, collaboration with organisations andvoluntary bodies, specific settings, environmental change strategies). Follow-up period is at least six months. Studies must measure physical activity outcomes using various methods (percentage active/inactive, frequency, meeting recommendations, etc.). The review excludes single strategy interventions and studies focused on non-population measures."}
+2026-05-20 22:49:21,053 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:21,054 [INFO] auto_slr: 从自然语言中提取了 2 条筛选结果
+2026-05-20 22:49:21,054 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"other_info": "[{'index': 1, 'decision': 'exclude', 'reason': 'Medicare Part A Expenditure (Community Services Usages)**\\n   - **Year One**: No significant difference between case management groups and controls.\\n   - **Year Two**: No significant difference between case management groups and controls.\\n   - **Year Three**: Slight reduction in expenditure, but not statistically significant.\\n   - **Total Follow-Up**: No significant difference overall; a slight reduction was observed over three years.'}, {'index': 2, 'decision': 'exclude', 'reason': 'Medicare Part A Expenditure Comparison**\\n   - The average annualized Medicare reimbursement for care-givers in the intervention group was lower than controls, but this difference was not statistically significant.\\n   - No significant differences were observed across individual years or the total follow-up period.\\n\\n### Trends and Comparisons:\\n- **Cost Over Time**: While there were slight reductions in expenditure over three years (Section 3.10), these did not reach statistical significance until the longer-term analysis.\\n- **Statistical Significance**: Most comparisons between groups showed no significant differences, except for a slight reduction in expenditure over three years.\\n\\n### Conclusion:\\nThe dataset indicates that while there were trends suggesting reduced costs over time, these reductions did not achieve statistical significance. The comparison of expenditures (Section 3.10) and the cost comparison with controls (Section 3.11) highlight areas where further analysis may be warranted to understand long-term impacts.\\n\\nThis structured approach allows for a clear understanding of the key metrics and trends across different sections, aiding in the extraction and interpretation of necessary information from the dataset.'}]"}
+2026-05-20 22:49:25,575 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:25,575 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Allergic skin diseases", "filter_requirements": "Searches up to 14 August 2014 in Cochrane Skin Group Specialised Register, CENTRAL, MEDLINE, Embase, LILACS, and GREAT database; handsearched abstracts from international eczema and allergy meetings.", "rejection_reasons": "", "other_info": "The system overview focuses on allergic skin diseases, particularly eczema. It searches multiple databases with a specific time frame (1946-2014) and includes references from various studies and meetings. The research highlights the need for high-quality long-term trials focusing on single, easy-to-administer allergen reduction measures."}
+2026-05-20 22:49:30,913 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:30,915 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "It is recognised that public health and health promotion interventions are evaluated using a wide variety of approaches and designs. We permitted the in
+2026-05-20 22:49:30,915 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "It is recognised that public health and health promotion interventions are evaluated using a wide variety of approaches and designs. We permitted the inclusion of cluster randomised controlled trials, randomised controlled trials (RCTs), quasi‐experime...
+2026-05-20 22:49:35,920 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:35,921 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:49:39,006 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:39,007 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Randomised controlled trials (RCTs) that assess the efficacy of any of the house dust mite reduction and avoidance measures for the treatment of eczema. We included trials tha
+2026-05-20 22:49:39,007 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Randomised controlled trials (RCTs) that assess the efficacy of any of the house dust mite reduction and avoidance measures for the treatment of eczema. We included trials that allowed co‐treatments. We excluded quasi‐randomised trials. We would have included cross‐over tria...
+2026-05-20 22:49:42,630 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:42,631 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "行为改变策略", "filter_requirements": "包括时间范围、研究类型、参与者类型、干预措施和评估指标等筛选标准", "rejection_reasons": "", "other_info": "研究主要关注公共健康领域中的行为改变策略，特别是针对社区 wide 广告的实施效果评估。"}
+2026-05-20 22:49:46,253 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:46,254 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】社区内针对痴呆症患者的案管理干预措施  
+【关键词】case management intervention, dementia care, community-based interventions  
+【筛选要求】两年内的随机对照试验（RCTs）或经济评估伴随RCTs；排除准随机研究如控制前后对照研究（CBAs）和截断时间序列分析（ITSs）。  
+【排除标准】CBAs、ITSs。  
+【已确认满意论文的共同特征】干预措施明确，研究时间为10-12个月后进行分析，并分为短期（<12个月）、中期（≥12个月 <18个月）和长期（≥18个月），关注患者的健康状况、护理者的影响、机构...
+2026-05-20 22:49:46,255 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 17 篇进入筛选
+2026-05-20 22:49:46,255 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.3529, 'recall': 1.0, 'f1': 0.5217, 'num_relevant': 6, 'num_retrieved': 17, 'num_true_positives': 6}
+2026-05-20 22:49:46,255 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 17 篇进入阶段2
+2026-05-20 22:49:46,255 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:49:46,255 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:49:53,015 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:53,016 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Randomised controlled trials (RCTs) assessing efficacy of house dust mite reduction measures for eczema treatment", "filter_requirements": "Two years", "rejection_reasons": "", "other_info": "Inclusion criteria: Participants with eczema as defined by the World Allergy Organization, atopic eczema, childhood eczema, or atopic dermatitis. Exclusions include skin comorbidities like psoriasis and infections. Interventions are non-pharmacological and pharmacological methods to reduce dust mite exposure. Comparators include active treatment, placebo, standard care only.", "additional_notes": "The review focuses on short-term (six months) and long-term outcomes, with long-term being more important for sustained effects."}
+2026-05-20 22:49:58,446 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:49:58,448 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "The searches were based on the following strategy, developed in Medline and adapted as appropriate to the specifications of each database 
+2026-05-20 22:49:58,448 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "The searches were based on the following strategy, developed in Medline and adapted as appropriate to the specifications of each database and web site. The strategy was deliberately designed to capture a broad range of references and the ...
+2026-05-20 22:50:03,813 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:03,813 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】社区中认知障碍患者的案管理干预  
+【关键词】case management intervention, dementia care, community-based interventions, case management protocols  
+【筛选要求】  
+- 研究时间范围：最近两年  
+- 筛选标准：随机对照试验（RCTs），经济评估伴随RCTs，排除准随机研究如控制前后对照研究（CBAs）和截断时间序列分析（ITSs）  
+- 入侵者标准：  
+  1. 社区中患有认知障碍的患者及其护理者  
+  2. 受试者接受社区内的案管理干预  
+  3. 治疗作为常规或非...
+2026-05-20 22:50:03,814 [INFO] test_csmed:   未筛选论文: 17 篇
+2026-05-20 22:50:08,289 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:08,290 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised controlled trials (RCTs) that assess the efficacy of any of the house dust mite reduction and avoidance measures for the treatment of eczema.
+2026-05-20 22:50:08,290 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised controlled trials (RCTs) that assess the efficacy of any of the house dust mite reduction and avoidance measures for the treatment of eczema. We included trials that allowed co‐treatments. We excluded quasi‐randomised trials. We would have i...
+2026-05-20 22:50:15,595 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:15,596 [WARNING] auto_slr: JSON 提取失败，原始文本: 根据您提供的文本内容，以下是信息抽取后的结果：
+
+### 1. 研究主题
+- **TS=(... )**：25个不同的研究主题，涵盖政策变化、社区计划、健康咨询等。
+- **policy change* OR fiscal change***：涉及政策或财政变化的研究。
+
+### 2. 关键词和数据库
+- **Databases=SCI-EXPANDED, SSCI, CPCI-S, CPCI-SSH**：这些数据库用于检索相关文献。
+- **TS=((Voluntary OR volunteer OR charities OR charity OR non‐government OR government OR "not for profit") AND (group* OR organisation* OR department* OR club*))**：涉及志愿者或慈善组织的研究。
+
+### 3. 具体条目
+- **TS=(Legislation OR legislative)**：涉及立法或政策变化的研究。
+- **TS=((road OR land) AND (use or usage))**：涉及道路或土地使用的研究。
+- **TS=environment* infrastructure**：涉及环境基础设施的研究。
+- **TS=((built environment* OR urban environment* OR environmental) AND (change* OR intervention*))**：涉及城市环境或环境干预的研究。
+
+### 4. 机构和主题
+- **Centers for Disease Control and Prevention (CDC)**：关注营养和物理活动。
+- **World Health Organization (WHO)**：提供相关研究信息。
+
+### 5. 其他信息
+- **Accessing information**：通过CDC的营养和物理活动部分查找相关研究。
+- **Author reference lists**：引用了JS的研究列表，涵盖CDC社区指南更新的相关内容。
+
+这些信息可以帮助您进一步筛选或检索相关的文献。
+2026-05-20 22:50:15,596 [WARNING] auto_slr: JSON 解析失败，第 1/3 次重试
+2026-05-20 22:50:25,297 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:31,637 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:31,639 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "Individuals with eczema as defined by the World Allergy Organization or atopic eczema, childhood eczema, or atopic dermatitis", "user_preference": "", "research_direction": "Non-pharmacological and pharmacological interventions for reducing or avoiding exposure to house dust mite and their faeces", "filter_requirements": "Two years, keywords: house dust mite reduction and avoidance measures, exclusion of quasi-randomised trials, cluster-randomised trials excluded unless data available at first period, RCTs with treatment carry-over effects excluded", "rejection_reasons": "", "other_info": "Types of studies include randomised controlled trials (RCTs) that assess efficacy, types of participants are individuals diagnosed with eczema by a clinician or using Hanifin and Rajka criteria, types of interventions cover various methods like mattress encasings, vacuuming, UV light sources, etc., educational aspects focus on reducing and avoiding house dust mite, environmental manipulation includes measures like mattress encasings and ventilation systems, pharmacological interventions are acaricide sprays, outcome measures include eczema severity, quality of life assessments, sensitivity to allergens, and adverse effects. Primary outcomes are global eczema severity using scales like SCORAD and quality of life assessments. Secondary outcomes include severity scores, topical treatment requirements, allergen sensitivity, and adverse effects."}
+2026-05-20 22:50:38,232 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:38,233 [WARNING] auto_slr: JSON 提取失败，原始文本: It appears you've provided a detailed dataset extracted from academic publications related to physical activity, health, and community-based interventions. The data includes study titles, authors, journals, publication dates, and specific keywords or terms pulled from the text using regular expressions.
+
+This type of extraction is often used for systematic reviews, meta-analyses, or bibliometric studies where you need to focus on specific aspects of physical activity or health interventions within a community context. The dataset spans from 2013 to 2014 and includes terms related to exercise types (e.g., cardiorespiratory fitness, strength training), health outcomes (e.g., obesity, diabetes), and intervention strategies.
+
+If you need further assistance with this data or have specific questions about it, feel free to ask!
+2026-05-20 22:50:38,233 [WARNING] auto_slr: JSON 解析失败，第 2/3 次重试
+2026-05-20 22:50:45,539 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:45,540 [INFO] test_csmed:   本轮筛选: included=3, excluded=14, not_sure=0
+2026-05-20 22:50:45,544 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Development and Implementation of Nonpharmacologic Protocols for the Management of Patients With Alzheimer's Disease and Their Families in a Multiracial Primary Care Setting' 应纳入，理由: 描述了非药物管理协议的开发与实施，属于case management的一部分，并且涉及非患者家庭成员，干预措施明确，研究关注点包括健康状况等关键指标。
+2026-05-20 22:50:47,315 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:59,583 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:50:59,584 [INFO] auto_slr: 从自然语言中提取了 4 条筛选结果
+2026-05-20 22:50:59,584 [INFO] auto_slr: 第 2 次重试成功提取 JSON
+2026-05-20 22:50:59,584 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"other_info": "[{'index': 1, 'decision': 'include', 'reason': '**\\n   - Each query specifies certain keywords or phrases that need extraction.\\n   - Example queries include \"state change,\" \"policy change,\" \"public health interventions,\" etc.'}, {'index': 2, 'decision': 'not_sure', 'reason': '**\\n   - Each query is associated with specific databases (e.g., \"SCI-EXPANDED,\" \"CDC\").\\n   - These databases index terms related to scientific articles and public health resources.'}, {'index': 3, 'decision': 'include', 'reason': '**\\n   - Queries specify a time range (e.g., 2011-2013) to limit the scope of studies.\\n   - This ensures focus on relevant, recent studies within the specified period.'}, {'index': 4, 'decision': 'include', 'reason': '**\\n   - Some queries target specific sources like CDC and WHO, focusing on nutrition and physical activity sections.\\n\\n### Example Execution:\\n\\n**Query 1:** \"state change OR policy change\"  \\n- **Databases:** \"SCI-EXPANDED,\" \"CDC.\"\\n- **Timeframe:** 2011-2013.\\n- **Action:** Extract studies discussing policy changes in public health interventions related to physical activity.\\n\\n**Query 2:** \"public health interventions\"  \\n- **Databases:** \"SCI-EXPANDED.\"\\n- **Timeframe:** 2011-2013.\\n- **Action:** Identify studies focusing on various public health interventions aimed at promoting physical activity and nutrition.\\n\\n### Compilation of Findings:\\n\\nThe extraction process will involve scanning the provided text for each query\\'s keywords within specified databases and timeframes. The results will be compiled into a structured format, similar to the example response, ensuring clarity and organization.\\n\\n---\\n\\n### Summary:\\n\\nBy systematically applying each query to the data with appropriate databases and timeframes, I will extract relevant information focused on public health interventions related to physical activity and nutrition. This approach ensures accuracy and relevance, providing a comprehensive overview of studies addressing these topics within the specified context.'}]"}
+2026-05-20 22:51:03,008 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:03,009 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Case Management", "filter_requirements": "", "rejection_reasons": "\"该论文描述了非药物管理协议的开发与实施，属于case management的一部分，并且涉及非患者家庭成员，干预措施明确，研究关注点包括健康状况等关键指标。\"", "other_info": ""}
+2026-05-20 22:51:11,095 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:11,096 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. CENTRAL (The Cochrane Library) search strategy": "#1 atopic dermatitis OR atopic eczema OR eczema* OR neurodermatitis OR infantile eczema #2 child* eczema* OR 
+2026-05-20 22:51:11,097 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. CENTRAL (The Cochrane Library) search strategy": "#1 atopic dermatitis OR atopic eczema OR eczema* OR neurodermatitis OR infantile eczema #2 child* eczema* OR Besnier's prurigo #3 MeSH descriptor: [Neurodermatitis] explode all trees #4 MeSH descriptor: [Eczem...
+2026-05-20 22:51:17,609 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:17,610 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:51:22,171 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:22,173 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Project CARE: A Randomized Controlled Trial of a Behavioral Intervention Group for Alzheimer's Disease Caregivers' 应排除，排除原因:  Did not meet criteria for case management intervention. 。系统误判为纳入。
+2026-05-20 22:51:27,365 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:27,366 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "atopic dermatitis OR atopic eczema OR eczema* OR neurodermatitis OR infantile eczema #2 child* eczema* OR Besnier's prurigo #3 MeSH descriptor: [Neurodermatitis] explode all trees #4 MeSH descriptor: [Eczema] explode all trees #5 (dust mite*) or (Dermatophagoide* or Euroglyphus or Blomia or Pyroglyphidae) #6 MeSH descriptor: [Pyroglyphidae] explode all trees #7 MeSH descriptor: [Dermatitis, Atopic] 1 tree(s) exploded #8 SR‐SKIN #9 #5 or #6 #10 #1 or #2 or #3 or #4 or #7 #11 #9 and #10 #12 #11 and not #8", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:51:32,472 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:32,472 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】社区wide广告对行为改变策略的影响与效果评估  
+【关键词】行为改变策略, 公共健康, 社区wide广告, 广告干预, 物理活动水平  
+【筛选要求】研究类型：社区wide广告；参与者类型：社区居民；干预措施：行为改变策略；评估指标：物理活动水平的测量方法（百分比活跃/inactive、频率等）  
+【排除标准】时间范围：至少两年；研究类型：社区wide广告；参与者类型：社区居民；干预措施：行为改变策略；评估指标：物理活动水平的测量方法（百分比活跃/inactive、频率等）  
+【已确认满意论文的共同特征】所有满意论文都使用了特定的行为改变策略，并评估了活动参与度，时间范围至少...
+2026-05-20 22:51:32,473 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 81 篇进入筛选
+2026-05-20 22:51:32,473 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.284, 'recall': 1.0, 'f1': 0.4423, 'num_relevant': 23, 'num_retrieved': 81, 'num_true_positives': 23}
+2026-05-20 22:51:32,474 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 81 篇进入阶段2
+2026-05-20 22:51:32,474 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:51:32,474 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:51:37,452 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:37,453 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Alzheimer's Disease Caregivers", "filter_requirements": "近两年, 关键词: case management intervention", "rejection_reasons": "Did not meet criteria for case management intervention.", "other_info": ""}
+2026-05-20 22:51:44,419 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:44,421 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 22:51:48,031 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:48,032 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】Community wide interventions for physical activity analysis using machine learning models  
+【关键词】机器学习模型分析, 干预效果评估, 社区需求差异  
+【筛选要求】时间范围：至少两年；研究类型：社区wide广告；参与者类型：社区居民；干预措施：行为改变策略（社会营销、沟通策略等）；评估指标：物理活动水平测量方法（百分比活跃/inactive、频率等）  
+【排除标准】不包括个体随机对照试验，只考虑群体性策略  
+【已确认满意论文的共同特征】研究时间范围至少两年, 研究类型为社区wide广...
+2026-05-20 22:51:48,032 [INFO] test_csmed:   未筛选论文: 81 篇
+2026-05-20 22:51:52,913 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:52,914 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Community based occupational therapy for patients with dementia and their care givers: randomised controlled trial' 应排除，排除原因:  Did not meet criteria for case management intervention. 。系统误判为纳入。
+2026-05-20 22:51:57,987 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:51:57,987 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】Allergic skin diseases, particularly eczema. The research focuses on non-pharmacological and pharmacological interventions for reducing or avoiding exposure to house dust mite and their faeces.
+【关键词】house dust mite reduction, avoidance measures, eczema, global eczema severity, quality of life ...
+2026-05-20 22:51:57,988 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 1 篇进入筛选
+2026-05-20 22:51:57,988 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+2026-05-20 22:51:57,988 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 1 篇进入阶段2
+2026-05-20 22:51:57,988 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 22:51:57,988 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:52:06,792 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:06,793 [INFO] auto_slr: 从自然语言中提取了 9 条筛选结果
+2026-05-20 22:52:09,962 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:09,963 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Community based occupational therapy for patients with dementia and their care givers: randomised controlled trial", "filter_requirements": "Did not meet criteria for case management intervention.", "rejection_reasons": "Did not meet criteria for case management intervention.", "other_info": ""}
+2026-05-20 22:52:15,436 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:15,436 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】Allergic skin diseases, particularly eczema; Non-pharmacological and pharmacological interventions for reducing exposure to house dust mites
+【关键词】Eczema; House dust mite reduction; Interventions; Randomized controlled trials (RCTs); Exclusion criteria; Skin comorbidities; Cluster-randomised tr...
+2026-05-20 22:52:15,437 [INFO] test_csmed:   未筛选论文: 1 篇
+2026-05-20 22:52:23,237 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:23,238 [WARNING] auto_slr: JSON 提取失败，原始文本: 根据用户的研究任务和筛选标准，以下是对10篇论文的初筛结果：
+
+- **论文1**：排除（时间范围不足两年）
+- **论文2**：包含
+- **论文3**：包含
+- **论文4**：排除（主题不符）
+- **论文5**：排除（干预类型不完全符合）
+- **论文6**：包含
+- **论文7**：包含
+- **论文8**：包含
+- **论文9**：排除（主题不符）
+- **论文10**：包含
+
+最终决定将论文2、3、6、7、8和10包含在文献综述中，而排除其他四篇。
+2026-05-20 22:52:23,238 [WARNING] auto_slr: JSON 解析失败，第 1/3 次重试
+2026-05-20 22:52:31,280 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:31,281 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Partners in Dementia Care: A Care Coordination Intervention for Individuals With Dementia and Their Family Caregivers' 应纳入。系统误判为排除。
+2026-05-20 22:52:33,974 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:33,975 [INFO] test_csmed:   本轮筛选: included=1, excluded=0, not_sure=0
+2026-05-20 22:52:33,975 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户确认论文 'Double-blind placebo-controlled house dust mite control measures in adult patients with atopic dermatitis' 应纳入，理由: 摘要描述了针对有eczema定义的成年患者进行随机对照试验，干预措施包括床垫套等非药物方法，并符合研究方向和筛选要求。
+2026-05-20 22:52:41,842 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:41,843 [INFO] auto_slr: 第 1 次重试成功提取 JSON
+2026-05-20 22:52:45,004 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:45,005 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "老年学/护理学", "filter_requirements": "系统误判为排除", "rejection_reasons": "系统误判为排除", "other_info": ""}
+2026-05-20 22:52:48,400 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:52:48,400 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "house dust mite control measures", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 22:53:01,334 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:53:01,336 [INFO] auto_slr: 从自然语言中提取了 10 条筛选结果
+2026-05-20 22:53:06,037 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:53:06,038 [INFO] auto_slr: [Assistant] extract_and_record 输入: 用户纠正：论文 'Effectiveness of Collaborative Care for Older Adults With Alzheimer Disease in Primary Care A Randomized Controlled Trial' 应纳入。系统误判为排除。
+2026-05-20 22:53:12,361 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:53:12,363 [INFO] test_csmed:   本轮反馈: 确认纳入=1, 确认排除=0, 纠正=0, 一致=1, 累计satisfied=1/3, labeled_correctly=1/5
+2026-05-20 22:53:12,363 [INFO] test_csmed: [阶段2 轮次2] 开始: satisfied=1/3
+2026-05-20 22:53:12,364 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 22:53:19,998 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:53:23,026 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 22:53:23,027 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "研究人员", "user_preference": "", "research_direction": "公共卫生", "filter_requirements": "", "rejection_reasons": "", "other_info": "用户提供了论文 'Effectiveness of Collaborative Care for Older Adults With Alzheimer Disease in Primary Care A Randomized Controlled Trial'，并表示该论文应纳入。"}

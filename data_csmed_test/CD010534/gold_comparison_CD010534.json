@@ -1,0 +1,47 @@
+{
+  "review_id": "CD010534",
+  "gold_included_ids": [
+    "CD010534-bib-0004",
+    "CD010534-bib-0006",
+    "CD010534-bib-0010"
+  ],
+  "include_only": {
+    "system_ids": [],
+    "correct_ids": [],
+    "missed_ids": [
+      "CD010534-bib-0004",
+      "CD010534-bib-0006",
+      "CD010534-bib-0010"
+    ],
+    "false_positive_ids": []
+  },
+  "include_and_not_sure": {
+    "system_ids": [
+      "CD010534-bib-0004",
+      "CD010534-bib-0006",
+      "CD010534-bib-0010",
+      "CD010534-bib-0033",
+      "CD010534-bib-0034",
+      "CD010534-bib-0036",
+      "CD010534-bib-0043",
+      "CD010534-bib-0044",
+      "CD010534-bib-0045",
+      "CD010534-bib-0047"
+    ],
+    "correct_ids": [
+      "CD010534-bib-0004",
+      "CD010534-bib-0006",
+      "CD010534-bib-0010"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": [
+      "CD010534-bib-0033",
+      "CD010534-bib-0034",
+      "CD010534-bib-0036",
+      "CD010534-bib-0043",
+      "CD010534-bib-0044",
+      "CD010534-bib-0045",
+      "CD010534-bib-0047"
+    ]
+  }
+}

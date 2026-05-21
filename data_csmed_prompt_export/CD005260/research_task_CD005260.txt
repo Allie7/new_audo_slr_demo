@@ -1,3 +1,0 @@
-research_direction: Prosthetic Rehabilitation  
-filter_requirements: Randomised controlled trials (RCTs) and quasi-randomised trials conducted in the past two years that evaluated the success of prosthetic rehabilitation interventions.  
-other_info: Prosthetic rehabilitation, including measures related to comfort, quality of life, functional recovery, and independence. Specific assessment tools include the Prosthetic Socket Fit Comfort Score, Harold-Wood Stanmore Mobility Grades, Locomotor Capabilities Index, Rivermead Mobility Index, Prosthesis Evaluation Questionnaire, Satisfaction With Prosthesis Questionnaire, Functional Measure for Amputees, and Russek's Scale.

@@ -1,2 +1,0 @@
-user_identity: 儿童（学龄前）
-user_preference: 医学研究/教育背景

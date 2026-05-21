@@ -1,0 +1,4 @@
+research_direction: 神经科学 - 精神病学/癫痫  
+Intervention: High-frequency oscillations, Epilepsy surgery, Single-pulse stimulation (SPES), Wavelet transform analysis  
+filter_requirements: 研究类型为非随机试验；时间范围：25 July 2016至现在；关键词：High-frequency oscillations、Epilepsy surgery、Single-pulse stimulation (SPES)、Wavelet transform analysis；排除标准：研究类型为不涉及随机试验或IOZ的临床试验，且研究中需进行高频率振荡分析以确保数据完整性。此外，研究类型为病例回顾的情况已被排除。  
+other_info: 研究使用了Meta分析模型和统计学方法，结果显示尽管有六名患者获得完全自由，但缺乏对照组进行比较。样本量小且质量较低，限制了结论的可靠性。此外，纳入和排除标准包括随机化或非随机化试验、cohort类型、时间框架、分析终点（至少六个月后）、数据处理方法以及HFOs结果（Classes I-IV）。研究还评估了不良事件发生率和生活质量指标，并讨论了这些因素对手术结果的影响。然而，研究引用了另一篇未寻找高频率振荡的文献，导致结果不可靠。使用小波变换分析功率谱的变化显示大部分数据不完整或不准确。

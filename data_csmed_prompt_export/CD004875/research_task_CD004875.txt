@@ -1,9 +1,0 @@
-research_direction: 抗生素治疗由Mycoplasma pneumoniae引起的儿童社区获得性下呼吸道感染的最新证据综述  
-Systematic Review of M. pneumoniae Community-Acquired Lower Respiratory Infections in Children  
-filter_requirements: 
-- 使用Dickersin 1994策略减少噪声，避免非出版物。
-- 随机对照试验（RCTs）比较类固醇、四环素或利昔那定等抗生素与安慰剂或其他类别的疗效。
-- 研究设计包括随机化和分组程序。  
-Additionally, the following criteria must be met:  
-- Diagnosis of M. pneumoniae感染 via培养、PCR检测或IgM抗体水平≥1:10（单份标本）.  
-- 其他诊断方法，如配对 sera四倍升高等，作为亚组分析的补充。

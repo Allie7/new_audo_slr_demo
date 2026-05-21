@@ -1,2 +1,0 @@
-user_identity: Systematic Review Author, researcher or student
-user_preference: randomised controlled trials (RCTs) comparing antibiotics from the macrolide, tetracycline or quinolone class versus placebo or other classes

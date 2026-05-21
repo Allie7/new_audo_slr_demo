@@ -1,3 +1,0 @@
-research_direction: 医学/健康科学, 运动与健康, 比较研究或团队管理; The role of physiotherapy in the management of non-specific back pain and neck pain  
-filter_requirements: 时间范围：立即后处理（≤1天）、短期随访（1天至3个月）、中期随访（3个月至但不包括1年）和长期随访（1年以上）。排除标准：研究脖子疼痛具有长期或可能的长轨迹征、由其他病理实体引起的脖子疼痛、与脖子相关但非椎源性头痛、混合性头痛。关键词：随机对照试验（RCTs）在任何语言中。比较：假象或安慰剂组、无治疗或等待期组、运动加另一种干预 vs 该种干预。参与者：成年急性、亚急性或慢性脖子紊乱，归类为机械脖子紊乱（MND），包括Whiplash相关综合症（WAD）、肌梭性脖子疼痛和退化变化（骨质关节炎和椎体后缩）。干预措施：特定的运动疗法在治疗脖子疼痛时应用，不包括综合性治疗、多模态治疗或需要由受过训练的人进行的手工疗法；心率变异性生物反馈作为一种新的干预方式。结果衡量标准：疼痛、功能或障碍量表（如颈部功能障碍指数）、日常活动能力、重返工作、病假、患者满意度和整体感知效果/生活质量。  
-rejection_reasons: Intervention: Multimodal approach within intervention groups without ability to differentiate each treatment techniques contribution.

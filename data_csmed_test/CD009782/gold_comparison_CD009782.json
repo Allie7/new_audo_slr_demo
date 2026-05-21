@@ -1,0 +1,16 @@
+{
+  "review_id": "CD009782",
+  "gold_included_ids": [],
+  "include_only": {
+    "system_ids": [],
+    "correct_ids": [],
+    "missed_ids": [],
+    "false_positive_ids": []
+  },
+  "include_and_not_sure": {
+    "system_ids": [],
+    "correct_ids": [],
+    "missed_ids": [],
+    "false_positive_ids": []
+  }
+}

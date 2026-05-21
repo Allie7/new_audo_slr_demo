@@ -1,0 +1,25 @@
+research_direction: 心血管疾病筛查、干预效果及医疗成本分析  
+研究方向：系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析  
+filter_requirements:  
+纳入标准：随机对照试验 (RCTs)，18岁以上的健康成年人，包括有心血管疾病风险但尚未确诊者。  
+排除标准：已确诊或高度诊断的CVD患者。  
+
+Types of studies: Randomised controlled trials (RCTs).  
+filter_requirements:  
+Intervention: Systematic risk assessment for primary prevention of CVD, defined as a screening-like programme, involving a predetermined selection process of people, who are systematically invited to attend a CVD health check in a primary care or similar setting, assessing at least two of the following risk factors: Blood pressure (systolic and/or diastolic) or lipid profile (total cholesterol, LDL, LDL/HDL); and Any other modifiable risk factor (smoking, weight, diet, exercise, alcohol, stress).  
+Control: Opportunistic risk assessment for primary prevention of CVD, defined as a range of activities, occurring sporadically in any primary setting, from no risk assessment at all to incentivised case finding.  
+
+other_info: 研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。
+
+Types of outcome measures: All-cause mortality, Cardiovascular mortality, Non-fatal cardiovascular endpoints (including CHD, MI, CABG, PTCA, stroke, TIA, and peripheral artery disease), Major CVD risk factors (lipid levels, blood pressure, type 2 diabetes), Intermediate outcomes (if reported): Case-finding rates, Attendance rates, Acceptability and participants’ satisfaction, Follow-up rates. Adverse effects and costs were also considered in the analysis.  
+
+研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。
+
+Types of studies: Randomised controlled trials (RCTs).  
+filter_requirements:  
+Intervention: Systematic risk assessment for primary prevention of CVD, defined as a screening-like programme, involving a predetermined selection process of people, who are systematically invited to attend a CVD health check in a primary care or similar setting, assessing at least two of the following risk factors: Blood pressure (systolic and/or diastolic) or lipid profile (total cholesterol, LDL, LDL/HDL); and Any other modifiable risk factor (smoking, weight, diet, exercise, alcohol, stress).  
+Control: Opportunistic risk assessment for primary prevention of CVD, defined as a range of activities, occurring sporadically in any primary setting, from no risk assessment at all to incentivised case finding.  
+
+other_info: 研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。研究的主要目标是评估系统性与机会性风险评估对降低心血管死亡率的效果及其医疗成本分析。纳入标准为随机对照试验，对象为18岁以上的健康成年人，尤其是有心血管疾病风险但尚未确诊者。排除标准为已确诊或高度诊断的CVD患者。研究还考虑了随访结果、成本效益分析等方面的要求。
+
+Types of outcome measures: All-cause mortality, Cardiovascular mortality, Non-fatal cardiovascular endpoints (including CHD, MI, CABG, PTCA, stroke, TIA, and peripheral artery disease), Major CVD risk factors (lipid levels, blood pressure, type 2 diabetes), Intermediate outcomes (if reported): Case-finding rates, Attendance rates, Acceptability and participants’ satisfaction, Follow-up rates. Adverse effects and costs were also considered in the analysis.

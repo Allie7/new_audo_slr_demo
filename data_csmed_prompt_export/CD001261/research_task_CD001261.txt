@@ -1,6 +1,0 @@
-research_direction: Public Health/ Biomedical  
-filter_requirements: 筛选要求: 不使用随机对照试验; 成人和儿童; 使用Ty2la或基因修改菌株; Vi polysaccharide疫苗; 共轭疫苗; 无活性剂（针对其他疾病）; 融合搜索策略：使用Cochrane Infectious Diseases Group Specialized Register, Embase, LILACS, MEDLINE等数据库进行联合搜索，以获取Typhoid fever和其疫苗的相关研究数据。研究时间限定为最近两年。
-
-other_info: 用户对论文 'Typhoid Fever Vaccine' 感到满意，并认为该论文符合研究需求。同时，研究中还包括对Ty21a疫苗不良事件数据的分析，包括不同试验中的发生率。
-
-rejection_reasons: No relevant outcome measures

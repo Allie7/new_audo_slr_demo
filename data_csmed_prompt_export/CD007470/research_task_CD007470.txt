@@ -1,7 +1,0 @@
-research_direction: 骨健康  
-other_info: 论文标题：'Prediction of Bone Mass Density Variation by Bone Remodeling Markers in Postmenopausal Women with Vitamin D Insufficiency Treated with Calcium and Vitamin D Supplementation'，研究主题涉及骨密度变化预测，使用了骨重构标记，在特定女性群体中接受治疗。研究将重点评估钙和维生素D补充剂对骨健康的干预效果，并探讨不同剂量下的效果及其与骨健康结果的关系（剂量反应研究）。研究对象为绝经后维生素D缺乏的成年人，排除特定患者群体和剂量细节，并关注骨矿密度的变化。其他干预措施包括安慰剂组、无干预或特定剂量维生素D作为对照。效应测量使用OR、RR等指标，但数据缺失严重。部分研究显示显著效果，如Ott 1989中OR为25.6。样本量从小到大不一，数据完整性需进一步核实。
-
-论文标题：Does vitamin D stop inpatients falling? A randomised controlled trial
-
-research_direction: Vitamin D deficiency and learning experiences in older adults  
-other_info: 论文标题：'Vitamin D deficiency and learning experiences in older adults'，研究主题涉及维生素D缺乏对老年人学习体验的影响。研究可能探讨维生素D缺乏如何影响老年人的学习能力、认知功能或生活质量，并通过随机对照试验或其他方法评估不同补充剂量的效果。研究对象为老年人群体，干预措施可能包括维生素D补充剂，而对照组则接受安慰剂或其他治疗。研究结果可能揭示维生素D在改善学习能力和生活质量中的作用机制，以及其剂量与效果的关系。研究设计和样本量需进一步明确，但预期贡献了对维生素D干预在老年健康中的应用提供了新的视角。

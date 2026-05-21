@@ -1,0 +1,5 @@
+research_direction: Carpal tunnel syndrome  
+new researching directions: Comparative study of endoscopic and open surgery for carpal tunnel syndrome  
+filter_requirements: 摘要明确表明符合特定治疗方法的筛选要求  
+other_info: 研究使用了Vpertool作为评估工具  
+rejection_reasons: Not an RCT

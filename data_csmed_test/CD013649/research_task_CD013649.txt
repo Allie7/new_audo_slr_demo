@@ -1,0 +1,9 @@
+research_direction: 心导管手术. The review included adults undergoing emergency or urgent procedures such as open surgical repair of aneurysms, endovascular stenting for peripheral arterial disease, and major lower limb amputation. Other outcomes included transfusion rates, mortality, risk of reoperation, thrombotic events, and serious adverse events. Inclusion criteria were randomised controlled trials (RCTs) with interventions such as Tranexamic acid, ε-aminocaproic acid, Aprotinin, Desmopressin, Prothrombin complex concentrate (PCC), Recombinant factor VII (rFVII), Factor XIII (FXIII), Fibrinogen concentrate, and combinations thereof. Exclusion criteria were based on route, dose, timing, or frequency of drug administration.
+
+filter_requirements: 
+- Eligible criteria: Ineligible participant population - primarily cardiac with no vascular subgroup available
+- Exclude papers where the patient population is mixed with less than 80% receiving the included intervention
+
+rejection_reasons: 
+- Eligible participant population - primarily cardiac with no vascular subgroup available
+- Ineligible study design ‐ used historic controls

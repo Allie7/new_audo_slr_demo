@@ -1,0 +1,2 @@
+research_direction: 药物治疗  
+other_info: 研究对象为40-55岁、未患脑卒中或TIA的年轻女性及有糖尿病并伴有血管疾病或高血压的患者。研究采用随机化对照试验方法，评估PPAR-γ激动剂（包括pioglitazone、rosiglitazone、glitazone等）与安慰剂的疗效和安全性，并评估终点指标如心血管事件发生率和HbA1c变化。过滤要求：纳入标准为研究对象未明确涉及脑卒中或TIA患者，且需评估再发中风、不良事件等终点指标。研究方向包括糖尿病预防、胰岛素抵抗及脑血管疾病。系统之前无法确定论文 'Pioglitazone after Ischemic Stroke or Transient Ischemic Attack' 应纳入。

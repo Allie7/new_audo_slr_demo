@@ -1,0 +1,42 @@
+research_direction: 研究方法在医学中的应用，包括随机对照试验（RCT）、准随机试验（quasi-RCT）和集群随机试验（cluster-RCT），比较ECMO与常规支持的有效性，针对成人心脏或呼吸系统疾病患者，排除交叉试验，并且参与者必须18岁以上。纳入标准为使用泵驱动的VV或VA环路，与常规管理如间歇性正压通气相比。
+
+filter_requirements: 研究类型：所有随机对照试验（RCT）比较成人ECMO与常规支持；准随机试验和集群随机试验也被包括在内，但排除交叉试验。参与者需为18岁以上且有心脏或呼吸系统疾病，或两者均有；排除因手术而预先设定 ECMO 用于手术的参与者。纳入标准包括使用泵驱动的VV或VA环路，与所有形式的常规管理（如间歇性正压通气）相比。
+
+other_info: {
+    "General Information": {
+        "Study Eligibility": {
+            "Eligibility criteria": [
+                "参与者必须为18岁以上",
+                "有心脏或呼吸系统疾病，或两者均有",
+                "排除因手术而预先设定ECMO的情况"
+            ],
+            "Inclusion criteria": [
+                "使用泵驱动的VV或VA环路",
+                "与常规管理（如间歇性正压通气）相比"
+            ]
+        }
+    },
+    "Study Design": {
+        "Design type": ["RCT", "quasi-RCT", "cluster-RCT"]
+    },
+    "Endpoints": [
+        {
+            "30天内全部死亡率",
+            "6个月内存活率",
+            "住院时间",
+            "残疾程度",
+            "不良事件",
+            "健康相关生活质量",
+            "长期健康状况和福祉",
+            "成本效益"
+        }
+    ],
+    "Data Extraction": {
+        "Extraction methods": [
+            "JSON结构化为数组或层次结构",
+            "提取信息基于预定义的字段",
+            "标记不确定性的字段（如'Possible conflicts of interest'）",
+            "提供占位符或明确缺失数据"
+        ]
+    }
+}

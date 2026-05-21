@@ -1,0 +1,7 @@
+{
+  "research_direction": "急诊气道干预",
+  "filter_requirements": "包括随机对照试验（RCTs），排除回顾性研究或其他非-随机化/准-随机化试验；研究对象为成人和 paediatric 患者在紧急情况下进行气管插管的患者，包括创伤、心肌梗死、 arrhythmia 等。",
+  "other_info": "终点指标：全因死亡率、30天内器官功能衰竭、呼吸相关死亡率；排除标准：非-RCTs；研究药物：单次剂量的乙酰胆碱、吗啡、维西那、丙戊达、托吡酯与其他快速-作用静脉单剂量药物（如etomidate）相比。",
+  "filter_reasons": "终点指标不明确，与研究方向不符",
+  "filter_years": "近两年"
+}

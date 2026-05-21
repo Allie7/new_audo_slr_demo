@@ -1,2 +1,0 @@
-research_direction: Thrombosis and related fields  
-filter_requirements: 近两年 | (thrombus* or thrombopro* or thrombotic* or thrombolic* or thromboemboli* or thrombos* or embol*)：TI,AB,KY | Pulmonary Embolism | (PE or DVT or VTE) | ((vein* or ven*) near thromb*) | (blood near3 clot*) | (pulmonary near3 clot*) | Studies must include patients aged 18 years or older with a diagnosis of objectively confirmed acute thromboembolism (DVT or PE).

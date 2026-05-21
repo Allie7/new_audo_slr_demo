@@ -1,0 +1,4 @@
+{
+    "user_identity": "researcher focusing on dementia case management interventions",
+    "user_preference": "寻找更详细的case管理干预效果和成本效益分析的论文"
+}

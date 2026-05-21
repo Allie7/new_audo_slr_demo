@@ -1,0 +1,2 @@
+user_identity: 医学相关研究者
+user_preference: 医学影像学、放射影像学

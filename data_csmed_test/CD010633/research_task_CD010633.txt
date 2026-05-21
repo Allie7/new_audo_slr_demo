@@ -1,0 +1,67 @@
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 神经退行性疾病诊断方法、神经退行性疾病诊断方法的比较研究以及基于单光子发射计算机断射技术的脑疾病诊断准确性评估  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，这在诊断LBD时具有不确定性；- MMSE得分24/30低于平均值，提示神经退行性疾病可能性，但不能单独确诊LBD；- MRI脑 putamen和caudate的 hypoperfusion提示潜在的帕金森病而非LBD；- 缺乏脑部结构影像对比限制了诊断。  
+结论：尽管临床表现和认知障碍与LBD一致，但基于DAT扫描的结果（正T值）需要谨慎解读。负A值增加了诊断不确定性，使诊断ambiguous。缺乏tau过磷酸化的影像证据限制了确诊。进一步的MRI检查是必要的。  
+最终建议：根据测试结果，建议进行额外的MRI检查以确认tau过磷酸化。结合临床指南和专家意见进行综合评估将有助于做出更明确的诊断决定。
+
+研究任务: 神经退行性疾病诊断方法  
+research_direction: 分析LBD与Alzheimer's disease之间的生物学差异，探讨突触单胺末端在两种疾病中的表达及其潜在关联  
+filter_requirements: 近两年；研究类型为Types of studies (a)和(b)；排除标准：临床诊断为DLB或AD；参考标准为神经病理学诊断；指标测试为SPECT或PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术  
+Search methods: 近两年的文献搜索，包括MEDLINE、Embase、BIOSIS Previews、PsycINFO、CINAHL、LILACS、Web of Science和会议论文集。  
+Selection criteria: 研究类型为(a)诊断病例对照研究或(b)横断面研究；排除标准：临床诊断为DLB或AD；参考标准：神经病理学诊断；指标测试：SPECT/PET扫描脑DA T区域，以及FP-CIT单光子发射计算机断射技术。数据收集与分析：由两位研究作者独立筛选研究，提取数据至2x2表格，并计算敏感性和特异性及其95%置信区间。采用QUADAS-2工具及额外评估项目来评估方法学质量。  
+Main results: 未发现适用研究；SPECT/PET扫描对可能DLB或轻度 dementia患者作为诊断测试的准确性尚无明确结论。FP-CIT单光子发射计算机断射技术在诊断Dementia with Lewy bodies时具有一定的参考价值，但需要结合临床表现和神经病理学检查进行综合评估。  
+Other information: 测试结果表明：- 正T值（18.5）提示tau过磷酸化；- 负A值（-6.7）表示角边缘磷酸化较低，

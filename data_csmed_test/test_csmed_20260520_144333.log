@@ -1,0 +1,219 @@
+2026-05-20 14:43:33,740 [INFO] test_csmed: 测试参数: {'num_reviews': 2, 'offset': 101, 'skip_prescreen': False, 'workers': 1}
+2026-05-20 14:43:33,770 [INFO] test_csmed: Reviews metadata 加载完成: 213 个 reviews
+2026-05-20 14:43:34,510 [INFO] test_csmed: 论文集加载完成: 3333 篇去重论文
+2026-05-20 14:43:34,517 [INFO] test_csmed: Gold standard 加载完成: 213 个 reviews, 3333 条决策
+2026-05-20 14:43:34,517 [INFO] test_csmed: 可测试的 review 数: 213
+2026-05-20 14:43:34,518 [INFO] test_csmed: 本次测试 2 个 review, 并发线程数: 1
+2026-05-20 14:43:34,518 [WARNING] test_csmed: 论文 CD008093-bib-0027 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 14:43:34,518 [WARNING] test_csmed: 论文 CD008093-bib-0058 的 title 或 abstract 为空，跳过 (title=空, abstract=空)
+2026-05-20 14:43:34,518 [INFO] test_csmed: build_paper_list_for_review: 跳过 2 篇无效论文，剩余 9 篇
+2026-05-20 14:43:34,519 [WARNING] test_csmed: 论文 CD008170-bib-0041 的 title 或 abstract 为空，跳过 (title=有, abstract=空)
+2026-05-20 14:43:34,519 [INFO] test_csmed: build_paper_list_for_review: 跳过 1 篇无效论文，剩余 21 篇
+2026-05-20 14:43:34,519 [INFO] test_csmed: ============================================================
+2026-05-20 14:43:34,519 [INFO] test_csmed: 开始处理 review: CD008093
+2026-05-20 14:43:34,520 [INFO] test_csmed: Review title: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 14:43:34,520 [INFO] test_csmed: 总论文数: 9, gold included: 7
+2026-05-20 14:43:34,520 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 14:43:34,520 [INFO] test_csmed: [阶段1a] 初始 query: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 14:43:34,520 [INFO] auto_slr: [Assistant] extract_and_record 输入: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+2026-05-20 14:43:42,087 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:43:42,090 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 14:43:44,305 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:43:44,307 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 系统综述摘要:
+Background Sudden cardiac death (SCD) is one of the main causes of cardiac death. There are two main strategies to prevent it: managing cardiovascular risk factors and reducing the risk of ven
+2026-05-20 14:43:44,307 [INFO] auto_slr: [Assistant] extract_and_record 输入: 系统综述摘要:
+Background Sudden cardiac death (SCD) is one of the main causes of cardiac death. There are two main strategies to prevent it: managing cardiovascular risk factors and reducing the risk of ventricular arrhythmias. Implantable cardiac defibrillators (ICDs) constitute the standard therapy for ...
+2026-05-20 14:43:50,093 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:43:50,093 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Antibarry drugs in prevention of SCD", "filter_requirements": "Cochrane Central Register of Controlled Trials (CENTRAL), MEDLINE, EMBASE, CINAHL, LILACS; randomised and quasi-randomised trials; English language restriction; inclusion criteria for primary prevention: high risk for SCD; secondary prevention: recovered from cardiac arrest or syncope due to VT/VF", "rejection_reasons": "", "other_info": "The study found that amiodarone reduced SCD, cardiac mortality, and all-cause mortality in primary prevention compared to placebo. In secondary prevention, it increased the risk of these outcomes. Amiodarone was associated with pulmonary and thyroid adverse events."}
+2026-05-20 14:43:53,837 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:43:53,839 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number. Adults (1
+2026-05-20 14:43:53,839 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number. Adults (16 years or older) with: reduced LVEF (< 40%), independent of the aetiology (ischaemic or non‐ischaem...
+2026-05-20 14:43:57,412 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:43:57,412 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Studies on adults (16 years or older) with reduced LVEF (< 40%), independent of the aetiology (ischaemic or non-ischaemic); or high risk for SCD, e.g. participants without structural heart disease but with a high risk cardiac condition, such as refractory sustained or non-sustained VT, or non-suppressible malignant arrhythmias induced by EP study.", "filter_requirements": "Randomised and quasi-randomised controlled trials. We considered a trial as quasi-randomised when the authors used methods such as alternation or case record number.", "rejection_reasons": "", "other_info": ""}
+2026-05-20 14:44:02,603 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:02,604 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case r
+2026-05-20 14:44:02,604 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Randomised and quasi‐randomised controlled trials. We considered a trial as quasi‐randomised when the authors used methods such as alternation or case record number.",
+  "Types of participants": "Adults (16 years or older) with: reduced LVEF (< 40%), i...
+2026-05-20 14:44:08,239 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:08,240 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Heart disease, cardiology, arrhythmias", "filter_requirements": "Exclusion criteria: People with genetic arrhythmia syndromes with specific treatments, such as Brugada syndrome; long QT syndrome; arrhythmogenic right ventricular dysplasia. Types of studies: Randomised and quasi-randomised controlled trials. We considered a trial as quasi-randomised when the authors used methods such as alternation or case record number.", "rejection_reasons": "", "other_info": "Types of interventions: Amiodarone at ≥200 mg/d, by any route of administration, for at least six months, compared to other antiarrhythmics, placebo or no intervention. Types of outcome measures: Sudden cardiac death (as defined in the studies), all-cause mortality, cardiac mortality (as defined in the studies), quality of life, adverse effects."}
+2026-05-20 14:44:15,763 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:15,764 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy": "CENTRAL #1 MeSH descriptor: [Amiodarone] this term only #2 amiodaron* #3 cordarex #4 amiobeta #5 amiodarex #6 cordaron* #7 trangorex #8 amio
+2026-05-20 14:44:15,764 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategy": "CENTRAL #1 MeSH descriptor: [Amiodarone] this term only #2 amiodaron* #3 cordarex #4 amiobeta #5 amiodarex #6 cordaron* #7 trangorex #8 amiohexal #9 aratac #10 braxan #11 corbionax #12 kordaron #13 ortacrone #14 rytmarone #15 tachydaron #16...
+2026-05-20 14:44:25,618 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:25,619 [WARNING] auto_slr: JSON 提取失败，原始文本: Here's the extracted information organized into a structured YAML format based on the provided JSON data:
+
+```yaml
+# EMBASE OVID Information
+
+## Drug Keywords
+- Amiodarone
+- Cordarex
+- Amiobeta
+- Amio...
+2026-05-20 14:44:25,619 [WARNING] auto_slr: 信息抽取 JSON 解析失败，原始返回:
+Here's the extracted information organized into a structured YAML format based on the provided JSON data:
+
+```yaml
+# EMBASE OVID Information
+
+## Drug Keywords
+- Amiodarone
+- Cordarex
+- Amiobeta
+- Amiodarex
+- Cordarone
+- Trangorex
+- Miohexal
+- Aratac
+- Braxan
+- Corbionax
+- Kordaron
+- Ortracron
+- Rytmarone
+- Tachydaron
+
+## Heart Conditions
+- Sudden Death
+- Heart Arrest
+- Cardiopulmonary Resuscitation
+- Tachycardia, Ventricular
+- Heart Failure
+- Myocardial Infarction
+- Ventricular Fibrillation
+- Mortality
+
+# MEDLINE OVID Information
+
+## Drug Keywords
+- Amiodarone
+- Cordarex
+- Amiobeta
+- Amiodarex
+- Cordaron
+- Trangorex
+- Miohexal
+- Aratac
+- Braxan
+- Corbionax
+- Kordaron
+- Ortracron
+- Rytmarone
+- Tachydaron
+
+## Heart Conditions
+- Sudden Death
+- Heart Arrest
+- Cardiopulmonary Resuscitation
+- Tachycardia, Ventricular
+- Heart Failure
+- Myocardial Infarction
+- Ventricular Fibrillation
+- Mortality
+```
+
+This YAML format organizes the extracted information into sections for each database and categorizes related terms together for clarity.
+2026-05-20 14:44:25,619 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"other_info": "Here's the extracted information organized into a structured YAML format based on the provided JSON data:\n\n```yaml\n# EMBASE OVID Information\n\n## Drug Keywords\n- Amiodarone\n- Cordarex\n- Amiobeta\n- Amiodarex\n- Cordarone\n- Trangorex\n- Miohexal\n- Aratac\n- Braxan\n- Corbionax\n- Kordaron\n- Ortracron\n- Rytmarone\n- Tachydaron\n\n## Heart Conditions\n- Sudden Death\n- Heart Arrest\n- Cardiopulmonary Resuscitation\n- Tachycardia, Ventricular\n- Heart Failure\n- Myocardial Infarction\n- Ventricular Fibrillation\n- Mortality\n\n# MEDLINE OVID Information\n\n## Drug Keywords\n- Amiodarone\n- Cordarex\n- Amiobeta\n- Amiodarex\n- Cordaron\n- Trangorex\n- Miohexal\n- Aratac\n- Braxan\n- Corbionax\n- Kordaron\n- Ortracron\n- Rytmarone\n- Tachydaron\n\n## Heart Conditions\n- Sudden Death\n- Heart Arrest\n- Cardiopulmonary Resuscitation\n- Tachycardia, Ventricular\n- Heart Failure\n- Myocardial Infarction\n- Ventricular Fibrillation\n- Mortality\n```\n\nThis YAML format organizes the extracted information into sections for each database and categorizes related terms together for clarity."}
+2026-05-20 14:44:33,251 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:33,252 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=筛选相关论文
+2026-05-20 14:44:40,239 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:40,239 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】研究关注左心室射出分数<40%的成年人，特别是高风险猝死患者及特定遗传综合征患者  
+【关键词】左心室射出分数<40%，随机对照试验，高风险猝死，特定遗传综合征  
+【筛选要求】研究类型为随机对照试验（RCT）或准随机对照试验（quasi-RCT），排除患有Brugada综合征、长QT综合征和右室arrhythmogenic dysplasia的患者；纳入标准为LVEF<40%及高风险猝死条件。  
+【排除标准】排除患有Brugada综合征、长QT综合征和右室arrhythmogenic dysplasia的患者。  
+【已确认满意论文的共同特征】研究对象为左心室射出分数<40%且...
+2026-05-20 14:44:40,240 [INFO] test_csmed: [阶段1.5] 跳过 metadata 初筛，全量 9 篇进入筛选
+2026-05-20 14:44:40,240 [INFO] test_csmed: [阶段1.5评估] Metadata初筛(全量): {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+2026-05-20 14:44:40,240 [INFO] test_csmed: [阶段1.8] 跳过 Title 筛选，全量 9 篇进入阶段2
+2026-05-20 14:44:40,240 [INFO] test_csmed: [阶段2 轮次1] 开始: satisfied=0/3
+2026-05-20 14:44:40,240 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 14:44:45,027 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:44:45,027 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】研究具有左心室射出分数<40%且高风险sudden cardiac death的成年人及特定遗传综合征患者的心脏病况
+【关键词】Left ventricular ejection fraction <40%, sudden cardiac death, Brugada syndrome, long QT syndrome, arrhythmogenic right ventricular dysplasia, Amiodarone
+【筛选要求】随机和准随机对照试验，排除Brugada综合征、long QT综合征和arrhythmogenic right ventricular dy...
+2026-05-20 14:44:45,028 [INFO] test_csmed:   未筛选论文: 9 篇
+2026-05-20 14:45:19,430 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:19,432 [INFO] test_csmed:   本轮筛选: included=0, excluded=0, not_sure=9
+2026-05-20 14:45:19,434 [INFO] test_csmed:   本轮无 include/exclude 论文，退出迭代
+2026-05-20 14:45:19,434 [INFO] test_csmed: [阶段2 完成] 共 1 轮迭代, satisfied=0, labeled_correctly=0, included=0, excluded=0, not_sure=0
+2026-05-20 14:45:19,435 [INFO] test_csmed: [阶段2→2.5] 重置 9 篇 not_sure/exclude 论文为 unscreened（用户拒绝的保留），将在阶段2.5重新筛选
+2026-05-20 14:45:19,435 [INFO] test_csmed: [阶段2.5 轮次1] 全量筛选剩余 9 篇 unscreened 论文
+2026-05-20 14:45:19,435 [INFO] auto_slr: [Assistant] provide_context 输入: task_description=对论文进行详细筛选，根据摘要判断是否纳入
+2026-05-20 14:45:23,646 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:23,647 [INFO] auto_slr: [Assistant] provide_context 输出: 【研究方向】研究对象为LVEF <40%且SCD高风险的成年人
+【关键词】 sudden cardiac death, LVEF <40%, 高风险心脏条件, Amiodarone, 准随机对照试验
+【筛选要求】研究类型为随机或准随机对照试验（RCTs或quasi-RCTs）
+【排除标准】排除Brugada综合征、长QT综合征和arrhythmogenic right ventricular dysplasia患者
+【已确认满意论文的共同特征】研究对象为LVEF <40%且SCD高风险的成人，干预措施为≥200 mg/d Amiodarone与其他抗 arrhythmics与安慰剂或无干预比较...
+2026-05-20 14:45:37,708 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:37,709 [WARNING] auto_slr: JSON 提取失败，原始文本: ```json
+[
+  {
+    "title": "Randomised trial of effect of amiodarone on mortality in patients with left-ventricular dysfunction after recent myocardial infarction: EMIAT",
+    "authors": "",
+    "year...
+2026-05-20 14:45:37,709 [WARNING] test_csmed:   全量筛选 JSON 解析失败
+2026-05-20 14:45:37,711 [INFO] test_csmed: [阶段2.5 完成] 共 1 轮全量筛选, included=0, excluded=0, not_sure=9
+2026-05-20 14:45:37,712 [INFO] test_csmed: [最终统计] included=0, excluded=0, not_sure=9, unscreened=0, 总论文数=9, 三类总计=9
+2026-05-20 14:45:37,712 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include+not_sure): {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+2026-05-20 14:45:37,712 [INFO] test_csmed: [阶段2评估] 筛选阶段 (include-only): {'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'num_relevant': 7, 'num_retrieved': 0, 'num_true_positives': 0}
+2026-05-20 14:45:37,712 [INFO] test_csmed: [Gold对比] 系统 include vs Gold included: P=0.7778, R=1.0, F1=0.875
+2026-05-20 14:45:37,712 [INFO] test_csmed:   系统 include: 9, Gold included: 7, 交集: 7
+2026-05-20 14:45:37,712 [INFO] test_csmed:   正确纳入 (TP): 7
+2026-05-20 14:45:37,712 [INFO] test_csmed:   遗漏 (FN): 0
+2026-05-20 14:45:37,712 [INFO] test_csmed:   误判 (FP): 2
+2026-05-20 14:45:37,713 [INFO] test_csmed: ============================================================
+2026-05-20 14:45:37,713 [INFO] test_csmed: [完成] review CD008093 (1/2)
+2026-05-20 14:45:37,713 [INFO] test_csmed: 开始处理 review: CD008170
+2026-05-20 14:45:37,713 [INFO] test_csmed: Review title: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 14:45:37,713 [INFO] test_csmed: 总论文数: 21, gold included: 17
+2026-05-20 14:45:37,713 [INFO] test_csmed: [阶段1] 信息抽取：以 review title 作为初始 query，逐步补充信息
+2026-05-20 14:45:37,713 [INFO] test_csmed: [阶段1a] 初始 query: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 14:45:37,713 [INFO] auto_slr: [Assistant] extract_and_record 输入: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension
+2026-05-20 14:45:40,413 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:40,413 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "心血管系统；肾脏疾病", "filter_requirements": "过去五年", "rejection_reasons": "", "other_info": "药理作用对比"}
+2026-05-20 14:45:42,423 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:42,424 [INFO] test_csmed: [阶段1b-1] 补充输入 (前200字): 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background This is the first update of a Cochrane Review first published in 2015. Renin angiotensin system (RAS) inhibitors include angiotensin converting enz
+2026-05-20 14:45:42,425 [INFO] auto_slr: [Assistant] extract_and_record 输入: 研究类型 (review_type): Intervention
+
+系统综述摘要:
+Background This is the first update of a Cochrane Review first published in 2015. Renin angiotensin system (RAS) inhibitors include angiotensin converting enzyme (ACE) inhibitors, angiotensin receptor blockers (ARBs) and renin inhibitors. They are widely pre...
+2026-05-20 14:45:47,605 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:47,606 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "医学研究者或学生", "user_preference": "", "research_direction": "ACE抑制剂、ARBs和ACEI与抗高血压药物的比较", "filter_requirements": "时间范围：近两年；关键词：Cochrane Hypertension Group, RCTs；排除标准：已证实的2级高血压", "rejection_reasons": "", "other_info": "研究背景：针对高血压患者，特别是糖尿病患者，评估RAS抑制剂与其他抗高血压药物的疗效和安全性。研究方法：搜索了多个数据库，包括Cochrane Hypertension Specialised Register等。筛选要求：随机对照试验（RCTs），≥130/85 mmHg，比较RAS抑制剂与其他抗高血压药物类别的疗效和安全性。结果与结论：RAS抑制剂在某些方面优于其他药物，但整体证据质量较低，尤其是对于心力衰竭和中风等严重不良事件的控制效果存在差异。"}
+2026-05-20 14:45:49,237 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:55,083 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:55,084 [INFO] test_csmed: [阶段1b-2] 补充输入 (前200字): 纳入/排除标准 (criteria_text):
+Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum f
+2026-05-20 14:45:55,084 [INFO] auto_slr: [Assistant] extract_and_record 输入: 纳入/排除标准 (criteria_text):
+Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum follow‐up of six months. People with primary elevated BP (that equals or exceeds 130/85 mmHg). We cho...
+2026-05-20 14:45:59,424 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:45:59,425 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "Clinical study on antihypertensive drugs and cardiovascular events", "filter_requirements": "RCTs with parallel design; double-blind; minimum follow-up of six months. People with primary elevated BP (that equals or exceeds 130/85 mmHg). Excluded people with proven secondary hypertension. Includes ACE inhibitors, ARBs, renin inhibitors, and other antihypertensive drugs. Excludes thiazides, beta-blockers, CCBs, alpha-blockers, or central nervous system (CNS) active drugs.", "rejection_reasons": "", "other_info": "Detailed inclusion criteria for clinical study on antihypertensive drugs and cardiovascular outcomes."}
+2026-05-20 14:46:06,489 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:46:06,489 [INFO] test_csmed: [阶段1b-3] 补充输入 (前200字): 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; 
+2026-05-20 14:46:06,489 [INFO] auto_slr: [Assistant] extract_and_record 输入: 结构化纳入/排除标准 (criteria):
+{
+  "Types of studies": "Study design must meet the following criteria: RCTs with parallel design;   double‐blind;   minimum follow‐up of six months. RCTs with parallel design; double‐blind; minimum follow‐up of six months.",
+  "Types of participants": "People with primary ele...
+2026-05-20 14:46:11,495 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:46:11,496 [INFO] auto_slr: [Assistant] extract_and_record 输出: {"user_identity": "", "user_preference": "", "research_direction": "研究设计必须满足RCCT双盲并行设计，最少随访六个月", "filter_requirements": "", "rejection_reasons": "", "other_info": ""}
+2026-05-20 14:46:17,967 [INFO] httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 14:46:17,968 [INFO] test_csmed: [阶段1b-4] 补充输入 (前200字): 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Database: Ovid MEDLINE(R) 1946 to Present with Daily Update Search Date: 20 November 2017 ‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+2026-05-20 14:46:17,968 [INFO] auto_slr: [Assistant] extract_and_record 输入: 搜索策略 (search_strategy):
+{
+  "Appendix 1. Search strategies": "Database: Ovid MEDLINE(R) 1946 to Present with Daily Update Search Date: 20 November 2017 ‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐ 1 exp Angiotensin‐Converting Enzyme Inhibitors/  2 ((angiotensin$ or...

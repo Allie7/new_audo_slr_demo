@@ -1,0 +1,5 @@
+research_direction: Medical interventions in cardiovascular diseases; current research progress: Randomised controlled trials with specific treatments for acute aortic dissection (AAA); screening criteria: 2015-2023年发表的英文研究论文，排除非英文研究论文，要求参与者为男性或女性，年龄在45岁以下，有无急性腹膜袢病史，有无进行过经皮或开放性手术修复，结果测量包括所有死亡、心血管死亡、与急性腹膜袢有关的死亡、严重创伤、生活质量变化及药物相关不良事件和死亡。研究方向还包括Aortic Aneurysm, Vascular Surgical Procedures, Platelet Aggregation Inhibitors, Phosphodiesterase Inhibitors, Tetrazoles, Antiplatelet或anti-platelet, Antihypertensive Agents, Adrenergic beta-Antagonists, Angiotensin-Converting Enzyme Inhibitors, Diuretics, Calcium Channel Blockers, Amlodipin或diltiazem或diltiazam或felodipin, Nicardipin或nifedipin或nimodipin, Dnisoldipin或olodipin等药物的研究。筛选标准：排除理由包括主研究负责人因违反诚信（未获得患者书面知情同意和疏忽数据收集）被解雇，并提供了一份报告链接：Erasmus MC Follow‐Up Committee 2012 。系统误判为纳入。此外，研究方向还包括DECREASE Study. research_direction: Perioperative myocardial ischemic injury in high-risk vascular surgery patients; rejection_reasons: 研究关注的是非心肌手术患者的心血管损伤，与急性腹膜袢病无关
+
+research_direction: 急性腹膜袢病
+filter_requirements: 排除基于摘要未涉及急性腹膜袢病的具体治疗方法的论文
+rejection_reasons: 摘要讨论了atorvastatin对CRP水平的影响，但未涉及急性腹膜袢病或评估针对该病的具体治疗方法

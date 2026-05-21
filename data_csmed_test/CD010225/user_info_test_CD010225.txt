@@ -1,0 +1,2 @@
+user_identity: Anaesthetist  
+user_preference: Etomidate for emergency airway intervention

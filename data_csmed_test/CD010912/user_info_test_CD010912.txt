@@ -1,0 +1,2 @@
+user_identity: 研究人员或学生
+user_preference: 医学/健康领域，关注工作姿势与健康的关系

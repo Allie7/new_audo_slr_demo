@@ -1,0 +1,10 @@
+research_direction: 角膜病、眼压、过滤手术等; 近两年; 随机对照试验 (RCTs) only; 研究对象为接受晶体取出术的参与者; 排除同时接受抗-血管内皮生长因子（VEGF）治疗并配合针刺 procedure 的参与者; 按失败风险分为高、中、低三类:  
+- 高风险: 前置有青光眼或白内障手术史及二次青光眼或先天性青光眼;  
+- 中风险: 同时接受晶体取出术及角膜手术;  
+- 低风险: 首次晶体取出术且无其他先发眼科手术历史  
+
+types of interventions: 任何浓度和剂量的抗-VEGF药物通过角膜注射对比任何其他抗疤痕药物或无额外治疗 (包括系统性或无治疗/安慰剂). 特别是，本研究将比较角膜内注射的贝伐珠单抗（1.25 mg, 0.05 mL）与结膜下注射的anti-VEGF药物在眼科手术患者中的效果。  
+types of outcomes: 成功率 (目标 IOP <21 mm Hg 不需干预) 及系统性不良事件发生率; 其他指标包括 12 个月后平均 IOP; 副作用类型包括但不限于伤口渗漏、视力下降、出血、角膜问题、眼内感染及晶体后混浊.  
+
+filter_requirements: 时间范围: 1年  
+other_info: 关键词包括MeSH描述词如Glaucoma、Intraocular Pressure、Filtering Surgery等，以及trabeculectom*、sclerostom*等。此外，本研究排除了anti-VEGF药物通过角膜注射而非结膜下注射的情况。

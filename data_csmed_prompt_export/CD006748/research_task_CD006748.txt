@@ -1,2 +1,0 @@
-research_direction: 机器学习在教育领域的应用; 行为干预
-filter_requirements: 近两年的研究；纳入随机化对照试验和元分析研究，研究设计包括个体或集群设计；排除标准为不涉及教育领域的干预措施和未使用机器学习技术的控制干预。其他信息：研究主要关注机器学习算法在教育数据分析、个性化教学和行为干预中的应用及其效果评估，采用机器学习模型和大数据分析工具进行测量。研究主题：Web-Based Personalized Feedback和Social Norms对酒精干预的有效性；论文标题：The Effectiveness of a Web-Based Personalized Feedback and Social Norms Alcohol Intervention on United Kingdom University Students: Randomized Controlled Trial

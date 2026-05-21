@@ -1,0 +1,13 @@
+research_direction: Dexmedetomidine versus propofol/midazolam for long-term sedation during mechanical ventilation  
+filter_requirements: 符合随机对照试验的要求，研究对象为需要机械通气超过24小时的重症监护室患者，并且预期镇静时间超过24小时。我们排除集群、交叉和非随机化随机化试验。我们包括 randomized controlled trials (RCTs) of critically ill participants who required mechanical ventilation for more than 24 hours and anticipated sedation for more than 24 hours. We exclude RCTs in which participants only had non-invasive mechanical ventilation or where explicit statement about sedation duration is missing. We include studies comparing dexmedetomidine versus alternative sedative agents, such as propofol and midazolam. The research endpoints include:  
+- 机械通气持续时间（as defined by authors of the studies）  
+- Delirium risk（as defined by any diagnostic criteria, such as CAM-ICU）  
+- coma risk（as defined by authors of the studies）  
+- 不良事件发生率（包括心率减慢、低血压、高血压等）  
+- weaning time  
+- 重症监护室长度-of-stay (ICU LOS)  
+- 死亡率（if mortality is assessed at various follow-up times, we will include only the one that most closely approximates to that used in other included studies.）  
+Other_info: 研究局限性包括高异质性和低质量证据，以及对关键结局指标（如机械通气持续时间、完全镇静时间等）的缺失。研究设计方面存在随机化不足和潜在偏倚的问题。此外，干预组在不良事件发生率和死亡率上均显著高于对照组，这可能受到多种因素的影响，需要进一步验证。  
+
+研究终点：  
+- 我们将评估dexmedetomidine用于长期镇静的安全性和效果，并比较其与propofol和midazolam的疗效和安全性。

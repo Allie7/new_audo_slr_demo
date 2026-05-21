@@ -1,0 +1,5 @@
+research_direction: 糖尿病视网膜病变研究（Diabetic Retinopathy）的研究方向包括光 coherence 术（OCT）在诊断糖尿病视网膜病变中的应用。系统回顾显示，OCT能够通过测量视网膜光学反射率提供客观的定量评估，从而精确评估中央视网膜结构和厚度。与主观的视网膜底照相或眼科医生的 fundus biomicroscopy 相比，OCT在诊断糖尿病 macular oedema, DMO 和 combined macular oedema, CMEC 方面具有更高的准确性。研究设计涵盖 consecutive series 和病例对照研究，并将 OCT 退黄症厚度测量值与特定阈值进行比较，以判断其与眼科医生的诊断结果一致。研究地点包括眼科学实践和不同国家，DMO 的预估发生率低于 10%，但高于先前研究的结果。CMEC 的定义基于 ETDRS 标准和临床相关性。这些研究为 OCT 在糖尿病视网膜病变诊断中的应用提供了重要的参考依据。此外，角膜生物镜与 OCT 比较用于检测糖尿病视网膜黄斑的接触，这也是一种研究方向。
+
+研究_direction: 视网膜厚度与视敏
+filter_requirements: 系统误判为排除
+other_info: 论文 'Central retinal thickness measured with HD-OCT shows a weak correlation with visual acuity in eyes with CSME' 应纳入

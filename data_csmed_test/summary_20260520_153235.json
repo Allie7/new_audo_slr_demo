@@ -1,0 +1,60 @@
+{
+  "test_time": "2026-05-20T15:32:35.742047",
+  "test_params": {
+    "num_reviews": 1,
+    "offset": 101,
+    "skip_prescreen": false,
+    "workers": 1
+  },
+  "num_reviews": 1,
+  "per_review_results": [
+    {
+      "review_id": "CD008093",
+      "review_title": "Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death",
+      "review_type": "",
+      "num_papers": 9,
+      "num_gold_included": 7,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "num_relevant": 7,
+        "num_retrieved": 7,
+        "num_true_positives": 6
+      },
+      "screening_include_metrics": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "num_relevant": 7,
+        "num_retrieved": 7,
+        "num_true_positives": 6
+      },
+      "scoring_metrics": null,
+      "gold_comparison": {
+        "precision": 0.8571,
+        "recall": 0.8571,
+        "f1": 0.8571,
+        "num_relevant": 7,
+        "num_retrieved": 7,
+        "num_true_positives": 6
+      },
+      "gold_comparison_detail": {
+        "num_correct": 6,
+        "num_missed": 1,
+        "num_false_positive": 1
+      }
+    }
+  ]
+}

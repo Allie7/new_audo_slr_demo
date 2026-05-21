@@ -1,0 +1,2 @@
+user_identity: Medical researcher with expertise in cardiovascular diseases and Colchicine treatment  
+user_preference: medication research preferences: colchicine, colcemid, demecolcine, colchamine, lumicolchicine

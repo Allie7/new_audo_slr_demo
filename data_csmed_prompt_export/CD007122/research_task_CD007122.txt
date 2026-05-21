@@ -1,4 +1,0 @@
-research_direction: 使用 Glycemic Plus Fetal Ultrasound Parameters 和 Glycemic Parameters 来确定 Insulin Therapy in Gestational Diabetes With Fasting Hyperglycemia  
-filter_requirements: 我们包括了随机化对照试验，这些试验评估了诊断妊娠糖尿病的参数（如Glycemic Plus Fetal Ultrasound Parameters和Glycemic Parameters）以及胰岛素治疗方案的效果。我们排除了非随机化对照试验、准随机设计试验（如交替日或出生日期分配到干预组），以及集群或交叉设计试验，除非它们专门针对随机化对照试验且涉及多个干预措施。  
-我们仅包括为评估诊断测试和干预措施效果而随机化分配的受试者。研究对象应为妊娠高血糖或有风险孕妇（如肥胖、一级亲属有糖尿病、高危种族群体、空腹血糖或随机血糖水平较高，或曾患有妊娠糖尿病）。我们排除了接受过非妊娠糖尿病诊断的受试者。  
-other_info: 研究的主要目标是评估Glycemic Plus Fetal Ultrasound Parameters和Glycemic Parameters在确定Insulin Therapy方案中的应用效果，并分析其对妊娠高血糖患者血糖控制的影响。筛选标准包括随机化对照试验、排除准随机设计试验，以及特定的研究对象和受试者群体（如妊娠高血糖或有风险孕妇）。系统性回顾将涵盖多个方面，包括这些参数在不同风险人群中表现差异的可能性及其在胰岛素治疗方案选择中的应用效果分析。此外，还将评估不同胰岛素控制策略对患者整体健康的影响。研究结果将为临床实践中选择合适的诊断测试和管理策略提供依据，并强调需要更大规模的随机对照试验以获得更可靠的数据支持。特别地，系统性回顾将包括使用OGTT（葡萄糖耐量试验）作为诊断妊娠糖尿病的重要工具，并分析其在不同医疗环境中应用的效果和局限性。

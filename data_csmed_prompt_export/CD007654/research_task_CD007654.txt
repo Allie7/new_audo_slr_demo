@@ -1,3 +1,0 @@
-research_direction: 糖尿病治疗相关领域  
-filter_requirements: {'search_strategy': {'inclusion_criteria': ['非随机对照试验', '他汀类药物干预', 'Orlistat、Sibutramine、Reductil、Medaria、Meridia和Arcalion等药物', '18岁以上且非孕妇的男性和女性，有至少90 mmHg舒张压 baseline但不包括本质性高血压患者'], 'methodological_details': ['安慰剂', '他汀类药物']}}  
-rejection_reasons: 研究不是随机对照试验

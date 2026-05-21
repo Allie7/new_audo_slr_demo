@@ -1,3 +1,0 @@
-research_direction: Antibiotic treatment effectiveness studies for COPD patients and diffuse panbronchiolitis (DPB) research, as well as long-term macrolide antibiotic therapy in the treatment of chronic small airway disease clinically mimicking diffuse panbronchiolitis  
-filter_requirements: MEDLINE (Ovid) #1 (panbronchiolitis or pan‐bronchiolitis).tw,ot. #2 diffuse panbronchiolitis.rs. #3 dpb.tw. #4 or/5‐8 #5 exp Macrolides/ #6 macrolide*.tw,nm. #7 (macrolide* or clarithromycin* or troleandomycin* or erythromycin* or josamycin* or azithromycin* or roxithromycin*).tw,nm. #8 Anti‐Bacterial Agents/ #9 or/5‐8 #10 4 and 9  
-other_info: 多语言支持，广泛的文献资源

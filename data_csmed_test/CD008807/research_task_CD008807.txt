@@ -1,0 +1,11 @@
+research_direction: ICU 成人患者机械通气 ALI/ARDS  
+filter_requirements: 时间范围：1994年前；特定人群：成人 ICU 患者；研究类型：RCTs 和 quasi-RCTs；排除标准：儿童患者、慢性呼吸障碍患者、非侵入式呼吸支持患者以及混合 ALI/ARDS 群体（除非无 ALI/ARDS 的患者不超过10%）； Alternate intervention; PEEP assigned according to measurements of oesophageal pressure  
+other_info: 研究目标：评估 ALI/ARDS 定义。系统回顾和Meta分析；引用来源包括Cochrane Central Register of Controlled Trials (CENTRAL)、MEDLINE、EMBASE、LILACS、Web of Science等；采用随机化方法、风险评估工具和数据提取方法，使用随机效应模型计算二元数据的风险比和连续型数据的均值差异，并构建95%置信区间。采用GRADE方法评估证据质量等级。Meta分析包含3项RCT，共1089名患者来自43家ICU，分别位于澳大利亚、加拿大、沙特阿拉伯、西班牙和美国。研究结果表明，PCV与VCV在降低患者死亡率或机械通气相关创伤方面无显著差异，但可能对ICU死亡率有潜在的保护作用。
+
+临床试验  
+研究类型：RCTs 和 quasi-RCTs  
+参与者：成人 ICU 患者，排除儿童、慢性呼吸障碍患者、非侵入式呼吸支持患者以及混合 ALI/ARDS 群体（除非无 ALI/ARDS 的患者不超过10%）； Alternate intervention; PEEP assigned according to measurements of oesophageal pressure  
+干预措施：压力控制或逆比率压力控制通气与体积控制通气比较  
+结果衡量指标：住院死亡率，包括ICU死亡率；28天死亡率；总住院时间；并发症（如胸膜穿孔、胸腔积液等）；其他器官功能衰竭；入院和出院长度；感染并发症（如肺炎球菌肺炎、细菌性休克）；生活质量  
+主要结果：住院死亡率，包括ICU死亡率；28天死亡率  
+次要结果：总住院时间；并发症；其他器官功能衰竭；入院和出院长度；感染并发症；生活质量

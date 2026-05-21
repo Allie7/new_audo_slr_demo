@@ -1,2 +1,0 @@
-user_identity: 学龄前儿童（2-11岁）  
-user_preference: 信号检测分析,干预式研究

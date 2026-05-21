@@ -1,0 +1,2 @@
+user_identity: 计算机专业硕士研究生  
+user_preference: 医疗/生命科学领域

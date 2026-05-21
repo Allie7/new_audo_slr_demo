@@ -1,0 +1,26 @@
+{
+  "research_direction": ["Comparative educational interventions for IBD management", "Influence Of Narrative Medicine-Based Health Education Combined With An Online Patient Mutual Assistance Group On The Health Of Patients With Inflammatory Bowel Disease and Arthritis", "Problem solving skills training improves oral medication adherence in pediatric patients with Inflammatory Bowel Disease participating in a randomized trial", "护士的 presentations", "Inflammatory Bowel Disease Telemedicine Clinical Trial", "TELEmedicine for Patients With Inflammatory Bowel Disease"],
+  "filter_requirements": [
+    "两年内发表的所有已知的随机对照试验（RCT）比较教育干预措施，针对所有年龄的IBD患者与任何其他类型的干预或无干预进行比较。",
+    "包括cluster-randomised和cross-over试验。",
+    "参与者：所有患有IBD的个体。",
+    "干预措施：任何形式的正式或非正式的教育干预，持续时间不限，内容直接针对IBD的知识或技能，用于直接管理IBD及其症状。不包括认知行为疗法（CBT）、放松疗法、冥想治疗或其他技能的培训。",
+    "交付方法：面对面或远程的教育会面、指导学习通过印刷物或在线材料、使用移动应用或其他将信息传递给患者的方法。",
+    "结果衡量标准：二元和连续型结果。疾病活动程度在研究结束时使用受研究作者认可的评分系统进行测量。 flare-ups或复发在研究期间通过临床、内窥镜或组织学方法进行测量。生活质量在研究结束时使用经过验证的量表或工具。",
+    "主要结果：疾病活动程度在研究结束时，使用研究作者认可的评分系统； flare-ups或复发在研究期间通过临床、内窥镜或组织学方法进行测量；生活质量在研究结束时使用经过验证的量表或工具。"
+  ],
+  "other_info": [
+    "系统回顾针对IBD患者的教育干预",
+    "搜索策略和方法，包括详细步骤用于在MEDLINE、Embase、ClinicalTrials.Gov和WHO ICTRP等数据库中检索。",
+    "纳入标准：比较正式或非正式的教育干预措施与任何其他干预或无干预的RCT。",
+    "排除标准：研究招募标准不明确（例如患者是否在入选标准之前被招募）的试验。",
+    "样本量：所有已知的、未出版和正在进行的研究。",
+    "比较的干预措施：与任何其他干预措施或无干预措施进行比较的干预措施。",
+    "疾病活动程度在研究结束时使用受认可的疾病活动评分系统测量。",
+    " flare-ups或复发在研究期间通过临床、内窥镜或组织学方法进行测量。",
+    "生活质量使用经过验证的量表或工具测量。",
+    "摘要内容与研究方向无关",
+    "用户纠正了论文 'TELEmedicine for Patients With Inflammatory Bowel Disease (TELE-IBD) Does Not Improve Depressive Symptoms or General Quality of Life Compared With Standard Care at Tertiary Referral Centers' 应纳入。"
+  ],
+  "rejection_reasons": ["不合格干预措施-教育侧重于情感压力和自我管理，而非IBD（问题解决）", "摘要内容与研究方向无关", "针对炎症性肠病患者的情感压力、自我管理和应对策略的教育干预具有相关性"]
+}

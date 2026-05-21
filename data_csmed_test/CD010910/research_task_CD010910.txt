@@ -1,0 +1,2 @@
+research_direction: Pilot study of treatment for major depression among women prisoners with substance use disorder and gender and treatment response in substance use treatment-mandated parolees  
+filter_requirements: 样本量38人足够，干预措施为group interpersonal psychotherapy（IPT）和心理社会干预，并且结果显示两种干预措施均有效；所有参与者需进行风险评估，结果分为Low risk、High risk或Unclear。

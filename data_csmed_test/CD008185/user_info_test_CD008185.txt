@@ -1,0 +1,2 @@
+user_identity: Medical student or researcher in the field of medicine, specifically related to genetic diseases or metabolism
+user_preference: Research articles that are randomized controlled trials (RCT) or controlled clinical trials (CCT)

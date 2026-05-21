@@ -1,0 +1,9 @@
+research_direction: 心肌梗死或thrombolytic治疗  
+filter_requirements:
+- Types of studies: 摘要讨论时间差异而非治疗效果和干预措施的全面性；研究设计虽然是RCT但不符合用户对结局指标的具体要求
+- Types of participants: 成年人（16岁以上）患有由医疗保健提供者确诊的心肌梗死，诊断应根据研究标准确定，需满足以下至少两个指标：病史和症状、 electrocardiogram (ECG) 结果、生物标志物。
+- Types of interventions: 使用作为心肌梗死替代或辅助治疗的组织 plasminogen activator，适用于急诊和普通病房。此外，若为标准治疗方案的一部分，可包括抗凝血治疗。
+- Types of outcome measures: 1个月（短期）的心脏相关死亡率（不包括非心脏原因）。 thrombolytic治疗的时间，从症状 onset或首次医疗联系开始计算到投用 thrombolytic药物。定义不良事件时需考虑因果关系的可能性（如心室颤动、无脉搏室颤、心性休克、不当使用溶栓药物、低血压、心动过缓、再梗死、出血、致命和非致命中风）。其他指标包括超声心动图测得的射血分数，根据纽约心脏病协会功能分类系统的心力衰竭分型，从入院到出院的天数。
+- Rejection_reasons: 一些参与者随机分配至急诊部门。研究未提供全部死亡率数据，仅提供心脏相关死亡率数据。
+
+Other_info: Research keywords: Myocardial infarction, STEMI, tissue plasminogen activator therapy.

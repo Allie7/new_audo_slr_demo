@@ -1,0 +1,14 @@
+research_direction: 公共卫生  
+filter_requirements: 入侵性研究（RCTs）；全文报道的研究，包括摘要和非公开数据。参与者必须为18岁以上的一般预防研究。排除标准：有既往 myocardial infarction (MI) 或 stroke病史（含两者），曾接受冠脉手术（coronary artery bypass grafting (CABG) 或 percutaneous transluminal coronary angioplasty (PTCA)）；有 angina或 angiographically-定义的冠心病（CHD）；2型糖尿病患者，尽管是CVD的重要危险因素，但与治疗和管理2型糖尿病相关的干预措施由Cochrane代谢和内分泌学分组负责审查。  
+other_info: 我们比较了膳食纤维与无干预或微干预（例如 leaflets或简短建议）的干预效果。干预形式包括增加摄入的建议、膳食纤维补充剂或富含纤维的食物。我们根据膳食纤维类型（可溶性或不可溶性）、补充剂量、干预持续时间和干预方式（建议、饮食或补充剂）对试验进行了分类。我们排除了多因素生活方式干预和关注体重变化的试验，以避免混杂因素。我们也关注了12周以上（或三个月以上）的随访期，因为更长的随访期更有助于公共卫生干预评估。分析的主要终点包括：  
+- 全部死亡（all-cause mortality）  
+- 心血管死亡（cardiovascular mortality）  
+- 非致命终点（如MI、CABG、PTCA、angina、angiographically-定义的CHD、stroke、carotid endarterectomy、peripheral arterial disease (PAD)）  
+- 血压变化（收缩压和舒张压）  
+- 血脂水平变化（总胆固醇、高密度脂蛋白（HDL）胆固醇、低密度脂蛋白（LDL）胆固醇、三酰甘油）  
+- 2型糖尿病作为CVD风险的主要因素  
+- 生活质量相关健康结果  
+- 不良反应  
+- 成本  
+
+我们还关注了膳食纤维对心血管疾病的具体影响，包括降低血压和血脂水平的研究。此外，论文'The effect of the daily intake of inulin on fasting lipid, insulin and glucose concentrations in middle-aged men and women' 应纳入分析。此外，研究方向扩展至 resistant starch type 4-enriched diet，并应纳入相关研究。

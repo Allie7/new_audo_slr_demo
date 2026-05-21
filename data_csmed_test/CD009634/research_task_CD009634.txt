@@ -1,0 +1,7 @@
+research_direction: Intranasal Nicotine for Postoperative Pain Treatment
+Filter requirements: 近两年（2018年以后）发表，排除非英文文献，涉及MeSH descriptors Nicotine, Analgesics的研究。参与者类型为女性，干预类型为药物治疗和其他辅助 analgesia。
+
+other_info: 确认论文 'Intranasal Nicotine for Postoperative Pain Treatment' 应纳入，理由: 摘要明确提到研究使用了内窥镜手术，并评估了尼古丁的镇痛效果，符合MeSH descriptors Nicotine、Analgesics等关键词。参与者类型为女性，干预类型包括药物治疗和其他辅助 analgesia，完全符合筛选要求。
+
+research_direction: 机器翻译系统性能评估
+Filter requirements: 近两年（2018年以后）发表，排除非英文文献

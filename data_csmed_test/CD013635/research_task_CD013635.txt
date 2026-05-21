@@ -1,0 +1,3 @@
+research_direction: Economic Support Interventions to Reduce Early Pregnancy and School Dropout  
+filter_requirements: 时间范围自1980年到2020年6月；使用GRADE-CERQual方法评估质量；研究设计类型为定量、定性或混合；参与者类型为妇女和母亲。  
+other_info: ['现金转移', '激励措施', '社会保护', '经济转移', '支持性计划', '公共援助', '健康政策']

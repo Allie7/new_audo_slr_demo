@@ -1,0 +1,1 @@
+user_preference: 糖尿病视网膜病变患者中影响疾病进展和发展的预后因素；研究人员 studying 糖尿病视网膜病变。医学领域中的糖尿病相关研究 exclude paper 'UKPDS 50: Risk factors for incidence and progression of retinopathy in Type II diabetes over 6 years from diagnosis' due to No data on risk factors

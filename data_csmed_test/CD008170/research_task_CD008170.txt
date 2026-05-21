@@ -1,0 +1,5 @@
+research_direction: 研究类型：ACE抑制剂（包括alacepril、altiopril、benazepril等）、ARBs（包括candesartan、eprosartan等）或RI的比较研究。主要终点包括所有原因的死亡、严重并发症、总心血管事件（致命和非致命的MI、中风、心衰）以及肾脏结局，如无端期肾功能衰竭。
+
+filter_requirements: RCTs必须满足以下条件：平行对照设计；最少六个月随访。研究对象为1级高血压患者（≥130/85 mmHg）。排除标准包括已确诊的2型高血压及使用利尿剂、β受体阻滞剂、血管紧张素转换酶抑制剂或中枢兴奋药物等其他降压药物的患者。
+
+other_info: 论文 'OR-69 THE EFFECT OF LOW BLOOD PRESSURE GOALS ON ACHIEVED BLOOD PRESSURE IN HIGH RISK HYPERTENSIVES' 应纳入。研究旨在评估ACE抑制剂、ARBs和RI在管理高血压方面的效果。主要终点包括所有原因的死亡、严重并发症、总心血管事件（致命和非致命的MI、中风、心衰）以及肾脏结局，如无端期肾功能衰竭。

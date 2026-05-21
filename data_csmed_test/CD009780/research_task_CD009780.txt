@@ -1,0 +1,3 @@
+research_direction: 精神病学及第一发作精神分裂症谱系障碍的治疗处方实践  
+filter_requirements: 随机对照试验（RCT），关注医疗提供者和患者的影响  
+other_info: Rejection_reasons: 摘要中提到是RCT，但缺乏明确的研究设计类型描述，且有潜在的冲突利益因素。

@@ -1,0 +1,2 @@
+user_identity: 研究人员或学生，学术领域为医学
+user_preference: 乳腺癌筛查策略

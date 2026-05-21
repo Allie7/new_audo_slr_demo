@@ -1,2 +1,0 @@
-user_identity: CPAP-naïve adults with obstructive sleep apnoea (OSA) and medical researchers  
-user_preference: 满意该论文

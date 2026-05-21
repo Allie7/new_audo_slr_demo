@@ -1,0 +1,8 @@
+research_direction: Shoulder injury reduction with post-offer testing, including the implementation of random controlled trials (RCTs), non-randomised studies (NRS) such as controlled before-and-after (CBA) and interrupted time-series (ITS) designs with at least three data points before and after intervention. These studies should focus on health outcomes related to occupational diseases and musculoskeletal injuries, including sick leave rates, fitness for duty assessments, medical visit frequencies, and rejection rates.
+
+filter_requirements: Studies must include RCTs or NRS designs (CBA/ITS) with at least three data points before and after the intervention. The research should specifically address health outcomes such as occupational diseases and musculoskeletal injuries, including sick leave rates, fitness for duty assessments, medical visit frequencies, and rejection rates.
+
+other_info: [
+    {'Year': '2019', 'Source': 'ITS', 'Details': 'Alternate allocation, Occupational injury and disease, Healthcare facilities, Adults, Follow-up: 6 months'},
+    {'Year': '2020', 'Source': 'RCT', 'Details': 'Randomized controlled trial, Effectiveness of intervention, Work sites, Teenagers, Pre-post study design'}
+]

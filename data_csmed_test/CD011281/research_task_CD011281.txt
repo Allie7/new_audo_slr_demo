@@ -1,0 +1,3 @@
+research_direction: Diabetic ketoacidosis (DKA) research and acute hyperglycemia outpatient treatment  
+filter_requirements: 近两年  
+other_info: 研究类型为随机ised controlled trials (RCTs)，参与者包括具有糖尿病史的个体，其中主要人群为孕妇（包括妊娠糖尿病）和2型糖尿病患者。研究主要关注糖尿病酮症酸中毒的干预措施及其效果。研究方法包括纳入和排除标准，并测量所有-原因死亡、低血糖事件、不良事件、糖 ketoacidosis 的恢复时间等结果指标。摘要探讨了使用胰岛素作为部分胰岛素与静脉胰岛素的对比，评估疗效和安全性。研究明确涉及糖尿病酮症酸中毒（DKA）的干预措施及其效果，符合用户的研究方向。摘要未涉及急性高血糖的outpatient治疗方案，并未提及DKA或胰岛素干预措施。研究对象仅限于1型糖尿病儿童和青少年。

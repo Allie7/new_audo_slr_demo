@@ -1,0 +1,2 @@
+user_identity: researcher or student  
+user_preference: CAM therapies for acne vulgaris

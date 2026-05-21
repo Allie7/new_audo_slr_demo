@@ -1,0 +1,3 @@
+research_direction: Intermittent Preventive Treatment against Malaria in Infants; Randomised controlled trial of Chloroquine for postmalarial anaemia  
+filter_requirements: 近两年，Subanalysis of Desai 2003 KEN. 研究关注对象为生活在疟疾高发区的儿童（Hb <11 g/dL; WHO 2008）。干预措施为SP，并要求在干预组和对照组完全相同。数据库包括Cochrane Infectious Diseases Group Specialized Register、CENTRAL、The Cochrane Library; MEDLINE; EMBASE; LILACS; WHO International Clinical Trial Registry Platform; metaRegister of Controlled Trials (mRCT); Randomized controlled trials (RCTs) evaluating the effect of SP on children with malaria-related anemia; Google Scholar; IEEE Xplore; Procedia Computer Science等。系统误判为排除  
+rejection_reasons: 干预措施为SP，不符合IPT或其他血动力药/LLINs的要求

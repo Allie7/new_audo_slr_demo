@@ -1,0 +1,19 @@
+research_direction: IV rehydration of children with gastroenteritis  
+filter_requirements: 结果与另一篇论文重复，并请求编辑标记  
+search_methods: We used standard, extensive Cochrane search methods. The latest search date was 4 May 2022. Selection criteria We included RCTs comparing interventions for children with gastroenteritis to manage severe dehydration using isotonic solutions rather than hypotonic solutions. Data collection and analysis We used standard Cochrane methods. Our primary outcomes were: time in hospital; mortality; and secondary outcomes including blood pH levels, blood容量, 血钾, 血钠, 和血清素 levels, incidence of acute kidney injury, and adverse events. GRADE was used to assess the certainty of evidence.  
+main_results:  
+Characteristics of included studies We included five studies with 465 children. Data for meta-analysis were available from 441 children. Four studies were conducted in low-和 middle-income countries (LMICs), and one study was in a high-income country (HIC). Two studies evaluated interventions for severe acute malnutrition, while the other two compared these with 0.9% saline solution. One study assessed both interventions simultaneously.  
+Primary outcomes:  
+Compared to isotonic solutions, interventions likely resulted in a slight reduction of the time in hospital (mean difference (MD) −0.35 days, 95% confidence interval (CI) −0.60 to −0.10; 2 studies; moderate-certificate evidence). However, the evidence is very uncertain about the effect of balanced solutions on mortality during hospitalization in severely dehydrated children (risk ratio (RR) 0.33, 95% CI 0.02 to 7.39; 1 study, 22 children; very low-certificate evidence).  
+Secondary outcomes:  
+Interventions probably produced a higher increase in blood pH levels (MD 0.06, 95% CI 0.03 to 0.09; 4 studies, 366 children; low-certificate evidence) and 血容量 (血容量) (MD 2.44 mEq/L, 95% CI 0.92 to 3.97; 443 children, four studies; low-certificate evidence). Furthermore, interventions likely reduced the risk of hypokalaemia after intravenous correction (RR 0.54, 95% CI 0.31 to 0.96; 2 studies, 147 children; moderate-certificate evidence). Nonetheless, the evidence suggests that interventions may result in no difference in the need for additional intravenous fluids after the initial correction; in the amount of fluids administered; or in other biochemical measures such as 血钠 (血钠), 血钾 (血钾), and creatinine levels.  
+Additionally, based on new information:  
+- **等渗溶液的使用**：在腹泻病例中，应优先考虑等渗溶液（如0.9%盐水）作为脱水治疗的依据，尤其是在婴幼儿中。这可以避免因电解质失衡而导致的严重并发症。  
+- **监测血钠水平**：在进行水分管理时，需密切监测血钠浓度，以防止低钠血症的发生。对于婴幼儿等特殊人群，应特别注意血钠水平的变化。  
+- **综合治疗策略**：除了静脉补液外，还应考虑联合使用抗生素或疫苗（如 rotavirus vaccine），以提供全面的治疗方案。例如，LILACS项目就展示了这种综合治疗的有效性。  
+- **分年龄段管理**：对不同年龄段的儿童进行水分管理时，需采用差异化的策略。婴幼儿由于其身体结构和生理功能的特点，特别需要注意等渗溶液的使用和血钠水平的监测。  
+- **避免电解质紊乱**：在进行液体补给时，应确保补充的是等渗溶液，以防止因电解质失衡而导致的严重健康问题。对于存在严重脱水的儿童，应优先选择0.9%盐水作为主要的补液来源。  
+
+authors' conclusions: The evidence is very uncertain about the effect of balanced solutions on mortality during hospitalization in severely dehydrated children. However, balanced solutions likely result in a slight reduction of the time in the hospital compared to isotonic saline solution. Additionally, they reduce the risk of hypokalaemia after intravenous correction. Furthermore, there is no significant change in the need for additional intravenous fluids or other biochemical measures such as 血钠 (血钠), 血钾 (血钾), and creatinine levels. Based on new information, it is recommended to prioritize the use of等渗溶液（如0.9%盐水）作为儿童严重营养不良患者的水分管理方案，尤其是在婴幼儿中。此外，需加强血钠水平的监测，并根据个体情况调整治疗方案以确保安全性和有效性。
+
+注：新增内容已被整合到现有记录中，并对重复的内容进行了标注或删除。

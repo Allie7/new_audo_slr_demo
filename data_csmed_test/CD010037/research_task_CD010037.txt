@@ -1,0 +1,3 @@
+research_direction: Modification of Intracellular Calcium and Plasma Renin by Dietary Calcium in Men  
+filter_requirements: 最近一年；排除孕妇和其他健康状况；参与者年龄18-69岁  
+other_info: 论文 'Modification of Intracellular Calcium and Plasma Renin by Dietary Calcium in Men' 应纳入

@@ -1,0 +1,2 @@
+user_identity: 医学或公共卫生领域的专业人士 with CF  
+user_preference: cystic fibrosis AND bronchoscopy, cystic fibrosis AND cystic fibrosis AND sampling technique

@@ -1,0 +1,26 @@
+{
+  "review_id": "CD009685",
+  "gold_included_ids": [
+    "CD009685-bib-0004"
+  ],
+  "include_only": {
+    "system_ids": [
+      "CD009685-bib-0004"
+    ],
+    "correct_ids": [
+      "CD009685-bib-0004"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  },
+  "include_and_not_sure": {
+    "system_ids": [
+      "CD009685-bib-0004"
+    ],
+    "correct_ids": [
+      "CD009685-bib-0004"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  }
+}

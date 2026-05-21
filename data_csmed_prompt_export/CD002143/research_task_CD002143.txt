@@ -1,4 +1,0 @@
-research_direction: palliative radiotherapy for NSCLC  
-研究类型为随机对照临床试验（RCTs）、Crossover Procedure、double‐blind procedure等干预型研究，使用handsearching、专家讨论等方式进行文献检索。  
-filter_requirements: 使用Cochrane Central Register of Controlled Trials、MEDLINE、EMBASE等数据库进行搜索，时间范围为2012年至今。  
-other_info: 研究对象为接受胸腔放射治疗的非小细胞肺癌患者及鳞状细胞癌患者，排除了外部束射和化疗组合治疗的研究；研究还包括评估放疗效果的Crossover Procedure、double‐blind procedure、randomized controlled trial、single‐blind procedure等干预型研究。

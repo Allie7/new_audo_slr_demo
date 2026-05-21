@@ -1,0 +1,3 @@
+user_identity: Data Scientist, PhD Candidate in Computer Science  
+user_preference: research types: AI algorithms, Data Analysis; time frame: past five years  
+exclusion_criteria: papers with insufficient methodology or lack of reproducibility

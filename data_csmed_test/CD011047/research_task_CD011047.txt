@@ -1,0 +1,4 @@
+research_direction: Colchicine and related drugs: mechanisms, applications, clinical trials and long-term cardiovascular effects  
+research_direction: Type 2 lepra reaction  
+research_direction: 视网膜抗炎药物治疗  
+filter_requirements: 摘要中未提及研究类型、干预措施或结果衡量标准，且研究主题与Colchicine相关性较低

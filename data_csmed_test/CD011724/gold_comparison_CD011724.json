@@ -1,0 +1,26 @@
+{
+  "review_id": "CD011724",
+  "gold_included_ids": [
+    "CD011724-bib-0002"
+  ],
+  "include_only": {
+    "system_ids": [
+      "CD011724-bib-0002"
+    ],
+    "correct_ids": [
+      "CD011724-bib-0002"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  },
+  "include_and_not_sure": {
+    "system_ids": [
+      "CD011724-bib-0002"
+    ],
+    "correct_ids": [
+      "CD011724-bib-0002"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  }
+}

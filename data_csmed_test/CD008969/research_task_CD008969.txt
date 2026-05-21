@@ -1,0 +1,2 @@
+research_direction: 青少年药物滥用干预
+研究类型为干预（Intervention），评估了学校干预措施的效果，并比较了行为干预条件下的效果。 effects of brief intervention for drug-abusing adolescents in a school setting on substance use and behavioural outcomes research_design: randomised controlled trials filter_requirements: 近两年发表在教育机构内的高质量期刊的论文，研究对象为青少年。 rejection_reasons: 研究设计为随机对照试验，干预类型为行为干预，并评估了二元变量（如酒精使用）的减少。

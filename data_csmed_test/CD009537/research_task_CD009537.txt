@@ -1,0 +1,2 @@
+research_direction: 预防老年痴呆症在长期护理之家中的可行性研究  
+other_info: 论文的研究设计为集群随机对照试验（cluster-RCTs），干预措施是Stop Delirium!，目标人群为长期护理之家的居民，平均年龄≥65岁。

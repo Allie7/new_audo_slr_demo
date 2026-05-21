@@ -1,0 +1,2 @@
+user_preference: Cognitive impairment
+user_identity: 用户

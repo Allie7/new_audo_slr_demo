@@ -1,0 +1,2 @@
+research_direction: 手术模型训练中的SSA和MP方法比较：随机对照试验；多媒体辅助在线平台 training-based surgical performance improvement  
+filter_requirements: 时间范围、关键词、排除标准（No separate data available for medical students）；时间效率和重复次数评估，采用随机分组

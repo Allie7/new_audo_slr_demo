@@ -1,0 +1,3 @@
+user_identity: 年轻女性
+user_preference: 治疗性研究，针对特定群体的研究
+Adults with patellofemoral pain (or a synonym of this)

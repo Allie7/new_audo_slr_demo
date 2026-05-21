@@ -1,0 +1,5 @@
+内科学 - 传染病治疗；使用青霉素类药物（包括头孢类）治疗Enteric热（伤寒和亚伤寒）。研究方向为抗生素治疗Enteric热，采用Cochrane方法，从多个数据库（包括CENTRAL、MEDLINE(R)、In-Process, In-Data-Review & Other Non-Indexed Citations <1946 to November 23, 2021>、Embase <1996 to 2021 Week 46>、LILACS和WHO ICTRP）收集至特定日期的研究，排除非对照组以及证据质量不佳的情况。研究综述指出，青霉素类药物在治疗Enteric热方面具有显著疗效，并建议需考虑地方性抗药性和合理的治疗时长。
+
+研究方向为抗生素对伤寒和亚伤热的有效性评估，采用随机对照试验（RCTs），对象为成人或儿童，基于血液培养、骨髓培养或分子检测确诊。治疗方案包括使用cephalosporins（不限剂量和持续时间）。定义了临床失败、微生物学失败、复发、病程消失时间、住院时间以及恢复排泄物时间等。此外，还明确了需要考虑的不良事件类型，包括严重不良反应导致中断治疗或延长疗程、微生物学失败（即在试验期间出现阳性培养结果）、复发（即在随访时出现阳性培养结果）等。
+
+研究方向为免疫因子在 typhoid fever 中的作用，关键词包括Interleukin-6, Gamma Interferon, Tumor Necrosis Factor Receptors, Typhoid Fever, Antimicrobial Therapy。

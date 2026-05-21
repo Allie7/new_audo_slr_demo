@@ -1,0 +1,63 @@
+================================================================================
+CSMeD-FT 测试报告
+测试时间: 2026-05-20 15:06:22
+测试参数: {"num_reviews": 2, "offset": 101, "skip_prescreen": false, "workers": 1}
+================================================================================
+
+总测试 review 数: 2
+成功: 2, 失败: 0
+
+================================================================================
+逐条 Review 结果
+================================================================================
+
+  Review: CD008093 ()
+    Title: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+    论文数: 9, Gold included: 7
+    迭代轮次: 1, 满意论文: 7
+    Metadata初筛: {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 7, 'num_retrieved': 7, 'num_true_positives': 7}
+    筛选(include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 7, 'num_retrieved': 7, 'num_true_positives': 7}
+    打分: None
+    *** Gold对比: P=1.0, R=1.0, F1=1.0 ***
+        TP=7, FN=0, FP=0
+
+  Review: CD008170 (Intervention)
+    Title: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive dr
+    论文数: 21, Gold included: 17
+    迭代轮次: 1, 满意论文: 17
+    Metadata初筛: {'precision': 0.8095, 'recall': 1.0, 'f1': 0.8947, 'num_relevant': 17, 'num_retrieved': 21, 'num_true_positives': 17}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 17, 'num_retrieved': 17, 'num_true_positives': 17}
+    筛选(include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 17, 'num_retrieved': 17, 'num_true_positives': 17}
+    打分: None
+    *** Gold对比: P=1.0, R=1.0, F1=1.0 ***
+        TP=17, FN=0, FP=0
+
+================================================================================
+汇总统计
+================================================================================
+
+  Metadata初筛 (平均): {'precision': 0.7936, 'recall': 1.0, 'f1': 0.8849}
+  Title筛选 (平均): {'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
+  筛选 include+not_sure (平均): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+  筛选 include-only (平均): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+  打分排序 (平均): {'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
+
+  *** Gold Standard 对比 (平均): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0} ***
+
+--- 按 review_type 分组 ---
+   (1 reviews): P=1.0000, R=1.0000, F1=1.0000
+  Intervention (1 reviews): P=1.0000, R=1.0000, F1=1.0000
+
+--- 全局 TP/FP/FN 汇总 ---
+  总 Gold included 论文数: 24
+  总 TP (系统 include & Gold include): 24
+  总 FP (系统 include & Gold exclude): 0
+  总 FN (系统 exclude & Gold include): 0
+  全局 Precision: 1.0000
+  全局 Recall: 1.0000
+  全局 F1: 1.0000
+
+================================================================================

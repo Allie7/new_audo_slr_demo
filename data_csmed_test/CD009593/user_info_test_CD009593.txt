@@ -1,0 +1,1 @@
+user_identity: Medical researcher focusing on infectious diseases; user_preference: Interest in comparing Xpert Ultra and Xpert MTB/RIF for TB detection

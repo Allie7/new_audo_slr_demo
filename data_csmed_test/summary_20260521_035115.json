@@ -1,0 +1,6112 @@
+{
+  "test_time": "2026-05-21T03:51:15.636057",
+  "test_params": {
+    "num_reviews": 100,
+    "offset": 100,
+    "skip_prescreen": false,
+    "workers": 3
+  },
+  "num_reviews": 100,
+  "per_review_results": [
+    {
+      "review_id": "CD008081",
+      "review_title": "Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinopathy",
+      "review_type": "Diagnostic",
+      "num_papers": 6,
+      "num_gold_included": 4,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 4,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 4,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 4,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 4,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008093",
+      "review_title": "Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death",
+      "review_type": "",
+      "num_papers": 9,
+      "num_gold_included": 7,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "screening_include_metrics": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "gold_comparison_kept": {
+        "precision": 0.7778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 7
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 7,
+        "num_missed": 0,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 7,
+        "num_missed": 0,
+        "num_false_positive": 2
+      }
+    },
+    {
+      "review_id": "CD008170",
+      "review_title": "First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive drug classes for hypertension",
+      "review_type": "Intervention",
+      "num_papers": 21,
+      "num_gold_included": 17,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.8095,
+        "recall": 1.0,
+        "f1": 0.8947,
+        "num_relevant": 17,
+        "num_retrieved": 21,
+        "num_true_positives": 17
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189,
+        "num_relevant": 17,
+        "num_retrieved": 20,
+        "num_true_positives": 17
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1765,
+        "f1": 0.3,
+        "num_relevant": 17,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1765,
+        "f1": 0.3,
+        "num_relevant": 17,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.85,
+        "recall": 1.0,
+        "f1": 0.9189,
+        "num_relevant": 17,
+        "num_retrieved": 20,
+        "num_true_positives": 17
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 14,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 17,
+        "num_missed": 0,
+        "num_false_positive": 3
+      }
+    },
+    {
+      "review_id": "CD008185",
+      "review_title": "Enzyme replacement therapy with idursulfase for mucopolysaccharidosis type II (Hunter syndrome)",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 2,
+        "num_retrieved": 3,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008213",
+      "review_title": "Surgical interventions for primary congenital glaucoma",
+      "review_type": "Intervention",
+      "num_papers": 6,
+      "num_gold_included": 4,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 4,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 2
+      }
+    },
+    {
+      "review_id": "CD008265",
+      "review_title": "Endoscopic release for carpal tunnel syndrome",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "num_relevant": 1,
+        "num_retrieved": 3,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008345",
+      "review_title": "Case management approaches to home support for people with dementia",
+      "review_type": "Intervention",
+      "num_papers": 17,
+      "num_gold_included": 6,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.3529,
+        "recall": 1.0,
+        "f1": 0.5217,
+        "num_relevant": 6,
+        "num_retrieved": 17,
+        "num_true_positives": 6
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 6,
+        "num_retrieved": 10,
+        "num_true_positives": 6
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 6,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 6,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 6,
+        "num_retrieved": 10,
+        "num_true_positives": 6
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 6,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 6,
+        "num_missed": 0,
+        "num_false_positive": 4
+      }
+    },
+    {
+      "review_id": "CD008366",
+      "review_title": "Community wide interventions for increasing physical activity",
+      "review_type": "Intervention",
+      "num_papers": 81,
+      "num_gold_included": 23,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.284,
+        "recall": 1.0,
+        "f1": 0.4423,
+        "num_relevant": 23,
+        "num_retrieved": 81,
+        "num_true_positives": 23
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.2933,
+        "recall": 0.9565,
+        "f1": 0.449,
+        "num_relevant": 23,
+        "num_retrieved": 75,
+        "num_true_positives": 22
+      },
+      "screening_include_metrics": {
+        "precision": 0.3636,
+        "recall": 0.1739,
+        "f1": 0.2353,
+        "num_relevant": 23,
+        "num_retrieved": 11,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.3636,
+        "recall": 0.1739,
+        "f1": 0.2353,
+        "num_relevant": 23,
+        "num_retrieved": 11,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.2933,
+        "recall": 0.9565,
+        "f1": 0.449,
+        "num_relevant": 23,
+        "num_retrieved": 75,
+        "num_true_positives": 22
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 19,
+        "num_false_positive": 7
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 22,
+        "num_missed": 1,
+        "num_false_positive": 53
+      }
+    },
+    {
+      "review_id": "CD008426",
+      "review_title": "House dust mite reduction and avoidance measures for treating eczema",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008435",
+      "review_title": "Skin‐to‐skin care for procedural pain in neonates",
+      "review_type": "Intervention",
+      "num_papers": 9,
+      "num_gold_included": 5,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5556,
+        "recall": 1.0,
+        "f1": 0.7143,
+        "num_relevant": 5,
+        "num_retrieved": 9,
+        "num_true_positives": 5
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "num_relevant": 5,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "num_relevant": 5,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "num_relevant": 5,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "num_relevant": 5,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 0,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD008729",
+      "review_title": "Psychological interventions for women with non‐metastatic breast cancer",
+      "review_type": "",
+      "num_papers": 18,
+      "num_gold_included": 10,
+      "num_screening_rounds": 1,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.5556,
+        "recall": 1.0,
+        "f1": 0.7143,
+        "num_relevant": 10,
+        "num_retrieved": 18,
+        "num_true_positives": 10
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "num_relevant": 10,
+        "num_retrieved": 8,
+        "num_true_positives": 8
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "num_relevant": 10,
+        "num_retrieved": 8,
+        "num_true_positives": 8
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "num_relevant": 10,
+        "num_retrieved": 8,
+        "num_true_positives": 8
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "num_relevant": 10,
+        "num_retrieved": 8,
+        "num_true_positives": 8
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 8,
+        "num_missed": 2,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 8,
+        "num_missed": 2,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008807",
+      "review_title": "Pressure‐controlled versus volume‐controlled ventilation for acute respiratory failure due to acute lung injury (ALI) or acute respiratory distress syndrome (ARDS)",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "num_relevant": 1,
+        "num_retrieved": 4,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008812",
+      "review_title": "Phacoemulsification with posterior chamber intraocular lens versus extracapsular cataract extraction (ECCE) with posterior chamber intraocular lens for age‐related cataract",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 1,
+        "num_retrieved": 2,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD008873",
+      "review_title": "Vitamin D supplementation for women during pregnancy",
+      "review_type": "Intervention",
+      "num_papers": 55,
+      "num_gold_included": 21,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.3818,
+        "recall": 1.0,
+        "f1": 0.5526,
+        "num_relevant": 21,
+        "num_retrieved": 55,
+        "num_true_positives": 21
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.42,
+        "recall": 1.0,
+        "f1": 0.5915,
+        "num_relevant": 21,
+        "num_retrieved": 50,
+        "num_true_positives": 21
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1429,
+        "f1": 0.25,
+        "num_relevant": 21,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1429,
+        "f1": 0.25,
+        "num_relevant": 21,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.42,
+        "recall": 1.0,
+        "f1": 0.5915,
+        "num_relevant": 21,
+        "num_retrieved": 50,
+        "num_true_positives": 21
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 18,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 21,
+        "num_missed": 0,
+        "num_false_positive": 29
+      }
+    },
+    {
+      "review_id": "CD008881",
+      "review_title": "Pre‐employment examinations for preventing injury, disease and sick leave in workers",
+      "review_type": "Intervention",
+      "num_papers": 10,
+      "num_gold_included": 4,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 4,
+        "num_retrieved": 10,
+        "num_true_positives": 4
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 4,
+        "num_retrieved": 10,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "num_relevant": 4,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "num_relevant": 4,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 4,
+        "num_retrieved": 10,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 1,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 6
+      }
+    },
+    {
+      "review_id": "CD008963",
+      "review_title": "Self‐management education programmes for osteoarthritis",
+      "review_type": "Intervention",
+      "num_papers": 12,
+      "num_gold_included": 9,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 9,
+        "num_retrieved": 12,
+        "num_true_positives": 9
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8,
+        "recall": 0.4444,
+        "f1": 0.5714,
+        "num_relevant": 9,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 0.8,
+        "recall": 0.4444,
+        "f1": 0.5714,
+        "num_relevant": 9,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.8,
+        "recall": 0.4444,
+        "f1": 0.5714,
+        "num_relevant": 9,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.8,
+        "recall": 0.4444,
+        "f1": 0.5714,
+        "num_relevant": 9,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 5,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 5,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD008969",
+      "review_title": "Brief school‐based interventions and behavioural outcomes for substance‐using adolescents",
+      "review_type": "Intervention",
+      "num_papers": 13,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.2308,
+        "recall": 1.0,
+        "f1": 0.375,
+        "num_relevant": 3,
+        "num_retrieved": 13,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.2727,
+        "recall": 1.0,
+        "f1": 0.4286,
+        "num_relevant": 3,
+        "num_retrieved": 11,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.2727,
+        "recall": 1.0,
+        "f1": 0.4286,
+        "num_relevant": 3,
+        "num_retrieved": 11,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.2727,
+        "recall": 1.0,
+        "f1": 0.4286,
+        "num_relevant": 3,
+        "num_retrieved": 11,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.2727,
+        "recall": 1.0,
+        "f1": 0.4286,
+        "num_relevant": 3,
+        "num_retrieved": 11,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 8
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 8
+      }
+    },
+    {
+      "review_id": "CD009125",
+      "review_title": "Psychological treatments for depression and anxiety in dementia and mild cognitive impairment",
+      "review_type": "Intervention",
+      "num_papers": 26,
+      "num_gold_included": 14,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5385,
+        "recall": 1.0,
+        "f1": 0.7,
+        "num_relevant": 14,
+        "num_retrieved": 26,
+        "num_true_positives": 14
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8235,
+        "recall": 1.0,
+        "f1": 0.9032,
+        "num_relevant": 14,
+        "num_retrieved": 17,
+        "num_true_positives": 14
+      },
+      "screening_include_metrics": {
+        "precision": 0.6667,
+        "recall": 0.2857,
+        "f1": 0.4,
+        "num_relevant": 14,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.6667,
+        "recall": 0.2857,
+        "f1": 0.4,
+        "num_relevant": 14,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.8235,
+        "recall": 1.0,
+        "f1": 0.9032,
+        "num_relevant": 14,
+        "num_retrieved": 17,
+        "num_true_positives": 14
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 10,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 14,
+        "num_missed": 0,
+        "num_false_positive": 3
+      }
+    },
+    {
+      "review_id": "CD009185",
+      "review_title": "Procalcitonin, C‐reactive protein, and erythrocyte sedimentation rate for the diagnosis of acute pyelonephritis in children",
+      "review_type": "Diagnostic",
+      "num_papers": 23,
+      "num_gold_included": 7,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.3043,
+        "recall": 1.0,
+        "f1": 0.4667,
+        "num_relevant": 7,
+        "num_retrieved": 23,
+        "num_true_positives": 7
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.2222,
+        "recall": 0.5714,
+        "f1": 0.32,
+        "num_relevant": 7,
+        "num_retrieved": 18,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.4286,
+        "f1": 0.6,
+        "num_relevant": 7,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.4286,
+        "f1": 0.6,
+        "num_relevant": 7,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.2222,
+        "recall": 0.5714,
+        "f1": 0.32,
+        "num_relevant": 7,
+        "num_retrieved": 18,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 4,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 3,
+        "num_false_positive": 14
+      }
+    },
+    {
+      "review_id": "CD009210",
+      "review_title": "Perioperative angiotensin‐converting enzyme inhibitors or angiotensin II type 1 receptor blockers for preventing mortality and morbidity in adults",
+      "review_type": "Intervention",
+      "num_papers": 6,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "num_relevant": 2,
+        "num_retrieved": 6,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009400",
+      "review_title": "Helminth therapy (worms) for induction of remission in inflammatory bowel disease",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 1,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009403",
+      "review_title": "Vitamin B and its derivatives for diabetic kidney disease",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD009436",
+      "review_title": "Complementary therapies for acne vulgaris",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009530",
+      "review_title": "Bronchoscopy‐guided antimicrobial therapy for cystic fibrosis",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "num_relevant": 1,
+        "num_retrieved": 4,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009537",
+      "review_title": "Interventions for preventing delirium in older people in institutional long‐term care",
+      "review_type": "Intervention",
+      "num_papers": 6,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 2
+      }
+    },
+    {
+      "review_id": "CD009593",
+      "review_title": "Xpert Ultra versus Xpert MTB/RIF for pulmonary tuberculosis and rifampicin resistance in adults with presumptive pulmonary tuberculosis",
+      "review_type": "Diagnostic",
+      "num_papers": 99,
+      "num_gold_included": 0,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 99,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 90,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 1,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 1,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 90,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 90
+      }
+    },
+    {
+      "review_id": "CD009633",
+      "review_title": "Clonidine premedication for postoperative analgesia in children",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 1,
+        "num_retrieved": 2,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009634",
+      "review_title": "Intranasal or transdermal nicotine for the treatment of postoperative pain",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009669",
+      "review_title": "Inotropic agents and vasodilator strategies for the treatment of cardiogenic shock or low cardiac output syndrome",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009685",
+      "review_title": "Image guided surgery for the resection of brain tumours",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009771",
+      "review_title": "Protocol‐directed sedation versus non‐protocol‐directed sedation in mechanically ventilated intensive care adults and children",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 1,
+        "num_retrieved": 2,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009780",
+      "review_title": "Implementation of treatment guidelines for specialist mental health care",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 2,
+        "num_retrieved": 5,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009782",
+      "review_title": "Anti‐vascular endothelial growth factor for control of wound healing in glaucoma surgery",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009784",
+      "review_title": "Anaesthetic regimens for day‐procedure laparoscopic cholecystectomy",
+      "review_type": "Intervention",
+      "num_papers": 0,
+      "num_gold_included": 0,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009823",
+      "review_title": "Interventions for promoting reintegration and reducing harmful behaviour and lifestyles in street‐connected children and young people",
+      "review_type": "Intervention",
+      "num_papers": 25,
+      "num_gold_included": 22,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.88,
+        "recall": 1.0,
+        "f1": 0.9362,
+        "num_relevant": 22,
+        "num_retrieved": 25,
+        "num_true_positives": 22
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 22,
+        "num_retrieved": 22,
+        "num_true_positives": 22
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1364,
+        "f1": 0.24,
+        "num_relevant": 22,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1364,
+        "f1": 0.24,
+        "num_relevant": 22,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 22,
+        "num_retrieved": 22,
+        "num_true_positives": 22
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 19,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 22,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD009831",
+      "review_title": "Haloperidol versus first‐generation antipsychotics for the treatment of schizophrenia and other psychotic disorders",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 3,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010037",
+      "review_title": "Calcium supplementation for prevention of primary hypertension",
+      "review_type": "",
+      "num_papers": 3,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010139",
+      "review_title": "Indacaterol, a once‐daily beta2‐agonist, versus twice‐daily beta2‐agonists or placebo for chronic obstructive pulmonary disease",
+      "review_type": "Intervention",
+      "num_papers": 6,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD010191",
+      "review_title": "Pre‐hospital versus in‐hospital thrombolysis for ST‐elevation myocardial infarction",
+      "review_type": "",
+      "num_papers": 7,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.1429,
+        "recall": 1.0,
+        "f1": 0.25,
+        "num_relevant": 1,
+        "num_retrieved": 7,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010206",
+      "review_title": "Palliative pharmacological sedation for terminally ill adults",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010225",
+      "review_title": "Single induction dose of etomidate versus other induction agents for endotracheal intubation in critically ill patients",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 4,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010226",
+      "review_title": "Trifluoperazine versus placebo for schizophrenia",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010235",
+      "review_title": "The role of high‐frequency oscillations in epilepsy surgery planning",
+      "review_type": "Intervention",
+      "num_papers": 16,
+      "num_gold_included": 1,
+      "num_screening_rounds": 1,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.0625,
+        "recall": 1.0,
+        "f1": 0.1176,
+        "num_relevant": 1,
+        "num_retrieved": 16,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.1818,
+        "num_relevant": 1,
+        "num_retrieved": 10,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 0.1,
+        "recall": 1.0,
+        "f1": 0.1818,
+        "num_relevant": 1,
+        "num_retrieved": 10,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 9
+      }
+    },
+    {
+      "review_id": "CD010254",
+      "review_title": "Rosuvastatin for lowering lipids",
+      "review_type": "Intervention",
+      "num_papers": 18,
+      "num_gold_included": 17,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.9444,
+        "recall": 1.0,
+        "f1": 0.9714,
+        "num_relevant": 17,
+        "num_retrieved": 18,
+        "num_true_positives": 17
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.9444,
+        "recall": 1.0,
+        "f1": 0.9714,
+        "num_relevant": 17,
+        "num_retrieved": 18,
+        "num_true_positives": 17
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1765,
+        "f1": 0.3,
+        "num_relevant": 17,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1765,
+        "f1": 0.3,
+        "num_relevant": 17,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.9444,
+        "recall": 1.0,
+        "f1": 0.9714,
+        "num_relevant": 17,
+        "num_retrieved": 18,
+        "num_true_positives": 17
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 14,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 17,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD010264",
+      "review_title": "Surgical versus non‐surgical treatment for lumbar spinal stenosis",
+      "review_type": "Intervention",
+      "num_papers": 8,
+      "num_gold_included": 6,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 6,
+        "num_retrieved": 8,
+        "num_true_positives": 6
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 2,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 2,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010269",
+      "review_title": "Alpha‐2 agonists for long‐term sedation during mechanical ventilation in critically ill patients",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 3,
+        "num_retrieved": 4,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010333",
+      "review_title": "Sound reduction management in the neonatal intensive care unit for preterm or very low birth weight infants",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 1,
+        "num_retrieved": 2,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010355",
+      "review_title": "Non‐invasive positive pressure ventilation for prevention of complications after pulmonary resection in lung cancer patients",
+      "review_type": "",
+      "num_papers": 3,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 2,
+        "num_retrieved": 3,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010356",
+      "review_title": "Preoperative inspiratory muscle training for postoperative pulmonary complications in adults undergoing cardiac and major abdominal surgery",
+      "review_type": "",
+      "num_papers": 10,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "num_relevant": 3,
+        "num_retrieved": 10,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "num_relevant": 3,
+        "num_retrieved": 10,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "num_relevant": 3,
+        "num_retrieved": 10,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 7
+      }
+    },
+    {
+      "review_id": "CD010381",
+      "review_title": "Extracorporeal membrane oxygenation for critically ill adults",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010387",
+      "review_title": "Exercise for treating patellofemoral pain syndrome",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010411",
+      "review_title": "Systematic versus opportunistic risk assessment for the primary prevention of cardiovascular disease",
+      "review_type": "Intervention",
+      "num_papers": 11,
+      "num_gold_included": 5,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4545,
+        "recall": 1.0,
+        "f1": 0.625,
+        "num_relevant": 5,
+        "num_retrieved": 11,
+        "num_true_positives": 5
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 5,
+        "num_retrieved": 10,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "num_relevant": 5,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "num_relevant": 5,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 5,
+        "num_retrieved": 10,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 2,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 0,
+        "num_false_positive": 5
+      }
+    },
+    {
+      "review_id": "CD010447",
+      "review_title": "Pharmacological treatment of vascular risk factors for reducing mortality and cardiovascular events in patients with abdominal aortic aneurysm",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 4,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010452",
+      "review_title": "Treatment of enteric fever (typhoid and paratyphoid fever) with cephalosporins",
+      "review_type": "Intervention",
+      "num_papers": 10,
+      "num_gold_included": 4,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 4,
+        "num_retrieved": 10,
+        "num_true_positives": 4
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 4,
+        "num_retrieved": 8,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 4,
+        "num_retrieved": 8,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 4,
+        "num_retrieved": 8,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 4,
+        "num_retrieved": 8,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 4
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 4
+      }
+    },
+    {
+      "review_id": "CD010463",
+      "review_title": "Chemotherapy for advanced non‐small cell lung cancer in the elderly population",
+      "review_type": "",
+      "num_papers": 5,
+      "num_gold_included": 4,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "num_relevant": 4,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "num_relevant": 4,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "num_relevant": 4,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "num_relevant": 4,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8889,
+        "num_relevant": 4,
+        "num_retrieved": 5,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD010473",
+      "review_title": "Continuous positive airway pressure (CPAP) for acute bronchiolitis in children",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 2,
+        "num_retrieved": 3,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010479",
+      "review_title": "Laparoscopic surgical box model training for surgical trainees with no prior laparoscopic experience",
+      "review_type": "Intervention",
+      "num_papers": 4,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 2,
+        "num_retrieved": 4,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010533",
+      "review_title": "Positron emission tomography‐adapted therapy for first‐line treatment in individuals with Hodgkin lymphoma",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010534",
+      "review_title": "Parent‐infant psychotherapy for improving parental and infant mental health",
+      "review_type": "",
+      "num_papers": 16,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.1875,
+        "recall": 1.0,
+        "f1": 0.3158,
+        "num_relevant": 3,
+        "num_retrieved": 16,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "num_relevant": 3,
+        "num_retrieved": 10,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 3,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 3,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615,
+        "num_relevant": 3,
+        "num_retrieved": 10,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 3,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 7
+      }
+    },
+    {
+      "review_id": "CD010542",
+      "review_title": "Transient elastography for diagnosis of stages of hepatic fibrosis and cirrhosis in people with alcoholic liver disease",
+      "review_type": "Diagnostic",
+      "num_papers": 3,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "num_relevant": 1,
+        "num_retrieved": 3,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010632",
+      "review_title": "18F‐FDG PET for the early diagnosis of Alzheimer’s disease dementia and other dementias in people with mild cognitive impairment (MCI)",
+      "review_type": "Diagnostic",
+      "num_papers": 12,
+      "num_gold_included": 6,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 6,
+        "num_retrieved": 12,
+        "num_true_positives": 6
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "num_relevant": 6,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 2,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 2,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010633",
+      "review_title": "Dopamine transporter imaging for the diagnosis of dementia with Lewy bodies",
+      "review_type": "Diagnostic",
+      "num_papers": 3,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "num_relevant": 1,
+        "num_retrieved": 3,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010653",
+      "review_title": "First rank symptoms for schizophrenia",
+      "review_type": "Diagnostic",
+      "num_papers": 3,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 3,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010685",
+      "review_title": "Retinoic acid postconsolidation therapy for high‐risk neuroblastoma patients treated with autologous haematopoietic stem cell transplantation",
+      "review_type": "Intervention",
+      "num_papers": 14,
+      "num_gold_included": 2,
+      "num_screening_rounds": 1,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.1429,
+        "recall": 1.0,
+        "f1": 0.25,
+        "num_relevant": 2,
+        "num_retrieved": 14,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "num_relevant": 2,
+        "num_retrieved": 8,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "num_relevant": 2,
+        "num_retrieved": 8,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 6
+      }
+    },
+    {
+      "review_id": "CD010693",
+      "review_title": "Peroxisome proliferator‐activated receptor gamma agonists for preventing recurrent stroke and other vascular events in people with stroke or transient ischaemic attack",
+      "review_type": "Intervention",
+      "num_papers": 12,
+      "num_gold_included": 5,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4167,
+        "recall": 1.0,
+        "f1": 0.5882,
+        "num_relevant": 5,
+        "num_retrieved": 12,
+        "num_true_positives": 5
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 5,
+        "num_retrieved": 5,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 5,
+        "num_retrieved": 5,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 5,
+        "num_retrieved": 5,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 5,
+        "num_retrieved": 5,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010709",
+      "review_title": "Pre‐emptive correction for haemodialysis arteriovenous access stenosis",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "num_relevant": 3,
+        "num_retrieved": 5,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 3,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010767",
+      "review_title": "Intermittent preventive antimalarial treatment for children with anaemia",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 2,
+        "num_retrieved": 5,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD010901",
+      "review_title": "Interventions for drug‐using offenders with co‐occurring mental health problems",
+      "review_type": "",
+      "num_papers": 69,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0435,
+        "recall": 1.0,
+        "f1": 0.0833,
+        "num_relevant": 3,
+        "num_retrieved": 69,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0612,
+        "recall": 1.0,
+        "f1": 0.1154,
+        "num_relevant": 3,
+        "num_retrieved": 49,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0612,
+        "recall": 1.0,
+        "f1": 0.1154,
+        "num_relevant": 3,
+        "num_retrieved": 49,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 3,
+        "num_false_positive": 6
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 46
+      }
+    },
+    {
+      "review_id": "CD010910",
+      "review_title": "Interventions for female drug‐using offenders",
+      "review_type": "Intervention",
+      "num_papers": 79,
+      "num_gold_included": 9,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.1139,
+        "recall": 1.0,
+        "f1": 0.2045,
+        "num_relevant": 9,
+        "num_retrieved": 79,
+        "num_true_positives": 9
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.2083,
+        "recall": 0.5556,
+        "f1": 0.303,
+        "num_relevant": 9,
+        "num_retrieved": 24,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 0.3846,
+        "recall": 0.5556,
+        "f1": 0.4545,
+        "num_relevant": 9,
+        "num_retrieved": 13,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.3846,
+        "recall": 0.5556,
+        "f1": 0.4545,
+        "num_relevant": 9,
+        "num_retrieved": 13,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 0.2083,
+        "recall": 0.5556,
+        "f1": 0.303,
+        "num_relevant": 9,
+        "num_retrieved": 24,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 4,
+        "num_false_positive": 8
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 4,
+        "num_false_positive": 19
+      }
+    },
+    {
+      "review_id": "CD010912",
+      "review_title": "Workplace interventions for reducing sitting at work",
+      "review_type": "Intervention",
+      "num_papers": 45,
+      "num_gold_included": 22,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4889,
+        "recall": 1.0,
+        "f1": 0.6567,
+        "num_relevant": 22,
+        "num_retrieved": 45,
+        "num_true_positives": 22
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5517,
+        "recall": 0.7273,
+        "f1": 0.6275,
+        "num_relevant": 22,
+        "num_retrieved": 29,
+        "num_true_positives": 16
+      },
+      "screening_include_metrics": {
+        "precision": 0.6667,
+        "recall": 0.2727,
+        "f1": 0.3871,
+        "num_relevant": 22,
+        "num_retrieved": 9,
+        "num_true_positives": 6
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.6667,
+        "recall": 0.2727,
+        "f1": 0.3871,
+        "num_relevant": 22,
+        "num_retrieved": 9,
+        "num_true_positives": 6
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5517,
+        "recall": 0.7273,
+        "f1": 0.6275,
+        "num_relevant": 22,
+        "num_retrieved": 29,
+        "num_true_positives": 16
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 6,
+        "num_missed": 16,
+        "num_false_positive": 3
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 16,
+        "num_missed": 6,
+        "num_false_positive": 13
+      }
+    },
+    {
+      "review_id": "CD010927",
+      "review_title": "Dihydroartemisinin‐piperaquine for treating uncomplicated Plasmodium falciparum malaria",
+      "review_type": "Intervention",
+      "num_papers": 16,
+      "num_gold_included": 14,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333,
+        "num_relevant": 14,
+        "num_retrieved": 16,
+        "num_true_positives": 14
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333,
+        "num_relevant": 14,
+        "num_retrieved": 16,
+        "num_true_positives": 14
+      },
+      "screening_include_metrics": {
+        "precision": 0.6667,
+        "recall": 0.2857,
+        "f1": 0.4,
+        "num_relevant": 14,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.6667,
+        "recall": 0.2857,
+        "f1": 0.4,
+        "num_relevant": 14,
+        "num_retrieved": 6,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333,
+        "num_relevant": 14,
+        "num_retrieved": 16,
+        "num_true_positives": 14
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 10,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 14,
+        "num_missed": 0,
+        "num_false_positive": 2
+      }
+    },
+    {
+      "review_id": "CD010952",
+      "review_title": "Non‐steroidal anti‐inflammatory drugs (NSAIDs) for axial spondyloarthritis (ankylosing spondylitis and non‐radiographic axial spondyloarthritis)",
+      "review_type": "",
+      "num_papers": 11,
+      "num_gold_included": 6,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5455,
+        "recall": 1.0,
+        "f1": 0.7059,
+        "num_relevant": 6,
+        "num_retrieved": 11,
+        "num_true_positives": 6
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.8333,
+        "recall": 0.8333,
+        "f1": 0.8333,
+        "num_relevant": 6,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 0.8333,
+        "recall": 0.8333,
+        "f1": 0.8333,
+        "num_relevant": 6,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.8333,
+        "recall": 0.8333,
+        "f1": 0.8333,
+        "num_relevant": 6,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 0.8333,
+        "recall": 0.8333,
+        "f1": 0.8333,
+        "num_relevant": 6,
+        "num_retrieved": 6,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 1,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 1,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD011047",
+      "review_title": "Colchicine for prevention of cardiovascular events",
+      "review_type": "Intervention",
+      "num_papers": 8,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 8,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011145",
+      "review_title": "Mini‐Mental State Examination (MMSE) for the detection of dementia in clinically unevaluated people aged 65 and over in community and primary care populations",
+      "review_type": "Diagnostic",
+      "num_papers": 42,
+      "num_gold_included": 15,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.3571,
+        "recall": 1.0,
+        "f1": 0.5263,
+        "num_relevant": 15,
+        "num_retrieved": 42,
+        "num_true_positives": 15
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5455,
+        "num_relevant": 15,
+        "num_retrieved": 40,
+        "num_true_positives": 15
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333,
+        "num_relevant": 15,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333,
+        "num_relevant": 15,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5455,
+        "num_relevant": 15,
+        "num_retrieved": 40,
+        "num_true_positives": 15
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 12,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 15,
+        "num_missed": 0,
+        "num_false_positive": 25
+      }
+    },
+    {
+      "review_id": "CD011146",
+      "review_title": "Doxycycline plus ivermectin versus ivermectin alone for treatment of patients with onchocerciasis",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011209",
+      "review_title": "Nortriptyline for neuropathic pain in adults",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011241",
+      "review_title": "Zonisamide for neuropathic pain in adults",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011268",
+      "review_title": "Second‐generation antidepressants for preventing seasonal affective disorder in adults",
+      "review_type": "",
+      "num_papers": 1,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 1,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011281",
+      "review_title": "Subcutaneous rapid‐acting insulin analogues for diabetic ketoacidosis",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "num_relevant": 2,
+        "num_retrieved": 5,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011447",
+      "review_title": "Ultrasound guidance versus anatomical landmarks for subclavian or femoral vein catheterization",
+      "review_type": "Intervention",
+      "num_papers": 3,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "num_relevant": 2,
+        "num_retrieved": 3,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011472",
+      "review_title": "Dietary fibre for the primary prevention of cardiovascular disease",
+      "review_type": "Intervention",
+      "num_papers": 7,
+      "num_gold_included": 3,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4286,
+        "recall": 1.0,
+        "f1": 0.6,
+        "num_relevant": 3,
+        "num_retrieved": 7,
+        "num_true_positives": 3
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "num_relevant": 3,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 3
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 0,
+        "num_false_positive": 3
+      }
+    },
+    {
+      "review_id": "CD011721",
+      "review_title": "Long‐acting muscarinic antagonists (LAMA) added to combination long‐acting beta2‐agonists and inhaled corticosteroids (LABA/ICS) versus LABA/ICS for adults with asthma",
+      "review_type": "Intervention",
+      "num_papers": 11,
+      "num_gold_included": 7,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.6364,
+        "recall": 1.0,
+        "f1": 0.7778,
+        "num_relevant": 7,
+        "num_retrieved": 11,
+        "num_true_positives": 7
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5556,
+        "recall": 0.7143,
+        "f1": 0.625,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 5
+      },
+      "screening_include_metrics": {
+        "precision": 0.5556,
+        "recall": 0.7143,
+        "f1": 0.625,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.5556,
+        "recall": 0.7143,
+        "f1": 0.625,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5556,
+        "recall": 0.7143,
+        "f1": 0.625,
+        "num_relevant": 7,
+        "num_retrieved": 9,
+        "num_true_positives": 5
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 2,
+        "num_false_positive": 4
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 5,
+        "num_missed": 2,
+        "num_false_positive": 4
+      }
+    },
+    {
+      "review_id": "CD011724",
+      "review_title": "Needle aspiration versus intercostal tube drainage for pneumothorax in the newborn",
+      "review_type": "Intervention",
+      "num_papers": 1,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD011737",
+      "review_title": "Reduction in saturated fat intake for cardiovascular disease",
+      "review_type": "",
+      "num_papers": 111,
+      "num_gold_included": 17,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.1532,
+        "recall": 1.0,
+        "f1": 0.2656,
+        "num_relevant": 17,
+        "num_retrieved": 111,
+        "num_true_positives": 17
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.1619,
+        "recall": 1.0,
+        "f1": 0.2787,
+        "num_relevant": 17,
+        "num_retrieved": 105,
+        "num_true_positives": 17
+      },
+      "screening_include_metrics": {
+        "precision": 0.7143,
+        "recall": 0.2941,
+        "f1": 0.4167,
+        "num_relevant": 17,
+        "num_retrieved": 7,
+        "num_true_positives": 5
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.7143,
+        "recall": 0.2941,
+        "f1": 0.4167,
+        "num_relevant": 17,
+        "num_retrieved": 7,
+        "num_true_positives": 5
+      },
+      "gold_comparison_kept": {
+        "precision": 0.1619,
+        "recall": 1.0,
+        "f1": 0.2787,
+        "num_relevant": 17,
+        "num_retrieved": 105,
+        "num_true_positives": 17
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 5,
+        "num_missed": 12,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 17,
+        "num_missed": 0,
+        "num_false_positive": 88
+      }
+    },
+    {
+      "review_id": "CD011837",
+      "review_title": "Medical and surgical interventions for the treatment of usual‐type vulval intraepithelial neoplasia",
+      "review_type": "Intervention",
+      "num_papers": 2,
+      "num_gold_included": 0,
+      "num_screening_rounds": 2,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 0,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD012004",
+      "review_title": "Motor control exercise for chronic non‐specific low‐back pain",
+      "review_type": "Intervention",
+      "num_papers": 24,
+      "num_gold_included": 11,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4583,
+        "recall": 1.0,
+        "f1": 0.6286,
+        "num_relevant": 11,
+        "num_retrieved": 24,
+        "num_true_positives": 11
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.55,
+        "recall": 1.0,
+        "f1": 0.7097,
+        "num_relevant": 11,
+        "num_retrieved": 20,
+        "num_true_positives": 11
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.2727,
+        "f1": 0.4286,
+        "num_relevant": 11,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.2727,
+        "f1": 0.4286,
+        "num_relevant": 11,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.55,
+        "recall": 1.0,
+        "f1": 0.7097,
+        "num_relevant": 11,
+        "num_retrieved": 20,
+        "num_true_positives": 11
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 8,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 11,
+        "num_missed": 0,
+        "num_false_positive": 9
+      }
+    },
+    {
+      "review_id": "CD012199",
+      "review_title": "Interventions to improve water, sanitation, and hygiene for preventing soil‐transmitted helminth infection",
+      "review_type": "Intervention",
+      "num_papers": 34,
+      "num_gold_included": 15,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4412,
+        "recall": 1.0,
+        "f1": 0.6122,
+        "num_relevant": 15,
+        "num_retrieved": 34,
+        "num_true_positives": 15
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5769,
+        "recall": 1.0,
+        "f1": 0.7317,
+        "num_relevant": 15,
+        "num_retrieved": 26,
+        "num_true_positives": 15
+      },
+      "screening_include_metrics": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.2857,
+        "num_relevant": 15,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.2857,
+        "num_relevant": 15,
+        "num_retrieved": 6,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5769,
+        "recall": 1.0,
+        "f1": 0.7317,
+        "num_relevant": 15,
+        "num_retrieved": 26,
+        "num_true_positives": 15
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 12,
+        "num_false_positive": 3
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 15,
+        "num_missed": 0,
+        "num_false_positive": 11
+      }
+    },
+    {
+      "review_id": "CD012515",
+      "review_title": "Training health workers in clinical breast examination for early detection of breast cancer in low‐ and middle‐income countries",
+      "review_type": "Intervention",
+      "num_papers": 6,
+      "num_gold_included": 2,
+      "num_screening_rounds": 2,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "num_relevant": 2,
+        "num_retrieved": 6,
+        "num_true_positives": 2
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 2,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 2,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD013080",
+      "review_title": "Accuracy of measures for antiretroviral adherence in people living with HIV",
+      "review_type": "Diagnostic",
+      "num_papers": 22,
+      "num_gold_included": 22,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 22,
+        "num_retrieved": 22,
+        "num_true_positives": 22
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 0.6364,
+        "f1": 0.7778,
+        "num_relevant": 22,
+        "num_retrieved": 14,
+        "num_true_positives": 14
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1818,
+        "f1": 0.3077,
+        "num_relevant": 22,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1818,
+        "f1": 0.3077,
+        "num_relevant": 22,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 0.6364,
+        "f1": 0.7778,
+        "num_relevant": 22,
+        "num_retrieved": 14,
+        "num_true_positives": 14
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 18,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 14,
+        "num_missed": 8,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD013088",
+      "review_title": "Case management for integrated care of older people with frailty in community settings",
+      "review_type": "Intervention",
+      "num_papers": 34,
+      "num_gold_included": 24,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.7059,
+        "recall": 1.0,
+        "f1": 0.8276,
+        "num_relevant": 24,
+        "num_retrieved": 34,
+        "num_true_positives": 24
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.6154,
+        "recall": 0.6667,
+        "f1": 0.64,
+        "num_relevant": 24,
+        "num_retrieved": 26,
+        "num_true_positives": 16
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "num_relevant": 24,
+        "num_retrieved": 6,
+        "num_true_positives": 6
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "num_relevant": 24,
+        "num_retrieved": 6,
+        "num_true_positives": 6
+      },
+      "gold_comparison_kept": {
+        "precision": 0.6154,
+        "recall": 0.6667,
+        "f1": 0.64,
+        "num_relevant": 24,
+        "num_retrieved": 26,
+        "num_true_positives": 16
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 6,
+        "num_missed": 18,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 16,
+        "num_missed": 8,
+        "num_false_positive": 10
+      }
+    },
+    {
+      "review_id": "CD013274",
+      "review_title": "Consumers’ and health providers’ views and perceptions of partnering to improve health services design, delivery and evaluation: a co‐produced qualitative evidence synthesis",
+      "review_type": "Qualitative",
+      "num_papers": 125,
+      "num_gold_included": 13,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.104,
+        "recall": 1.0,
+        "f1": 0.1884,
+        "num_relevant": 13,
+        "num_retrieved": 125,
+        "num_true_positives": 13
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.039,
+        "recall": 0.2308,
+        "f1": 0.0667,
+        "num_relevant": 13,
+        "num_retrieved": 77,
+        "num_true_positives": 3
+      },
+      "screening_include_metrics": {
+        "precision": 0.0638,
+        "recall": 0.2308,
+        "f1": 0.1,
+        "num_relevant": 13,
+        "num_retrieved": 47,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0638,
+        "recall": 0.2308,
+        "f1": 0.1,
+        "num_relevant": 13,
+        "num_retrieved": 47,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.039,
+        "recall": 0.2308,
+        "f1": 0.0667,
+        "num_relevant": 13,
+        "num_retrieved": 77,
+        "num_true_positives": 3
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 10,
+        "num_false_positive": 44
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 3,
+        "num_missed": 10,
+        "num_false_positive": 74
+      }
+    },
+    {
+      "review_id": "CD013328",
+      "review_title": "Interventions to improve sanitation for preventing diarrhoea",
+      "review_type": "Intervention",
+      "num_papers": 24,
+      "num_gold_included": 15,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692,
+        "num_relevant": 15,
+        "num_retrieved": 24,
+        "num_true_positives": 15
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 15,
+        "num_retrieved": 20,
+        "num_true_positives": 15
+      },
+      "screening_include_metrics": {
+        "precision": 0.875,
+        "recall": 0.4667,
+        "f1": 0.6087,
+        "num_relevant": 15,
+        "num_retrieved": 8,
+        "num_true_positives": 7
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.875,
+        "recall": 0.4667,
+        "f1": 0.6087,
+        "num_relevant": 15,
+        "num_retrieved": 8,
+        "num_true_positives": 7
+      },
+      "gold_comparison_kept": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "num_relevant": 15,
+        "num_retrieved": 20,
+        "num_true_positives": 15
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 7,
+        "num_missed": 8,
+        "num_false_positive": 1
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 15,
+        "num_missed": 0,
+        "num_false_positive": 5
+      }
+    },
+    {
+      "review_id": "CD013635",
+      "review_title": "Experiences of conditional and unconditional cash transfers intended for improving health outcomes and health service use: a qualitative evidence synthesis",
+      "review_type": "Qualitative",
+      "num_papers": 84,
+      "num_gold_included": 40,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.4762,
+        "recall": 1.0,
+        "f1": 0.6452,
+        "num_relevant": 40,
+        "num_retrieved": 84,
+        "num_true_positives": 40
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.5745,
+        "recall": 0.675,
+        "f1": 0.6207,
+        "num_relevant": 40,
+        "num_retrieved": 47,
+        "num_true_positives": 27
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.425,
+        "f1": 0.5965,
+        "num_relevant": 40,
+        "num_retrieved": 17,
+        "num_true_positives": 17
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.425,
+        "f1": 0.5965,
+        "num_relevant": 40,
+        "num_retrieved": 17,
+        "num_true_positives": 17
+      },
+      "gold_comparison_kept": {
+        "precision": 0.5745,
+        "recall": 0.675,
+        "f1": 0.6207,
+        "num_relevant": 40,
+        "num_retrieved": 47,
+        "num_true_positives": 27
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 17,
+        "num_missed": 23,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 27,
+        "num_missed": 13,
+        "num_false_positive": 20
+      }
+    },
+    {
+      "review_id": "CD013640",
+      "review_title": "Balanced crystalloid solutions versus 0.9% saline for treating acute diarrhoea and severe dehydration in children",
+      "review_type": "Intervention",
+      "num_papers": 5,
+      "num_gold_included": 1,
+      "num_screening_rounds": 2,
+      "num_satisfied": 1,
+      "prescreen_metrics": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333,
+        "num_relevant": 1,
+        "num_retrieved": 5,
+        "num_true_positives": 1
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "num_relevant": 1,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 1,
+        "num_missed": 0,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD013649",
+      "review_title": "Drugs to reduce bleeding and transfusion in major open vascular or endovascular surgery: a systematic review and network meta‐analysis",
+      "review_type": "Intervention",
+      "num_papers": 11,
+      "num_gold_included": 0,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 11,
+        "num_true_positives": 0
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "screening_include_metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "gold_comparison_kept": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "num_relevant": 0,
+        "num_retrieved": 2,
+        "num_true_positives": 0
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 2
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 0,
+        "num_missed": 0,
+        "num_false_positive": 2
+      }
+    },
+    {
+      "review_id": "CD013775",
+      "review_title": "Prognostic factors for the development and progression of proliferative diabetic retinopathy in people with diabetic retinopathy",
+      "review_type": "Prognosis",
+      "num_papers": 45,
+      "num_gold_included": 16,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.3556,
+        "recall": 1.0,
+        "f1": 0.5246,
+        "num_relevant": 16,
+        "num_retrieved": 45,
+        "num_true_positives": 16
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.3846,
+        "recall": 0.9375,
+        "f1": 0.5455,
+        "num_relevant": 16,
+        "num_retrieved": 39,
+        "num_true_positives": 15
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1": 0.3158,
+        "num_relevant": 16,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1": 0.3158,
+        "num_relevant": 16,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.3846,
+        "recall": 0.9375,
+        "f1": 0.5455,
+        "num_relevant": 16,
+        "num_retrieved": 39,
+        "num_true_positives": 15
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 13,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 15,
+        "num_missed": 1,
+        "num_false_positive": 24
+      }
+    },
+    {
+      "review_id": "CD013778",
+      "review_title": "Inspiratory muscle training, with or without concomitant pulmonary rehabilitation, for chronic obstructive pulmonary disease (COPD)",
+      "review_type": "Intervention",
+      "num_papers": 28,
+      "num_gold_included": 15,
+      "num_screening_rounds": 1,
+      "num_satisfied": 0,
+      "prescreen_metrics": {
+        "precision": 0.5357,
+        "recall": 1.0,
+        "f1": 0.6977,
+        "num_relevant": 15,
+        "num_retrieved": 28,
+        "num_true_positives": 15
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.7222,
+        "recall": 0.8667,
+        "f1": 0.7879,
+        "num_relevant": 15,
+        "num_retrieved": 18,
+        "num_true_positives": 13
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.0667,
+        "f1": 0.125,
+        "num_relevant": 15,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.0667,
+        "f1": 0.125,
+        "num_relevant": 15,
+        "num_retrieved": 1,
+        "num_true_positives": 1
+      },
+      "gold_comparison_kept": {
+        "precision": 0.7222,
+        "recall": 0.8667,
+        "f1": 0.7879,
+        "num_relevant": 15,
+        "num_retrieved": 18,
+        "num_true_positives": 13
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 1,
+        "num_missed": 14,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 13,
+        "num_missed": 2,
+        "num_false_positive": 5
+      }
+    },
+    {
+      "review_id": "CD013854",
+      "review_title": "Patient education interventions for the management of inflammatory bowel disease",
+      "review_type": "Intervention",
+      "num_papers": 17,
+      "num_gold_included": 9,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.5294,
+        "recall": 1.0,
+        "f1": 0.6923,
+        "num_relevant": 9,
+        "num_retrieved": 17,
+        "num_true_positives": 9
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474,
+        "num_relevant": 9,
+        "num_retrieved": 10,
+        "num_true_positives": 9
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "num_relevant": 9,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "num_relevant": 9,
+        "num_retrieved": 3,
+        "num_true_positives": 3
+      },
+      "gold_comparison_kept": {
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9474,
+        "num_relevant": 9,
+        "num_retrieved": 10,
+        "num_true_positives": 9
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 3,
+        "num_missed": 6,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 9,
+        "num_missed": 0,
+        "num_false_positive": 1
+      }
+    },
+    {
+      "review_id": "CD014384",
+      "review_title": "Antipsychotic dose reduction compared to dose continuation for people with schizophrenia",
+      "review_type": "Intervention",
+      "num_papers": 14,
+      "num_gold_included": 10,
+      "num_screening_rounds": 1,
+      "num_satisfied": 3,
+      "prescreen_metrics": {
+        "precision": 0.7143,
+        "recall": 1.0,
+        "f1": 0.8333,
+        "num_relevant": 10,
+        "num_retrieved": 14,
+        "num_true_positives": 10
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714,
+        "num_relevant": 10,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714,
+        "num_relevant": 10,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714,
+        "num_relevant": 10,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_kept": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714,
+        "num_relevant": 10,
+        "num_retrieved": 4,
+        "num_true_positives": 4
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 4,
+        "num_missed": 6,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 4,
+        "num_missed": 6,
+        "num_false_positive": 0
+      }
+    },
+    {
+      "review_id": "CD014758",
+      "review_title": "Interventions for myopia control in children: a living systematic review and network meta‐analysis",
+      "review_type": "Intervention",
+      "num_papers": 47,
+      "num_gold_included": 33,
+      "num_screening_rounds": 1,
+      "num_satisfied": 2,
+      "prescreen_metrics": {
+        "precision": 0.7021,
+        "recall": 1.0,
+        "f1": 0.825,
+        "num_relevant": 33,
+        "num_retrieved": 47,
+        "num_true_positives": 33
+      },
+      "title_screen_metrics": null,
+      "screening_metrics": {
+        "precision": 0.825,
+        "recall": 1.0,
+        "f1": 0.9041,
+        "num_relevant": 33,
+        "num_retrieved": 40,
+        "num_true_positives": 33
+      },
+      "screening_include_metrics": {
+        "precision": 1.0,
+        "recall": 0.0606,
+        "f1": 0.1143,
+        "num_relevant": 33,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "scoring_metrics": null,
+      "gold_comparison_include": {
+        "precision": 1.0,
+        "recall": 0.0606,
+        "f1": 0.1143,
+        "num_relevant": 33,
+        "num_retrieved": 2,
+        "num_true_positives": 2
+      },
+      "gold_comparison_kept": {
+        "precision": 0.825,
+        "recall": 1.0,
+        "f1": 0.9041,
+        "num_relevant": 33,
+        "num_retrieved": 40,
+        "num_true_positives": 33
+      },
+      "gold_comparison_detail_include": {
+        "num_correct": 2,
+        "num_missed": 31,
+        "num_false_positive": 0
+      },
+      "gold_comparison_detail_kept": {
+        "num_correct": 33,
+        "num_missed": 0,
+        "num_false_positive": 7
+      }
+    }
+  ]
+}

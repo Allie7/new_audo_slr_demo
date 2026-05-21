@@ -1,0 +1,3 @@
+research_direction: 个体化治疗方案  
+filter_requirements: 最近两年且与ACEI或ARB相关  
+other_info: 研究结论显示ACEI或ARB在预防急性心肌梗死、全因死亡等方面效果有限，但可能有助于改善心脏输出和减少心衰风险。建议个体化治疗方案，根据患者具体情况选择药物。

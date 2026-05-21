@@ -1,0 +1,7 @@
+research_direction: 医学/药理学  
+other_info: 研究方向为心血管疾病中的心律失常：包括心肌收缩功能（如reduced LVEF）、心律失常和sudden cardiac death等；针对高危患者或因VT/VF恢复的成人进行随机或准随机对照试验评估阿莫地平与其他抗心律失常药物的效果。筛选条件为近2年、排除非随机对照试验，并使用关键词randomised controlled trials等。结构化总结提供了各研究的数据，包括标题、期刊、作者、关键词和相关药物，这有助于进一步分析或整合到更大的数据集中。
+
+此外，论文 'Absence of bilateral vision loss from amiodarone: A randomized trial' 应纳入现有记录中，因为其研究方向与心血管疾病中的心律失常相关，并且符合筛选条件。
+
+研究_direction: β-受体阻滞剂及其在预防起搏器性震颤中的应用  
+filter_requirements: 近两年, 关键词: β-Blockers, Amiodarone Plus β-Blockers, Sotalol; 排除标准: 不含与起搏器性震颤相关的关键词

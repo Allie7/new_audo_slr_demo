@@ -1,0 +1,11 @@
+research_direction: Evaluation of Inflammatory Markers in Acute Urinary Tract Infections  
+other_info: Reference standards include photopenia on DMSA scan as pyelonephritis; accuracy assessed through meta-regression analysis of timing; excludes permissive criteria such as bag specimen urine collection and antibiotics use.  
+
+research_direction: acute pyelonephritis in children  
+other_info: Procalcitonin, C-reactive protein, and erythrocyte sedimentation rate for the diagnosis of acute pyelonephritis in children.  
+
+research_direction: UTI中的化脓性肾盂炎与非化脓性肾盂炎的区别  
+other_info: 摘要详细描述了研究目的（评估PCT、CRP和ESR在诊断UTI中的准确性）、搜索方法、筛选标准以及主要结果.  
+
+research_direction: Serum neutrophil gelatinase-associated lipocalin for predicting acute pyelonephritis in infants with urinary tract infection  
+other_info: A study evaluating the diagnostic accuracy of serum neutrophil gelatinase-associated lipocalin (NGAL) for predicting acute pyelonephritis in infants with urinary tract infections.

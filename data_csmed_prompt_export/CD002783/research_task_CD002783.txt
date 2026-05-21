@@ -1,2 +1,0 @@
-research_direction: 药物-机械导管辅助静脉治疗深静脉血栓的额外成本效益  
-other_info: 研究方向为药物-机械导管辅助静脉治疗深静脉血栓（DVT）的额外成本效益分析，研究对象分为急性深静脉血栓（DVT）患者和CVA相关动脉闭塞症（CAVA）患者。DVT组的研究对象包括各种 thrombolytic药物如streptokinase、urokinase、tPA等，以及辅助治疗手段如thrombectomy和balloon venoplasty；CAVA组则采用超声加速的导管辅助静脉溶解再通治疗与抗凝治疗的对比研究。主要结果关注完全消凝和出血并发症，次要结果涉及康复率、复发DVT或CAVA、DVT或CAVA相关动脉闭塞症复发和成本比较。用户对论文 'Cost-effectiveness of additional catheter-directed thrombolysis for deep vein thrombosis' 表达了满意，认为该论文符合研究需求。

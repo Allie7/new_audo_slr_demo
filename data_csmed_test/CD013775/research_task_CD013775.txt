@@ -1,0 +1,13 @@
+research_direction: Predicting Development of Proliferative Diabetic Retinopathy  
+filter_requirements: 摘要不完整且包含版权信息，无法确定是否为队列研究或符合用户需求  
+rejection_reasons: 摘要不完整且包含版权信息，无法确定是否为队列研究或符合用户需求  
+
+other_info: 研究目标人群为≥18岁成年人，具有糖尿病视网膜病变 (Diabetic Retinopathy, DR) 或视网膜 punctate diabetes (PDR) 的参与者，来自所有种族、地理和经济社会背景。纳入标准包括前瞻性队列研究、回顾性队列研究、病例对照研究和基于 registry 的纵向数据研究。排除标准为无风险因素数据。研究必须评估糖尿病（Type 1 Diabetes）对糖尿病视网膜病变发展的确切影响因素，并分析这些因素对糖尿病视网膜病变发展的影响，而非整体 DR 进行预测或随访。此外，作者应确保以下方面：  
+- **Valid性和可靠性测量**: 相关因素的测量具有高、低或中等的有效性和可靠性。  
+- **Valid性和可靠性的评估**: 相关因素的评估方法具有高、低或中等的有效性和可靠性。  
+- **Prognostic Factor Measurement**: 作者对相关因素的测量结果为 Low、High 或 Moderate。  
+- **Adjustment for Other Prognostic Factors**: 作者在调整其他因素时的具体方法。  
+- **QUIPS Tool (Risk of Bias)**: 研究设计中的风险评估工具。  
+- **QUIPS Tool (Authors' Judgements)**: 研究设计中作者的判断结果。  
+
+研究目标人群为≥18岁成年人，具有糖尿病视网膜病变 (Diabetic Retinopathy, DR) 或视网膜 punctate diabetes (PDR) 的参与者，来自所有种族、地理和经济社会背景。纳入标准包括前瞻性队列研究、回顾性队列研究、病例对照研究和基于 registry 的纵向数据研究。排除标准为无风险因素数据。研究必须评估糖尿病（Type 1 Diabetes）对糖尿病视网膜病变发展的确切影响因素，并分析这些因素对糖尿病视网膜病变发展的影响，而非整体 DR 进行预测或随访。此外，研究应重点关注与Proliferative Diabetic Retinopathy发展的预测相关因素的测量和分析。

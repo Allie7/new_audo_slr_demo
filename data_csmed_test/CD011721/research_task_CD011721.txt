@@ -1,0 +1,3 @@
+research_direction: Chronic Asthma
+filter_requirements: 近两年, 关键词: Tirotropium, Randomized Controlled Trial, Inhaler Use
+other_info: 我们使用电子监测技术评估吸入药物的使用情况。我们纳入并分析了至少12周的随机化对照试验（RCTs），包括完整的-full text、出版摘要和未公开数据。我们比较了Tirotropium加用药物与相同剂量LABA/ICS单药的疗效和安全性。我们研究了Tiotropium在慢性哮喘患者中的潜在作用，并评估了以下指标：加重需要口服皮质类固醇、生活质量（采用 validated asthma scale，如AQLQ）、严重不良事件、加重需要住院、肺功能（FEV1）和哮喘控制（Asthma Control Questionnaire (ACQ)）。我们还评估了任何不良事件。

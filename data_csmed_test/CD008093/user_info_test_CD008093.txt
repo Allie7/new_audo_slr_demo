@@ -1,0 +1,2 @@
+user_identity: 计算机专业硕士研究生
+user_preference: 心脏学领域，尤其是随机对照试验或准随机对照试验

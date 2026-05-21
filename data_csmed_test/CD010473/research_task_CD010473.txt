@@ -1,0 +1,3 @@
+研究方向：Bronchiolitis, Bronchopneumonia, Respiratory Syncytial Virus Infections, Positive Pressure Ventilation (PPV), Continuous Positive Airway Pressure (CPAP), High flow nasal cannula (HFNC) 在儿童（3岁以下）急性支气管炎中的应用与效果比较，重点评估其在儿童（3岁以下）急性支气管炎中的治疗效果。  
+filter_requirements: 近两年发表的文献，关键词筛选，排除与Respiratory Syncytial Virus无关的内容，使用MEDLINE、LILACS等数据库进行检索。  
+other_info: 研究包括婴儿的所有阶段，无论是否存在RV感染状态，干预措施涉及不同PPV、CPAP参数、设备类型和持续时间，但排除高流鼻 cannulae的研究。

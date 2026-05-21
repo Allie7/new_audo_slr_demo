@@ -1,0 +1,179 @@
+================================================================================
+CSMeD-FT 测试报告
+测试时间: 2026-05-20 23:47:25
+测试参数: {"num_reviews": 10, "offset": 100, "skip_prescreen": false, "workers": 1}
+================================================================================
+
+总测试 review 数: 10
+成功: 9, 失败: 1
+
+--- 失败的 review ---
+  CD008366: 'str' object has no attribute 'get'
+
+================================================================================
+逐条 Review 结果
+================================================================================
+
+  Review: CD008081 (Diagnostic)
+    Title: Optical coherence tomography (OCT) for detection of macular oedema in patients with diabetic retinop
+    论文数: 6, Gold included: 4
+    迭代轮次: 1, 满意论文: 3
+    Metadata初筛: {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 0.8, 'recall': 1.0, 'f1': 0.8889, 'num_relevant': 4, 'num_retrieved': 5, 'num_true_positives': 4}
+    筛选(include-only): {'precision': 0.8, 'recall': 1.0, 'f1': 0.8889, 'num_relevant': 4, 'num_retrieved': 5, 'num_true_positives': 4}
+    打分: None
+    *** Gold对比 (include-only): P=0.8, R=1.0, F1=0.8889 ***
+        TP=4, FN=0, FP=1
+    *** Gold对比 (include+not_sure): P=0.8, R=1.0, F1=0.8889 ***
+        TP=4, FN=0, FP=1
+
+  Review: CD008093 ()
+    Title: Amiodarone versus other pharmacological interventions for prevention of sudden cardiac death
+    论文数: 9, Gold included: 7
+    迭代轮次: 1, 满意论文: 3
+    Metadata初筛: {'precision': 0.7778, 'recall': 1.0, 'f1': 0.875, 'num_relevant': 7, 'num_retrieved': 9, 'num_true_positives': 7}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 0.7143, 'f1': 0.8333, 'num_relevant': 7, 'num_retrieved': 5, 'num_true_positives': 5}
+    筛选(include-only): {'precision': 1.0, 'recall': 0.7143, 'f1': 0.8333, 'num_relevant': 7, 'num_retrieved': 5, 'num_true_positives': 5}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=0.7143, F1=0.8333 ***
+        TP=5, FN=2, FP=0
+    *** Gold对比 (include+not_sure): P=1.0, R=0.7143, F1=0.8333 ***
+        TP=5, FN=2, FP=0
+
+  Review: CD008170 (Intervention)
+    Title: First‐line drugs inhibiting the renin angiotensin system versus other first‐line antihypertensive dr
+    论文数: 21, Gold included: 17
+    迭代轮次: 1, 满意论文: 3
+    Metadata初筛: {'precision': 0.8095, 'recall': 1.0, 'f1': 0.8947, 'num_relevant': 17, 'num_retrieved': 21, 'num_true_positives': 17}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 0.85, 'recall': 1.0, 'f1': 0.9189, 'num_relevant': 17, 'num_retrieved': 20, 'num_true_positives': 17}
+    筛选(include-only): {'precision': 1.0, 'recall': 0.3529, 'f1': 0.5217, 'num_relevant': 17, 'num_retrieved': 6, 'num_true_positives': 6}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=0.3529, F1=0.5217 ***
+        TP=6, FN=11, FP=0
+    *** Gold对比 (include+not_sure): P=0.85, R=1.0, F1=0.9189 ***
+        TP=17, FN=0, FP=3
+
+  Review: CD008185 (Intervention)
+    Title: Enzyme replacement therapy with idursulfase for mucopolysaccharidosis type II (Hunter syndrome)
+    论文数: 3, Gold included: 2
+    迭代轮次: 2, 满意论文: 2
+    Metadata初筛: {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 2, 'num_retrieved': 3, 'num_true_positives': 2}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 2, 'num_retrieved': 2, 'num_true_positives': 2}
+    筛选(include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 2, 'num_retrieved': 2, 'num_true_positives': 2}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=1.0, F1=1.0 ***
+        TP=2, FN=0, FP=0
+    *** Gold对比 (include+not_sure): P=1.0, R=1.0, F1=1.0 ***
+        TP=2, FN=0, FP=0
+
+  Review: CD008213 (Intervention)
+    Title: Surgical interventions for primary congenital glaucoma
+    论文数: 6, Gold included: 4
+    迭代轮次: 1, 满意论文: 3
+    Metadata初筛: {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+    筛选(include-only): {'precision': 0.6667, 'recall': 1.0, 'f1': 0.8, 'num_relevant': 4, 'num_retrieved': 6, 'num_true_positives': 4}
+    打分: None
+    *** Gold对比 (include-only): P=0.6667, R=1.0, F1=0.8 ***
+        TP=4, FN=0, FP=2
+    *** Gold对比 (include+not_sure): P=0.6667, R=1.0, F1=0.8 ***
+        TP=4, FN=0, FP=2
+
+  Review: CD008265 (Intervention)
+    Title: Endoscopic release for carpal tunnel syndrome
+    论文数: 3, Gold included: 1
+    迭代轮次: 2, 满意论文: 1
+    Metadata初筛: {'precision': 0.3333, 'recall': 1.0, 'f1': 0.5, 'num_relevant': 1, 'num_retrieved': 3, 'num_true_positives': 1}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+    筛选(include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=1.0, F1=1.0 ***
+        TP=1, FN=0, FP=0
+    *** Gold对比 (include+not_sure): P=1.0, R=1.0, F1=1.0 ***
+        TP=1, FN=0, FP=0
+
+  Review: CD008345 (Intervention)
+    Title: Case management approaches to home support for people with dementia
+    论文数: 17, Gold included: 6
+    迭代轮次: 1, 满意论文: 1
+    Metadata初筛: {'precision': 0.3529, 'recall': 1.0, 'f1': 0.5217, 'num_relevant': 6, 'num_retrieved': 17, 'num_true_positives': 6}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 0.6, 'recall': 1.0, 'f1': 0.75, 'num_relevant': 6, 'num_retrieved': 10, 'num_true_positives': 6}
+    筛选(include-only): {'precision': 1.0, 'recall': 0.1667, 'f1': 0.2857, 'num_relevant': 6, 'num_retrieved': 1, 'num_true_positives': 1}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=0.1667, F1=0.2857 ***
+        TP=1, FN=5, FP=0
+    *** Gold对比 (include+not_sure): P=0.6, R=1.0, F1=0.75 ***
+        TP=6, FN=0, FP=4
+
+  Review: CD008426 (Intervention)
+    Title: House dust mite reduction and avoidance measures for treating eczema
+    论文数: 1, Gold included: 1
+    迭代轮次: 2, 满意论文: 1
+    Metadata初筛: {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+    筛选(include-only): {'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'num_relevant': 1, 'num_retrieved': 1, 'num_true_positives': 1}
+    打分: None
+    *** Gold对比 (include-only): P=1.0, R=1.0, F1=1.0 ***
+        TP=1, FN=0, FP=0
+    *** Gold对比 (include+not_sure): P=1.0, R=1.0, F1=1.0 ***
+        TP=1, FN=0, FP=0
+
+  Review: CD008435 (Intervention)
+    Title: Skin‐to‐skin care for procedural pain in neonates
+    论文数: 9, Gold included: 5
+    迭代轮次: 1, 满意论文: 3
+    Metadata初筛: {'precision': 0.5556, 'recall': 1.0, 'f1': 0.7143, 'num_relevant': 5, 'num_retrieved': 9, 'num_true_positives': 5}
+    Title筛选: None
+    筛选(include+not_sure): {'precision': 0.8333, 'recall': 1.0, 'f1': 0.9091, 'num_relevant': 5, 'num_retrieved': 6, 'num_true_positives': 5}
+    筛选(include-only): {'precision': 0.8333, 'recall': 1.0, 'f1': 0.9091, 'num_relevant': 5, 'num_retrieved': 6, 'num_true_positives': 5}
+    打分: None
+    *** Gold对比 (include-only): P=0.8333, R=1.0, F1=0.9091 ***
+        TP=5, FN=0, FP=1
+    *** Gold对比 (include+not_sure): P=0.8333, R=1.0, F1=0.9091 ***
+        TP=5, FN=0, FP=1
+
+================================================================================
+汇总统计
+================================================================================
+
+  Metadata初筛 (平均): {'precision': 0.6477, 'recall': 1.0, 'f1': 0.7673}
+  Title筛选 (平均): {'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
+  筛选 include+not_sure (平均): {'precision': 0.8611, 'recall': 0.9683, 'f1': 0.9}
+  筛选 include-only (平均): {'precision': 0.9222, 'recall': 0.8038, 'f1': 0.8043}
+  打分排序 (平均): {'precision': 0.0, 'recall': 0.0, 'f1': 0.0}
+
+  *** Gold对比 include-only (平均): {'precision': 0.9222, 'recall': 0.8038, 'f1': 0.8043} ***
+  *** Gold对比 include+not_sure (平均): {'precision': 0.8611, 'recall': 0.9683, 'f1': 0.9} ***
+
+--- 按 review_type 分组 ---
+   (1 reviews): [include] P=1.0000, R=0.7143, F1=0.8333 | [include+not_sure] P=1.0000, R=0.7143, F1=0.8333
+  Diagnostic (1 reviews): [include] P=0.8000, R=1.0000, F1=0.8889 | [include+not_sure] P=0.8000, R=1.0000, F1=0.8889
+  Intervention (7 reviews): [include] P=0.9286, R=0.7885, F1=0.7881 | [include+not_sure] P=0.8500, R=1.0000, F1=0.9111
+
+--- 全局 TP/FP/FN 汇总 (include-only) ---
+  总 Gold included 论文数: 47
+  总 TP (系统 include & Gold include): 29
+  总 FP (系统 include & Gold exclude): 4
+  总 FN (系统 exclude & Gold include): 18
+  全局 Precision: 0.8788
+  全局 Recall: 0.6170
+  全局 F1: 0.7250
+
+--- 全局 TP/FP/FN 汇总 (include+not_sure) ---
+  总 Gold included 论文数: 47
+  总 TP (系统 include & Gold include): 45
+  总 FP (系统 include & Gold exclude): 11
+  总 FN (系统 exclude & Gold include): 2
+  全局 Precision: 0.8036
+  全局 Recall: 0.9574
+  全局 F1: 0.8738
+
+================================================================================

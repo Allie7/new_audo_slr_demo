@@ -1,1 +1,0 @@
-user_identity: 成人（年龄>18岁）

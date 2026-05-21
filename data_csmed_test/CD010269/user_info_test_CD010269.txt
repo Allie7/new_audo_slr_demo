@@ -1,0 +1,1 @@
+user_identity: Medical professional or researcher in critical care; user_preference: Clinical trial or study type

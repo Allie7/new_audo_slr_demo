@@ -1,0 +1,9 @@
+research_direction: 肝硬化诊断  
+filter_requirements: 我们寻求包括评估酒精性肝病患者中肝硬化患者中的肝硬化队列和病例对照研究，使用 transient elastography 和 fibroscan 作为指标测试。我们考虑纳入任何性别、种族的参与者（年龄大于16岁），患有酒精性肝病（基于饮酒史和临床证据）。此外，我们还考虑了不同病因的参与者。  
+other_info: 类型的试验：诊断队列和病例对照研究，评估酒精性肝病患者中肝硬化患者中肝硬化存在与否，使用 transient elastography (肝硬度测量) 和 fibroscan (弹性扫描) 作为指标测试， liver biopsy* 作为参考标准。  
+参与者：任何性别、种族，年龄大于16岁，患有酒精性肝病（基于饮酒史和临床证据）。  
+指标测试： transient elastography (肝硬度测量) 和 fibroscan (弹性扫描)。  
+目标条件：使用 METAVIR 评分评估肝硬化（HCV ≥3）和肝 cirrhosis 的存在与否。  
+参考标准： liver biopsy* 作为诊断肝硬化和肝 cirrhosis 的参考标准。  
+
+rejection_reasons: 排除原因: Participants were suspected of having a chronic liver disease; however, aetiology was not reported.

@@ -1,0 +1,4 @@
+research_direction: 胆囊切除术  
+comparison_of_anesthesia regimens: Comparison of anaesthetic regimens for laparoscopic cholecystectomy  
+filter_requirements: 所有随机临床试验（RCTs），不论是否遮蔽、出版状态或样本量，排除准随机和非随机化研究。  
+other_info: 研究结果表明，所有比较中没有发现患者在同一天出院的比例存在显著差异。

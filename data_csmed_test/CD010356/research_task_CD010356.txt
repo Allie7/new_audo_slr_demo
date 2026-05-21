@@ -1,0 +1,3 @@
+research_direction: 术前加强性腹肌训练在Chef手术后肺并发症中的应用及术后呼吸肌训练对腹 major手术后呼吸肌力量的影响  
+filter_requirements: 近两年, 关键词筛选, 排除标准: quasi-randomized studies, historically controlled trials, cohort studies, 和 case series. 我们计划包括内群相关系数报告的集群随机对照试验。  
+other_info:术前加强性腹肌训练的最大呼吸肌力量（Pi-max）和耐力（Pm-peak/Pi-max）。术后30天内可能发生的心脏并发症、神经并发症及手术部位感染（详细描述见附录2）。总退出率作为整体可接受性的替代指标。患者报告的健康相关生活质量，包括12项简短健康调查、36项简短健康调查、国家健康结果量表和世界卫生组织健康质量评估工具。研究方法采用多学科协作，确保数据的准确性和一致性。

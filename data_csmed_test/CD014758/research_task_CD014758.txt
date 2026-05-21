@@ -1,0 +1,3 @@
+research_direction: 正交屈光治疗; 近视进展评估; 系统性回顾; RMS (反射型隐形眼镜); CS (渐进式多焦点人工晶体); 使用Atropine的情况，特别是电眼图谱  
+filter_requirements: 时间范围: 近两年；关键词: 安全性、舒适度、视力状况、随机ised controlled trials (RCTs) of orthokeratology treatments for improving visual comfort and outcomes in children, 使用率和满意度、RMS, CS. 研究参与者为18岁以下儿童。排除标准：主要参与者年龄超过18岁或基底视力小于−0.50 D；此外，研究排除了没有直接评估近视进展效果的干预措施。  
+other_info: 系统性回顾系统性评估了光具、药物和环境因素干预措施在减缓儿童近视进展方面的作用，采用网络元分析方法。研究纳入了来自亚洲和北美超过64项研究，关注的变化包括球镜等效折射率（SER）和轴长的改变。研究结果表明，在对照组中使用无效干预的情况下，某些干预措施如HDA、MDA、LDA、pir Azepine和多焦点眼镜可能有助于减缓近视进展。此外，反射型隐形眼镜(RMS)和渐进式多焦点人工晶体(CS)也被纳入评估，以了解其在青少年近视管理中的使用率和满意度。论文标题：Multifocal electroretinogram findings in children on atropine treatment for myopia

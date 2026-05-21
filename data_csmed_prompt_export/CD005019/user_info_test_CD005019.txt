@@ -1,2 +1,0 @@
-user_identity: 研究人员/学生
-user_preference: HMG CoA reductase inhibitors (statins), Hydroxymethylglutaryl-CoA Reductase Inhibitors, kidney next (transplant* or graft* or recipient*) in All Fields in all products, renal next (transplant* or graft* or recipient*) in All Fields in all products

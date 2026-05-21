@@ -1,0 +1,4 @@
+research_direction: 机器学习在医疗领域中的文本摘要生成模型及其在健康服务设计中的应用  
+research_direction: 公共卫生/医疗系统优先级设置  
+research_direction: Increased fairness in priority setting processes within the health sector  
+other_info: [{'index': 1, 'decision': 'include', 'reason': '"Intervention effects of consumers and health providers working in partnership on health services planning, delivery, and evaluation"'}], filter_requirements: 系统误判，rejection_reasons: 系统误判

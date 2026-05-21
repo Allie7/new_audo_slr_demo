@@ -1,2 +1,0 @@
-user_identity: Medical doctor from the University of Manchester
-user_preference: Systematic Review (Systemic Synthesis) of Intervention

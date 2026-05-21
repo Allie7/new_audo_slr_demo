@@ -1,3 +1,0 @@
-research_direction: Health-Related Quality of Life Outcomes Following Elective Open or Endovascular AAA Repair  
-filter_requirements: randomised participants in a 3:1 format, where 57 participants were randomised to EVAR and 19 to OSR; health‐related quality of life outcomes estimated at 3 months post surgery; small sample size in OSR group; results may not be representative  
-other_info: 研究分析了短期（术后3个月）、中期（至随机化后4年）和长期（超过4年）的结果。重点关注了手术方法在AAA患者中的比较及其对心血管事件、器官功能损伤等中短期并发症及生活质量的长期影响。主要评估指标为预期的终点，经济分析未提及。

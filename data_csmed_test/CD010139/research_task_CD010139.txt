@@ -1,0 +1,5 @@
+research_direction: 呼吸系统药物应用  
+We included randomised controlled trials of at least 12 weeks' duration with adults older than 18 years and a confirmed spirometric diagnosis of COPD as participants. Interventions included once-daily inhaled agents (e.g., indacaterol) at any dose, placebo, twice-daily long-acting beta2 agonists, and alternative long-acting beta2 agonists for children. Primary outcomes were trough forced expiratory volume in one second (FEV1), mean difference in quality of life, and the number of participants with a clinically significant improvement in quality of life.  
+
+需要特别关注：  
+other_info: 需要进一步确认

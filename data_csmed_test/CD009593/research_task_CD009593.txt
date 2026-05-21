@@ -1,0 +1,2 @@
+research_direction: Comparative study of GeneXpert MTB and standard culture in children with TB  
+filter_requirements: 横断面或队列研究；排除病例对照设计和其他临床试验类型；仅限于与活动性肺结核相关的参考标准，时间截止到2023年1月。可以根据需要扩展至现在的时间范围。排除与儿童相关的论文，并且排除Xpert Ultra not evaluated的情况。

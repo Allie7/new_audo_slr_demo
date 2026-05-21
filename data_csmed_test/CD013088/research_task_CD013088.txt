@@ -1,0 +1,4 @@
+research_direction: Frailty老年人的护理模型  
+Time frame: last two years; Keywords: 整合护理, Frailty老年人, 护理模型, 老年护理实践, 护理效果, 社区; Exclusions: No structured follow-up or designated lead professional  
+
+The review included randomized controlled trials (RCTs) evaluating the care model for integrated care of frailty elderly patients versus usual care. The studies were conducted in community settings across high-, middle-, and low-income countries, utilizing peer-reviewed literature including conference abstracts and unpublished data. Trials were included irrespective of their publication status or language.

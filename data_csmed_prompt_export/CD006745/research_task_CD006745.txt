@@ -1,4 +1,0 @@
-research_direction: 随机临床试验评估经皮局部消融治疗；研究目标：针对肝细胞癌（HCC）的早期干预，评估经皮局部消融治疗的有效性。过滤条件：时间框架为近十年，排除放射治疗和其他组合干预的研究。背景信息：肝癌是全球第五种最常见的癌症。早期干预措施如PEGAS unwednesday注射（PEI）和Pict tors瑞西尼（PAI）可能提供更少侵入性和更有可能的治愈效果与手术相比。研究发表状态不限制；包括随机临床试验，无论是否双盲；语言不限制。非随机化研究仅限于评估治疗的伤害数据。
-
-Cochrane Hepato-Biliary Group Controlled Trials Register
-other_info: Multiple databases used: Cochrane Hepato-Biliary Group Controlled Trials Register, MEDLINE (Ovid SP), EMBASE (Ovid SP), Science Citation Index Expanded. Search strategy includes specific terms for ethanol, acetic acid, injections, liver neoplasms, and randomized controlled trials.

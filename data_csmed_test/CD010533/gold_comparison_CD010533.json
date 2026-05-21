@@ -1,0 +1,31 @@
+{
+  "review_id": "CD010533",
+  "gold_included_ids": [
+    "CD010533-bib-0003",
+    "CD010533-bib-0006"
+  ],
+  "include_only": {
+    "system_ids": [
+      "CD010533-bib-0003",
+      "CD010533-bib-0006"
+    ],
+    "correct_ids": [
+      "CD010533-bib-0003",
+      "CD010533-bib-0006"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  },
+  "include_and_not_sure": {
+    "system_ids": [
+      "CD010533-bib-0003",
+      "CD010533-bib-0006"
+    ],
+    "correct_ids": [
+      "CD010533-bib-0003",
+      "CD010533-bib-0006"
+    ],
+    "missed_ids": [],
+    "false_positive_ids": []
+  }
+}

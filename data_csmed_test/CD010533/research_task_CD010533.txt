@@ -1,0 +1,3 @@
+research_direction: Hodgkin Lymphoma中的PET适应性治疗效果评估  
+filter_requirements: 近两年的RCTs, 使用MeSH descriptors筛选（包括Lymphoma, Hodgkin Disease, Positron‐Emission Tomography, PET scan等）  
+other_info: 系统综述的主要终点为无进展生存期（OS），次要终点包括疾病进展或复发时间（PFS）、总反应率和部分缓解率。此外，我们还关注了与TRM相关的治疗相关死亡率（TRM）以及患者生活质量（QoL）。筛选标准包括随机对照试验类型、研究设计、参与者特征等。

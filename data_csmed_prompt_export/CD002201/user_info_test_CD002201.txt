@@ -1,3 +1,0 @@
-user_identity: 研究人员  
-user_preference: omega-3多不饱和脂肪酸补充  
-CF患者群体：People with CF, of any age and severity, diagnosed clinically and by sweat or genetic testing.

@@ -1,0 +1,3 @@
+research_direction: Arteriovenous Fistula Study  
+filter_requirements: 系统误判为排除 AND (predialysis OR pre-dialysis) AND (hemodialysis OR hemodynamic access) AND (kidney failure OR kidney disease OR renal failure OR renal disease) AND (CKD OR CKF OR CRD OR CRF OR ESKD OR ESKF OR ESRD OR ESRF)  
+other_info: Database: MEDLINE and EMBASE; Search terms include various blood vessel procedures, dialysis access, renal replacement therapy, and kidney disease.

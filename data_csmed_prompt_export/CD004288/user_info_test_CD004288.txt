@@ -1,2 +1,0 @@
-user_identity: 医学专业人士  
-user_preference: surgical hand antiseptic techniques

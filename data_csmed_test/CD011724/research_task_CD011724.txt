@@ -1,0 +1,6 @@
+{
+  "research_direction": "Newborns' Chest Drain Insertion",
+  "filter_requirements": "随机对照试验",
+  "other_info": "风险评估工具包括7个评估点：1. 序列生成，2. 分配 concealment，3. 参与者和人员的盲识，4. 结果评估的盲识，5. 不完全数据，6. 报告偏倚，7. 其他潜在偏差。每个评估点的风险分类标准为：low risk、high risk或unclear risk。",
+  "other_info": "摘要明确说明研究对象为低出生体重新生儿，方法为随机对照试验，并且对象人群为新生儿"
+}

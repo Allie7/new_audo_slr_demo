@@ -1,0 +1,3 @@
+research_direction: 精神分裂症维持治疗  
+intervention: 基于2002年的筛选方法，使用手搜索、参考文献搜索等。  
+filter_requirements: 近两年，关键词，排除标准等。

@@ -1,0 +1,35 @@
+research_direction: NSAI在类风湿性脊柱炎（RA）患者中的临床应用效果及骨质增生程度的影响。为了系统地研究NSAIDs在RA患者中的临床应用效果及其对骨质增生程度的影响，可以按照以下步骤进行文献检索：
+
+1. 提取关键词：
+   - 使用提取的关键词如"Rheumatoid arthritis (RA)"、"Spondylitis"等。
+   - 结合特定药物名称和抗炎剂，例如"nsaid*"、"naproxen"、"phenylbutazone"。
+
+2. 格式化搜索查询：
+   - 在PubMed（MeSH）中使用以下格式化的查询字符串：
+     ```
+     "[Rheumatoid arthritis (RA)] ti,ab"
+     "Spondylitis" ti,ab
+     "anti-inflammatory agents, non-steroidal:ti,ab"
+     "nsaid*:ti,ab"
+     "aceclofenac.:ti,ab"
+     "Indomethacin:ti,ab"
+     "[Rheumatoid arthritis (RA)] ti,ab"
+     ```
+
+3. 在Scopus中使用以下格式化的查询：
+   - #1 TITLE-ABS-KEY(rheumatoid arthritis) [注：保留原有关键词]
+   - #2 TITLE-ABS-KEY(ankyl* OR spondyl*) [注：添加RA相关关键词]
+   - #3 #1 OR #2
+   - #4 TITLE-ABS-KEY("cox 2 inhibitor*" OR "cyclooxygenase 2 inhibitor*" OR "cyclo-oxygenase-2 inhibitor*")
+   - #5 TITLE-ABS-KEY(meloxicam OR ... coxib*)
+     ```
+
+4. 在ClinicalTrials.gov中使用以下格式化的查询：
+   ```
+   "Rheumatoid arthritis (RA)" in Condition AND (Meloxicam OR ... ximoprofen) AND LIMIT-TO(DOCTYPE, "cp") AND PUBLISHED_YEAR > 2021
+   ```
+
+5. 研究方向扩展：
+   - 此外，研究还涉及评估非甾体抗炎药物对骨质增生程度的影响，具体研究方向为"Effect of non-steroidal anti-inflammatory drugs on radiographic spinal progression in patients with axial spondyloarthritis"。
+
+通过以上步骤，可以系统地提取和格式化关键词，生成有效的搜索查询以研究NSAIDs在类风湿性脊柱炎患者中的临床应用效果及其对骨质增生程度的影响。特别关注 naproxen 和 phenylbutazone 在RA中的比较研究，并限定搜索范围为近两年的临床试验数据，排除不完整数据的交叉研究。

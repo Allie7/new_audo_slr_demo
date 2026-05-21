@@ -1,2 +1,0 @@
-user_identity: 医学研究者或相关专业背景
-user_preference: 药物试验或RCTs

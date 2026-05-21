@@ -1,0 +1,1 @@
+research_direction: 呼吸肌训练. research_direction: 运动科学/康复. research_direction: 稳定 COPD 患者肌力测试. filter_requirements: 包含RCT，排除IMT和综述的研究.

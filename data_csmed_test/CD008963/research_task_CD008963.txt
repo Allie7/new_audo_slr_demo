@@ -1,0 +1,14 @@
+research_direction: 自管理教育计划  
+filter_requirements: 使用非随机分组的方法；人群定义为所有年龄组的骨质退化性关节炎（OA）患者；排除标准包括混合人群，除非明确报告了仅限于OA单独人群的数据。最近两年。
+
+research_direction: 自然语言处理  
+filter_requirements: 最近两年
+
+research_direction: LLM Agent记忆管理  
+filter_requirements: 最近两年
+
+research_direction: Economic evaluation of arthritis self management in primary care  
+filter_requirements: 最近两年
+
+research_direction: Impact of the Fit and Strong Intervention on Older Adults With Osteoarthritis
+filter_requirements: 无法确定

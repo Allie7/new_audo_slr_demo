@@ -1,0 +1,13 @@
+research_direction: 急性心衰患者、利尿剂和血管扩张剂的单药或药物组合在急性 setting中的效果评估；同时，评估单药或药物组合在急性 settings中的效果和安全性，并关注所有原因的死亡率。  
+filter_requirements: 搜索数据库包括CENTRAL、MEDLINE、Embase和CPCI-S Web of Science，时间为2019年10月；排除语言限制；筛选标准为随机对照试验（RCTs）；研究设计为平行组，关注急性 setting，排除交叉试验；对象为18岁及以上成年患者，包括中高风险人群（LCOS/CS）；随访包括至少医院化；干预措施为单药或药物组合；对照组为安慰剂或无治疗。  
+filter_requirements: 利用其八种特定搜索选项探索相关条件：  
+- **Search 1:** "cardiogenic shock" 或 "low cardiac output"，并结合"利尿剂"、"血管扩张剂"等干预措施  
+- **Search 2:** 同上，但结合其他药物（如enoximone、lisinopril等）  
+- **Search 3:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物组合"  
+- **Search 4:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物（如ipratropium bromide、mebeverine等）"  
+- **Search 5:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物（如nizatib、timolol等）"  
+- **Search 6:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物（如methyldopa、phenylephrine等）"  
+- **Search 7:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物组合（如norfloxastatin、PNNH等）"  
+- **Search 8:** 结合"cardiogenic shock" 或 "low cardiac output" 和"其他药物（如spironolactone、tamsulosin等）"  
+
+other_info: 研究设计：随机对照试验（RCTs），平行组设计，急性 setting；主要结局指标：所有原因的死亡率（all-cause mortality）；次要结局指标：严重的心脏事件、入院时间、生活质量（SF-36）、血液动力学参数、不良事件和成本。

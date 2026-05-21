@@ -1,6 +1,0 @@
-research_direction: COPD及哮喘患者的随机对照试验  
-研究方向：CF患者和ω-3脂肪酸补充剂研究  
-filter_requirements: 研究方向：COPD及哮喘患者的随机对照试验  
-filter_requirements: 研究方向：CF患者和ω-3脂肪酸补充剂研究  
-filter_requirements: 入侵标准：纳入标准为随机对照试验（RCT）、准随机对照试验（quasi‐randomised）和交叉对照试验（cross‐over）。受试者为患有CF的患者，任何年龄段、任何严重度，临床诊断或通过汗液或遗传学测试确诊。饮食补充ω-3脂肪酸（以EPA或DHA或两者结合）与安慰剂进行比较。排除标准：受试者不能有低ω-3或ω-6脂肪酸含量的饮食补充（如橄榄油）。测量指标包括：住院次数、抗生素使用次数和类型、不良事件和退出情况、肺功能（FEV1% predicted和FVC）、生活质量、生长或营养指标、气道反应性测试结果、生物化学标记（如血浆、血小板和红细胞中的EPA、DHA及其比值）。  
-filter_requirements: clinicaltrials.gov, Cystic Fibrosis AND Omega 3 Fatty Acids, 12 February 2019

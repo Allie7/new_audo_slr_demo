@@ -1,0 +1,3 @@
+research_direction: 多策略干预、系统综述方法、Cluster Randomized Controlled Trial（群随机对照试验）和高影响因子期刊  
+filter_requirements: 时间范围截至2023年1月，使用随机对照试验、准实验设计、中断时间序列研究、前瞻性队列研究以及stepped wedge设计等方法；排除单策略干预措施或未关注群体结果的研究，并关注高影响因子期刊。  
+other_info: 研究背景：探索多策略社区wide干预对人群物理活动的影响。研究方法：系统综述和Cluster RCT，搜索了多个数据库和相关指南。研究结果：大部分干预措施在高收入国家实施但效果不显著，在低收入国家的干预措施中部分有较高的参与率；新增研究显示农村社区物理活动干预通过stepped wedge设计评估后，效果显著且具有可复制性。结论：尽管进行了大量研究，但结果不一致且受方法学问题影响。此外，论文 'Evaluation of community level interventions to address social and structural determinants of health: a cluster randomised controlled trial' 被确认为纳入，理由是作为研究的设计说明，被视为不同的研究，应纳入。
